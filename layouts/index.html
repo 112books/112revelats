@@ -34,7 +34,7 @@
         <p>{{ i18n "mecenes_text" }}</p>
       </div>
     </div>
-    <p style="margin-top:1.5rem;"><a href="/patrocini/" class="btn btn-primary">{{ i18n "patrocini_veure" }}</a></p>
+    <p style="margin-top:1.5rem;"><a href="{{ "patrocini" | relLangURL }}" class="btn btn-primary">{{ i18n "patrocini_veure" }}</a></p>
   </div>
 </section>
 
@@ -71,7 +71,7 @@
           <textarea name="missatge" placeholder="{{ i18n "participa_form_missatge" }}" rows="3"></textarea>
           <label class="checkbox-label">
             <input type="checkbox" name="rgpd" value="si" required>
-            {{ i18n "participa_form_rgpd" }} <a href="/privacitat" target="_blank">{{ i18n "participa_form_rgpd_link" }}</a>
+            {{ i18n "participa_form_rgpd" }} <a href="{{ "privacitat" | relLangURL }}" target="_blank">{{ i18n "participa_form_rgpd_link" }}</a>
           </label>
           <button type="submit" class="btn btn-primary btn-lg">{{ i18n "form_envia" }}</button>
         </form>
