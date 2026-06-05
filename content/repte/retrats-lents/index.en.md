@@ -3,11 +3,6 @@ title: "Retrats Lents (Slow Portraits)"
 description: "Second photographic challenge of 112 Revelats — Pinhole camera and long exposure portraits"
 status: "active"
 challengeNumber: 2
-phases:
-  - date: "Summer solstice — Sant Joan"
-  - date: "Until September 6"
-  - date: "Early October"
-  - date: "Late October"
 ---
 
 **Retrats Lents** is the second photographic challenge of 112 Revelats. An invitation to slow down your gaze and capture the essence of the subject through time and low light.

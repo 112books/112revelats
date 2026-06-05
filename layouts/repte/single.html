@@ -44,21 +44,9 @@
       <div class="phase-list">
         {{ $phases := slice (i18n "fase_1") (i18n "fase_2") (i18n "fase_3") (i18n "fase_4") }}
         {{ range $i, $phase := $phases }}
-          {{ $date := "" }}
-          {{ with $.Params.phases }}
-            {{ if lt $i (len .) }}
-              {{ $date = (index . $i).date }}
-            {{ end }}
-          {{ end }}
-          <div class="phase {{ if eq $status "completed" }}phase-done{{ else if eq $i 0 }}phase-active{{ else }}phase-pending{{ end }}">
-            <span class="phase-dot"></span>
+          <div class="phase">
+            <span class="phase-dot" style="background:var(--accent);"></span>
             <span>{{ $phase }}</span>
-            {{ if $date }}
-              <span class="phase-date">{{ $date }}</span>
-            {{ end }}
-            <span style="margin-left:auto;font-size:0.9rem;{{ if eq $status "completed" }}color:var(--green);{{ else if eq $i 0 }}color:var(--amber);{{ else }}color:var(--ink-3);{{ end }}">
-              {{ if eq $status "completed" }}{{ i18n "fase_completada" }}{{ else if eq $i 0 }}{{ i18n "fase_actual" }}{{ else }}{{ i18n "fase_properament" }}{{ end }}
-            </span>
           </div>
         {{ end }}
       </div>
