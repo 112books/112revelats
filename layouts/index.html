@@ -50,6 +50,8 @@
       </div>
       <p>{{ i18n "repte_002_desc" }}</p>
 
+      <p style="margin-top:0.5rem;"><a href="{{ "repte/retrats-lents" | relLangURL }}" class="btn btn-secondary btn-sm">{{ i18n "repte_002_info" }}</a></p>
+
       <div class="phases">
         <h4>{{ i18n "reptes_fases_subtitle" }}</h4>
         <div class="phase-list">
@@ -83,7 +85,10 @@
         <span class="challenge-badge challenge-badge-done">{{ i18n "repte_001_estat" }}</span>
       </div>
       <p class="challenge-desc">{{ i18n "repte_001_desc" }}</p>
-      <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">{{ i18n "repte_001_pdf" }}</a>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.5rem;">
+        <a href="{{ "repte/arrencant-el-dia" | relLangURL }}" class="btn btn-secondary btn-sm">{{ i18n "repte_001_info" }}</a>
+        <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">{{ i18n "repte_001_pdf" }}</a>
+      </div>
     </div>
   </div>
 </section>

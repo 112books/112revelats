@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{ $status := .Params.status }}
+{{ $badge := cond (eq $status "completed") (i18n "repte_001_estat") (i18n "repte_002_estat") }}
+{{ $badgeClass := cond (eq $status "completed") "challenge-badge-done" "challenge-badge-open" }}
+{{ $num := .Params.challengeNumber }}
+
+<section class="challenge-hero" style="background:{{ if eq $status "completed" }}linear-gradient(135deg,#1B2A4A,#2d4a7a){{ else }}linear-gradient(135deg,#1a3a2a,#2d6a4f){{ end }};">
+  <div class="section-inner" style="text-align:center;padding:4rem 1rem;">
+    <span class="challenge-badge {{ $badgeClass }}" style="font-size:0.85rem;padding:0.3rem 0.8rem;display:inline-block;margin-bottom:1rem;">{{ $badge }}</span>
+    <h1 style="color:#fff;font-size:2.8rem;margin-bottom:0.5rem;">{{ .Title }}</h1>
+    <p style="color:rgba(255,255,255,0.75);font-size:1rem;max-width:600px;margin:0 auto 1.5rem;">{{ .Description }}</p>
+    {{ if eq $status "completed" }}
+      <a href="{{ .Params.downloadUrl }}" class="btn btn-primary" target="_blank" rel="noopener">{{ i18n "hero_cta_pdf" }}</a>
+    {{ else }}
+      <a href="/#reptes" class="btn btn-primary">{{ i18n "hero_cta_participa" }}</a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ if eq $status "completed" }}
+{{ $selected := .Params.authorsSelected }}
+{{ $other := .Params.authorsOther }}
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2 style="text-align:center;margin-bottom:0.5rem;">{{ i18n "repte_authors_title" }}</h2>
+    <p style="text-align:center;color:var(--ink-3);margin-bottom:2rem;">{{ i18n "repte_authors_desc" }}</p>
+
+    <h3 style="font-size:1.1rem;margin-bottom:1rem;">{{ i18n "repte_authors_selected" }}</h3>
+    <div class="author-grid">
+      {{ range $selected }}
+      <div class="author-card selected">
+        <span class="author-icon">✓</span>
+        <span class="author-name">{{ . }}</span>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ if $other }}
+    <h3 style="font-size:1.1rem;margin-bottom:1rem;margin-top:2rem;">{{ i18n "repte_authors_other" }}</h3>
+    <div class="author-grid">
+      {{ range $other }}
+      <div class="author-card other">
+        <span class="author-icon">·</span>
+        <span class="author-name">{{ . }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<style>
+.challenge-hero { padding:2rem 0; }
+.author-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:0.6rem; }
+.author-card { display:flex; align-items:center; gap:0.5rem; padding:0.5rem 0.8rem; border-radius:6px; font-size:0.85rem; }
+.author-card.selected { background:#f0fdf4; border:1px solid #bbf7d0; }
+.author-card.other { background:#fafafa; border:1px solid #e5e5e5; }
+.author-icon { width:20px; text-align:center; flex-shrink:0; }
+.author-card.selected .author-icon { color:#16a34a; font-weight:700; }
+.author-card.other .author-icon { color:#94a3b8; font-weight:700; }
+.author-name { color:var(--ink-2); }
+.challenge-hero .btn-primary { background:#fff; color:#111; }
+.challenge-hero .btn-primary:hover { background:#e5e5e5; }
+</style>
+{{ end }}

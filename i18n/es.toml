@@ -40,10 +40,22 @@
   other = "Completado"
 [repte_001_pdf]
   other = "Descargar el fotolibro (PDF)"
+[repte_001_info]
+  other = "Toda la información del reto →"
 [repte_002_titol]
   other = "Retratos Lentos"
+[repte_002_info]
+  other = "Toda la información del reto →"
 [repte_002_desc]
   other = "Segundo reto fotográfico de 112 Revelats. Retratos con cámara estenopeica y larga exposición. Una invitación a ralentizar la mirada y capturar la esencia del sujeto a través del tiempo y la poca luz."
+[repte_authors_title]
+  other = "Participantes"
+[repte_authors_desc]
+  other = "Gracias a todas las personas que hicieron posible este reto."
+[repte_authors_selected]
+  other = "Seleccionados/as para el fotolibro"
+[repte_authors_other]
+  other = "También participaron (agradecimiento especial)"
 [repte_002_estat]
   other = "Inscripción abierta"
 [participa_form_title]

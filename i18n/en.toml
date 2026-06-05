@@ -40,10 +40,22 @@
   other = "Completed"
 [repte_001_pdf]
   other = "Download the photobook (PDF)"
+[repte_001_info]
+  other = "Full challenge info →"
 [repte_002_titol]
   other = "Slow Portraits"
+[repte_002_info]
+  other = "Full challenge info →"
 [repte_002_desc]
   other = "Second photographic challenge by 112 Revelats. Portraits with pinhole camera and long exposure. An invitation to slow down the gaze and capture the subject's essence through time and low light."
+[repte_authors_title]
+  other = "Participants"
+[repte_authors_desc]
+  other = "Thank you to everyone who made this challenge possible."
+[repte_authors_selected]
+  other = "Selected for the photobook"
+[repte_authors_other]
+  other = "Also participated (special thanks)"
 [repte_002_estat]
   other = "Open for submissions"
 [participa_form_title]

@@ -1,0 +1,6 @@
+{{ define "main" }}
+<meta http-equiv="refresh" content="0;url={{ .Params.redirect }}">
+<section style="padding:4rem 1rem;text-align:center;">
+  <p>Redirecting to <a href="{{ .Params.redirect }}">{{ .Title }}</a>...</p>
+</section>
+{{ end }}

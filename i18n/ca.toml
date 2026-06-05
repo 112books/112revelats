@@ -40,10 +40,22 @@
   other = "Completat"
 [repte_001_pdf]
   other = "Descarregar el fotollibre (PDF)"
+[repte_001_info]
+  other = "Tota la informació del repte →"
 [repte_002_titol]
   other = "Retrats Lents"
+[repte_002_info]
+  other = "Tota la informació del repte →"
 [repte_002_desc]
   other = "Segon repte fotogràfic de 112 Revelats. Retrats amb càmera estenopeica i llarga exposició. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum."
+[repte_authors_title]
+  other = "Participants"
+[repte_authors_desc]
+  other = "Gràcies a totes les persones que van fer possible aquest repte."
+[repte_authors_selected]
+  other = "Seleccionats/des per al fotollibre"
+[repte_authors_other]
+  other = "També hi van participar (agraïment especial)"
 [repte_002_estat]
   other = "Inscripció oberta"
 [participa_form_title]
