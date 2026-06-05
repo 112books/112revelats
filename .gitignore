@@ -6,3 +6,4 @@
 *.swp
 *.swo
 node_modules/
+docs/
