@@ -152,6 +152,7 @@
   <div class="section-inner">
     <h2>{{ i18n "contacte_title" }}</h2>
     <p>{{ i18n "contacte_text" }}</p>
+    <p class="contacte-nota">{{ i18n "contacte_nota" | safeHTML }}</p>
     <form class="contact-form" action="{{ $.Site.Params.formAction }}" method="POST">
       <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
       <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>

@@ -96,6 +96,8 @@
   other = "Contacto / FAQ"
 [contacte_text]
   other = "Escríbenos directamente o consulta las preguntas frecuentes."
+[contacte_nota]
+  other = "Este formulario <strong>no</strong> es para participar en el reto. Para inscribirte, ve a la sección <a href=\"#reptes\">Retos</a>."
 [faq_title]
   other = "Preguntas frecuentes (FAQ)"
 [faq_1_p]

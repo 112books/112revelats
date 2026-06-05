@@ -187,6 +187,8 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .faq-item p { font-size: 0.85rem; color: var(--ink-2); padding: 0.3rem 0 0.5rem 1.2rem; }
 
 /* contact form */
+.contacte-nota { font-size: 0.82rem; color: var(--ink-3); background: #fafafa; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; line-height: 1.5; }
+.contacte-nota a { color: var(--ink-2); }
 .contact-form { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem; max-width: 480px; }
 .contact-form input, .contact-form textarea { padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; font-family: var(--sans); font-size: 0.9rem; }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #888; }
