@@ -206,3 +206,5 @@
   other = "Como un negativo al sol, esta página se ha velado. Prueba a volver al inicio."
 [error_404_cta]
   other = "← Vuelve al sitio"
+[hero_cta_presskit]
+  other = "Kit de Prensa"

@@ -206,3 +206,5 @@
   other = "Like a negative in the sun, this page got fogged. Head back to the start."
 [error_404_cta]
   other = "← Back to the site"
+[hero_cta_presskit]
+  other = "Press Kit"

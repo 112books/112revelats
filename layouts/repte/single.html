@@ -15,7 +15,10 @@
     {{ else }}
       <div style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
         <a href="{{ "" | relLangURL }}#reptes" class="btn btn-primary">{{ i18n "hero_cta_participa" }}</a>
-        <a href="/presskit/presskit-retrats-lents.pdf" class="btn btn-outline" target="_blank" rel="noopener" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">📄 Kit de Premsa</a>
+        {{ $presskit := "/presskit/presskit-retrats-lents.pdf" }}
+        {{ if eq .Lang "es" }}{{ $presskit = "/presskit/presskit-retrats-lents-es.pdf" }}{{ end }}
+        {{ if eq .Lang "en" }}{{ $presskit = "/presskit/presskit-retrats-lents-en.pdf" }}{{ end }}
+        <a href="{{ $presskit }}" class="btn btn-outline" target="_blank" rel="noopener" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">📄 {{ i18n "hero_cta_presskit" }}</a>
       </div>
     {{ end }}
   </div>
