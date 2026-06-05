@@ -3,6 +3,19 @@ title: "Retratos Lentos"
 description: "Segundo reto fotográfico de 112 Revelats — Retratos con cámara estenopeica y larga exposición"
 status: "active"
 challengeNumber: 2
+phases:
+  - date: "21 jun — 6 sep"
+    status: "active"
+    note: "Inicio oficial en el solsticio de verano (Sant Joan)"
+  - date: "21 jun — 6 sep"
+    status: "active"
+    note: "Gratuita y abierta a todas las edades y niveles. Menores: requieren autorización del tutor legal."
+  - date: "Principios de octubre"
+    status: "future"
+    note: "Comunicaremos los seleccionados"
+  - date: "Octubre"
+    status: "future"
+    note: "El fotolibro se lanza a finales de octubre"
 ---
 
 **Retratos Lentos** es el segundo reto fotográfico de 112 Revelats. Una invitación a ralentizar la mirada y capturar la esencia del sujeto a través del tiempo y la poca luz.

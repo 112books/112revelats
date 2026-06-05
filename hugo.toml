@@ -38,5 +38,10 @@ disableKinds = ["taxonomy", "term"]
 [outputs]
   home = ["HTML"]
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [build]
   writeStats = false

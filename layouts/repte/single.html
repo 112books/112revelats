@@ -47,7 +47,7 @@
     <div class="gallery-grid" id="gallery-grid">
       {{ range $galleryImages }}
       <div class="gallery-item">
-        <img src="{{ . | relURL }}" alt="" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ i18n "gallery_title" }} — {{ $.Title }}" loading="lazy">
       </div>
       {{ end }}
     </div>
@@ -81,11 +81,15 @@
     <h2 style="font-size:2.5rem;margin-top:3rem;margin-bottom:0.5rem;text-align:center;">{{ i18n "reptes_fases" }}</h2>
     <div class="phases" style="margin-top:0;padding-top:0;border-top:none;">
       <div class="phase-list">
-        {{ $phases := slice (i18n "fase_1") (i18n "fase_2") (i18n "fase_3") (i18n "fase_4") }}
-        {{ range $i, $phase := $phases }}
-          <div class="phase">
-            <span class="phase-dot" style="background:var(--accent);"></span>
-            <span>{{ $phase }}</span>
+        {{ $phaseNames := slice (i18n "fase_1") (i18n "fase_2") (i18n "fase_3") (i18n "fase_4") (i18n "fase_5") (i18n "fase_6") }}
+        {{ range $i, $p := .Params.phases }}
+          {{ $class := cond (eq $p.status "active") "phase-active" (cond (eq $p.status "future") "phase-pending" "") }}
+          <div class="phase {{ $class }}">
+            <span class="phase-dot"></span>
+            <div>
+              <span>{{ index $phaseNames $i }} <span class="phase-date">{{ $p.date }}</span></span>
+              {{ with $p.note }}<div class="phase-note">{{ . }}</div>{{ end }}
+            </div>
           </div>
         {{ end }}
       </div>
@@ -142,6 +146,8 @@
 .phase-date { font-size:0.8rem; color:var(--ink-3); margin-left:0.5rem; }
 .phase-active .phase-date { color:rgba(217,119,6,0.8); }
 .phase-pending .phase-date { color:var(--ink-3); }
+.phase-note { font-size:0.75rem; color:var(--ink-3); margin-top:0.15rem; line-height:1.3; }
+.phase-active .phase-note { color:rgba(217,119,6,0.65); }
 
 .author-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:0.6rem; }
 .author-card { display:flex; align-items:center; gap:0.5rem; padding:0.5rem 0.8rem; border-radius:6px; font-size:1rem; }

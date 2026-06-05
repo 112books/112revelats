@@ -4,37 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="description" content="{{ or .Description .Summary .Site.Params.description }}">
   <link rel="icon" href="{{ "img/favicon.png" | relURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
 
-  <meta property="og:title" content="{{ .Site.Title }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ or .Description .Summary .Site.Params.description }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">
+  <meta property="og:image" content="{{ or .Params.ogImage .Site.Params.ogImage | absURL }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ or .Description .Summary .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ or .Params.ogImage .Site.Params.ogImage | absURL }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&family=Literata:opsz,wght@7..72,400;6..72,600;7..72,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&family=Literata:opsz,wght@7..72,400;6..72,600;6..72,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&family=Literata:opsz,wght@7..72,400;6..72,600;6..72,700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&family=Literata:opsz,wght@7..72,400;6..72,600;6..72,700&display=swap"></noscript>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "112 Revelats",
-    "url": "{{ .Site.BaseURL }}",
+    "url": "{{ .Permalink }}",
     "logo": "{{ .Site.Params.ogImage | absURL }}",
     "sameAs": ["{{ .Site.Params.instagram }}", "{{ .Site.Params.facebook }}"]
   }
   </script>
+
+  {{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+  {{ end }}
 
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
@@ -52,7 +61,7 @@
         <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="112 Revelats" class="nav-logo">
         112 Revelats
       </a>
-      <button class="nav-toggle" aria-label="Menú">☰</button>
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">☰</button>
       <div class="nav-links">
         <a href="{{ "" | relLangURL }}#inici">{{ i18n "inici" }}</a>
         <a href="{{ "" | relLangURL }}#objectius">{{ i18n "objectius" }}</a>
@@ -79,13 +88,11 @@
   <footer class="site-footer" id="footer">
     <div class="footer-inner">
       <div class="footer-cols">
-        <div class="footer-col" style="display:flex;flex-direction:column;align-items:flex-start;">
+        <div class="footer-col">
           <a href="https://112books.eu" target="_blank" rel="noopener">
             <img src="{{ "img/112books-logo.png" | relURL }}" alt="112Books" class="footer-logo" style="height:80px;width:auto;">
           </a>
           <p style="font-size:0.75rem;color:var(--ink-3);margin-top:0.4rem;line-height:1.3;">{{ i18n "iniciativa" }}<br><a href="https://112books.eu" target="_blank" rel="noopener" style="color:var(--ink-2);text-decoration:none;">112Books.eu</a></p>
-        </div>
-        <div class="footer-col">
         </div>
         <div class="footer-col">
           <h5>{{ i18n "footer_legal" }}</h5>
@@ -101,7 +108,10 @@
             <input type="search" name="q" placeholder="{{ i18n "footer_cerca_placeholder" }}">
             <button type="submit">{{ i18n "footer_cerca_btn" }}</button>
           </form>
-          <div class="footer-social" style="margin-top:0.5rem;">
+        </div>
+        <div class="footer-col">
+          <h5>{{ i18n "footer_social" }}</h5>
+          <div class="footer-social">
             <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
@@ -117,6 +127,37 @@
       </div>
     </div>
   </footer>
+
+  <nav class="mobile-tab-bar">
+    <a href="{{ "" | relLangURL }}#inici">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      <span>{{ i18n "inici" }}</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#objectius">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      <span>{{ i18n "objectius" }}</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#patrocini">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      <span>{{ i18n "patrocini" }}</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#reptes">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <span>{{ i18n "reptes" }}</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#fotollibres">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+      <span>llibres</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#faq">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span>FAQ</span>
+    </a>
+    <a href="{{ "" | relLangURL }}#contacte">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span>{{ i18n "contacte" }}</span>
+    </a>
+  </nav>
 
   {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}"></script>

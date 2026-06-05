@@ -3,6 +3,19 @@ title: "Retrats Lents"
 description: "Segon repte fotogràfic de 112 Revelats — Retrats amb càmera estenopeica i llarga exposició"
 status: "active"
 challengeNumber: 2
+phases:
+  - date: "21 juny — 6 setembre"
+    status: "active"
+    note: "Inici oficial el solstici d'estiu (Sant Joan)"
+  - date: "21 juny — 6 setembre"
+    status: "active"
+    note: "Gratuïta i oberta a totes les edats i nivells. Menors: cal autorització del tutor legal."
+  - date: "Principis d'octubre"
+    status: "future"
+    note: "Comunicarem els seleccionats"
+  - date: "Octubre"
+    status: "future"
+    note: "El fotollibre es llança a finals d'octubre"
 ---
 
 **Retrats Lents** és el segon repte fotogràfic de 112 Revelats. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum.
