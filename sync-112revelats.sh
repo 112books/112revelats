@@ -49,14 +49,42 @@ build() {
 deploy() {
   sync
   build
-  print "Publicant a GitHub Pages..."
-  git subtree push --prefix $BUILD_DIR $REMOTE gh-pages 2>/dev/null
-  if [[ $? -ne 0 ]]; then
-    # If subtree push fails (e.g. first time), force split and push
-    git push $REMOTE `git subtree split --prefix $BUILD_DIR $BRANCH`:gh-pages --force
-  fi
-  ok "Deploy fet → https://112books.github.io/$REPO_NAME/"
+  deploy_ghpages
 }
+
+deploy_ghpages() {
+  print "Publicant a GitHub Pages..."
+  git checkout --orphan gh-pages-tmp
+  git rm -rf . > /dev/null 2>&1 || true
+  cp -r $BUILD_DIR/* . 2>/dev/null || true
+  touch .nojekyll
+  git add -A
+  git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)"
+  git push $REMOTE gh-pages-tmp:gh-pages --force
+  git checkout $BRANCH
+  git branch -D gh-pages-tmp 2>/dev/null || true
+  ok "Deploy fet → https://112revelats.112books.eu/"
+}
+
+deploy_auto() {
+  build
+  print "Publicant a GitHub Pages..."
+  git checkout --orphan gh-pages-tmp 2>/dev/null
+  git rm -rf . > /dev/null 2>&1 || true
+  cp -r $BUILD_DIR/* . 2>/dev/null || true
+  touch .nojekyll
+  git add -A 2>/dev/null || true
+  git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)" 2>/dev/null || true
+  git push $REMOTE gh-pages-tmp:gh-pages --force 2>/dev/null || true
+  git checkout $BRANCH 2>/dev/null || true
+  git branch -D gh-pages-tmp 2>/dev/null || true
+  ok "Deploy fet → https://112revelats.112books.eu/"
+}
+
+if [[ "$1" == "deploy" ]]; then
+  deploy_auto
+  exit 0
+fi
 
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━"
