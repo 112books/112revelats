@@ -272,8 +272,8 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .footer-bottom p { font-size: 0.72rem; color: var(--ink-3); }
 .footer-bottom a { color: var(--ink-2); }
 .footer-powered { display: flex; flex-direction: column; align-items: flex-end; gap: 0.15rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: right; }
-.footer-powered p { font-size: 0.72rem; color: var(--ink-3); margin: 0; }
-.footer-powered a { color: var(--ink-2); text-decoration: none; }
+.footer-powered p { font-size: 0.72rem; color: var(--ink-3); margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.footer-powered a { color: var(--ink-2); text-decoration: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .footer-powered a:hover { color: var(--ink); }
 .powered-detail { font-size: 0.65rem; color: var(--ink-3); letter-spacing: 0.02em; }
 
