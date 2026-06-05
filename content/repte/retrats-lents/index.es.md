@@ -3,6 +3,11 @@ title: "Retratos Lentos"
 description: "Segundo reto fotográfico de 112 Revelats — Retratos con cámara estenopeica y larga exposición"
 status: "active"
 challengeNumber: 2
+phases:
+  - date: "Solsticio de verano — San Juan"
+  - date: "Hasta el 6 de septiembre"
+  - date: "Principios de octubre"
+  - date: "Finales de octubre"
 ---
 
 **Retratos Lentos** es el segundo reto fotográfico de 112 Revelats. Una invitación a ralentizar la mirada y capturar la esencia del sujeto a través del tiempo y la poca luz.
@@ -16,7 +21,7 @@ No hace falta tener una cámara especial: puedes construir tu propia cámara est
 ## Cómo participar
 
 1. Haz un retrato con cámara estenopeica o larga exposición
-2. Envíanos tu propuesta a través del formulario de inscripción
+2. [Envíanos tu propuesta a través del formulario de inscripción](/es/legal/formulari/)
 3. Si tu imagen es seleccionada, formará parte del fotolibro colectivo
 
-El período de inscripción está abierto. Las bases completas y el formulario de participación los encontrarás en la sección de Retos de la home.
+> **El período de inscripción está abierto.** Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).

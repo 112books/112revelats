@@ -3,6 +3,11 @@ title: "Retrats Lents"
 description: "Segon repte fotogràfic de 112 Revelats — Retrats amb càmera estenopeica i llarga exposició"
 status: "active"
 challengeNumber: 2
+phases:
+  - date: "Solstici d'estiu — Sant Joan"
+  - date: "Fins al 6 de setembre"
+  - date: "Principis d'octubre"
+  - date: "Finals d'octubre"
 ---
 
 **Retrats Lents** és el segon repte fotogràfic de 112 Revelats. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum.
@@ -16,7 +21,7 @@ No cal tenir una càmera especial: pots construir la teva pròpia càmera esteno
 ## Com participar
 
 1. Fes un retrat amb càmera estenopeica o llarga exposició
-2. Envia'ns la teva proposta a través del formulari d'inscripció
+2. [Envia'ns la teva proposta a través del formulari d'inscripció](/legal/formulari/)
 3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
 
-El període d'inscripció està obert. Les bases completes i el formulari de participació els trobaràs a la secció de Reptes de la home.
+> **El període d'inscripció està obert.** Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
