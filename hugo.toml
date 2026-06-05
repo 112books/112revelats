@@ -24,8 +24,8 @@ disableKinds = ["taxonomy", "term"]
 [params]
   description = "Projecte de fotollibres col·lectius"
   author = "112Books"
-  instagram = "https://instagram.com/112revelats"
-  facebook = "https://facebook.com/112revelats"
+  instagram = "https://www.instagram.com/112books.eu/"
+  facebook = "https://www.facebook.com/112books/"
   llibreUrl = "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
   ogImage = "/img/hero-bg.png"
   pressDossier = "/pdf/dossier-premsa-112-revelats.pdf"

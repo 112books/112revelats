@@ -190,3 +190,13 @@
   other = "Privacitat"
 [cookies]
   other = "Cookies"
+[reptes_fases]
+  other = "Fases del repte"
+[fase_actual]
+  other = "Actual"
+[fase_properament]
+  other = "Properament"
+[fase_completada]
+  other = "Completat"
+[repte_figure_caption]
+  other = "Identitat visual del repte — disseny per 112 Books"

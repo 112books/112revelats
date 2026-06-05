@@ -4,7 +4,19 @@ description: "Primera edición del reto fotográfico 112 Revelats"
 status: "completed"
 challengeNumber: 1
 downloadUrl: "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
-authorsSelected: ["Jordi Mallol i Comas", "Miyuki Kurosaki", "Tommy Lanceley", "Xavier Sisternas", "Pedro ‘Clic’ Garcia Fernandez", "Joan ‘Linux’"]
+authorsSelected:
+  - name: "Jordi Mallol i Comas"
+    url: "https://www.instagram.com/gatillepisphoto/"
+  - name: "Miyuki Kurosaki"
+    url: "https://www.instagram.com/miyupixi/"
+  - name: "Tommy Lanceley"
+    url: "https://www.instagram.com/tommy_jp_photos/"
+  - name: "Xavier Sisternas"
+    url: "https://www.instagram.com/xaviersisternas/"
+  - name: "Pedro ‘Clic’ Garcia Fernandez"
+    url: "https://www.instagram.com/pedroclick5/"
+  - name: "Joan ‘Linux’"
+    url: "https://www.instagram.com/joanlinux/"
 authorsOther: []
 ---
 

@@ -190,3 +190,13 @@
   other = "Privacidad"
 [cookies]
   other = "Cookies"
+[reptes_fases]
+  other = "Fases del reto"
+[fase_actual]
+  other = "Actual"
+[fase_properament]
+  other = "Próximamente"
+[fase_completada]
+  other = "Completado"
+[repte_figure_caption]
+  other = "Identidad visual del reto — diseño por 112 Books"

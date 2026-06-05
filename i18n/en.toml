@@ -190,3 +190,13 @@
   other = "Privacy"
 [cookies]
   other = "Cookies"
+[reptes_fases]
+  other = "Challenge phases"
+[fase_actual]
+  other = "Current"
+[fase_properament]
+  other = "Coming soon"
+[fase_completada]
+  other = "Completed"
+[repte_figure_caption]
+  other = "Challenge visual identity — design by 112 Books"
