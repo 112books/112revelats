@@ -4,8 +4,8 @@ description: "Primera edición del reto fotográfico 112 Revelats"
 status: "completed"
 challengeNumber: 1
 downloadUrl: "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
-authorsSelected: ["Anna Martínez", "Carles Font", "Laura Puig", "Marc Vidal", "Núria Soler", "Pau Roca", "Sílvia Pla", "Txema Bonet"]
-authorsOther: ["Albert Rovira", "Cristina Serra", "David Lleó", "Elena Mas", "Ferran Closa", "Glòria Pagès", "Ivan Torres", "Jordi Camps", "Laia Grau", "Miquel Àngel Cortès"]
+authorsSelected: ["Jordi Mallol i Comas", "Miyuki Kurosaki", "Tommy Lanceley", "Xavier Sisternas", "Pedro ‘Clic’ Garcia Fernandez", "Joan ‘Linux’"]
+authorsOther: []
 ---
 
 **Arrancando el día** es el primer fotolibro colectivo de 112 Revelats. Una exploración visual del instante en que el día comienza, capturado desde miradas diversas y personales.

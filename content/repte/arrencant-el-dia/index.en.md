@@ -4,8 +4,8 @@ description: "First edition of the 112 Revelats photographic challenge"
 status: "completed"
 challengeNumber: 1
 downloadUrl: "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
-authorsSelected: ["Anna Martínez", "Carles Font", "Laura Puig", "Marc Vidal", "Núria Soler", "Pau Roca", "Sílvia Pla", "Txema Bonet"]
-authorsOther: ["Albert Rovira", "Cristina Serra", "David Lleó", "Elena Mas", "Ferran Closa", "Glòria Pagès", "Ivan Torres", "Jordi Camps", "Laia Grau", "Miquel Àngel Cortès"]
+authorsSelected: ["Jordi Mallol i Comas", "Miyuki Kurosaki", "Tommy Lanceley", "Xavier Sisternas", "Pedro ‘Clic’ Garcia Fernandez", "Joan ‘Linux’"]
+authorsOther: []
 ---
 
 **Arrencant el dia** is the first collective photobook from 112 Revelats. A visual exploration of the moment the day begins, captured through diverse and personal perspectives.
