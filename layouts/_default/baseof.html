@@ -42,7 +42,9 @@
     {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
-    <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+    {{ range .AllTranslations }}{{ if eq .Lang "ca" }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end }}{{ end }}
   {{ end }}
 
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
@@ -61,7 +63,6 @@
         <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="112 Revelats" class="nav-logo">
         112 Revelats
       </a>
-      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">☰</button>
       <div class="nav-links">
         <a href="{{ "" | relLangURL }}#inici">{{ i18n "inici" }}</a>
         <a href="{{ "" | relLangURL }}#objectius">{{ i18n "objectius" }}</a>
@@ -70,6 +71,8 @@
         <a href="{{ "" | relLangURL }}#fotollibres">{{ i18n "els_nostres_fotollibres" }}</a>
         <a href="{{ "" | relLangURL }}#faq">FAQ</a>
         <a href="{{ "" | relLangURL }}#contacte">{{ i18n "contacte" }}</a>
+      </div>
+      <div class="nav-langs">
         {{ range .AllTranslations }}
           {{ if ne .Lang $.Lang }}
             <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
