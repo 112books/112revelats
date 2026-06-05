@@ -1,0 +1,140 @@
+[inici]
+  other = "Home"
+[objectius]
+  other = "About"
+[objectius_title]
+  other = "What is 112 Revelats?"
+[patrocini]
+  other = "Sponsorship"
+[patrocini_title]
+  other = "Sponsorship / Patronage"
+[reptes]
+  other = "Challenges"
+[reptes_title]
+  other = "Photo challenges"
+[reptes_subtitle]
+  other = "Every six months we propose a photographic challenge open to everyone. The best images become a collective photobook."
+[reptes_participa]
+  other = "Join the next challenge"
+[reptes_fases_title]
+  other = "Challenge phases"
+[reptes_fases_subtitle]
+  other = "Each challenge goes through three phases:"
+[fase_revisar]
+  other = "Review open call for submissions"
+[fase_activat]
+  other = "Activate selection and photobook production"
+[fase_desenvolupar]
+  other = "Develop publication and presentation"
+[reptes_completats_title]
+  other = "Completed challenges"
+[repte_001_titol]
+  other = "Starting the day"
+[repte_001_desc]
+  other = "First edition of the 112 Revelats photo challenge. Participants captured the moment the day begins, through diverse and personal perspectives."
+[repte_001_estat]
+  other = "Completed"
+[repte_001_pdf]
+  other = "Download the photobook (PDF)"
+[repte_002_titol]
+  other = "Slow Portraits"
+[repte_002_desc]
+  other = "Second photographic challenge by 112 Revelats. Portraits with pinhole camera and long exposure. An invitation to slow down the gaze and capture the subject's essence through time and low light."
+[repte_002_estat]
+  other = "Open for submissions"
+[participa_form_title]
+  other = "Sign up for the challenge"
+[participa_form_portfolio]
+  other = "Link to your portfolio or website (optional)"
+[participa_form_missatge]
+  other = "Briefly explain why you want to participate"
+[participa_form_rgpd]
+  other = "I have read and accept the"
+[participa_form_rgpd_link]
+  other = "privacy policy"
+[fase_placeholder_1]
+  other = "Review proposals"
+[fase_placeholder_2]
+  other = "Activate production"
+[fase_placeholder_3]
+  other = "Develop photobook"
+[els_nostres_fotollibres]
+  other = "Our photobooks"
+[els_nostres_fotollibres_desc]
+  other = "Soon you will be able to discover all the photobook editions created by the 112 Revelats community, born from creative challenges and artistic collaboration."
+[premsa]
+  other = "Press"
+[premsa_dossier]
+  other = "112 Revelats — Press Kit"
+[premsa_dossier_desc]
+  other = "Download the press kit with all the information about the project."
+[arrencant]
+  other = "Starting the day"
+[arrencant_title]
+  other = "Starting the day"
+[arrencant_text]
+  other = "A free photobook collecting the best images from the first edition of the challenge. Download it in PDF."
+[contacte]
+  other = "Contact"
+[contacte_title]
+  other = "Contact / FAQ"
+[contacte_text]
+  other = "Write us directly or check the frequently asked questions."
+[faq_title]
+  other = "Frequently Asked Questions (FAQ)"
+[faq_1_p]
+  other = "What is 112 Revelats?"
+[faq_1_r]
+  other = "A collective editorial project that promotes photobooks with emerging and established authors."
+[faq_2_p]
+  other = "How can I participate?"
+[faq_2_r]
+  other = "Every six months we open a photo challenge. Send us your email and we will let you know when the next call opens."
+[faq_3_p]
+  other = "Do I have to pay to participate?"
+[faq_3_r]
+  other = "No. Participating in the challenge is free. The digital photobook is published at no cost. For a print edition, we seek collective sponsorship."
+[faq_4_p]
+  other = "What happens to my photos?"
+[faq_4_r]
+  other = "Selected photos become part of the collective photobook, with credit for each author. You retain all rights to your images."
+[faq_5_p]
+  other = "How can I contribute as a patron?"
+[faq_5_r]
+  other = "You can make a donation for the print edition of the photobook, or sponsor an emerging author. Write to us and we will explain the options."
+[hero_subtitle]
+  other = "Collective photobook project"
+[hero_cta_pdf]
+  other = "Download \"Starting the day\" (free PDF)"
+[hero_cta_participa]
+  other = "Join the challenge"
+[participa_title]
+  other = "Participate with your project"
+[participa_text]
+  other = "Submit your photographic project and be part of the next challenge edition."
+[mecenes_title]
+  other = "Become a patron"
+[mecenes_text]
+  other = "Support photobooks and help us publish new talent. Every contribution counts."
+[form_nom]
+  other = "Name"
+[form_email]
+  other = "Email"
+[form_missatge]
+  other = "Message"
+[form_envia]
+  other = "Send"
+[form_email_list]
+  other = "Notify me when the next challenge opens"
+[form_email_list_placeholder]
+  other = "my@email.com"
+[iniciativa]
+  other = "An initiative by"
+[credits_powered]
+  other = "Powered by"
+[avis_legal]
+  other = "Legal notice"
+[privacitat]
+  other = "Privacy"
+[cookies]
+  other = "Cookies"

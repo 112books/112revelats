@@ -1,0 +1,157 @@
+{{ define "main" }}
+<section id="inici" class="hero">
+  <div class="hero-content">
+    <h1>112 Revelats</h1>
+    <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
+    <div class="hero-cta">
+      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary" download>{{ i18n "hero_cta_pdf" }}</a>
+      <a href="#reptes" class="btn btn-secondary">{{ i18n "hero_cta_participa" }}</a>
+    </div>
+  </div>
+</section>
+
+<section id="objectius" class="section">
+  <div class="section-inner">
+    <h2>{{ i18n "objectius_title" }}</h2>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<section id="patrocini" class="section section-alt">
+  <div class="section-inner">
+    <h2>{{ i18n "patrocini_title" }}</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>{{ i18n "participa_title" }}</h3>
+        <p>{{ i18n "participa_text" }}</p>
+      </div>
+      <div class="card">
+        <h3>{{ i18n "mecenes_title" }}</h3>
+        <p>{{ i18n "mecenes_text" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reptes" class="section">
+  <div class="section-inner">
+    <h2>{{ i18n "reptes_title" }}</h2>
+    <p class="section-desc">{{ i18n "reptes_subtitle" }}</p>
+
+    <div class="challenge-next">
+      <div class="challenge-card-header">
+        <h3>{{ i18n "repte_002_titol" }}</h3>
+        <span class="challenge-badge challenge-badge-open">{{ i18n "repte_002_estat" }}</span>
+      </div>
+      <p>{{ i18n "repte_002_desc" }}</p>
+
+      <div class="phases">
+        <h4>{{ i18n "reptes_fases_subtitle" }}</h4>
+        <div class="phase-list">
+          <div class="phase phase-active"><span class="phase-dot"></span> {{ i18n "fase_revisar" }}</div>
+          <div class="phase phase-pending"><span class="phase-dot"></span> {{ i18n "fase_activat" }}</div>
+          <div class="phase phase-pending"><span class="phase-dot"></span> {{ i18n "fase_desenvolupar" }}</div>
+        </div>
+      </div>
+
+      <div class="participa-form">
+        <h4>{{ i18n "participa_form_title" }}</h4>
+        <form class="contact-form" action="{{ $.Site.Params.formAction }}" method="POST">
+          <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
+          <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
+          <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
+          <input type="url" name="portfolio" placeholder="{{ i18n "participa_form_portfolio" }}">
+          <textarea name="missatge" placeholder="{{ i18n "participa_form_missatge" }}" rows="3"></textarea>
+          <label class="checkbox-label">
+            <input type="checkbox" name="rgpd" value="si" required>
+            {{ i18n "participa_form_rgpd" }} <a href="/privacitat" target="_blank">{{ i18n "participa_form_rgpd_link" }}</a>
+          </label>
+          <button type="submit" class="btn btn-primary btn-sm">{{ i18n "form_envia" }}</button>
+        </form>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2.5rem;">{{ i18n "reptes_completats_title" }}</h3>
+    <div class="challenge-card">
+      <div class="challenge-card-header">
+        <strong>{{ i18n "repte_001_titol" }}</strong>
+        <span class="challenge-badge challenge-badge-done">{{ i18n "repte_001_estat" }}</span>
+      </div>
+      <p class="challenge-desc">{{ i18n "repte_001_desc" }}</p>
+      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary btn-sm" download>{{ i18n "repte_001_pdf" }}</a>
+    </div>
+  </div>
+</section>
+
+<section id="fotollibres" class="section section-alt">
+  <div class="section-inner">
+    <h2>{{ i18n "els_nostres_fotollibres" }}</h2>
+    <div class="prose">
+      <p>{{ i18n "els_nostres_fotollibres_desc" }}</p>
+    </div>
+  </div>
+</section>
+
+<section id="arrencant" class="section">
+  <div class="section-inner">
+    <h2>{{ i18n "arrencant_title" }}</h2>
+    <p class="prose">{{ i18n "arrencant_text" }}</p>
+    <p style="margin-top: 1rem;">
+      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary" download>{{ i18n "hero_cta_pdf" }}</a>
+    </p>
+  </div>
+</section>
+
+<section id="premsa" class="section section-alt">
+  <div class="section-inner">
+    <h2>{{ i18n "premsa" }}</h2>
+    <p class="prose">{{ i18n "premsa_dossier_desc" }}</p>
+    <p style="margin-top: 1rem;">
+      <a href="{{ $.Site.Params.pressDossier }}" class="btn btn-secondary btn-sm" download>{{ i18n "premsa_dossier" }}</a>
+    </p>
+  </div>
+</section>
+
+<section id="contacte" class="section">
+  <div class="section-inner">
+    <h2>{{ i18n "contacte_title" }}</h2>
+    <p>{{ i18n "contacte_text" }}</p>
+    <form class="contact-form" action="{{ $.Site.Params.formAction }}" method="POST">
+      <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
+      <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
+      <textarea name="missatge" placeholder="{{ i18n "form_missatge" }}" rows="4"></textarea>
+      <label class="checkbox-label">
+        <input type="checkbox" name="llistacorreu" value="si">
+        {{ i18n "form_email_list" }}
+      </label>
+      <button type="submit" class="btn btn-primary">{{ i18n "form_envia" }}</button>
+    </form>
+
+    <div class="faq">
+      <h3>{{ i18n "faq_title" }}</h3>
+      <details class="faq-item">
+        <summary>{{ i18n "faq_1_p" }}</summary>
+        <p>{{ i18n "faq_1_r" }}</p>
+      </details>
+      <details class="faq-item">
+        <summary>{{ i18n "faq_2_p" }}</summary>
+        <p>{{ i18n "faq_2_r" }}</p>
+      </details>
+      <details class="faq-item">
+        <summary>{{ i18n "faq_3_p" }}</summary>
+        <p>{{ i18n "faq_3_r" }}</p>
+      </details>
+      <details class="faq-item">
+        <summary>{{ i18n "faq_4_p" }}</summary>
+        <p>{{ i18n "faq_4_r" }}</p>
+      </details>
+      <details class="faq-item">
+        <summary>{{ i18n "faq_5_p" }}</summary>
+        <p>{{ i18n "faq_5_r" }}</p>
+      </details>
+    </div>
+  </div>
+</section>
+{{ end }}

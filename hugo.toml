@@ -1,0 +1,41 @@
+baseURL = "/"
+title = "112 Revelats"
+defaultContentLanguage = "ca"
+defaultContentLanguageInSubdir = false
+
+disableKinds = ["taxonomy", "term"]
+
+[languages]
+  [languages.ca]
+    languageName = "Català"
+    weight = 1
+    disableKinds = ["taxonomy", "term"]
+
+  [languages.es]
+    languageName = "Español"
+    weight = 2
+    disableKinds = ["taxonomy", "term"]
+
+  [languages.en]
+    languageName = "English"
+    weight = 3
+    disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Projecte col·lectiu de fotollibres"
+  author = "112Books"
+  instagram = "https://instagram.com/112revelats"
+  facebook = "https://facebook.com/112revelats"
+  pdfUrl = "/pdf/arrencant-el-dia.pdf"
+  pressDossier = "/pdf/dossier-premsa-112-revelats.pdf"
+  goatcounter = "112revelats"
+  formAction = "https://formspree.io/f/xxxxx"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML"]
+
+[build]
+  writeStats = false

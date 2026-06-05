@@ -1,0 +1,140 @@
+[inici]
+  other = "Inicio"
+[objectius]
+  other = "Objetivos"
+[objectius_title]
+  other = "¿Qué es 112 Revelats?"
+[patrocini]
+  other = "Patrocinio"
+[patrocini_title]
+  other = "Patrocinio / Mecenazgo"
+[reptes]
+  other = "Los retos"
+[reptes_title]
+  other = "Retos fotográficos"
+[reptes_subtitle]
+  other = "Cada seis meses proponemos un reto fotográfico abierto a todos. Las mejores imágenes se convierten en un fotolibro colectivo."
+[reptes_participa]
+  other = "Apúntate al próximo reto"
+[reptes_fases_title]
+  other = "Fases del reto"
+[reptes_fases_subtitle]
+  other = "Cada reto pasa por tres fases:"
+[fase_revisar]
+  other = "Revisar abierta la convocatoria y recogida de propuestas"
+[fase_activat]
+  other = "Activado selección y producción del fotolibro"
+[fase_desenvolupar]
+  other = "Desarrollar publicación y presentación del resultado"
+[reptes_completats_title]
+  other = "Retos completados"
+[repte_001_titol]
+  other = "Arrancando el día"
+[repte_001_desc]
+  other = "Primera edición del reto fotográfico 112 Revelats. Los participantes capturaron el instante en que el día comienza, desde miradas diversas y personales."
+[repte_001_estat]
+  other = "Completado"
+[repte_001_pdf]
+  other = "Descargar el fotolibro (PDF)"
+[repte_002_titol]
+  other = "Retratos Lentos"
+[repte_002_desc]
+  other = "Segundo reto fotográfico de 112 Revelats. Retratos con cámara estenopeica y larga exposición. Una invitación a ralentizar la mirada y capturar la esencia del sujeto a través del tiempo y la poca luz."
+[repte_002_estat]
+  other = "Inscripción abierta"
+[participa_form_title]
+  other = "Inscríbete al reto"
+[participa_form_portfolio]
+  other = "Enlace a tu portfolio o web (opcional)"
+[participa_form_missatge]
+  other = "Explica brevemente por qué quieres participar"
+[participa_form_rgpd]
+  other = "He leído y acepto la"
+[participa_form_rgpd_link]
+  other = "política de privacidad"
+[fase_placeholder_1]
+  other = "Revisar propuestas"
+[fase_placeholder_2]
+  other = "Activar producción"
+[fase_placeholder_3]
+  other = "Desarrollar fotolibro"
+[els_nostres_fotollibres]
+  other = "Nuestros fotolibros"
+[els_nostres_fotollibres_desc]
+  other = "Pronto podrás descubrir todas las ediciones de fotolibros creadas por la comunidad de 112 Revelats, fruto de los retos creativos y la colaboración artística."
+[premsa]
+  other = "Prensa"
+[premsa_dossier]
+  other = "112 Revelats — Dossier de Prensa"
+[premsa_dossier_desc]
+  other = "Descarga el dossier de prensa con toda la información del proyecto."
+[arrencant]
+  other = "Arrancando el día"
+[arrencant_title]
+  other = "Arrancando el día"
+[arrencant_text]
+  other = "Un fotolibro gratuito que recoge las mejores imágenes de la primera edición del reto. Descárgalo en PDF."
+[contacte]
+  other = "Contacto"
+[contacte_title]
+  other = "Contacto / FAQ"
+[contacte_text]
+  other = "Escríbenos directamente o consulta las preguntas frecuentes."
+[faq_title]
+  other = "Preguntas frecuentes (FAQ)"
+[faq_1_p]
+  other = "¿Qué es 112 Revelats?"
+[faq_1_r]
+  other = "Un proyecto editorial colectivo que impulsa fotolibros con autores emergentes y consolidados."
+[faq_2_p]
+  other = "¿Cómo puedo participar?"
+[faq_2_r]
+  other = "Cada seis meses abrimos un reto fotográfico. Envíanos tu correo y te avisaremos cuando abramos la próxima convocatoria."
+[faq_3_p]
+  other = "¿Tengo que pagar para participar?"
+[faq_3_r]
+  other = "No. Participar en el reto es gratuito. El fotolibro digital se publica sin coste. Si se quiere edición en papel, se busca patrocinio colectivo."
+[faq_4_p]
+  other = "¿Qué pasa con mis fotos?"
+[faq_4_r]
+  other = "Las fotos seleccionadas pasan a formar parte del fotolibro colectivo, con crédito para cada autor/a. Los derechos siguen siendo tuyos."
+[faq_5_p]
+  other = "¿Cómo puedo colaborar como mecenas?"
+[faq_5_r]
+  other = "Puedes hacer una donación para la edición en papel del fotolibro, o apadrinar a un autor emergente. Escríbenos y te explicamos las opciones."
+[hero_subtitle]
+  other = "Proyecto colectivo de fotolibros"
+[hero_cta_pdf]
+  other = "Descargar \"Arrancando el día\" (PDF gratuito)"
+[hero_cta_participa]
+  other = "Participa en el reto"
+[participa_title]
+  other = "Participa con tu proyecto"
+[participa_text]
+  other = "Presenta tu proyecto fotográfico y forma parte de la próxima edición del reto."
+[mecenes_title]
+  other = "Conviértete en mecenas"
+[mecenes_text]
+  other = "Apoya los fotolibros y ayúdanos a publicar nuevos talentos. Cada aportación cuenta."
+[form_nom]
+  other = "Nombre"
+[form_email]
+  other = "Correo electrónico"
+[form_missatge]
+  other = "Mensaje"
+[form_envia]
+  other = "Enviar"
+[form_email_list]
+  other = "Avisadme cuando abráis el próximo reto"
+[form_email_list_placeholder]
+  other = "mi@email.com"
+[iniciativa]
+  other = "Una iniciativa de"
+[credits_powered]
+  other = "Powered by"
+[avis_legal]
+  other = "Aviso legal"
+[privacitat]
+  other = "Privacidad"
+[cookies]
+  other = "Cookies"

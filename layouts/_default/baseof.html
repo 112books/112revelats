@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="icon" href="/img/favicon.png">
+
+  {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+  {{ if .Site.Params.goatcounter }}
+  <script data-goatcounter="https://{{ .Site.Params.goatcounter }}.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  {{ end }}
+
+  <style>
+  #pw-gate {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #111; display: flex;
+    align-items: center; justify-content: center;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+  }
+  #pw-gate.hidden { display: none; }
+  .pw-box { text-align: center; }
+  .pw-box h1 { color: #fff; font-size: 1.4rem; font-weight: 400; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+  .pw-box input {
+    padding: 0.7rem 1rem; width: 240px; font-size: 1rem; text-align: center;
+    border: 1px solid #333; border-radius: 4px; background: #1a1a1a; color: #fff; outline: none;
+  }
+  .pw-box input:focus { border-color: #666; }
+  .pw-error { color: #e74c3c; font-size: 0.8rem; margin-top: 0.5rem; min-height: 1.2rem; }
+  .pw-hint { color: #555; font-size: 0.7rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+<div id="pw-gate">
+  <div class="pw-box">
+    <h1>112 Revelats</h1>
+    <input type="password" id="pw-input" placeholder="Contrasenya" autofocus>
+    <div class="pw-error" id="pw-error"></div>
+    <div class="pw-hint">Accés restringit · 112 Books</div>
+  </div>
+</div>
+<script>
+(function(){
+  var HASH='ec689a6b20231cab576cd7604ab478777e3e23bd4e4822dbc841779afa57fbbf';
+  if(sessionStorage.getItem('112_auth')==='1'){document.getElementById('pw-gate').classList.add('hidden');return;}
+  document.getElementById('pw-input').addEventListener('keydown',function(e){
+    if(e.key!=='Enter')return;
+    var val=this.value;
+    crypto.subtle.digest('SHA-256',new TextEncoder().encode(val)).then(function(buf){
+      var hex=Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+      if(hex===HASH){
+        sessionStorage.setItem('112_auth','1');
+        document.getElementById('pw-gate').classList.add('hidden');
+        document.getElementById('pw-error').textContent='';
+      }else{
+        document.getElementById('pw-error').textContent='Contrasenya incorrecta';
+        document.getElementById('pw-input').value='';
+      }
+    });
+  });
+})();
+</script>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#inici" class="nav-brand">112 Revelats</a>
+      <button class="nav-toggle" aria-label="Menú">☰</button>
+      <div class="nav-links">
+        <a href="#inici">{{ i18n "inici" }}</a>
+        <a href="#objectius">{{ i18n "objectius" }}</a>
+        <a href="#patrocini">{{ i18n "patrocini" }}</a>
+        <a href="#reptes">{{ i18n "reptes" }}</a>
+        <a href="#fotollibres">{{ i18n "els_nostres_fotollibres" }}</a>
+        <a href="#contacte">{{ i18n "contacte" }}</a>
+        {{ range .AllTranslations }}
+          <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
+        <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <p class="footer-credit">
+        {{ i18n "iniciativa" }} <a href="https://112books.eu">112Books.eu</a>
+        · {{ i18n "credits_powered" }} <a href="https://linuxbcn.com">LinuxBCN</a>
+      </p>
+      <p class="footer-legal">
+        <a href="/avis-legal">{{ i18n "avis_legal" }}</a>
+        · <a href="/privacitat">{{ i18n "privacitat" }}</a>
+        · <a href="/cookies">{{ i18n "cookies" }}</a>
+      </p>
+    </div>
+  </footer>
+
+  {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}"></script>
+</body>
+</html>

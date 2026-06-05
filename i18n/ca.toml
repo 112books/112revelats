@@ -1,0 +1,140 @@
+[inici]
+  other = "Inici"
+[objectius]
+  other = "Objectius"
+[objectius_title]
+  other = "Què és 112 Revelats?"
+[patrocini]
+  other = "Patrocini"
+[patrocini_title]
+  other = "Patrocini / Mecenatge"
+[reptes]
+  other = "Els reptes"
+[reptes_title]
+  other = "Reptes fotogràfics"
+[reptes_subtitle]
+  other = "Cada sis mesos proposem un repte fotogràfic obert a tothom. Les millors imatges es converteixen en un fotollibre col·lectiu."
+[reptes_participa]
+  other = "Apunta't al proper repte"
+[reptes_fases_title]
+  other = "Fases del repte"
+[reptes_fases_subtitle]
+  other = "Cada repte passa per tres fases:"
+[fase_revisar]
+  other = "Revisar oberta la convocatòria i recollida de propostes"
+[fase_activat]
+  other = "Activat selecció i producció del fotollibre"
+[fase_desenvolupar]
+  other = "Desenvolupar publicació i presentació del resultat"
+[reptes_completats_title]
+  other = "Reptes completats"
+[repte_001_titol]
+  other = "Arrencant el dia"
+[repte_001_desc]
+  other = "Primera edició del repte fotogràfic 112 Revelats. Els participants van capturar l'instant en què el dia comença, des de mirades diverses i personals."
+[repte_001_estat]
+  other = "Completat"
+[repte_001_pdf]
+  other = "Descarregar el fotollibre (PDF)"
+[repte_002_titol]
+  other = "Retrats Lents"
+[repte_002_desc]
+  other = "Segon repte fotogràfic de 112 Revelats. Retrats amb càmera estenopeica i llarga exposició. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum."
+[repte_002_estat]
+  other = "Inscripció oberta"
+[participa_form_title]
+  other = "Inscriu-te al repte"
+[participa_form_portfolio]
+  other = "Enllaç al teu portfolio o web (opcional)"
+[participa_form_missatge]
+  other = "Explica breument per què vols participar-hi"
+[participa_form_rgpd]
+  other = "He llegit i accepto la"
+[participa_form_rgpd_link]
+  other = "política de privacitat"
+[fase_placeholder_1]
+  other = "Revisar propostes"
+[fase_placeholder_2]
+  other = "Activar producció"
+[fase_placeholder_3]
+  other = "Desenvolupar fotollibre"
+[els_nostres_fotollibres]
+  other = "Els nostres fotollibres"
+[els_nostres_fotollibres_desc]
+  other = "Properament podràs descobrir totes les edicions de fotollibres creades per la comunitat de 112 Revelats, fruit dels reptes creatius i de la col·laboració artística."
+[premsa]
+  other = "Premsa"
+[premsa_dossier]
+  other = "112 Revelats — Dossier de Premsa"
+[premsa_dossier_desc]
+  other = "Descarrega el dossier de premsa amb tota la informació del projecte."
+[arrencant]
+  other = "Arrencant el dia"
+[arrencant_title]
+  other = "Arrencant el dia"
+[arrencant_text]
+  other = "Un fotollibre gratuït que recull les millors imatges de la primera edició del repte. Descarrega'l en PDF."
+[contacte]
+  other = "Contacte"
+[contacte_title]
+  other = "Contacte / FAQ"
+[contacte_text]
+  other = "Pots escriure'ns directament o consultar les preguntes freqüents."
+[faq_title]
+  other = "Preguntes freqüents (FAQ)"
+[faq_1_p]
+  other = "Què és 112 Revelats?"
+[faq_1_r]
+  other = "Un projecte editorial col·lectiu que impulsa fotollibres amb autors emergents i consolidats."
+[faq_2_p]
+  other = "Com puc participar?"
+[faq_2_r]
+  other = "Cada sis mesos obrim un repte fotogràfic. Envia'ns el teu correu i t'avisarem quan obrim la pròxima convocatòria."
+[faq_3_p]
+  other = "He de pagar per participar?"
+[faq_3_r]
+  other = "No. Participar en el repte és gratuït. El fotollibre digital es publica sense cost. Si es vol edició en paper, es busca patrocini col·lectiu."
+[faq_4_p]
+  other = "Què passa amb les meves fotos?"
+[faq_4_r]
+  other = "Les fotos seleccionades passen a formar part del fotollibre col·lectiu, amb crèdit per a cada autor/a. Els drets segueixen sent teus."
+[faq_5_p]
+  other = "Com puc col·laborar com a mecene?"
+[faq_5_r]
+  other = "Pots fer una donació per a l'edició en paper del fotollibre, o apadrinar un autor emergent. Escriu-nos i t'expliquem les opcions."
+[hero_subtitle]
+  other = "Projecte col·lectiu de fotollibres"
+[hero_cta_pdf]
+  other = "Descarregar \"Arrencant el dia\" (PDF gratuït)"
+[hero_cta_participa]
+  other = "Participa al repte"
+[participa_title]
+  other = "Participa amb el teu projecte"
+[participa_text]
+  other = "Presenta el teu projecte fotogràfic i forma part de la pròxima edició del repte."
+[mecenes_title]
+  other = "Converteix-te en mecene"
+[mecenes_text]
+  other = "Dona suport als fotollibres i ajuda'ns a publicar nous talents. Cada aportació compta."
+[form_nom]
+  other = "Nom"
+[form_email]
+  other = "Correu electrònic"
+[form_missatge]
+  other = "Missatge"
+[form_envia]
+  other = "Envia"
+[form_email_list]
+  other = "Aviseu-me quan obriu el proper repte"
+[form_email_list_placeholder]
+  other = "el_meu@email.com"
+[iniciativa]
+  other = "Una iniciativa de"
+[credits_powered]
+  other = "Powered by"
+[avis_legal]
+  other = "Avís legal"
+[privacitat]
+  other = "Privacitat"
+[cookies]
+  other = "Cookies"
