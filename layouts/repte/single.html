@@ -4,7 +4,7 @@
 {{ $badgeClass := cond (eq $status "completed") "challenge-badge-done" "challenge-badge-open" }}
 {{ $num := .Params.challengeNumber }}
 
-<section class="challenge-hero" style="background:{{ if eq $status "completed" }}linear-gradient(135deg,#1B2A4A,#2d4a7a){{ else }}linear-gradient(135deg,#1a3a2a,#2d6a4f){{ end }};">
+<section class="challenge-hero" style="background:{{ if eq $status "completed" }}linear-gradient(135deg,#1B2A4A,#2d4a7a){{ else }}linear-gradient(135deg,#2a0000,#cc0000){{ end }};">
   <div class="section-inner" style="text-align:center;padding:4rem 1rem;">
     <span class="challenge-badge {{ $badgeClass }}" style="font-size:0.85rem;padding:0.3rem 0.8rem;display:inline-block;margin-bottom:1rem;">{{ $badge }}</span>
     <h1 style="color:#fff;font-size:2.8rem;margin-bottom:0.5rem;">{{ .Title }}</h1>
