@@ -143,16 +143,6 @@
   </div>
 </section>
 
-<section id="premsa" class="section">
-  <div class="section-inner">
-    <h2>{{ i18n "premsa" }}</h2>
-    <p class="prose">{{ i18n "premsa_dossier_desc" }}</p>
-    <p style="margin-top: 1rem;">
-      <a href="{{ $.Site.Params.pressDossier }}" class="btn btn-secondary btn-sm" download>{{ i18n "premsa_dossier" }}</a>
-    </p>
-  </div>
-</section>
-
 <section id="contacte" class="section section-alt">
   <div class="section-inner">
     <h2>{{ i18n "contacte_title" }}</h2>
@@ -196,6 +186,16 @@
         <p>{{ i18n "faq_5_r" }}</p>
       </details>
     </div>
+  </div>
+</section>
+
+<section id="premsa" class="section">
+  <div class="section-inner">
+    <h2>{{ i18n "premsa" }}</h2>
+    <p class="prose">{{ i18n "premsa_dossier_desc" }}</p>
+    <p style="margin-top: 1rem;">
+      <a href="{{ $.Site.Params.pressDossier }}" class="btn btn-secondary btn-sm" download>{{ i18n "premsa_dossier" }}</a>
+    </p>
   </div>
 </section>
 {{ end }}
