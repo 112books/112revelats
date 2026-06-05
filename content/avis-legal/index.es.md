@@ -7,7 +7,7 @@ description: "Aviso legal de 112 Revelats"
 
 **112 Books**
 
-Correo electrónico: contacto@112books.eu
+Correo electrónico: hola@112books.eu
 
 Propiedad del proyecto **112 Revelats**, una iniciativa de 112 Books.
 

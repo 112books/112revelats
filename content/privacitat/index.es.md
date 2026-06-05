@@ -5,7 +5,7 @@ description: "Política de privacidad de 112 Revelats"
 
 ## Responsable del tratamiento
 
-**112 Books** — contacto@112books.eu
+**112 Books** — hola@112books.eu
 
 ## Finalidad del tratamiento
 
@@ -28,7 +28,7 @@ Los datos se conservan mientras sea necesario para la finalidad para la que se r
 
 ## Derechos
 
-El usuario puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición contactando a contacto@112books.eu.
+El usuario puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición contactando a hola@112books.eu.
 
 ## Análisis de audiencia
 

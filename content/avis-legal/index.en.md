@@ -7,7 +7,7 @@ description: "Legal notice of 112 Revelats"
 
 **112 Books**
 
-Email: contacto@112books.eu
+Email: hola@112books.eu
 
 **112 Revelats** project, an initiative of 112 Books.
 

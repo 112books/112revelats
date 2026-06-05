@@ -5,7 +5,7 @@ description: "Privacy policy of 112 Revelats"
 
 ## Data controller
 
-**112 Books** — contacto@112books.eu
+**112 Books** — hola@112books.eu
 
 ## Purpose of processing
 
@@ -28,7 +28,7 @@ Data is kept for as long as necessary for the purpose for which it was collected
 
 ## Rights
 
-Users may exercise their rights of access, rectification, deletion, portability, restriction and objection by contacting contacto@112books.eu.
+Users may exercise their rights of access, rectification, deletion, portability, restriction and objection by contacting hola@112books.eu.
 
 ## Audience analysis
 

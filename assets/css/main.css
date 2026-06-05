@@ -32,10 +32,10 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
   max-width: 1200px; margin: 0 auto; padding: 0 1rem;
   display: flex; align-items: center; height: 100%;
 }
-.nav-brand { display: flex; align-items: center; gap: 0.5rem; font-family: var(--display); font-weight: 700; text-decoration: none; color: var(--ink); margin-right: auto; font-size: 1.2rem; }
-.nav-logo { height: 36px; width: auto; border-radius: 50%; }
-.nav-links { display: flex; gap: 0.4rem; align-items: center; }
-.nav-links a { text-decoration: none; color: var(--ink-2); font-size: 0.82rem; font-family: var(--sans); padding: 0.2rem 0.5rem; border-radius: 4px; transition: background 0.15s; }
+.nav-brand { display: flex; align-items: center; gap: 0.75rem; font-family: var(--display); font-weight: 700; text-decoration: none; color: var(--ink); margin-right: auto; font-size: 1.5rem; }
+.nav-logo { height: 64px; width: auto; border-radius: 50%; }
+.nav-links { display: flex; gap: 0.6rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--ink-2); font-size: 0.9rem; font-family: var(--sans); padding: 0.25rem 0.55rem; border-radius: 4px; transition: background 0.15s; }
 .nav-links a:hover { background: var(--bg-alt); color: var(--ink); }
 .lang-switch { font-family: var(--mono); font-size: 0.65rem; text-transform: uppercase; padding: 0.1rem 0.35rem; border: 1px solid var(--border); border-radius: 3px; opacity: 0.7; }
 .lang-switch:hover { opacity: 1; }
@@ -146,31 +146,49 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .timeline::before {
   content: ''; position: absolute; left: 1rem; top: 0; bottom: 0;
   width: 2px; background: linear-gradient(to bottom, var(--accent), var(--border));
+  animation: tl-line-grow 1.2s ease forwards;
+  transform-origin: top;
+}
+@keyframes tl-line-grow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
 }
 .timeline-step {
   display: flex; align-items: center; gap: 1rem;
   padding: 1rem 0; position: relative;
-  animation: tl-fade 0.6s ease both;
+  animation: tl-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
-.timeline-step:nth-child(1) { animation-delay: 0s; }
-.timeline-step:nth-child(2) { animation-delay: 0.15s; }
-.timeline-step:nth-child(3) { animation-delay: 0.3s; }
-.timeline-step:nth-child(4) { animation-delay: 0.45s; }
-.timeline-step:nth-child(5) { animation-delay: 0.6s; }
-.timeline-step:nth-child(6) { animation-delay: 0.75s; }
-@keyframes tl-fade {
-  from { opacity: 0; transform: translateX(-10px); }
-  to { opacity: 1; transform: translateX(0); }
+.timeline-step:nth-child(1) { animation-delay: 0.1s; }
+.timeline-step:nth-child(2) { animation-delay: 0.25s; }
+.timeline-step:nth-child(3) { animation-delay: 0.4s; }
+.timeline-step:nth-child(4) { animation-delay: 0.55s; }
+.timeline-step:nth-child(5) { animation-delay: 0.7s; }
+.timeline-step:nth-child(6) { animation-delay: 0.85s; }
+@keyframes tl-pop {
+  from { opacity: 0; transform: translateX(-20px) scale(0.9); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
 }
 .timeline-num {
-  width: 32px; height: 32px; border-radius: 50%;
+  width: 40px; height: 40px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--display); font-weight: 700; font-size: 0.9rem;
+  font-family: var(--display); font-weight: 700; font-size: 1rem;
   background: var(--accent); color: #fff; flex-shrink: 0;
   position: relative; z-index: 1;
   box-shadow: 0 0 0 4px var(--bg-alt);
+  animation: tl-pulse 2s ease-in-out infinite;
 }
-.timeline-label { font-size: 0.9rem; color: var(--ink-2); }
+@keyframes tl-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px var(--bg-alt), 0 0 0 0 rgba(37,99,235,0.3); }
+  50% { box-shadow: 0 0 0 4px var(--bg-alt), 0 0 0 8px rgba(37,99,235,0.1); }
+}
+.timeline-label { font-size: 0.95rem; color: var(--ink-2); }
+.timeline-step:hover .timeline-num {
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
+}
+.timeline-step:hover .timeline-label {
+  color: var(--ink);
+}
 
 /* faq */
 .faq { margin-top: 2rem; }

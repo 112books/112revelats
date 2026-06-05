@@ -5,7 +5,7 @@ description: "Política de privacitat de 112 Revelats"
 
 ## Responsable del tractament
 
-**112 Books** — contacto@112books.eu
+**112 Books** — hola@112books.eu
 
 ## Finalitat del tractament
 
@@ -28,7 +28,7 @@ Les dades es conserven mentre sigui necessari per a la finalitat per a la qual e
 
 ## Drets
 
-L'usuari pot exercir els seus drets d'accés, rectificació, supressió, portabilitat, limitació i oposició contactant a contacto@112books.eu.
+L'usuari pot exercir els seus drets d'accés, rectificació, supressió, portabilitat, limitació i oposició contactant a hola@112books.eu.
 
 ## Anàlisi d'audiència
 
