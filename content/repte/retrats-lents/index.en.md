@@ -20,17 +20,3 @@ You don't need a special camera: you can build your own pinhole camera with a ti
 3. If your image is selected, it will be part of the collective photobook
 
 The registration period is open. Full terms and the participation form can be found in the Challenges section on the homepage.
-
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Retrats Lents — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Challenge visual identity — design by 112 Books</figcaption>
-</figure>
-
-## Challenge phases
-
-| Phase | Period |
-|-------|--------|
-| Open call | Current |
-| Proposal selection | Coming soon |
-| Photobook production | Coming soon |
-| Publication and presentation | Coming soon |

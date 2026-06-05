@@ -20,10 +20,7 @@ The submissions were extraordinarily diverse, demonstrating the richness of pers
 
 The book features 24 images selected from over 80 submissions. Each author participates with 3 photographs, forming a collective narrative that moves from darkness to full light, in a visual journey through different moments of the morning.
 
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Arrencant el dia — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Photobook cover — design by 112 Books</figcaption>
-</figure>
+{{< figure src="img/112revelats-logo.png" alt="Arrencant el dia — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;" caption="Photobook cover — design by 112 Books" >}}
 
 ## Acknowledgements
 

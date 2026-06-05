@@ -1,0 +1,4 @@
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}"{{ with .Get "style" }} style="{{ . }}"{{ end }}>
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

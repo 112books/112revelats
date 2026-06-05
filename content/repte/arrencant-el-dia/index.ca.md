@@ -20,10 +20,7 @@ Les propostes rebudes van ser extraordinàriament diverses, demostrant la riques
 
 El llibre recull 24 imatges seleccionades entre més de 80 propostes. Cada autor/a hi participa amb 3 fotografies, formant un relat col·lectiu que avança des de la foscor cap a la llum plena, en un viatge visual que travessa diferents moments del matí.
 
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Arrencant el dia — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Portada del fotollibre — disseny per 112 Books</figcaption>
-</figure>
+{{< figure src="img/112revelats-logo.png" alt="Arrencant el dia — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;" caption="Portada del fotollibre — disseny per 112 Books" >}}
 
 ## Agraïments
 

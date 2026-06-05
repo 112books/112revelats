@@ -12,7 +12,7 @@
     {{ if eq $status "completed" }}
       <a href="{{ .Params.downloadUrl }}" class="btn btn-primary" target="_blank" rel="noopener">{{ i18n "hero_cta_pdf" }}</a>
     {{ else }}
-      <a href="/#reptes" class="btn btn-primary">{{ i18n "hero_cta_participa" }}</a>
+      <a href="{{ "" | relLangURL }}#reptes" class="btn btn-primary">{{ i18n "hero_cta_participa" }}</a>
     {{ end }}
   </div>
 </section>
@@ -25,6 +25,25 @@
   </div>
 </section>
 
+<section class="section section-alt">
+  <div class="section-inner">
+    <figure style="text-align:center;margin:0 auto 3rem;">
+      <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Retrats Lents — 112 Revelats" style="max-width:300px;border-radius:8px;">
+      <figcaption style="margin-top:0.5rem;font-size:1rem;color:var(--ink-3);">Identitat visual del repte — disseny per 112 Books</figcaption>
+    </figure>
+
+    <h2 style="font-size:2.5rem;margin-bottom:1.5rem;text-align:center;">Fases del repte</h2>
+    <div class="phases" style="margin-top:0;padding-top:0;border-top:none;">
+      <div class="phase-list">
+        <div class="phase phase-active"><span class="phase-dot"></span> <span>Convocatòria oberta</span> <span style="margin-left:auto;font-size:0.9rem;color:var(--amber);">Actual</span></div>
+        <div class="phase phase-pending"><span class="phase-dot"></span> <span>Selecció de propostes</span> <span style="margin-left:auto;font-size:0.9rem;color:var(--ink-3);">Properament</span></div>
+        <div class="phase phase-pending"><span class="phase-dot"></span> <span>Producció del fotollibre</span> <span style="margin-left:auto;font-size:0.9rem;color:var(--ink-3);">Properament</span></div>
+        <div class="phase phase-pending"><span class="phase-dot"></span> <span>Publicació i presentació</span> <span style="margin-left:auto;font-size:0.9rem;color:var(--ink-3);">Properament</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ if eq $status "completed" }}
 {{ $selected := .Params.authorsSelected }}
 {{ $other := .Params.authorsOther }}
@@ -33,7 +52,7 @@
     <h2 style="text-align:center;margin-bottom:0.5rem;">{{ i18n "repte_authors_title" }}</h2>
     <p style="text-align:center;color:var(--ink-3);margin-bottom:2rem;">{{ i18n "repte_authors_desc" }}</p>
 
-    <h3 style="font-size:1.1rem;margin-bottom:1rem;">{{ i18n "repte_authors_selected" }}</h3>
+    <h3 style="font-size:1.54rem;margin-bottom:1rem;">{{ i18n "repte_authors_selected" }}</h3>
     <div class="author-grid">
       {{ range $selected }}
       <div class="author-card selected">
@@ -44,7 +63,7 @@
     </div>
 
     {{ if $other }}
-    <h3 style="font-size:1.1rem;margin-bottom:1rem;margin-top:2rem;">{{ i18n "repte_authors_other" }}</h3>
+    <h3 style="font-size:1.54rem;margin-bottom:1rem;margin-top:2rem;">{{ i18n "repte_authors_other" }}</h3>
     <div class="author-grid">
       {{ range $other }}
       <div class="author-card other">
@@ -60,15 +79,15 @@
 
 <style>
 .challenge-hero { padding:2rem 0; }
+.challenge-hero .btn-primary { background:#fff; color:#111; }
+.challenge-hero .btn-primary:hover { background:#e5e5e5; }
 .author-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:0.6rem; }
-.author-card { display:flex; align-items:center; gap:0.5rem; padding:0.5rem 0.8rem; border-radius:6px; font-size:0.85rem; }
+.author-card { display:flex; align-items:center; gap:0.5rem; padding:0.5rem 0.8rem; border-radius:6px; font-size:1rem; }
 .author-card.selected { background:#f0fdf4; border:1px solid #bbf7d0; }
 .author-card.other { background:#fafafa; border:1px solid #e5e5e5; }
 .author-icon { width:20px; text-align:center; flex-shrink:0; }
 .author-card.selected .author-icon { color:#16a34a; font-weight:700; }
 .author-card.other .author-icon { color:#94a3b8; font-weight:700; }
 .author-name { color:var(--ink-2); }
-.challenge-hero .btn-primary { background:#fff; color:#111; }
-.challenge-hero .btn-primary:hover { background:#e5e5e5; }
 </style>
 {{ end }}

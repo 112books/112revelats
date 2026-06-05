@@ -95,18 +95,18 @@
 </script>
   <header class="site-header">
     <nav class="nav">
-      <a href="{{ "/#inici" | relLangURL }}" class="nav-brand">
+      <a href="{{ "" | relLangURL }}#inici" class="nav-brand">
         <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="112 Revelats" class="nav-logo">
         112 Revelats
       </a>
       <button class="nav-toggle" aria-label="Menú">☰</button>
       <div class="nav-links">
-        <a href="{{ "/#inici" | relLangURL }}">{{ i18n "inici" }}</a>
-        <a href="{{ "/#objectius" | relLangURL }}">{{ i18n "objectius" }}</a>
-        <a href="{{ "/#patrocini" | relLangURL }}">{{ i18n "patrocini" }}</a>
-        <a href="{{ "/#reptes" | relLangURL }}">{{ i18n "reptes" }}</a>
-        <a href="{{ "/#fotollibres" | relLangURL }}">{{ i18n "els_nostres_fotollibres" }}</a>
-        <a href="{{ "/#contacte" | relLangURL }}">{{ i18n "contacte" }}</a>
+        <a href="{{ "" | relLangURL }}#inici">{{ i18n "inici" }}</a>
+        <a href="{{ "" | relLangURL }}#objectius">{{ i18n "objectius" }}</a>
+        <a href="{{ "" | relLangURL }}#patrocini">{{ i18n "patrocini" }}</a>
+        <a href="{{ "" | relLangURL }}#reptes">{{ i18n "reptes" }}</a>
+        <a href="{{ "" | relLangURL }}#fotollibres">{{ i18n "els_nostres_fotollibres" }}</a>
+        <a href="{{ "" | relLangURL }}#contacte">{{ i18n "contacte" }}</a>
         {{ range .AllTranslations }}
           {{ if ne .Lang $.Lang }}
             <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>

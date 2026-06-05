@@ -20,17 +20,3 @@ No hace falta tener una cámara especial: puedes construir tu propia cámara est
 3. Si tu imagen es seleccionada, formará parte del fotolibro colectivo
 
 El período de inscripción está abierto. Las bases completas y el formulario de participación los encontrarás en la sección de Retos de la home.
-
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Retratos Lentos — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Identidad visual del reto — diseño por 112 Books</figcaption>
-</figure>
-
-## Fases del reto
-
-| Fase | Período |
-|------|---------|
-| Convocatoria abierta | Actual |
-| Selección de propuestas | Próximamente |
-| Producción del fotolibro | Próximamente |
-| Publicación y presentación | Próximamente |

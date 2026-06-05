@@ -20,10 +20,7 @@ Las propuestas recibidas fueron extraordinariamente diversas, demostrando la riq
 
 El libro recoge 24 imágenes seleccionadas entre más de 80 propuestas. Cada autor/a participa con 3 fotografías, formando un relato colectivo que avanza desde la oscuridad hacia la luz plena, en un viaje visual que atraviesa diferentes momentos de la mañana.
 
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Arrancando el día — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Portada del fotolibro — diseño por 112 Books</figcaption>
-</figure>
+{{< figure src="img/112revelats-logo.png" alt="Arrancando el día — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;" caption="Portada del fotolibro — diseño por 112 Books" >}}
 
 ## Agradecimientos
 

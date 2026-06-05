@@ -35,9 +35,9 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .nav-brand { display: flex; align-items: center; gap: 0.75rem; font-family: var(--display); font-weight: 700; text-decoration: none; color: var(--ink); margin-right: auto; font-size: 2.1rem; }
 .nav-logo { height: 84px; width: auto; border-radius: 50%; margin: 8px 0; }
 .nav-links { display: flex; gap: 0.6rem; align-items: center; }
-.nav-links a { text-decoration: none; color: var(--ink-2); font-size: 0.9rem; font-family: var(--sans); padding: 0.25rem 0.55rem; border-radius: 4px; transition: background 0.15s; }
+.nav-links a { text-decoration: none; color: var(--ink-2); font-size: 1rem; font-family: var(--sans); padding: 0.25rem 0.55rem; border-radius: 4px; transition: background 0.15s; }
 .nav-links a:hover { background: var(--bg-alt); color: var(--ink); }
-.lang-switch { font-family: var(--mono); font-size: 0.65rem; text-transform: uppercase; padding: 0.1rem 0.35rem; border: 1px solid var(--border); border-radius: 3px; opacity: 0.7; }
+.lang-switch { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; padding: 0.1rem 0.35rem; border: 1px solid var(--border); border-radius: 3px; opacity: 0.7; }
 .lang-switch:hover { opacity: 1; }
 .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; cursor: pointer; }
 
@@ -88,15 +88,15 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 /* grid */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .card { background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
-.card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
-.card p { font-size: 0.9rem; color: var(--ink-2); }
+.card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.card p { font-size: 1.26rem; color: var(--ink-2); }
 
 /* challenges */
 .challenge-next {
   background: #fff; border: 1px solid var(--border); border-radius: 8px;
   padding: 1.5rem; margin-top: 0.5rem;
 }
-.challenge-next h3 { font-size: 1.1rem; margin-bottom: 0.5rem; display: inline; margin-right: 0.5rem; }
+.challenge-next h3 { font-size: 1.54rem; margin-bottom: 0.5rem; display: inline; margin-right: 0.5rem; }
 .challenge-badge {
   display: inline-block; font-size: 0.65rem; font-family: var(--mono);
   text-transform: uppercase; padding: 0.1rem 0.5rem; border-radius: 3px;
@@ -105,14 +105,14 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .challenge-badge-future { background: var(--bg-alt); color: var(--ink-3); border: 1px solid var(--border); }
 .challenge-badge-done { background: #e8f5e9; color: var(--green); border: 1px solid #c8e6c9; }
 .challenge-badge-open { background: #fff8e1; color: #b8860b; border: 1px solid #ffe082; }
-.challenge-next p { margin-top: 0.8rem; font-size: 0.9rem; color: var(--ink-2); }
+.challenge-next p { margin-top: 0.8rem; font-size: 1.26rem; color: var(--ink-2); }
 .challenge-card {
   background: #fff; border: 1px solid var(--border); border-radius: 8px;
   padding: 1rem 1.5rem; margin-top: 0.8rem;
 }
 .challenge-card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
-.challenge-card-header strong { font-size: 0.95rem; }
-.challenge-desc { font-size: 0.85rem; color: var(--ink-2); margin-bottom: 0.8rem; }
+.challenge-card-header strong { font-size: 1.33rem; }
+.challenge-desc { font-size: 1.19rem; color: var(--ink-2); margin-bottom: 0.8rem; }
 
 /* phases 3-step */
 .phases { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
@@ -215,17 +215,17 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 
 /* faq */
 .faq { margin-top: 2rem; }
-.faq h3 { font-size: 1rem; margin-bottom: 1rem; }
+.faq h3 { font-size: 1.4rem; margin-bottom: 1rem; }
 .faq-item { border-bottom: 1px solid var(--border); padding: 0.6rem 0; }
 .faq-item summary {
-  cursor: pointer; font-weight: 500; font-size: 0.9rem;
+  cursor: pointer; font-weight: 500; font-size: 1.26rem;
   color: var(--ink); padding: 0.2rem 0;
   list-style: none; display: flex; align-items: center; gap: 0.4rem;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary::before { content: "+"; font-family: var(--mono); color: var(--ink-3); font-size: 0.9rem; }
 .faq-item[open] summary::before { content: "–"; }
-.faq-item p { font-size: 0.85rem; color: var(--ink-2); padding: 0.3rem 0 0.5rem 1.2rem; }
+.faq-item p { font-size: 1.19rem; color: var(--ink-2); padding: 0.3rem 0 0.5rem 1.2rem; }
 
 /* contact form */
 .contacte-nota { font-size: 0.82rem; color: var(--ink-3); background: #fafafa; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; line-height: 1.5; }

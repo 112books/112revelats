@@ -20,17 +20,3 @@ No cal tenir una càmera especial: pots construir la teva pròpia càmera esteno
 3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
 
 El període d'inscripció està obert. Les bases completes i el formulari de participació els trobaràs a la secció de Reptes de la home.
-
-<figure>
-  <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="Retrats Lents — 112 Revelats" style="max-width:300px;display:block;margin:2rem auto;border-radius:8px;">
-  <figcaption style="text-align:center;font-size:0.85rem;color:var(--ink-3);">Identitat visual del repte — disseny per 112 Books</figcaption>
-</figure>
-
-## Fases del repte
-
-| Fase | Període |
-|------|---------|
-| Convocatòria oberta | Actual |
-| Selecció de propostes | Properament |
-| Producció del fotollibre | Properament |
-| Publicació i presentació | Properament |
