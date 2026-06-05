@@ -80,6 +80,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .section { padding: 5rem 1rem; }
 .section-alt { background: var(--bg-alt); }
 .section-inner { max-width: 720px; margin: 0 auto; }
+.page-content { padding-top: calc(var(--header-h) + 3rem); }
 .section h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; }
 .section-desc { color: var(--ink-2); margin-bottom: 2rem; font-size: 1.2rem; }
 
