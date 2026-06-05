@@ -96,7 +96,7 @@
   <header class="site-header">
     <nav class="nav">
       <a href="#inici" class="nav-brand">
-        <img src="/img/112revelats-logo.png" alt="112 Revelats" class="nav-logo">
+        <img src="{{ "img/112revelats-logo.png" | relURL }}" alt="112 Revelats" class="nav-logo">
         112 Revelats
       </a>
       <button class="nav-toggle" aria-label="Menú">☰</button>
@@ -126,42 +126,33 @@
     <div class="footer-inner">
       <div class="footer-cols">
         <div class="footer-col">
-          <h5>{{ i18n "footer_legal" }}</h5>
-          <a href="/avis-legal">{{ i18n "avis_legal" }}</a>
-          <a href="/privacitat">{{ i18n "privacitat" }}</a>
-          <a href="/cookies">{{ i18n "cookies" }}</a>
-          <a href="/exempcio">{{ i18n "exempcio" }}</a>
+          <p>{{ i18n "iniciativa" }} <a href="https://112books.eu" target="_blank" rel="noopener">112Books.eu</a></p>
         </div>
         <div class="footer-col">
-          <h5>{{ i18n "footer_butlleti" }}</h5>
-          <p>{{ i18n "footer_butlleti_desc" }}</p>
-          <form class="footer-form" action="{{ $.Site.Params.formAction }}" method="POST">
-            <input type="hidden" name="_subject" value="Butlleti 112 Revelats">
-            <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
-            <button type="submit">{{ i18n "footer_subscribe" }}</button>
-          </form>
+        </div>
+        <div class="footer-col">
+          <h5>{{ i18n "footer_legal" }}</h5>
+          <a href="{{ "avis-legal" | relLangURL }}">{{ i18n "avis_legal" }}</a>
+          <a href="{{ "privacitat" | relLangURL }}">{{ i18n "privacitat" }}</a>
+          <a href="{{ "cookies" | relLangURL }}">{{ i18n "cookies" }}</a>
+          <a href="{{ "exempcio" | relLangURL }}">{{ i18n "exempcio" }}</a>
         </div>
         <div class="footer-col">
           <h5>{{ i18n "footer_cerca" }}</h5>
-          <form class="footer-form" action="https://duckduckgo.com/" method="GET" target="_blank">
+          <form class="footer-form" action="https://duckduckgo.com/" method="GET">
             <input type="hidden" name="sites" value="112revelats.112books.eu">
             <input type="search" name="q" placeholder="{{ i18n "footer_cerca_placeholder" }}">
             <button type="submit">{{ i18n "footer_cerca_btn" }}</button>
           </form>
-        </div>
-        <div class="footer-col">
-          <h5>{{ i18n "footer_social" }}</h5>
-          <div class="footer-social">
+          <div class="footer-social" style="margin-top:0.5rem;">
             <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
             <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <a href="https://112books.eu" target="_blank" rel="noopener">
-          <img src="/img/112books-logo.png" alt="112Books" class="footer-logo">
-        </a>
-        <p>{{ i18n "iniciativa" }} <a href="https://112books.eu" target="_blank" rel="noopener">112Books.eu</a></p>
+      <div class="footer-powered">
+        <p>Powered by <a href="https://linuxbcn.cat" target="_blank" rel="noopener">LinuxBCN</a></p>
+        <p class="powered-detail">Consultancy | Development | Hosting | Design</p>
       </div>
     </div>
   </footer>
