@@ -5,7 +5,7 @@ description: "Submit your proposal for the Slow Portraits challenge by 112 Revel
 
 **112 Revelats – Participation form**
 **Current challenge: Slow Portraits**
-**Submission deadline: September 6, 2026**
+<p style="font-size:1.2rem;color:var(--accent);font-weight:700;">Submission deadline: September 6, 2026</p>
 
 Some images need time. A gaze that builds while the shutter stays open. Light passing through a tiny hole, projecting the world upside down inside a can. In a moment where everything moves fast, we propose returning to the pause: building a portrait from waiting, observation, and long exposure.
 

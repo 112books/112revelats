@@ -5,7 +5,7 @@ description: "Envia la teva proposta per al repte Retrats Lents de 112 Revelats"
 
 **112 Revelats – Formulari de participació**
 **Repte actual: Retrats Lents**
-**Data límit d'enviament: 6 de setembre de 2026**
+<p style="font-size:1.2rem;color:var(--accent);font-weight:700;">Data límit d'enviament: 6 de setembre de 2026</p>
 
 Hi ha imatges que necessiten temps. Una mirada que es construeix mentre l'obturador roman obert. La llum que travessa un forat diminut i projecta el món cap per avall dins d'una llauna. En un moment on tot va de pressa, proposem tornar a la pausa: construir un retrat des de l'espera, l'observació i la llarga exposició.
 
