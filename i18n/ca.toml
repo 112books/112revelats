@@ -200,3 +200,9 @@
   other = "Completat"
 [repte_figure_caption]
   other = "Identitat visual del repte — disseny per 112 Books"
+[error_404_title]
+  other = "Error 404 — Aquesta pàgina s'ha fos"
+[error_404_desc]
+  other = "Com un negatiu al sol, aquesta pàgina ha quedat velada. Prova de tornar a l'inici."
+[error_404_cta]
+  other = "← Torna al web"

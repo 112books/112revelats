@@ -200,3 +200,9 @@
   other = "Completed"
 [repte_figure_caption]
   other = "Challenge visual identity — design by 112 Books"
+[error_404_title]
+  other = "Error 404 — This page got burned"
+[error_404_desc]
+  other = "Like a negative in the sun, this page got fogged. Head back to the start."
+[error_404_cta]
+  other = "← Back to the site"

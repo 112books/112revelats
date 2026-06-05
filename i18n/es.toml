@@ -200,3 +200,9 @@
   other = "Completado"
 [repte_figure_caption]
   other = "Identidad visual del reto — diseño por 112 Books"
+[error_404_title]
+  other = "Error 404 — Esta página se ha fundido"
+[error_404_desc]
+  other = "Como un negativo al sol, esta página se ha velado. Prueba a volver al inicio."
+[error_404_cta]
+  other = "← Vuelve al sitio"
