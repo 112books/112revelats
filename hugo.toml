@@ -30,7 +30,7 @@ disableKinds = ["taxonomy", "term"]
   ogImage = "/img/hero-bg.png"
   pressDossier = "/pdf/dossier-premsa-112-revelats.pdf"
   goatcounter = "112revelats"
-  formAction = "https://formspree.io/f/xxxxx"
+  formAction = "https://formspree.io/f/maqzqynz"
 
 [markup.goldmark.renderer]
   unsafe = true
