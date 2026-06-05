@@ -58,6 +58,22 @@
   other = "Activar producció"
 [fase_placeholder_3]
   other = "Desenvolupar fotollibre"
+[fases_title]
+  other = "Fases del projecte"
+[fases_subtitle]
+  other = "Cada repte fotogràfic segueix el mateix procés editorial:"
+[fase_1]
+  other = "Convocatòria"
+[fase_2]
+  other = "La vostra participació"
+[fase_3]
+  other = "Selecció de projectes"
+[fase_4]
+  other = "Conceptualització amb l'equip editorial"
+[fase_5]
+  other = "Publicació digital"
+[fase_6]
+  other = "Crida a patrocini per paper"
 [els_nostres_fotollibres]
   other = "Els nostres fotollibres"
 [els_nostres_fotollibres_desc]
@@ -128,6 +144,24 @@
   other = "Aviseu-me quan obriu el proper repte"
 [form_email_list_placeholder]
   other = "el_meu@email.com"
+[footer_legal]
+  other = "Legal"
+[footer_butlleti]
+  other = "Butlletí"
+[footer_butlleti_desc]
+  other = "Rep les novetats dels reptes al teu correu"
+[footer_subscribe]
+  other = "Subscriu-te"
+[footer_cerca]
+  other = "Cerca"
+[footer_cerca_placeholder]
+  other = "Cerca al web..."
+[footer_cerca_btn]
+  other = "Cerca"
+[footer_social]
+  other = "Xarxes"
+[exempcio]
+  other = "Exempció de responsabilitat"
 [iniciativa]
   other = "Una iniciativa de"
 [credits_powered]

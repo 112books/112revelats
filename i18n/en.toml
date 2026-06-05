@@ -58,6 +58,22 @@
   other = "Activate production"
 [fase_placeholder_3]
   other = "Develop photobook"
+[fases_title]
+  other = "Project phases"
+[fases_subtitle]
+  other = "Every photo challenge follows the same editorial process:"
+[fase_1]
+  other = "Open call"
+[fase_2]
+  other = "Your participation"
+[fase_3]
+  other = "Project selection"
+[fase_4]
+  other = "Conceptualisation with editorial team"
+[fase_5]
+  other = "Digital publication"
+[fase_6]
+  other = "Print sponsorship call"
 [els_nostres_fotollibres]
   other = "Our photobooks"
 [els_nostres_fotollibres_desc]
@@ -128,6 +144,24 @@
   other = "Notify me when the next challenge opens"
 [form_email_list_placeholder]
   other = "my@email.com"
+[footer_legal]
+  other = "Legal"
+[footer_butlleti]
+  other = "Newsletter"
+[footer_butlleti_desc]
+  other = "Get challenge updates in your inbox"
+[footer_subscribe]
+  other = "Subscribe"
+[footer_cerca]
+  other = "Search"
+[footer_cerca_placeholder]
+  other = "Search the site..."
+[footer_cerca_btn]
+  other = "Search"
+[footer_social]
+  other = "Social"
+[exempcio]
+  other = "Disclaimer"
 [iniciativa]
   other = "An initiative by"
 [credits_powered]

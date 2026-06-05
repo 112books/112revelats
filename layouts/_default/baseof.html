@@ -6,6 +6,35 @@
   <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
   <link rel="icon" href="/img/favicon.png">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&family=Literata:opsz,wght@7..72,400;6..72,600;7..72,700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "112 Revelats",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ .Site.Params.ogImage | absURL }}",
+    "sameAs": ["{{ .Site.Params.instagram }}", "{{ .Site.Params.facebook }}"]
+  }
+  </script>
 
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
@@ -66,7 +95,10 @@
 </script>
   <header class="site-header">
     <nav class="nav">
-      <a href="#inici" class="nav-brand">112 Revelats</a>
+      <a href="#inici" class="nav-brand">
+        <img src="/img/112revelats-logo.png" alt="112 Revelats" class="nav-logo">
+        112 Revelats
+      </a>
       <button class="nav-toggle" aria-label="Menú">☰</button>
       <div class="nav-links">
         <a href="#inici">{{ i18n "inici" }}</a>
@@ -76,7 +108,9 @@
         <a href="#fotollibres">{{ i18n "els_nostres_fotollibres" }}</a>
         <a href="#contacte">{{ i18n "contacte" }}</a>
         {{ range .AllTranslations }}
-          <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+          {{ if ne .Lang $.Lang }}
+            <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+          {{ end }}
         {{ end }}
       </div>
     </nav>
@@ -86,21 +120,49 @@
     {{ block "main" . }}{{ end }}
   </main>
 
+  <button id="scroll-top" class="scroll-top" aria-label="Torna a dalt">↑</button>
+
   <footer class="site-footer" id="footer">
     <div class="footer-inner">
-      <div class="footer-social">
-        <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
-        <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>{{ i18n "footer_legal" }}</h5>
+          <a href="/avis-legal">{{ i18n "avis_legal" }}</a>
+          <a href="/privacitat">{{ i18n "privacitat" }}</a>
+          <a href="/cookies">{{ i18n "cookies" }}</a>
+          <a href="/exempcio">{{ i18n "exempcio" }}</a>
+        </div>
+        <div class="footer-col">
+          <h5>{{ i18n "footer_butlleti" }}</h5>
+          <p>{{ i18n "footer_butlleti_desc" }}</p>
+          <form class="footer-form" action="{{ $.Site.Params.formAction }}" method="POST">
+            <input type="hidden" name="_subject" value="Butlleti 112 Revelats">
+            <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
+            <button type="submit">{{ i18n "footer_subscribe" }}</button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <h5>{{ i18n "footer_cerca" }}</h5>
+          <form class="footer-form" action="https://duckduckgo.com/" method="GET" target="_blank">
+            <input type="hidden" name="sites" value="112revelats.112books.eu">
+            <input type="search" name="q" placeholder="{{ i18n "footer_cerca_placeholder" }}">
+            <button type="submit">{{ i18n "footer_cerca_btn" }}</button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <h5>{{ i18n "footer_social" }}</h5>
+          <div class="footer-social">
+            <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
+            <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
       </div>
-      <p class="footer-credit">
-        {{ i18n "iniciativa" }} <a href="https://112books.eu">112Books.eu</a>
-        · {{ i18n "credits_powered" }} <a href="https://linuxbcn.com">LinuxBCN</a>
-      </p>
-      <p class="footer-legal">
-        <a href="/avis-legal">{{ i18n "avis_legal" }}</a>
-        · <a href="/privacitat">{{ i18n "privacitat" }}</a>
-        · <a href="/cookies">{{ i18n "cookies" }}</a>
-      </p>
+      <div class="footer-bottom">
+        <a href="https://112books.eu" target="_blank" rel="noopener">
+          <img src="/img/112books-logo.png" alt="112Books" class="footer-logo">
+        </a>
+        <p>{{ i18n "iniciativa" }} <a href="https://112books.eu" target="_blank" rel="noopener">112Books.eu</a></p>
+      </div>
     </div>
   </footer>
 

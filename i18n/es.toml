@@ -58,6 +58,22 @@
   other = "Activar producción"
 [fase_placeholder_3]
   other = "Desarrollar fotolibro"
+[fases_title]
+  other = "Fases del proyecto"
+[fases_subtitle]
+  other = "Cada reto fotográfico sigue el mismo proceso editorial:"
+[fase_1]
+  other = "Convocatoria"
+[fase_2]
+  other = "Vuestra participación"
+[fase_3]
+  other = "Selección de proyectos"
+[fase_4]
+  other = "Conceptualización con el equipo editorial"
+[fase_5]
+  other = "Publicación digital"
+[fase_6]
+  other = "Llamada a patrocinio para papel"
 [els_nostres_fotollibres]
   other = "Nuestros fotolibros"
 [els_nostres_fotollibres_desc]
@@ -128,6 +144,24 @@
   other = "Avisadme cuando abráis el próximo reto"
 [form_email_list_placeholder]
   other = "mi@email.com"
+[footer_legal]
+  other = "Legal"
+[footer_butlleti]
+  other = "Boletín"
+[footer_butlleti_desc]
+  other = "Recibe las novedades de los retos en tu correo"
+[footer_subscribe]
+  other = "Suscríbete"
+[footer_cerca]
+  other = "Buscar"
+[footer_cerca_placeholder]
+  other = "Buscar en el web..."
+[footer_cerca_btn]
+  other = "Buscar"
+[footer_social]
+  other = "Redes"
+[exempcio]
+  other = "Exención de responsabilidad"
 [iniciativa]
   other = "Una iniciativa de"
 [credits_powered]

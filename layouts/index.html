@@ -1,10 +1,11 @@
 {{ define "main" }}
-<section id="inici" class="hero">
+<section id="inici" class="hero hero-bg">
+  <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>112 Revelats</h1>
     <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
     <div class="hero-cta">
-      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary" download>{{ i18n "hero_cta_pdf" }}</a>
+      <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary" target="_blank" rel="noopener">{{ i18n "hero_cta_pdf" }}</a>
       <a href="#reptes" class="btn btn-secondary">{{ i18n "hero_cta_participa" }}</a>
     </div>
   </div>
@@ -80,12 +81,45 @@
         <span class="challenge-badge challenge-badge-done">{{ i18n "repte_001_estat" }}</span>
       </div>
       <p class="challenge-desc">{{ i18n "repte_001_desc" }}</p>
-      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary btn-sm" download>{{ i18n "repte_001_pdf" }}</a>
+      <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">{{ i18n "repte_001_pdf" }}</a>
     </div>
   </div>
 </section>
 
-<section id="fotollibres" class="section section-alt">
+<section id="fases" class="section section-alt">
+  <div class="section-inner">
+    <h2>{{ i18n "fases_title" }}</h2>
+    <p class="section-desc">{{ i18n "fases_subtitle" }}</p>
+    <div class="timeline">
+      <div class="timeline-step">
+        <span class="timeline-num">1</span>
+        <span class="timeline-label">{{ i18n "fase_1" }}</span>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">2</span>
+        <span class="timeline-label">{{ i18n "fase_2" }}</span>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">3</span>
+        <span class="timeline-label">{{ i18n "fase_3" }}</span>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">4</span>
+        <span class="timeline-label">{{ i18n "fase_4" }}</span>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">5</span>
+        <span class="timeline-label">{{ i18n "fase_5" }}</span>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">6</span>
+        <span class="timeline-label">{{ i18n "fase_6" }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotollibres" class="section">
   <div class="section-inner">
     <h2>{{ i18n "els_nostres_fotollibres" }}</h2>
     <div class="prose">
@@ -94,17 +128,17 @@
   </div>
 </section>
 
-<section id="arrencant" class="section">
+<section id="arrencant" class="section section-alt">
   <div class="section-inner">
     <h2>{{ i18n "arrencant_title" }}</h2>
     <p class="prose">{{ i18n "arrencant_text" }}</p>
     <p style="margin-top: 1rem;">
-      <a href="{{ $.Site.Params.pdfUrl }}" class="btn btn-primary" download>{{ i18n "hero_cta_pdf" }}</a>
+      <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary" target="_blank" rel="noopener">{{ i18n "hero_cta_pdf" }}</a>
     </p>
   </div>
 </section>
 
-<section id="premsa" class="section section-alt">
+<section id="premsa" class="section">
   <div class="section-inner">
     <h2>{{ i18n "premsa" }}</h2>
     <p class="prose">{{ i18n "premsa_dossier_desc" }}</p>
@@ -114,7 +148,7 @@
   </div>
 </section>
 
-<section id="contacte" class="section">
+<section id="contacte" class="section section-alt">
   <div class="section-inner">
     <h2>{{ i18n "contacte_title" }}</h2>
     <p>{{ i18n "contacte_text" }}</p>
