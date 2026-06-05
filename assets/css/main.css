@@ -66,6 +66,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
   transition: background 0.15s, color 0.15s;
 }
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.8rem; }
+.btn-lg { padding: 1.2rem 2.4rem; font-size: 1.4rem; }
 .btn-primary { background: #fff; color: var(--ink); }
 .btn-primary:hover { background: #e5e5e5; }
 .btn-secondary { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.5); }

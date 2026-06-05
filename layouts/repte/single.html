@@ -4,7 +4,7 @@
 {{ $badgeClass := cond (eq $status "completed") "challenge-badge-done" "challenge-badge-open" }}
 {{ $num := .Params.challengeNumber }}
 
-<section class="challenge-hero" style="{{ if eq $status "completed" }}background:linear-gradient(135deg,#1B2A4A,#2d4a7a){{ else }}background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('{{ "img/retrats-lents-bg.jpg" | relURL }}') center/cover no-repeat fixed{{ end }};">
+<section class="challenge-hero" style="{{ if eq $status "completed" }}background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('{{ "img/arrencant-el-dia-cover.png" | relURL }}') center/cover no-repeat fixed{{ else }}background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('{{ "img/retrats-lents-bg.jpg" | relURL }}') center/cover no-repeat fixed{{ end }};">
   <div class="section-inner" style="text-align:center;padding:6rem 1rem;min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
     <span class="challenge-badge {{ $badgeClass }}" style="font-size:0.85rem;padding:0.3rem 0.8rem;display:inline-block;margin-bottom:1rem;">{{ $badge }}</span>
     <h1 style="color:#fff;font-size:4.5rem;margin-bottom:0.5rem;">{{ .Title }}</h1>
