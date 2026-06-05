@@ -252,7 +252,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .scroll-top:hover { transform: translateY(-2px); }
 
 /* footer */
-.site-footer { border-top: 1px solid var(--border); padding: 3rem 1rem 2rem; }
+.site-footer { border-top: 1px solid var(--border); padding: 3rem 1rem 2rem; background: rgba(254,33,33,0.08); }
 .footer-inner { max-width: 960px; margin: 0 auto; }
 .footer-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 2.5rem; }
 .footer-col { display: flex; flex-direction: column; gap: 0.4rem; }
