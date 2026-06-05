@@ -3,6 +3,8 @@ title: "Arrencant el dia"
 description: "First edition of the 112 Revelats photographic challenge"
 status: "completed"
 challengeNumber: 1
+startDate: "August 8, 2025"
+endDate: "December 22, 2025"
 downloadUrl: "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
 authorsSelected:
   - name: "Jordi Mallol i Comas"

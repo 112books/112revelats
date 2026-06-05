@@ -3,6 +3,8 @@ title: "Arrancando el día"
 description: "Primera edición del reto fotográfico 112 Revelats"
 status: "completed"
 challengeNumber: 1
+startDate: "8 d'agost de 2025"
+endDate: "22 de desembre de 2025"
 downloadUrl: "https://www.112books.eu/producte/arrencant-el-dia-112-revelats/"
 authorsSelected:
   - name: "Jordi Mallol i Comas"
