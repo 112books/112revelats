@@ -1,6 +1,6 @@
 ---
 title: "112 Revelats"
-description: "Projecte col·lectiu de fotollibres — 112Books"
+description: "Projecte de fotollibres col·lectius — 112Books"
 ---
 
 112 Revelats és un projecte editorial col·lectiu que impulsa fotollibres amb autors emergents i consolidats, promovent la fotografia contemporània i el treball conjunt entre creadors.

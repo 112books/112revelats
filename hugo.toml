@@ -22,7 +22,7 @@ disableKinds = ["taxonomy", "term"]
     disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Projecte col·lectiu de fotollibres"
+  description = "Projecte de fotollibres col·lectius"
   author = "112Books"
   instagram = "https://instagram.com/112revelats"
   facebook = "https://facebook.com/112revelats"
