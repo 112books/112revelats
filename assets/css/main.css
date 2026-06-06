@@ -324,6 +324,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
   .nav-langs .lang-switch { font-size: 0.75rem; padding: 0.1rem 0.4rem; }
   .hero h1 { font-size: 3rem; }
   .challenge-hero { min-height: 50vh; }
+  .hero-bg { background-position: right center; }
   .grid-2 { grid-template-columns: 1fr; }
   .mobile-tab-bar { display: flex; }
   body { padding-bottom: 3.2rem; }
