@@ -16,7 +16,7 @@ jobs:
       - name: Fetch analytics data
         id: fetch
         env:
-          GC_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          GC_TOKEN: ${{ secrets.GOATCOUNTER_API_KEY }}
           GC_ACCOUNT: "112revelats"
         run: |
           END=$(date +%Y-%m-%d)
