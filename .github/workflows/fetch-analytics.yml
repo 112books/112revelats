@@ -14,6 +14,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Fetch analytics data
+        id: fetch
         env:
           GC_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
           GC_ACCOUNT: "112revelats"
@@ -22,6 +23,14 @@ jobs:
           START=$(date -d '365 days ago' +%Y-%m-%d)
           BASE="https://${GC_ACCOUNT}.goatcounter.com/api/v0"
           AUTH="Authorization: Bearer ${GC_TOKEN}"
+
+          CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}")
+          if ! echo "${CHECK}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
+            echo "::warning::Token GoatCounter invàlid o expirat — actualitza el secret GOATCOUNTER_TOKEN a GitHub → Settings → Secrets."
+            echo "token_ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "token_ok=true" >> "$GITHUB_OUTPUT"
 
           fetch_json() {
             local url="$1"
@@ -45,6 +54,7 @@ jobs:
           python3 scripts/build-analytics-json.py "${START}" "${END}"
 
       - name: Process analytics
+        if: steps.fetch.outputs.token_ok == 'true'
         run: |
           python3 scripts/process-analytics.py \
             /tmp/raw_all.json \
@@ -53,6 +63,7 @@ jobs:
             "$(date +%Y-%m-%d)"
 
       - name: Commit analytics
+        if: steps.fetch.outputs.token_ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

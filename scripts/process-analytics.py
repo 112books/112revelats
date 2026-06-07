@@ -67,9 +67,21 @@ def main():
     total       = 0
     hits_by_day = {}
     hits_pages  = {}
+    events_data = {}
+
+    WIZARD_STEPS = ['wizard-s1', 'wizard-s2', 'wizard-s3', 'wizard-s4', 'wizard-sent']
 
     for path_item in hits_list:
-        path    = path_item.get("path", "")
+        path     = path_item.get("path", "")
+        is_event = path_item.get("event", False)
+
+        if is_event:
+            for stat in path_item.get("stats", []):
+                count = stat.get("daily", 0)
+                if count:
+                    events_data[path] = events_data.get(path, 0) + count
+            continue
+
         lang    = extract_lang(path)
         section = extract_section(path)
         path_total = 0
@@ -94,7 +106,19 @@ def main():
     hits_top = sorted(
         [{"path": k, "count": v} for k, v in hits_pages.items()],
         key=lambda x: x["count"], reverse=True
-    )[:30]
+    )[:50]
+
+    noticies_top = sorted(
+        [h for h in hits_top if '/noticies/' in h['path']],
+        key=lambda x: x["count"], reverse=True
+    )[:15]
+
+    festivals_top = sorted(
+        [h for h in hits_top if '/festivals/' in h['path']],
+        key=lambda x: x["count"], reverse=True
+    )[:15]
+
+    wizard_funnel = {k: events_data.get(k, 0) for k in WIZARD_STEPS}
 
     total_data   = safe_get(raw, "total_data") or {}
     total_unique = safe_get(total_data, "total_unique") or 0
@@ -114,6 +138,9 @@ def main():
         "hits":         hits_top,
         "by_lang":      by_lang,
         "by_section":   by_section,
+        "noticies_top":  noticies_top,
+        "festivals_top": festivals_top,
+        "wizard_funnel": wizard_funnel,
         "browsers":     norm_items(browsers_raw),
         "systems":      norm_items(systems_raw),
         "sizes":        norm_items(sizes_raw),
@@ -125,7 +152,7 @@ def main():
     with open(output_file, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"Analytics processats: {total} visites, {len(hits_by_day_list)} dies")
+    print(f"Analytics processats: {total} visites, {len(hits_by_day_list)} dies, funnel: {wizard_funnel}")
 
 if __name__ == "__main__":
     main()

@@ -1,9 +1,6 @@
 {
-  "generated": "2026-06-07T08:20:50.221792Z",
-  "period": {
-    "start": "2025-06-07",
-    "end": "2026-06-07"
-  },
+  "generated": null,
+  "period": {"start": null, "end": null},
   "total": 0,
   "total_unique": 0,
   "hits_by_day": [],

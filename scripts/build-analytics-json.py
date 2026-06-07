@@ -9,7 +9,12 @@ def load(path):
         if not content or content == "null":
             print(f"WARN: {path} buit o null", file=sys.stderr)
             return None
-        return json.loads(content)
+        parsed = json.loads(content)
+        for key, val in (parsed.items() if isinstance(parsed, dict) else []):
+            if isinstance(val, list) and val:
+                print(f"DEBUG {path} → {key}[0] keys: {list(val[0].keys())}", file=sys.stderr)
+                break
+        return parsed
     except (json.JSONDecodeError, FileNotFoundError) as e:
         print(f"WARN: error a {path}: {e}", file=sys.stderr)
         return None

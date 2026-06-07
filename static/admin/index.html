@@ -4,48 +4,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Stats · 112 Revelats</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Stats · 112revelats</title>
+
+  <style>
+    @font-face {
+      font-family: 'Syne';
+      src: url('/fonts/Syne-Variable.woff2') format('woff2');
+      font-weight: 400 800;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'IBM Plex Sans Condensed';
+      src: url('/fonts/IBMPlexSansCondensed-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'IBM Plex Sans Condensed';
+      src: url('/fonts/IBMPlexSansCondensed-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-display: swap;
+    }
+  </style>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
 
-  <!-- ══ CONFIGURACIÓ ═══════════════════════════════════════════
-       Canvia PW_HASH: echo -n "contrasenya" | sha256sum
-  ═══════════════════════════════════════════════════════════════ -->
   <script>
   const CFG = {
-    siteName:     '112 Revelats',
+    siteName:     '112revelats',
     gcUrl:        'https://112revelats.goatcounter.com',
     pwHash:       'ec689a6b20231cab576cd7604ab478777e3e23bd4e4822dbc841779afa57fbbf',
     dataUrl:      'analytics.json',
-    sectionNames: {"inici":"Inici","objectius":"Objectius","patrocini":"Patrocini","reptes":"Reptes","fotollibres":"Fotollibres","arrencant":"Arrencant","contacte":"Contacte"},
+    sectionNames: {
+      "inici":       "Inici",
+      "convocatoria":"Convocatòria",
+      "inscripcio":  "Inscripció",
+      "contacte":    "Contacte",
+      "legal":       "Legal",
+    },
   };
   </script>
 
   <style>
     :root {
-      --bg:      #f5f4f0;
-      --ink:     #111110;
-      --ink2:    #444440;
-      --ink3:    #6b6b66;
-      --accent:  #d4600a;
-      --accent2: #b04d06;
-      --green:   #2d7a2d;
-      --blue:    #1a5c9a;
-      --border:  #ddddd8;
-      --surface: #eeede9;
-      --warn:    #8b2500;
+      --bg:      #080808;
+      --bg2:     #111111;
+      --fg:      #f0f0f0;
+      --mid:     #777777;
+      --line:    #1c1c1c;
+      --accent:  #FF5500;
+      --accent2: #cc4400;
+      --green:   #4caf50;
+      --blue:    #4a90d9;
+      --warn:    #ff8866;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       background: var(--bg);
-      color: var(--ink);
-      font-family: 'IBM Plex Mono', 'Courier New', monospace;
-      font-size: 13px;
+      color: var(--fg);
+      font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
+      font-size: 14px;
       line-height: 1.6;
       min-height: 100vh;
     }
+
     #login {
       display: flex;
       align-items: center;
@@ -53,51 +77,64 @@
       min-height: 100vh;
     }
     .login-box {
-      width: 300px;
-      padding: 2.5rem;
-      border: 1px solid var(--border);
+      width: 320px;
+      padding: 3rem;
+      border: 1px solid var(--line);
+      background: var(--bg2);
     }
     .login-logo {
-      color: var(--ink3);
-      letter-spacing: .15em;
-      font-size: 11px;
-      text-transform: uppercase;
-      margin-bottom: 2rem;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: -.01em;
+      color: var(--fg);
+      margin-bottom: 2.5rem;
     }
     .login-logo em { color: var(--accent); font-style: normal; }
+    .login-sub {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: .2rem;
+    }
     #pwd {
       width: 100%;
       background: transparent;
       border: none;
-      border-bottom: 1px solid var(--border);
-      padding: .5rem 0;
-      font-family: inherit;
-      font-size: 15px;
-      color: var(--ink);
+      border-bottom: 1px solid var(--line);
+      padding: .6rem 0;
+      font-family: 'IBM Plex Sans Condensed', monospace;
+      font-size: 16px;
+      color: var(--fg);
       outline: none;
-      margin-bottom: 1.5rem;
-      letter-spacing: .1em;
+      margin-bottom: 1.8rem;
+      letter-spacing: .12em;
     }
+    #pwd::placeholder { color: var(--mid); }
     #pwd:focus { border-bottom-color: var(--accent); }
     .btn {
       background: var(--accent);
       color: #fff;
       border: none;
-      padding: .55rem 1.25rem;
-      font-family: inherit;
+      padding: .6rem 1.5rem;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
       font-size: 12px;
-      letter-spacing: .08em;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
       cursor: pointer;
     }
     .btn:hover { background: var(--accent2); }
     #login-err { min-height: 1.4em; color: var(--warn); font-size: 11px; margin-top: .75rem; }
+
     #dashboard { display: none; }
     .topbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: .75rem 2rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
       background: var(--bg);
@@ -105,105 +142,213 @@
       gap: 1rem;
       flex-wrap: wrap;
     }
-    .topbar-logo { color: var(--ink3); letter-spacing: .12em; font-size: 11px; text-transform: uppercase; }
+    .topbar-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -.01em;
+      color: var(--fg);
+    }
     .topbar-logo em { color: var(--accent); font-style: normal; }
     .topbar-meta { flex: 1; min-width: 0; }
-    .topbar-gen { font-size: 10px; color: var(--ink3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .topbar-gen strong { color: var(--ink2); }
+    .topbar-gen {
+      font-size: 11px;
+      color: var(--mid);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: .04em;
+    }
+    .topbar-gen strong { color: var(--fg); }
     .topbar-actions { display: flex; gap: .6rem; align-items: center; flex-shrink: 0; }
     .btn-sm {
       background: transparent;
-      border: 1px solid var(--border);
-      color: var(--ink3);
-      padding: .28rem .65rem;
-      font-family: inherit;
+      border: 1px solid var(--line);
+      color: var(--mid);
+      padding: .28rem .75rem;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
       font-size: 11px;
-      letter-spacing: .06em;
+      letter-spacing: .08em;
+      text-transform: uppercase;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
     }
     .btn-sm:hover { border-color: var(--accent); color: var(--accent); }
-    .dash-body { padding: 2rem; max-width: 1080px; margin: 0 auto; }
-    .banner { padding: .85rem 1.1rem; margin-bottom: 1.5rem; font-size: 12px; line-height: 1.5; }
-    .banner-error   { background: #fef0ec; border: 1px solid #f4b49a; color: var(--warn); }
-    .banner-loading { color: var(--ink3); font-size: 12px; }
-    .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-bottom: 2rem; list-style: none; }
-    .kpi { border: 1px solid var(--border); padding: 1.2rem 1.5rem; }
-    .kpi dt { color: var(--ink3); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: .4rem; font-weight: 400; }
-    .kpi-value { font-size: 2.4rem; color: var(--ink); line-height: 1; margin-bottom: .25rem; letter-spacing: -.01em; }
-    .kpi-value.accent { color: var(--accent); }
-    .kpi-sub { color: var(--ink3); font-size: 10px; letter-spacing: .04em; }
-    .tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
-    .tab-btn {
-      background: none; border: none; border-bottom: 2px solid transparent;
-      color: var(--ink3); font-family: inherit; font-size: 11px;
-      letter-spacing: .14em; text-transform: uppercase;
-      padding: .65rem 1.2rem; cursor: pointer; position: relative; bottom: -1px;
+    .btn-sm.btn-live { border-color: #2a2a2a; color: var(--mid); }
+    .btn-sm.btn-live:hover { border-color: var(--green); color: var(--green); }
+    .btn-sm.btn-live.loading { opacity: .5; cursor: not-allowed; pointer-events: none; }
+
+    #token-modal {
+      display: none;
+      position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,.85);
+      align-items: center; justify-content: center;
     }
-    .tab-btn:hover { color: var(--ink); }
+    .token-box {
+      width: 380px; background: var(--bg2);
+      border: 1px solid var(--line); padding: 2rem;
+    }
+    .token-box h3 {
+      font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700;
+      margin-bottom: .4rem; letter-spacing: -.01em;
+    }
+    .token-box p { font-size: 11px; color: var(--mid); margin-bottom: 1.4rem; line-height: 1.7; }
+    .token-box p a { color: var(--accent); }
+    #token-input {
+      width: 100%; background: transparent; border: none;
+      border-bottom: 1px solid var(--line); padding: .5rem 0;
+      font-family: 'IBM Plex Sans Condensed', monospace; font-size: 13px;
+      color: var(--fg); outline: none; margin-bottom: 1.2rem; letter-spacing: .06em;
+    }
+    #token-input:focus { border-bottom-color: var(--accent); }
+    #token-input::placeholder { color: var(--mid); }
+    .token-actions { display: flex; gap: .6rem; align-items: center; }
+    #token-err { font-size: 11px; color: var(--warn); min-height: 1.2em; margin-top: .5rem; }
+
+    .dash-body { padding: 2rem; max-width: 1100px; margin: 0 auto; }
+
+    .banner { padding: .85rem 1.1rem; margin-bottom: 1.5rem; font-size: 12px; line-height: 1.5; }
+    .banner-error   { background: #1a0800; border: 1px solid var(--accent); color: var(--warn); }
+    .banner-loading { color: var(--mid); font-size: 12px; }
+
+    .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin-bottom: 2rem; list-style: none; background: var(--line); border: 1px solid var(--line); }
+    .kpi { background: var(--bg2); padding: 1.4rem 1.5rem; }
+    .kpi dt {
+      color: var(--mid);
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      font-weight: 400;
+    }
+    .kpi-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--fg);
+      line-height: 1;
+      margin-bottom: .3rem;
+      letter-spacing: -.02em;
+    }
+    .kpi-value.accent { color: var(--accent); }
+    .kpi-sub { color: var(--mid); font-size: 10px; letter-spacing: .04em; }
+
+    .tabs { display: flex; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+    .tab-btn {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--mid);
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      padding: .7rem 1.3rem;
+      cursor: pointer;
+      position: relative;
+      bottom: -1px;
+    }
+    .tab-btn:hover { color: var(--fg); }
     .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+
     .section-title {
-      color: var(--ink3); font-size: 10px; font-weight: 400;
-      letter-spacing: .15em; text-transform: uppercase;
-      margin: 2rem 0 1rem; padding-bottom: .4rem; border-bottom: 1px solid var(--border);
+      color: var(--mid);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin: 2rem 0 1rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid var(--line);
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
     .section-title:first-child { margin-top: 0; }
+
     .chart-controls { display: flex; gap: .4rem; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
-    .chart-sep { width: 1px; height: 24px; background: var(--border); margin: 0 .2rem; }
+    .chart-sep { width: 1px; height: 24px; background: var(--line); margin: 0 .2rem; }
     .period-btn, .group-btn {
-      background: transparent; border: 1px solid var(--border);
-      color: var(--ink3); padding: .22rem .6rem; font-family: inherit;
-      font-size: 10px; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--mid);
+      padding: .25rem .65rem;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      cursor: pointer;
     }
-    .period-btn:hover, .group-btn:hover { border-color: var(--ink3); color: var(--ink); }
+    .period-btn:hover, .group-btn:hover { border-color: var(--mid); color: var(--fg); }
     .period-btn.active, .group-btn.active { border-color: var(--accent); color: var(--accent); }
-    .chart-wrap { border: 1px solid var(--border); padding: 1.25rem 1.25rem .75rem; height: 220px; position: relative; }
+    .chart-wrap { border: 1px solid var(--line); background: var(--bg2); padding: 1.25rem 1.25rem .75rem; height: 240px; position: relative; }
     .chart-wrap canvas { position: absolute; top: 1.25rem; left: 1.25rem; right: 1.25rem; bottom: .75rem; width: calc(100% - 2.5rem) !important; height: calc(100% - 2rem) !important; }
-    .chart-summary { font-size: 11px; color: var(--ink3); margin-top: .6rem; }
-    .chart-summary strong { color: var(--ink2); }
+    .chart-summary { font-size: 11px; color: var(--mid); margin-top: .6rem; letter-spacing: .03em; }
+    .chart-summary strong { color: var(--fg); }
     .chart-summary .hl { color: var(--accent); }
-    .bars { display: flex; flex-direction: column; gap: .55rem; }
-    .bar-row { display: grid; grid-template-columns: 150px 1fr 52px; align-items: center; gap: .75rem; }
-    .bar-label { font-size: 11px; color: var(--ink2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; }
+
+    .bars { display: flex; flex-direction: column; gap: .6rem; }
+    .bar-row { display: grid; grid-template-columns: 160px 1fr 56px; align-items: center; gap: .75rem; }
+    .bar-label { font-size: 12px; color: var(--mid); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; }
     .bar-label a { color: inherit; text-decoration: none; }
     .bar-label a:hover { color: var(--accent); }
-    .bar-track { background: var(--surface); height: 22px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+    .bar-track { background: var(--bg2); height: 22px; position: relative; overflow: hidden; border: 1px solid var(--line); }
     .bar-fill { height: 100%; width: 0; background: var(--accent); transition: width .9s cubic-bezier(.4,0,.2,1); display: flex; align-items: center; }
     .bar-fill.blue   { background: var(--blue); }
     .bar-fill.green  { background: var(--green); }
-    .bar-fill.ink2   { background: var(--ink2); }
+    .bar-fill.ink2   { background: #444; }
     .bar-pct { font-size: 10px; color: #fff; position: absolute; right: 5px; }
-    .bar-count { font-size: 11px; color: var(--ink); text-align: right; }
-    .lang-bar { display: flex; height: 26px; margin-bottom: .6rem; overflow: hidden; border: 1px solid var(--border); }
-    .lang-seg { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; transition: width .8s ease; }
+    .bar-count { font-size: 12px; color: var(--fg); text-align: right; font-weight: 700; }
+
+    .lang-bar { display: flex; height: 28px; margin-bottom: .6rem; overflow: hidden; border: 1px solid var(--line); }
+    .lang-seg { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; transition: width .8s ease; }
     .lang-ca { background: var(--accent); }
-    .lang-en { background: var(--ink3); }
-    .lang-es { background: var(--ink2); }
-    .lang-fr { background: var(--blue); }
-    .lang-other { background: #aaa; }
-    .lang-detail { display: flex; gap: 1.5rem; color: var(--ink3); font-size: 11px; flex-wrap: wrap; }
-    .device-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
-    .device-card { border: 1px solid var(--border); padding: 1rem 1.25rem; display: flex; flex-direction: column; align-items: center; gap: .3rem; }
-    .device-icon { font-size: 1.6rem; line-height: 1; }
-    .device-label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); }
-    .device-count { font-size: 2rem; color: var(--ink); line-height: 1; }
-    .device-pct { font-size: 10px; color: var(--ink3); }
+    .lang-en { background: #555; }
+    .lang-es { background: #333; }
+    .lang-other { background: #2a2a2a; }
+    .lang-detail { display: flex; gap: 1.5rem; color: var(--mid); font-size: 12px; flex-wrap: wrap; margin-top: .5rem; }
+
+    .device-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-bottom: 1.5rem; background: var(--line); border: 1px solid var(--line); }
+    .device-card { background: var(--bg2); padding: 1.2rem 1.5rem; display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+    .device-icon { font-size: 1.6rem; line-height: 1; filter: grayscale(1) brightness(1.5); }
+    .device-label { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
+    .device-count { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 700; color: var(--fg); line-height: 1; }
+    .device-pct { font-size: 11px; color: var(--mid); }
+
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
     .insight {
-      background: var(--surface); border-left: 3px solid var(--accent);
-      padding: 1rem 1.25rem; margin-top: 1.5rem;
-      font-size: 11px; color: var(--ink2); line-height: 1.9;
+      background: var(--bg2);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 12px;
+      color: var(--mid);
+      line-height: 1.9;
     }
     .insight .label {
-      font-size: 10px; letter-spacing: .15em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: .4rem; display: block;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .4rem;
+      display: block;
     }
-    .insight em { color: var(--ink); font-style: normal; }
+    .insight em { color: var(--fg); font-style: normal; }
     .insight-line::before { content: '→ '; color: var(--accent); }
-    .empty { color: var(--ink3); font-size: 11px; font-style: italic; padding: .4rem 0; display: block; }
+
+    .lang-kpi { display: flex; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 1.5rem; }
+    .lang-kpi-item { flex: 1; background: var(--bg2); padding: 1rem 1.25rem; }
+    .lang-kpi-item dt { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--mid); margin-bottom: .35rem; }
+    .lang-kpi-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 700; line-height: 1; margin-bottom: .2rem; }
+    .lang-kpi-num.ca { color: var(--accent); }
+    .lang-kpi-num.en { color: #aaa; }
+    .lang-kpi-num.es { color: #666; }
+    .lang-kpi-sub { font-size: 11px; color: var(--mid); }
+
+    .empty { color: var(--mid); font-size: 12px; font-style: italic; padding: .4rem 0; display: block; }
+
     @media (max-width: 1080px) { .kpis { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 860px) {
       .kpis { grid-template-columns: repeat(2, 1fr); }
@@ -211,12 +356,12 @@
       .dash-body { padding: 1rem; }
       .topbar { padding: .6rem 1rem; }
       .bar-row { grid-template-columns: 90px 1fr 40px; gap: .5rem; }
-      .bar-label { font-size: 10px; }
+      .bar-label { font-size: 11px; }
     }
     @media (max-width: 480px) {
       .tabs { overflow-x: auto; }
       .tab-btn { padding: .6rem .9rem; white-space: nowrap; }
-      .device-grid { gap: .6rem; }
+      .device-grid { gap: 0; }
       .kpis { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
@@ -225,23 +370,44 @@
 
 <div id="login">
   <form id="login-form" class="login-box" novalidate>
-    <div class="login-logo" id="login-logo"></div>
+    <div class="login-logo">112<em>revelats</em></div>
+    <div class="login-sub">Estadístiques</div>
+    <br>
     <input id="pwd" type="password" placeholder="·····" autocomplete="current-password" autofocus>
-    <button type="submit" class="btn">→ entrar</button>
+    <button type="submit" class="btn">Entrar →</button>
     <div id="login-err"></div>
+  </form>
+</div>
+
+<div id="token-modal">
+  <form id="token-form" class="token-box" novalidate>
+    <h3>Token de GoatCounter</h3>
+    <p>
+      Ves a <a href="https://112revelats.goatcounter.com/settings/api" target="_blank" rel="noopener">GoatCounter → Settings → API</a>,
+      crea un token amb permís <em>Read stats</em> i enganxa'l aquí.<br>
+      Es guarda a la sessió del navegador, mai al codi.
+    </p>
+    <input id="token-input" type="password" placeholder="token_…" autocomplete="off" spellcheck="false">
+    <div class="token-actions">
+      <button type="submit" class="btn" style="font-size:11px;padding:.45rem 1.1rem">Actualitzar →</button>
+      <button type="button" class="btn-sm" id="token-cancel">Cancel·lar</button>
+    </div>
+    <div id="token-err"></div>
   </form>
 </div>
 
 <div id="dashboard">
 
   <div class="topbar">
-    <div class="topbar-logo" id="topbar-logo"></div>
+    <div class="topbar-logo">112<em>revelats</em> <span style="color:var(--mid);font-weight:400;font-size:.85em;">/ stats</span></div>
     <div class="topbar-meta">
       <div class="topbar-gen" id="topbar-gen">carregant…</div>
     </div>
     <div class="topbar-actions">
-      <a id="gc-link" class="btn-sm" target="_blank" rel="noopener noreferrer">↗ GoatCounter</a>
-      <button type="button" class="btn-sm" id="btn-logout">sortir ×</button>
+      <button type="button" class="btn-sm btn-live" id="btn-refresh">↻ En viu</button>
+      <a href="/" class="btn-sm">← Web</a>
+      <a href="https://112revelats.goatcounter.com/" target="_blank" rel="noopener" class="btn-sm">GoatCounter ↗</a>
+      <button type="button" class="btn-sm" id="btn-logout">Sortir ×</button>
     </div>
   </div>
 
@@ -249,15 +415,16 @@
     <div id="banner"></div>
 
     <dl class="kpis">
-      <div class="kpi"><dt>avui</dt><dd><div class="kpi-value accent" id="kpi-avui">—</div><div class="kpi-sub" id="sub-avui"></div></dd></div>
+      <div class="kpi"><dt>Avui</dt><dd><div class="kpi-value accent" id="kpi-avui">—</div><div class="kpi-sub" id="sub-avui"></div></dd></div>
       <div class="kpi"><dt>7 dies</dt><dd><div class="kpi-value" id="kpi-7d">—</div><div class="kpi-sub">últims 7 dies</div></dd></div>
       <div class="kpi"><dt>30 dies</dt><dd><div class="kpi-value" id="kpi-30d">—</div><div class="kpi-sub">últims 30 dies</div></dd></div>
-      <div class="kpi"><dt>total any</dt><dd><div class="kpi-value" id="kpi-total">—</div><div class="kpi-sub" id="sub-total"></div></dd></div>
-      <div class="kpi"><dt>mitjana/dia</dt><dd><div class="kpi-value" id="kpi-pps">—</div><div class="kpi-sub">visites diàries (mitjana)</div></dd></div>
+      <div class="kpi"><dt>Total any</dt><dd><div class="kpi-value" id="kpi-total">—</div><div class="kpi-sub" id="sub-total"></div></dd></div>
+      <div class="kpi"><dt>Mitjana/dia</dt><dd><div class="kpi-value" id="kpi-pps">—</div><div class="kpi-sub">visites diàries</div></dd></div>
     </dl>
 
     <div class="tabs">
       <button class="tab-btn active" onclick="showTab('temporal',this)">Temporal</button>
+      <button class="tab-btn" onclick="showTab('contingut',this)">Contingut</button>
       <button class="tab-btn" onclick="showTab('pagines',this)">Pàgines</button>
       <button class="tab-btn" onclick="showTab('dispositius',this)">Dispositius</button>
     </div>
@@ -281,16 +448,20 @@
       </div>
     </div>
 
+    <div id="tab-contingut" class="tab-panel">
+      <h2 class="section-title">Idioma dels visitants</h2>
+      <div id="lang-kpi-wrap"></div>
+      <div id="lang-wrap-2"></div>
+    </div>
+
     <div id="tab-pagines" class="tab-panel">
-      <h2 class="section-title">visites per idioma</h2>
-      <div id="lang-wrap"></div>
-      <h2 class="section-title">seccions més visitades</h2>
+      <h2 class="section-title">Seccions més visitades</h2>
       <div id="sections-wrap" class="bars"></div>
-      <h2 class="section-title">pàgines top</h2>
+      <h2 class="section-title">Pàgines top</h2>
       <div id="pages-wrap" class="bars"></div>
-      <h2 class="section-title">d'on vénen les visites</h2>
+      <h2 class="section-title">D'on vénen les visites</h2>
       <div id="refs-wrap" class="bars"></div>
-      <h2 class="section-title">localització</h2>
+      <h2 class="section-title">Localització</h2>
       <div id="locations-wrap" class="bars"></div>
       <div id="insight-pagines" class="insight" style="display:none">
         <span class="label">// observació</span>
@@ -299,7 +470,7 @@
     </div>
 
     <div id="tab-dispositius" class="tab-panel">
-      <h2 class="section-title">tipus de dispositiu</h2>
+      <h2 class="section-title">Tipus de dispositiu</h2>
       <div class="device-grid">
         <div class="device-card"><div class="device-icon">📱</div><div class="device-label">Mòbil</div><div class="device-count" id="dev-mobile">—</div><div class="device-pct" id="dev-mobile-pct"></div></div>
         <div class="device-card"><div class="device-icon">⬜</div><div class="device-label">Tauleta</div><div class="device-count" id="dev-tablet">—</div><div class="device-pct" id="dev-tablet-pct"></div></div>
@@ -307,11 +478,11 @@
       </div>
       <div class="grid-2">
         <div>
-          <h2 class="section-title">navegadors</h2>
+          <h2 class="section-title">Navegadors</h2>
           <div id="browsers-wrap" class="bars"></div>
         </div>
         <div>
-          <h2 class="section-title">sistemes operatius</h2>
+          <h2 class="section-title">Sistemes operatius</h2>
           <div id="systems-wrap" class="bars"></div>
         </div>
       </div>
@@ -325,13 +496,6 @@
 </div>
 
 <script>
-document.getElementById('login-logo').innerHTML =
-  CFG.siteName.toUpperCase().replace(/(\w+)$/, '<em>$1</em>') + ' / STATS';
-document.getElementById('topbar-logo').innerHTML =
-  CFG.siteName.toUpperCase().replace(/(\w+)$/, '<em>$1</em>') + ' / STATS';
-document.getElementById('gc-link').href = CFG.gcUrl;
-document.title = 'Stats · ' + CFG.siteName;
-
 async function sha256(str) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
   return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
@@ -438,6 +602,7 @@ function renderAll(data) {
   document.getElementById('topbar-gen').innerHTML = 'Actualitzat: <strong>' + gen + '</strong>';
 
   renderChart(data);
+  renderLangKpi(data);
   renderLang(data);
   renderSections(data);
   renderPages(data);
@@ -470,26 +635,26 @@ function renderChart(data) {
     visitsChart.update();
   } else {
     const ctx = document.getElementById('chart-canvas').getContext('2d');
-    Chart.defaults.color = '#6b6b66';
-    Chart.defaults.font.family = "'IBM Plex Mono','Courier New',monospace";
-    Chart.defaults.font.size   = 10;
+    Chart.defaults.color = '#777777';
+    Chart.defaults.font.family = "'IBM Plex Sans Condensed','Arial Narrow',sans-serif";
+    Chart.defaults.font.size   = 11;
     visitsChart = new Chart(ctx, {
       type: 'line',
       data: {
         labels,
         datasets: [{
           label: 'Visites', data: values,
-          borderColor: '#d4600a',
+          borderColor: '#FF5500',
           backgroundColor: ctx2 => {
             const g = ctx2.chart.ctx.createLinearGradient(0, 0, 0, ctx2.chart.height);
-            g.addColorStop(0, 'rgba(212,96,10,0.18)');
-            g.addColorStop(1, 'rgba(212,96,10,0.01)');
+            g.addColorStop(0, 'rgba(255,85,0,0.22)');
+            g.addColorStop(1, 'rgba(255,85,0,0.01)');
             return g;
           },
           fill: true, tension: 0.3,
           pointRadius: values.length > 60 ? 0 : 3,
           pointHoverRadius: 5,
-          pointBackgroundColor: '#d4600a',
+          pointBackgroundColor: '#FF5500',
           borderWidth: 1.5,
         }],
       },
@@ -497,14 +662,14 @@ function renderChart(data) {
         responsive: true, maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
         scales: {
-          x: { grid: { color: 'rgba(17,17,16,0.05)' }, ticks: { color: '#6b6b66', maxTicksLimit: 10 }, border: { color: 'rgba(17,17,16,0.12)' } },
-          y: { grid: { color: 'rgba(17,17,16,0.05)' }, ticks: { color: '#6b6b66' }, border: { color: 'rgba(17,17,16,0.12)' }, beginAtZero: true },
+          x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#777', maxTicksLimit: 10 }, border: { color: 'rgba(255,255,255,0.08)' } },
+          y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#777' }, border: { color: 'rgba(255,255,255,0.08)' }, beginAtZero: true },
         },
         plugins: {
           legend: { display: false },
           tooltip: {
-            backgroundColor: '#f5f4f0', borderColor: '#ddddd8', borderWidth: 1,
-            titleColor: '#111110', bodyColor: '#6b6b66', padding: 10,
+            backgroundColor: '#111111', borderColor: '#1c1c1c', borderWidth: 1,
+            titleColor: '#f0f0f0', bodyColor: '#777777', padding: 10,
             callbacks: { label: c => ' ' + c.parsed.y.toLocaleString('ca-ES') + ' visites' },
           },
         },
@@ -545,28 +710,42 @@ function groupHits(days, groupBy) {
   }));
 }
 
+function renderLangKpi(data) {
+  const el = document.getElementById('lang-kpi-wrap');
+  if (!el) return;
+  const by_lang = data.by_lang || {};
+  const total = Object.values(by_lang).reduce((s,v) => s+v, 0) || 1;
+  const NAMES = {ca:'Català',en:'Anglès',es:'Castellà'};
+  const CLASSES = {ca:'ca',en:'en',es:'es'};
+  const entries = Object.entries(by_lang).sort((a,b) => b[1]-a[1]).slice(0,4);
+  if (!entries.length) { el.innerHTML = '<span class="empty">sense dades</span>'; return; }
+  el.innerHTML = '<div class="lang-kpi">' + entries.map(([lang, count]) => {
+    const pct = Math.round(count/total*100);
+    const cls = CLASSES[lang] || '';
+    return `<div class="lang-kpi-item"><dt>${NAMES[lang]||lang.toUpperCase()}</dt>
+      <div class="lang-kpi-num ${cls}">${pct}%</div>
+      <div class="lang-kpi-sub">${fmt(count)} visites</div></div>`;
+  }).join('') + '</div>';
+}
+
 function renderLang(data) {
-  const el = document.getElementById('lang-wrap');
+  const el = document.getElementById('lang-wrap-2');
   const by_lang = data.by_lang || {};
   const total = Object.values(by_lang).reduce((s,v) => s+v, 0);
   if (!total) { el.innerHTML = '<span class="empty">sense dades d\'idioma</span>'; return; }
-
   const entries = Object.entries(by_lang).sort((a,b) => b[1]-a[1]);
   const segs = entries.map(([lang, count]) => {
     const pct = Math.round(count/total*100);
-    const cls = ['ca','en','es','fr'].includes(lang) ? 'lang-'+lang : 'lang-other';
+    const cls = ['ca','en','es'].includes(lang) ? 'lang-'+lang : 'lang-other';
     return pct > 0
       ? '<div class="lang-seg '+cls+'" style="width:0%" data-w="'+pct+'%">'+(pct>8?lang.toUpperCase()+' '+pct+'%':'')+'</div>'
       : '';
   }).join('');
-
   const detail = entries.map(([lang, count]) => {
-    const NAMES = {ca:'Català',es:'Castellà',en:'Anglès',fr:'Francès',de:'Alemany',it:'Italià',pt:'Portuguès'};
+    const NAMES = {ca:'Català',es:'Castellà',en:'Anglès'};
     return '<span>'+(NAMES[lang]||lang)+': '+fmt(count)+'</span>';
   }).join('');
-
   el.innerHTML = '<div class="lang-bar">' + segs + '</div><div class="lang-detail">' + detail + '</div>';
-
   requestAnimationFrame(() => {
     el.querySelectorAll('[data-w]').forEach(el2 => { el2.style.width = el2.dataset.w; });
   });
@@ -620,7 +799,6 @@ function renderDevices(data) {
   });
   const total = mobile + tablet + desktop || 1;
   const pct = n => total > 1 ? Math.round(n/total*100) + '%' : '';
-
   setText('dev-mobile',      mobile  > 0 ? fmt(mobile)  : '—');
   setText('dev-mobile-pct',  mobile  > 0 ? pct(mobile)  : '');
   setText('dev-tablet',      tablet  > 0 ? fmt(tablet)  : '—');
@@ -662,7 +840,7 @@ function renderInsightPagines(data) {
   const bySec  = Object.entries(data.by_section||{}).sort((a,b)=>b[1]-a[1]);
   if (byLang.length) {
     const [lang, cnt] = byLang[0];
-    const NAMES = {ca:'Català',es:'Castellà',en:'Anglès',fr:'Francès',de:'Alemany',it:'Italià',pt:'Portuguès'};
+    const NAMES = {ca:'Català',es:'Castellà',en:'Anglès'};
     lines.push('L\'idioma principal és el <em>' + (NAMES[lang]||lang) + '</em> (' + Math.round(cnt/total*100) + '% del trànsit).');
   }
   if (bySec.length) {
@@ -703,7 +881,7 @@ function renderInsightDispositius(data) {
   if (browsers.length) {
     const tot = browsers.reduce((s,b)=>s+b.count,0)||1;
     const top = browsers[0];
-    lines.push('<em>' + top.name + '</em> és el navegador principal (' + Math.round(top.count/tot*100) + '% dels usuaris): assegura la compatibilitat com a prioritat.');
+    lines.push('<em>' + top.name + '</em> és el navegador principal (' + Math.round(top.count/tot*100) + '% dels usuaris).');
   }
   if (systems.length) {
     const tot = systems.reduce((s,b)=>s+b.count,0)||1;
@@ -794,15 +972,17 @@ function fmtPeriod(start, end) {
   const f = s => new Date(s+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'});
   return f(start)+' – '+f(end);
 }
+
 function setBanner(type, msg) {
   const el = document.getElementById('banner');
   el.className = 'banner banner-' + type;
-  el.innerHTML = msg;
+  el.textContent = msg;
 }
 function clearBanner() {
-  const el = document.getElementById('banner');
-  el.className = ''; el.textContent = '';
+  document.getElementById('banner').className = '';
+  document.getElementById('banner').textContent = '';
 }
 </script>
+
 </body>
 </html>
