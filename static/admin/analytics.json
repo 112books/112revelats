@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-09T00:01:08.626414Z",
+  "generated": "2026-06-09T05:00:13.707062Z",
   "period": {
     "start": "2025-06-09",
     "end": "2026-06-09"
   },
-  "total": 40,
+  "total": 41,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -22,12 +22,16 @@
     {
       "date": "2026-06-08",
       "count": 3
+    },
+    {
+      "date": "2026-06-09",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 15
+      "count": 16
     },
     {
       "path": "/repte/retrats-lents",
@@ -111,7 +115,7 @@
     "en": 2
   },
   "by_section": {
-    "inici": 17,
+    "inici": 18,
     "repte": 7,
     "112revelats": 12,
     "patrocini": 2,
@@ -130,7 +134,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 22
+      "count": 24
     },
     {
       "name": "Safari",
@@ -152,6 +156,11 @@
     {
       "name": "Windows",
       "id": "Windows",
+      "count": 2
+    },
+    {
+      "name": "Android",
+      "id": "Android",
       "count": 1
     }
   ],
@@ -164,19 +173,24 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 12
+      "count": 13
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 5
+      "count": 6
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 40
+      "count": 41
+    },
+    {
+      "name": "United States",
+      "id": "US",
+      "count": 1
     }
   ],
   "refs": [
@@ -199,6 +213,11 @@
       "name": "112books.github.io",
       "id": "112books.github.io",
       "count": 2
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 1
     },
     {
       "name": "112books.github.io/112revelats/en",
