@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-08T20:07:18.500453Z",
+  "generated": "2026-06-09T00:01:08.626414Z",
   "period": {
-    "start": "2025-06-08",
-    "end": "2026-06-08"
+    "start": "2025-06-09",
+    "end": "2026-06-09"
   },
-  "total": 38,
+  "total": 40,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -21,13 +21,13 @@
     },
     {
       "date": "2026-06-08",
-      "count": 1
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 13
+      "count": 15
     },
     {
       "path": "/repte/retrats-lents",
@@ -111,7 +111,7 @@
     "en": 2
   },
   "by_section": {
-    "inici": 15,
+    "inici": 17,
     "repte": 7,
     "112revelats": 12,
     "patrocini": 2,
@@ -183,7 +183,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 11
+      "count": 13
     },
     {
       "name": "112books.github.io/112revelats",
