@@ -194,7 +194,7 @@
     <h2>{{ i18n "premsa" }}</h2>
     <p class="prose">{{ i18n "premsa_dossier_desc" }}</p>
     <p style="margin-top: 1rem;">
-      <a href="{{ $.Site.Params.pressDossier | relURL }}" class="btn btn-secondary btn-sm" download>{{ i18n "premsa_dossier" }}</a>
+      <a href="{{ printf "/presskit/presskit-retrats-lents-%s.pdf" $.Site.Language.Lang | relURL }}" class="btn btn-secondary btn-sm" download>{{ i18n "premsa_dossier" }}</a>
     </p>
   </div>
 </section>
