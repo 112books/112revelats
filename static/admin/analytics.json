@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-11T23:20:57.889342Z",
+  "generated": "2026-06-12T02:58:36.524402Z",
   "period": {
-    "start": "2025-06-11",
-    "end": "2026-06-11"
+    "start": "2025-06-12",
+    "end": "2026-06-12"
   },
-  "total": 42,
+  "total": 46,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -26,16 +26,20 @@
     {
       "date": "2026-06-09",
       "count": 2
+    },
+    {
+      "date": "2026-06-11",
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 17
+      "count": 20
     },
     {
       "path": "/repte/retrats-lents",
-      "count": 4
+      "count": 5
     },
     {
       "path": "/112revelats",
@@ -115,8 +119,8 @@
     "en": 2
   },
   "by_section": {
-    "inici": 19,
-    "repte": 7,
+    "inici": 22,
+    "repte": 8,
     "112revelats": 12,
     "patrocini": 2,
     "legal": 2
@@ -197,7 +201,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 13
+      "count": 14
     },
     {
       "name": "112books.github.io/112revelats",
@@ -222,6 +226,11 @@
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
+      "count": 1
+    },
+    {
+      "name": "Postal",
+      "id": "Postal",
       "count": 1
     },
     {
