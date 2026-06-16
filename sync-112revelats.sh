@@ -73,6 +73,8 @@ deploy_auto() {
   git rm -rf . > /dev/null 2>&1 || true
   cp -r $BUILD_DIR/* . 2>/dev/null || true
   touch .nojekyll
+  rm -rf PROMO public static docs .DS_Store 2>/dev/null || true
+  find . -name ".DS_Store" -delete 2>/dev/null || true
   git add -A 2>/dev/null || true
   git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)" 2>/dev/null || true
   git push $REMOTE gh-pages-tmp:gh-pages --force 2>/dev/null || true
