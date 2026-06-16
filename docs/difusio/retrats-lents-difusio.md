@@ -116,6 +116,7 @@ https://112revelats.112books.eu/en/
 | **AFC** — Agrupació Fotogràfica de Catalunya | — | afc@afc.cat | CA | CA | ⏳ |
 | **FCF** — Federació Catalana de Fotografia | — | info@federaciofotografia.cat | CA | CA | ⏳ |
 | **Foto Club Tordera** | Xavier Llop (president) | fct@fotoclubtordera.cat · [@fotoclubtordera](https://instagram.com/fotoclubtordera) | CA | CA | ⏳ |
+| **PhotoSagrera** — Assoc. fotogràfica Barcelona | — | info@photosagrera.cat · [photosagrera.com](https://www.photosagrera.com) | CA | CA | ⏳ |
 
 > La FCF agrupa desenes de clubs a Catalunya. Contactant-los es pot arribar a tots els associats amb un sol missatge.  
 > Llista completa de clubs FCF: https://www.federaciofotografia.cat/entitats
@@ -126,6 +127,8 @@ https://112revelats.112books.eu/en/
 |---|---|---|---|---|---|
 | **ANFA** — Asoc. Nacional de Fotografía Analógica | — | Web: [an-fa.es](http://an-fa.es) · [Facebook](https://facebook.com/anfa.analogica) · [@anfa_analogica](https://twitter.com/anfa_analogica) | ES | ES | ⏳ |
 | **Farolillo Rojo** — Asoc. analógica Sevilla | — | Web: [farolillorojo.jimdofree.com](https://farolillorojo.jimdofree.com) · [Facebook](https://facebook.com/farolillo.rojo.376) | ES | ES | ⏳ |
+| **AFM** — Asociación Fotográfica de Madrid | — | info@asociacionfotograficademadrid.com · [@afm.photo.madrid](https://instagram.com/afm.photo.madrid) | ES | ES | ⏳ |
+| **Real Sociedad Fotográfica** — Madrid (1899) | — | rsf@rsf.es · Tel. 91 539 75 79 | ES | ES | ⏳ |
 
 #### Internacional
 
@@ -133,6 +136,8 @@ https://112revelats.112books.eu/en/
 |---|---|---|---|---|---|
 | **Worldwide Pinhole Photography Day** | — | Formulari: [pinholeday.org](https://pinholeday.org) | EN | EN | ⏳ |
 | **Justin Quinnell** (referent mundial pinhole) | Justin Quinnell | justinpinhole@gmail.com · [pinholephotography.org](https://www.pinholephotography.org) | EN | EN | ⏳ |
+| **The Analog Club** — París | — | [theanalogclub.co](https://www.theanalogclub.co) | EN | EN | ⏳ |
+| **Analog Sparks** — Premis internacionals fotografia analògica | — | [analogsparksawards.com](https://www.analogsparksawards.com) · [@analog_sparks](https://instagram.com/analog_sparks) | EN | EN | ⏳ |
 
 ---
 
@@ -160,6 +165,14 @@ https://112revelats.112books.eu/en/
 
 ---
 
+### 2b. Festivals i esdeveniments
+
+| Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
+|---|---|---|---|---|---|
+| **Experimental Foto Festival** — Barcelona (juliol 2026) | — | experimentalphotofestival@gmail.com · [@experimentalphotofestival](https://instagram.com/experimentalphotofestival) | CA/ES | CA | ⏳ |
+
+---
+
 ### 3. Revistes i mitjans especialitzats
 
 #### Espanya / Iberoamèrica
@@ -173,6 +186,9 @@ https://112revelats.112books.eu/en/
 | Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
 |---|---|---|---|---|---|
 | **Lomography Magazine** | Erin (editora en cap) | magazine.editors@lomography.com | EN | EN | ⏳ |
+| **35mmc** — blog analògic més gran del món | — | info@35mmc.com · [35mmc.com](https://www.35mmc.com) | EN | EN | ⏳ |
+| **LensCulture** — fotografia contemporània | — | photonews@lensculture.com | EN | EN | ⏳ |
+| **AlternativePhotography.com** — pinhole i tèc. alternatives | — | talk@alternativephotography.com | EN | EN | ⏳ |
 
 ---
 
@@ -193,6 +209,8 @@ https://112revelats.112books.eu/en/
 | **Reddit** | [r/pinhole](https://reddit.com/r/pinhole) | Post específic pinhole | EN | ⏳ |
 | **Reddit** | [r/photobooks](https://reddit.com/r/photobooks) | Post sobre el fotollibre | EN | ⏳ |
 | **Lomography** | [lomography.com/magazine](https://lomography.com/magazine) | Enviar article/call | EN | ⏳ |
+| **Photrio** (ex-APUG) | [photrio.com/forum](https://www.photrio.com/forum) (~60.000 membres) | Post al subfòrum pinhole | EN | ⏳ |
+| **Meetup** | [Analogue Photography groups](https://www.meetup.com/topics/analogue-photography/) | Contactar organitzadors grups locals | EN | ⏳ |
 
 ---
 
@@ -205,15 +223,18 @@ https://112revelats.112books.eu/en/
 
 ### Properes entitats a investigar
 
-- [ ] Clubs associats a la FCF (llista completa a federaciofotografia.cat/entitats)
+- [ ] Clubs associats a la FCF (llista completa a federaciofotografia.cat/entitats — desenes de clubs)
 - [ ] Agrupació Fotogràfica de Girona (AFG)
 - [ ] Foto Club Manresa
-- [ ] Asociación Fotográfica de Madrid (AFM)
-- [ ] Pinhole Visions (comunitat internacional pinhole)
-- [ ] Analog Photography Users Group (APUG / photrio.com)
+- [ ] Agrupació Fotogràfica Montcada i Reixac
+- [ ] Penya Fotogràfica de Badalona
+- [ ] Asociación Fotográfica Sierra de Madrid — afsmadrid.com
+- [ ] Sociedad Fotográfica de Zaragoza
 - [ ] The Darkroom (USA) — laboratori analògic popular online
-- [ ] Revistes: BJP (British Journal of Photography), LensCulture, Fraction Magazine
+- [ ] BJP (British Journal of Photography) — submissions
+- [ ] Fraction Magazine — fractionmagazine.com
+- [ ] Flickr Group "Pinhole Photography" — contactar moderadors
 
 ---
 
-*Creat: 2026-06-13 · Mantenidor: Joan Martínez — joan@linuxbcn.com*
+*Creat: 2026-06-13 · Actualitzat: 2026-06-17 · Mantenidor: Joan Martínez — joan@linuxbcn.com*
