@@ -104,13 +104,20 @@
 
 ### Per fer
 
-- [ ] **Galeria d'imatges** a `/repte/retrats-lents/` — mostrar imatges de mostra aleatòries cada visita. Calen imatges del usuari per posar-les a `static/img/retrats-lents/` i un JS que les barregi.
-- [ ] **Millorar el formulari de formulari** — el Formspree amb file upload potser necessita confirmació del compte
-- [ ] **Comprovar que el domini vell redirigeix** — `112books.github.io/112revelats/` hauria de redirigir a `112revelats.112books.eu`
-- [ ] S'ha de Netlify/verificar que el `robots.txt` existeix i no bloqueja res
-- [ ] Self-host Google Fonts (evitar dependència externa)
-- [ ] Afegir PWA support (`site.webmanifest`, service worker)
-- [ ] Afegir `humans.txt` i `llms.txt`
+- [ ] **Posar imatges a `static/img/retrats-lents/`** — la galeria ja està preparada (CSS + JS randomizer + secció al template). Quan hi hagi imatges al directori, es mostraran automàticament (fins a 6 aleatòries cada visita).
+- [ ] **Confirmar Formspree** — el primer submit del formulari envia un email de confirmació al teu compte. Cal obrir-lo i confirmar.
+- [ ] **Self-host Google Fonts** (evitar dependència externa)
+- [ ] **PWA support** (`site.webmanifest`, service worker)
+
+### Resolt
+
+- ✅ Password gate eliminat (2026-06-05)
+- ✅ Dates de fases de Retrats Lents eliminades
+- ✅ `robots.txt` creat (permet tots els crawlers)
+- ✅ `humans.txt` creat
+- ✅ `llms.txt` creat (informació per a crawlers d'IA)
+- ✅ Galeria preparada: JS randomizer + CSS + secció al template
+- ✅ `sync-112revelats.sh` ara accepta `deploy` com a argument per a ús no-interactiu: `./sync-112revelats.sh deploy`
 
 ### Notat
 
