@@ -130,14 +130,47 @@ https://112revelats.112books.eu/en/
 | **AFM** — Asociación Fotográfica de Madrid | — | info@asociacionfotograficademadrid.com · [@afm.photo.madrid](https://instagram.com/afm.photo.madrid) | ES | ES | ⏳ |
 | **Real Sociedad Fotográfica** — Madrid (1899) | — | rsf@rsf.es · Tel. 91 539 75 79 | ES | ES | ⏳ |
 
-#### Internacional
+#### Internacional — Analògic general
 
 | Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
 |---|---|---|---|---|---|
-| **Worldwide Pinhole Photography Day** | — | Formulari: [pinholeday.org](https://pinholeday.org) | EN | EN | ⏳ |
+| **Worldwide Pinhole Photography Day** | — | Formulari: [pinholeday.org](https://pinholeday.org) · [Facebook @PinholeDay](https://facebook.com/PinholeDay) | EN | EN | ⏳ |
 | **Justin Quinnell** (referent mundial pinhole) | Justin Quinnell | justinpinhole@gmail.com · [pinholephotography.org](https://www.pinholephotography.org) | EN | EN | ⏳ |
 | **The Analog Club** — París | — | [theanalogclub.co](https://www.theanalogclub.co) | EN | EN | ⏳ |
 | **Analog Sparks** — Premis internacionals fotografia analògica | — | [analogsparksawards.com](https://www.analogsparksawards.com) · [@analog_sparks](https://instagram.com/analog_sparks) | EN | EN | ⏳ |
+
+---
+
+### 1b. Comunitats i grups específics de pinhole / estenopeica
+
+> Prioritat màxima — públic directament afí al repte Retrats Lents.
+
+#### Europa
+
+| Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
+|---|---|---|---|---|---|
+| **Pinhole London** — UK | — | pinholelondon2020@gmail.com · [@pinholelondon](https://facebook.com/pinholelondon) | EN | EN | ⏳ |
+| **The Pinhole Project** — Seattle, USA | — | longexposurepinholes@gmail.com · [thepinholeproject.org](https://www.thepinholeproject.org) | EN | EN | ⏳ |
+| **Pinhole New York** — Stefan Killen | Stefan Killen | [pinholeny.com](https://www.pinholeny.com) · [@PinholeNewYork](https://facebook.com/PinholeNewYork) | EN | EN | ⏳ |
+
+#### Amèrica Llatina
+
+| Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
+|---|---|---|---|---|---|
+| **Colectivo Sinóptico** — Montevideo, Uruguai | — | colectivosinoptico@gmail.com · [@tallersinoptico](https://twitter.com/tallersinoptico) | ES | ES | ⏳ |
+| **Colectivo La Pesera** — Mèxic | — | [Facebook /colectivo.lapesera](https://facebook.com/colectivo.lapesera) | ES | ES | ⏳ |
+| **@fotografia.estenopeica** — compte Instagram internacional | — | [@fotografia.estenopeica](https://instagram.com/fotografia.estenopeica) | ES | ES | ⏳ |
+
+#### Comunitats online específiques pinhole
+
+| Plataforma | Canal | Membres aprox. | Acció | Idioma | Enviat |
+|---|---|---|---|---|---|
+| **Flickr** | [The Pinhole Pool](https://flickr.com/groups/pinholephotography) | molt actiu | Post + contactar moderador | EN | ⏳ |
+| **Flickr** | [Digital Pinhole Photography](https://flickr.com/groups/95279410@N00) | actiu | Post + contactar moderador | EN | ⏳ |
+| **Flickr** | [Large Format Pinhole Group](https://flickr.com/groups/thelargeformatpinholegroup) | actiu | Post + contactar moderador | EN | ⏳ |
+| **pinholeday.org** | [Llista de grups registrats](https://pinholeday.org/participate/listGroups.php) | centenars de grups | Contactar grups de l'edició 2026 | EN | ⏳ |
+
+> 💡 **pinholeday.org/participate/listGroups.php** — directori de grups participants al Worldwide Pinhole Day. Conté centenars de clubs de tot el món amb el seu nom; molts tenen webs i emails públics.
 
 ---
 
