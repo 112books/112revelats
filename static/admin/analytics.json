@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-18T22:01:42.814420Z",
+  "generated": "2026-06-19T00:22:09.890893Z",
   "period": {
-    "start": "2025-06-18",
-    "end": "2026-06-18"
+    "start": "2025-06-19",
+    "end": "2026-06-19"
   },
-  "total": 72,
+  "total": 78,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -38,32 +38,36 @@
     {
       "date": "2026-06-17",
       "count": 2
+    },
+    {
+      "date": "2026-06-18",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 26
+      "count": 28
     },
     {
       "path": "/repte/retrats-lents",
       "count": 12
     },
     {
+      "path": "/en",
+      "count": 5
+    },
+    {
       "path": "/legal/formulari",
       "count": 4
     },
     {
-      "path": "/112revelats",
+      "path": "/en/repte/retrats-lents",
       "count": 3
     },
     {
-      "path": "/en",
-      "count": 2
-    },
-    {
-      "path": "/en/repte/retrats-lents",
-      "count": 2
+      "path": "/112revelats",
+      "count": 3
     },
     {
       "path": "/es/repte/retrats-lents",
@@ -147,12 +151,12 @@
     }
   ],
   "by_lang": {
-    "en": 7,
+    "en": 11,
     "es": 4
   },
   "by_section": {
-    "inici": 30,
-    "repte": 18,
+    "inici": 35,
+    "repte": 19,
     "legal": 7,
     "112revelats": 12,
     "patrocini": 2,
@@ -251,7 +255,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 29
+      "count": 31
     },
     {
       "name": "112books.github.io/112revelats",
@@ -262,6 +266,11 @@
       "name": "112books.github.io/112revelats/repte/retrats-lents",
       "id": "112books.github.io/112revelats/repte/retrats-lents",
       "count": 3
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 2
     },
     {
       "name": "112books.github.io",
@@ -291,11 +300,6 @@
     {
       "name": "112books.github.io/112revelats/en",
       "id": "112books.github.io/112revelats/en",
-      "count": 1
-    },
-    {
-      "name": "112books.github.io/112revelats/es/repte/retrats-lents",
-      "id": "112books.github.io/112revelats/es/repte/retrats-lents",
       "count": 1
     }
   ]
