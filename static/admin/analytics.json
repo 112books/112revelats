@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-20T23:02:12.598449Z",
+  "generated": "2026-06-21T03:32:59.463553Z",
   "period": {
-    "start": "2025-06-20",
-    "end": "2026-06-20"
+    "start": "2025-06-21",
+    "end": "2026-06-21"
   },
-  "total": 79,
+  "total": 81,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -46,6 +46,10 @@
     {
       "date": "2026-06-19",
       "count": 1
+    },
+    {
+      "date": "2026-06-20",
+      "count": 2
     }
   ],
   "hits": [
@@ -59,15 +63,15 @@
     },
     {
       "path": "/en",
-      "count": 5
+      "count": 6
+    },
+    {
+      "path": "/en/repte/retrats-lents",
+      "count": 4
     },
     {
       "path": "/legal/formulari",
       "count": 4
-    },
-    {
-      "path": "/en/repte/retrats-lents",
-      "count": 3
     },
     {
       "path": "/112revelats",
@@ -155,12 +159,12 @@
     }
   ],
   "by_lang": {
-    "en": 11,
+    "en": 13,
     "es": 4
   },
   "by_section": {
-    "inici": 36,
-    "repte": 19,
+    "inici": 37,
+    "repte": 20,
     "legal": 7,
     "112revelats": 12,
     "patrocini": 2,
@@ -259,7 +263,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 32
+      "count": 33
     },
     {
       "name": "112books.github.io/112revelats",
