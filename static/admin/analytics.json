@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-25T21:26:40.732033Z",
+  "generated": "2026-06-26T02:48:29.796573Z",
   "period": {
-    "start": "2025-06-25",
-    "end": "2026-06-25"
+    "start": "2025-06-26",
+    "end": "2026-06-26"
   },
-  "total": 87,
+  "total": 93,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -62,6 +62,10 @@
     {
       "date": "2026-06-24",
       "count": 2
+    },
+    {
+      "date": "2026-06-25",
+      "count": 6
     }
   ],
   "hits": [
@@ -75,15 +79,15 @@
     },
     {
       "path": "/en",
+      "count": 9
+    },
+    {
+      "path": "/en/repte/retrats-lents",
       "count": 6
     },
     {
       "path": "/legal/formulari",
       "count": 5
-    },
-    {
-      "path": "/en/repte/retrats-lents",
-      "count": 4
     },
     {
       "path": "/legal/bases",
@@ -92,6 +96,10 @@
     {
       "path": "/112revelats",
       "count": 3
+    },
+    {
+      "path": "/en/legal/formulari",
+      "count": 2
     },
     {
       "path": "/es/repte/retrats-lents",
@@ -111,10 +119,6 @@
     },
     {
       "path": "/avis-legal",
-      "count": 1
-    },
-    {
-      "path": "/en/legal/formulari",
       "count": 1
     },
     {
@@ -171,13 +175,13 @@
     }
   ],
   "by_lang": {
-    "en": 13,
+    "en": 19,
     "es": 4
   },
   "by_section": {
-    "inici": 38,
-    "repte": 22,
-    "legal": 10,
+    "inici": 41,
+    "repte": 24,
+    "legal": 11,
     "112revelats": 12,
     "patrocini": 2,
     "privacitat": 1,
@@ -283,14 +287,14 @@
       "count": 7
     },
     {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 5
+    },
+    {
       "name": "112books.github.io/112revelats/repte/retrats-lents",
       "id": "112books.github.io/112revelats/repte/retrats-lents",
       "count": 3
-    },
-    {
-      "name": "l.instagram.com",
-      "id": "l.instagram.com",
-      "count": 2
     },
     {
       "name": "112books.github.io",
