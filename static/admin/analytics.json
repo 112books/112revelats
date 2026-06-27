@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-26T22:07:29.094062Z",
+  "generated": "2026-06-27T04:47:11.207685Z",
   "period": {
-    "start": "2025-06-26",
-    "end": "2026-06-26"
+    "start": "2025-06-27",
+    "end": "2026-06-27"
   },
-  "total": 93,
+  "total": 111,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -66,39 +66,47 @@
     {
       "date": "2026-06-25",
       "count": 6
+    },
+    {
+      "date": "2026-06-26",
+      "count": 18
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 30
+      "count": 36
     },
     {
       "path": "/repte/retrats-lents",
-      "count": 14
+      "count": 18
     },
     {
       "path": "/en",
-      "count": 9
+      "count": 10
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/legal/formulari",
-      "count": 5
+      "count": 6
     },
     {
       "path": "/legal/bases",
-      "count": 4
+      "count": 6
+    },
+    {
+      "path": "/en/legal/formulari",
+      "count": 3
     },
     {
       "path": "/112revelats",
       "count": 3
     },
     {
-      "path": "/en/legal/formulari",
+      "path": "/avis-legal",
       "count": 2
     },
     {
@@ -110,15 +118,15 @@
       "count": 2
     },
     {
+      "path": "/en/avis-legal",
+      "count": 1
+    },
+    {
       "path": "/privacitat",
       "count": 1
     },
     {
       "path": "/cookies",
-      "count": 1
-    },
-    {
-      "path": "/avis-legal",
       "count": 1
     },
     {
@@ -175,18 +183,18 @@
     }
   ],
   "by_lang": {
-    "en": 19,
+    "en": 23,
     "es": 4
   },
   "by_section": {
-    "inici": 41,
-    "repte": 24,
-    "legal": 11,
+    "inici": 48,
+    "repte": 29,
+    "legal": 15,
     "112revelats": 12,
+    "avis-legal": 3,
     "patrocini": 2,
     "privacitat": 1,
-    "cookies": 1,
-    "avis-legal": 1
+    "cookies": 1
   },
   "noticies_top": [],
   "festivals_top": [],
@@ -279,7 +287,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 36
+      "count": 40
     },
     {
       "name": "112books.github.io/112revelats",
@@ -295,6 +303,11 @@
       "name": "112books.github.io/112revelats/repte/retrats-lents",
       "id": "112books.github.io/112revelats/repte/retrats-lents",
       "count": 3
+    },
+    {
+      "name": "ig",
+      "id": "ig",
+      "count": 2
     },
     {
       "name": "112books.github.io",
@@ -319,11 +332,6 @@
     {
       "name": "Postal",
       "id": "Postal",
-      "count": 1
-    },
-    {
-      "name": "112books.github.io/112revelats/en",
-      "id": "112books.github.io/112revelats/en",
       "count": 1
     }
   ]
