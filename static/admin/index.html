@@ -986,7 +986,7 @@ function clearBanner() {
 // ── En viu: GoatCounter API ──────────────────────────────────────────────────
 
 document.getElementById('btn-refresh').addEventListener('click', () => {
-  const token = sessionStorage.getItem('gc_token');
+  const token = localStorage.getItem('gc_token');
   if (!token) {
     document.getElementById('token-modal').style.display = 'flex';
     setTimeout(() => document.getElementById('token-input').focus(), 50);
@@ -999,7 +999,7 @@ document.getElementById('token-form').addEventListener('submit', async e => {
   e.preventDefault();
   const token = document.getElementById('token-input').value.trim();
   if (!token) { document.getElementById('token-err').textContent = 'Cal un token vàlid'; return; }
-  sessionStorage.setItem('gc_token', token);
+  localStorage.setItem('gc_token', token);
   document.getElementById('token-modal').style.display = 'none';
   document.getElementById('token-input').value = '';
   document.getElementById('token-err').textContent = '';
@@ -1024,17 +1024,18 @@ async function loadLiveData(token) {
     const qs        = '?start=' + yearStart + '&end=' + today;
 
     const [hR, bR, sysR, szR, locR, refR] = await Promise.all([
-      fetch(base + '/hits'      + qs + '&daily=true&limit=200', { headers }),
+      fetch(base + '/hits'      + qs + '&daily=true&limit=100', { headers }),
       fetch(base + '/browsers'  + qs + '&limit=10',             { headers }),
       fetch(base + '/systems'   + qs + '&limit=10',             { headers }),
       fetch(base + '/sizes'     + qs + '&limit=10',             { headers }),
       fetch(base + '/locations' + qs + '&limit=15',             { headers }),
-      fetch(base + '/ref'       + qs + '&limit=10',             { headers }),
+      fetch(base + '/toprefs'   + qs + '&limit=10',             { headers }),
     ]);
 
     if (!hR.ok) {
+      if (hR.status === 401 || hR.status === 403) localStorage.removeItem('gc_token');
       const e = await hR.json().catch(() => ({}));
-      throw new Error((e.error || 'Error ' + hR.status) + ' — token incorrecte o sense permisos?');
+      throw new Error((e.error || 'Error ' + hR.status) + (hR.status === 401 ? ' — token incorrecte' : ' — sense permisos?'));
     }
 
     const [hD, bD, sysD, szD, locD, refD] = await Promise.all([
@@ -1050,7 +1051,7 @@ async function loadLiveData(token) {
     const dayMap = {};
     (hD.hits || []).forEach(p => {
       (p.stats || []).forEach(s => {
-        const n = s.total != null ? s.total : (s.hourly || []).reduce((a, b) => a + b, 0);
+        const n = s.daily != null ? s.daily : (s.hourly || []).reduce((a, b) => a + b, 0);
         dayMap[s.day] = (dayMap[s.day] || 0) + n;
       });
     });
@@ -1109,7 +1110,6 @@ async function loadLiveData(token) {
 
   } catch (err) {
     setBanner('error', 'Error carregant dades en viu: ' + err.message);
-    sessionStorage.removeItem('gc_token');
   } finally {
     btn.classList.remove('loading');
   }

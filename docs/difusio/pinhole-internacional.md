@@ -10,10 +10,11 @@
 
 ### Setmana 1 (26 juny – 4 juliol)
 
-- [x] Instagram Post 1 — Llançament *(26 juny)*
-- [ ] **Reddit r/pinhole** — Post en anglès *(27 juny)*
-- [ ] **Reddit r/analog** — Post en anglès *(28 juny)*
-- [ ] **Flickr: The Pinhole Pool** — Post + missatge moderador *(29 juny)*
+- [x] Instagram Post 1 — Llançament *(21 juny)*
+- [x] Instagram Post 2 — Explicació tècnica *(25 juny)*
+- [x] **Reddit r/pinhole** — Post en anglès *(28 juny)*
+- [x] **Reddit r/analog** — Descartat (regla no self-promotion) → substituït per r/pinhole *(28 juny)*
+- [x] **Flickr: Pinhole Portraiture + Homemade Pinhole + B&W Pinhole Photography** — Posts publicats *(28 juny)*
 - [ ] **Photrio.com** — Post subfòrum Pinhole *(30 juny)*
 - [ ] **pinholeday.org** — Formulari de contacte *(1 juliol)*
 - [ ] Instagram Post 3 *(1 juliol, 19h)*
