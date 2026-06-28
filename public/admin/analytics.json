@@ -1,0 +1,342 @@
+{
+  "generated": "2026-06-28T18:01:17.418794Z",
+  "period": {
+    "start": "2025-06-28",
+    "end": "2026-06-28"
+  },
+  "total": 114,
+  "total_unique": 0,
+  "hits_by_day": [
+    {
+      "date": "2026-06-05",
+      "count": 31
+    },
+    {
+      "date": "2026-06-06",
+      "count": 3
+    },
+    {
+      "date": "2026-06-07",
+      "count": 3
+    },
+    {
+      "date": "2026-06-08",
+      "count": 3
+    },
+    {
+      "date": "2026-06-09",
+      "count": 2
+    },
+    {
+      "date": "2026-06-11",
+      "count": 4
+    },
+    {
+      "date": "2026-06-16",
+      "count": 24
+    },
+    {
+      "date": "2026-06-17",
+      "count": 2
+    },
+    {
+      "date": "2026-06-18",
+      "count": 6
+    },
+    {
+      "date": "2026-06-19",
+      "count": 1
+    },
+    {
+      "date": "2026-06-20",
+      "count": 2
+    },
+    {
+      "date": "2026-06-22",
+      "count": 1
+    },
+    {
+      "date": "2026-06-23",
+      "count": 3
+    },
+    {
+      "date": "2026-06-24",
+      "count": 2
+    },
+    {
+      "date": "2026-06-25",
+      "count": 6
+    },
+    {
+      "date": "2026-06-26",
+      "count": 18
+    },
+    {
+      "date": "2026-06-27",
+      "count": 3
+    }
+  ],
+  "hits": [
+    {
+      "path": "/",
+      "count": 36
+    },
+    {
+      "path": "/repte/retrats-lents",
+      "count": 21
+    },
+    {
+      "path": "/en",
+      "count": 10
+    },
+    {
+      "path": "/en/repte/retrats-lents",
+      "count": 7
+    },
+    {
+      "path": "/legal/formulari",
+      "count": 6
+    },
+    {
+      "path": "/legal/bases",
+      "count": 6
+    },
+    {
+      "path": "/en/legal/formulari",
+      "count": 3
+    },
+    {
+      "path": "/112revelats",
+      "count": 3
+    },
+    {
+      "path": "/avis-legal",
+      "count": 2
+    },
+    {
+      "path": "/es/repte/retrats-lents",
+      "count": 2
+    },
+    {
+      "path": "/patrocini",
+      "count": 2
+    },
+    {
+      "path": "/en/avis-legal",
+      "count": 1
+    },
+    {
+      "path": "/privacitat",
+      "count": 1
+    },
+    {
+      "path": "/cookies",
+      "count": 1
+    },
+    {
+      "path": "/es",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/patrocini",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/legal/bases",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/legal/formulari",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/en",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/en/repte/retrats-lents",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/es/repte/retrats-lents",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/avis-legal",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/privacitat",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/cookies",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/exempcio",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/repte/arrencant-el-dia",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/repte/retrats-lents",
+      "count": 1
+    }
+  ],
+  "by_lang": {
+    "en": 23,
+    "es": 4
+  },
+  "by_section": {
+    "inici": 48,
+    "repte": 32,
+    "legal": 15,
+    "112revelats": 12,
+    "avis-legal": 3,
+    "patrocini": 2,
+    "privacitat": 1,
+    "cookies": 1
+  },
+  "noticies_top": [],
+  "festivals_top": [],
+  "wizard_funnel": {
+    "wizard-s1": 0,
+    "wizard-s2": 0,
+    "wizard-s3": 0,
+    "wizard-s4": 0,
+    "wizard-sent": 0
+  },
+  "browsers": [
+    {
+      "name": "Safari",
+      "id": "Safari",
+      "count": 64
+    },
+    {
+      "name": "Chrome",
+      "id": "Chrome",
+      "count": 51
+    }
+  ],
+  "systems": [
+    {
+      "name": "macOS",
+      "id": "macOS",
+      "count": 54
+    },
+    {
+      "name": "iOS",
+      "id": "iOS",
+      "count": 37
+    },
+    {
+      "name": "Android",
+      "id": "Android",
+      "count": 16
+    },
+    {
+      "name": "Windows",
+      "id": "Windows",
+      "count": 8
+    }
+  ],
+  "sizes": [
+    {
+      "name": "phone",
+      "id": "phone",
+      "count": 53
+    },
+    {
+      "name": "desktop",
+      "id": "desktop",
+      "count": 35
+    },
+    {
+      "name": "desktophd",
+      "id": "desktophd",
+      "count": 24
+    },
+    {
+      "name": "tablet",
+      "id": "tablet",
+      "count": 3
+    }
+  ],
+  "locations": [
+    {
+      "name": "Spain",
+      "id": "ES",
+      "count": 98
+    },
+    {
+      "name": "Poland",
+      "id": "PL",
+      "count": 9
+    },
+    {
+      "name": "United Kingdom",
+      "id": "GB",
+      "count": 4
+    },
+    {
+      "name": "United States",
+      "id": "US",
+      "count": 4
+    }
+  ],
+  "refs": [
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 41
+    },
+    {
+      "name": "112books.github.io/112revelats",
+      "id": "112books.github.io/112revelats",
+      "count": 7
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 5
+    },
+    {
+      "name": "ig",
+      "id": "ig",
+      "count": 4
+    },
+    {
+      "name": "112books.github.io/112revelats/repte/retrats-lents",
+      "id": "112books.github.io/112revelats/repte/retrats-lents",
+      "count": 3
+    },
+    {
+      "name": "112books.github.io",
+      "id": "112books.github.io",
+      "count": 2
+    },
+    {
+      "name": "naubostik.com",
+      "id": "naubostik.com",
+      "count": 2
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 1
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 1
+    },
+    {
+      "name": "Postal",
+      "id": "Postal",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Legals on 112 Revelats</title><link>https://112revelats.112books.eu/es/legal/</link><description>Recent content in Legals on 112 Revelats</description><generator>Hugo</generator><language>es</language><atom:link href="https://112revelats.112books.eu/es/legal/index.xml" rel="self" type="application/rss+xml"/><item><title>Bases de participación — Retratos Lentos</title><link>https://112revelats.112books.eu/es/legal/bases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/es/legal/bases/</guid><description>&lt;p&gt;&lt;strong&gt;112 Revelats – Bases de participación&lt;/strong&gt;
+&lt;strong&gt;Reto actual: Retratos Lentos&lt;/strong&gt;
+&lt;strong&gt;Fecha límite de envío: 6 de septiembre de 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="1-objeto-del-proyecto"&gt;1. Objeto del proyecto&lt;/h3&gt;
+&lt;p&gt;El proyecto 112 Revelats, impulsado por la editorial &lt;strong&gt;112 Books&lt;/strong&gt;, tiene como objetivo recopilar obras fotográficas originales para formar parte de una publicación colectiva. Esta iniciativa busca dar visibilidad a fotógrafos emergentes y consolidados, mediante publicaciones digitales y, si es posible, edición impresa, así como presentaciones, exposiciones y otras actividades culturales asociadas.&lt;/p&gt;</description></item><item><title>Colabora con 112 Revelats</title><link>https://112revelats.112books.eu/es/legal/col-labora/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/es/legal/col-labora/</guid><description>&lt;p&gt;&lt;strong&gt;Colabora con 112 Revelats&lt;/strong&gt;
+&lt;strong&gt;Reto actual: Retratos Lentos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;112 Revelats es un proyecto editorial colectivo impulsado por 112 Books. Las empresas y entidades relacionadas con la fotografía pueden colaborar con aportaciones económicas o no económicas para ayudar a financiar la edición impresa, diseño, producción y difusión del proyecto.&lt;/p&gt;
+&lt;p&gt;Los patrocinadores obtienen reconocimiento y visibilidad según el nivel de colaboración.&lt;/p&gt;
+&lt;form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;"&gt;
+ &lt;input type="hidden" name="_subject" value="Colaboracio 112 Revelats"&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Datos personales&lt;/h4&gt;
+ &lt;input type="text" name="nom-contacte" placeholder="Nombre completo de la persona de contacto" required&gt;
+ &lt;input type="text" name="empresa" placeholder="Empresa / Entidad"&gt;
+ &lt;input type="text" name="cif" placeholder="Identificación fiscal (CIF/NIF)" required&gt;
+ &lt;input type="text" name="adreca-fiscal" placeholder="Dirección fiscal" required&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Tipo de participación&lt;/h4&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="col-laborador" required&gt; Colaborador — hasta 100 €
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="mecenes"&gt; Mecenas — de 101 a 300 €
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="patrocinador"&gt; Patrocinador — de 301 a 600 €
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="patrocinador-principal"&gt; Patrocinador Principal — más de 600 €
+ &lt;/label&gt;
+ &lt;input type="text" name="import" placeholder="Importe de la colaboración (en euros)"&gt;
+ &lt;textarea name="altres" placeholder="Otras colaboraciones NO económicas (describe brevemente)" rows="3"&gt;&lt;/textarea&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Visibilidad y reconocimiento&lt;/h4&gt;
+ &lt;p style="font-size:0.85rem;color:var(--ink-3);"&gt;Autorizo a mostrar nuestro nombre (de empresa o como persona física) en la web del proyecto 112 Revelats:&lt;/p&gt;</description></item><item><title>Formulario de participación — Retratos Lentos</title><link>https://112revelats.112books.eu/es/legal/formulari/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/es/legal/formulari/</guid><description>&lt;p&gt;&lt;strong&gt;112 Revelats – Formulario de participación&lt;/strong&gt;
+&lt;strong&gt;Reto actual: Retratos Lentos&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="font-size:1.2rem;color:var(--accent);font-weight:700;"&gt;Fecha límite de envío: 6 de septiembre de 2026&lt;/p&gt;
+&lt;p&gt;Hay imágenes que necesitan tiempo. Una mirada que se construye mientras el obturador permanece abierto. La luz que atraviesa un agujero diminuto y proyecta el mundo al revés dentro de una lata. En un momento donde todo va deprisa, proponemos volver a la pausa: construir un retrato desde la espera, la observación y la larga exposición.&lt;/p&gt;</description></item></channel></rss>
