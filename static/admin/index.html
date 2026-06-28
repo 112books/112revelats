@@ -175,36 +175,6 @@
       display: inline-block;
     }
     .btn-sm:hover { border-color: var(--accent); color: var(--accent); }
-    .btn-sm.btn-live { border-color: #2a2a2a; color: var(--mid); }
-    .btn-sm.btn-live:hover { border-color: var(--green); color: var(--green); }
-    .btn-sm.btn-live.loading { opacity: .5; cursor: not-allowed; pointer-events: none; }
-
-    #token-modal {
-      display: none;
-      position: fixed; inset: 0; z-index: 100;
-      background: rgba(0,0,0,.85);
-      align-items: center; justify-content: center;
-    }
-    .token-box {
-      width: 380px; background: var(--bg2);
-      border: 1px solid var(--line); padding: 2rem;
-    }
-    .token-box h3 {
-      font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700;
-      margin-bottom: .4rem; letter-spacing: -.01em;
-    }
-    .token-box p { font-size: 11px; color: var(--mid); margin-bottom: 1.4rem; line-height: 1.7; }
-    .token-box p a { color: var(--accent); }
-    #token-input {
-      width: 100%; background: transparent; border: none;
-      border-bottom: 1px solid var(--line); padding: .5rem 0;
-      font-family: 'IBM Plex Sans Condensed', monospace; font-size: 13px;
-      color: var(--fg); outline: none; margin-bottom: 1.2rem; letter-spacing: .06em;
-    }
-    #token-input:focus { border-bottom-color: var(--accent); }
-    #token-input::placeholder { color: var(--mid); }
-    .token-actions { display: flex; gap: .6rem; align-items: center; }
-    #token-err { font-size: 11px; color: var(--warn); min-height: 1.2em; margin-top: .5rem; }
 
     .dash-body { padding: 2rem; max-width: 1100px; margin: 0 auto; }
 
@@ -379,22 +349,6 @@
   </form>
 </div>
 
-<div id="token-modal">
-  <form id="token-form" class="token-box" novalidate>
-    <h3>Token de GoatCounter</h3>
-    <p>
-      Ves a <a href="https://112revelats.goatcounter.com/settings/api" target="_blank" rel="noopener">GoatCounter → Settings → API</a>,
-      crea un token amb permís <em>Read stats</em> i enganxa'l aquí.<br>
-      Es guarda a la sessió del navegador, mai al codi.
-    </p>
-    <input id="token-input" type="password" placeholder="token_…" autocomplete="off" spellcheck="false">
-    <div class="token-actions">
-      <button type="submit" class="btn" style="font-size:11px;padding:.45rem 1.1rem">Actualitzar →</button>
-      <button type="button" class="btn-sm" id="token-cancel">Cancel·lar</button>
-    </div>
-    <div id="token-err"></div>
-  </form>
-</div>
 
 <div id="dashboard">
 
@@ -404,7 +358,6 @@
       <div class="topbar-gen" id="topbar-gen">carregant…</div>
     </div>
     <div class="topbar-actions">
-      <button type="button" class="btn-sm btn-live" id="btn-refresh">↻ En viu</button>
       <a href="/" class="btn-sm">← Web</a>
       <a href="https://112revelats.goatcounter.com/" target="_blank" rel="noopener" class="btn-sm">GoatCounter ↗</a>
       <button type="button" class="btn-sm" id="btn-logout">Sortir ×</button>
@@ -983,137 +936,6 @@ function clearBanner() {
   document.getElementById('banner').textContent = '';
 }
 
-// ── En viu: GoatCounter API ──────────────────────────────────────────────────
-
-document.getElementById('btn-refresh').addEventListener('click', () => {
-  const token = localStorage.getItem('gc_token');
-  if (!token) {
-    document.getElementById('token-modal').style.display = 'flex';
-    setTimeout(() => document.getElementById('token-input').focus(), 50);
-  } else {
-    loadLiveData(token);
-  }
-});
-
-document.getElementById('token-form').addEventListener('submit', async e => {
-  e.preventDefault();
-  const token = document.getElementById('token-input').value.trim();
-  if (!token) { document.getElementById('token-err').textContent = 'Cal un token vàlid'; return; }
-  localStorage.setItem('gc_token', token);
-  document.getElementById('token-modal').style.display = 'none';
-  document.getElementById('token-input').value = '';
-  document.getElementById('token-err').textContent = '';
-  await loadLiveData(token);
-});
-
-document.getElementById('token-cancel').addEventListener('click', () => {
-  document.getElementById('token-modal').style.display = 'none';
-  document.getElementById('token-err').textContent = '';
-});
-
-async function loadLiveData(token) {
-  const btn = document.getElementById('btn-refresh');
-  btn.classList.add('loading');
-  setBanner('loading', 'carregant dades en viu de GoatCounter…');
-
-  try {
-    const base    = CFG.gcUrl + '/api/v0/stats';
-    const headers = { Authorization: 'Bearer ' + token };
-    const today     = isoToday();
-    const yearStart = today.slice(0, 4) + '-01-01';
-    const qs        = '?start=' + yearStart + '&end=' + today;
-
-    const [hR, bR, sysR, szR, locR, refR] = await Promise.all([
-      fetch(base + '/hits'      + qs + '&daily=true&limit=100', { headers }),
-      fetch(base + '/browsers'  + qs + '&limit=10',             { headers }),
-      fetch(base + '/systems'   + qs + '&limit=10',             { headers }),
-      fetch(base + '/sizes'     + qs + '&limit=10',             { headers }),
-      fetch(base + '/locations' + qs + '&limit=15',             { headers }),
-      fetch(base + '/toprefs'   + qs + '&limit=10',             { headers }),
-    ]);
-
-    if (!hR.ok) {
-      if (hR.status === 401 || hR.status === 403) localStorage.removeItem('gc_token');
-      const e = await hR.json().catch(() => ({}));
-      throw new Error((e.error || 'Error ' + hR.status) + (hR.status === 401 ? ' — token incorrecte' : ' — sense permisos?'));
-    }
-
-    const [hD, bD, sysD, szD, locD, refD] = await Promise.all([
-      hR.json(),
-      bR.ok   ? bR.json()   : { stats: [] },
-      sysR.ok ? sysR.json() : { stats: [] },
-      szR.ok  ? szR.json()  : { stats: [] },
-      locR.ok ? locR.json() : { stats: [] },
-      refR.ok ? refR.json() : { stats: [] },
-    ]);
-
-    // Totals diaris: sumar totes les pàgines per dia
-    const dayMap = {};
-    (hD.hits || []).forEach(p => {
-      (p.stats || []).forEach(s => {
-        const n = s.daily != null ? s.daily : (s.hourly || []).reduce((a, b) => a + b, 0);
-        dayMap[s.day] = (dayMap[s.day] || 0) + n;
-      });
-    });
-    const hits_by_day = Object.keys(dayMap).sort().map(date => ({ date, count: dayMap[date] }));
-
-    // Total per pàgina
-    const hits = (hD.hits || []).map(p => ({
-      path: p.path,
-      count: (p.stats || []).reduce((s, d) => {
-        return s + (d.total != null ? d.total : (d.hourly || []).reduce((a, b) => a + b, 0));
-      }, 0),
-    })).sort((a, b) => b.count - a.count);
-
-    const total = hits.reduce((s, h) => s + h.count, 0);
-
-    // Idioma des del prefix de la URL
-    const by_lang = {};
-    hits.forEach(h => {
-      const lang = h.path.startsWith('/en') ? 'en' : h.path.startsWith('/es') ? 'es' : 'ca';
-      by_lang[lang] = (by_lang[lang] || 0) + h.count;
-    });
-
-    // Secció des del path (normalitzat sense prefix d'idioma)
-    const by_section = {};
-    hits.forEach(h => {
-      const p = h.path.replace(/^\/(en|es)\//, '/');
-      let sec = 'inici';
-      if      (p.includes('/legal/formulari') || p.includes('formulari')) sec = 'inscripcio';
-      else if (p.startsWith('/legal/') || p.includes('avis-legal') || p.includes('privacitat') || p.includes('cookies')) sec = 'legal';
-      else if (p.startsWith('/repte/')) sec = 'convocatoria';
-      else if (p.includes('col-labora') || p.includes('patrocini')) sec = 'contacte';
-      by_section[sec] = (by_section[sec] || 0) + h.count;
-    });
-
-    const liveData = {
-      generated : new Date().toISOString(),
-      total,
-      period    : { start: yearStart, end: today },
-      hits_by_day,
-      hits,
-      by_lang,
-      by_section,
-      browsers  : (bD.stats   || []).map(x => ({ name: x.name || x.id, count: x.count })),
-      systems   : (sysD.stats || []).map(x => ({ name: x.name || x.id, count: x.count })),
-      sizes     : (szD.stats  || []).map(x => ({ id: x.id || x.name, name: x.name, count: x.count })),
-      locations : (locD.stats || []).map(x => ({ name: x.name || x.id, count: x.count })),
-      refs      : (refD.stats || []).map(x => ({ name: x.name || x.id, count: x.count })),
-    };
-
-    globalData = liveData;
-    clearBanner();
-    renderAll(liveData);
-    document.getElementById('topbar-gen').innerHTML =
-      'En viu · <strong>GoatCounter API</strong> · ' +
-      new Date().toLocaleTimeString('ca-ES', { hour: '2-digit', minute: '2-digit' });
-
-  } catch (err) {
-    setBanner('error', 'Error carregant dades en viu: ' + err.message);
-  } finally {
-    btn.classList.remove('loading');
-  }
-}
 </script>
 
 </body>
