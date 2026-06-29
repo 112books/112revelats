@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-28T23:07:12.897059Z",
+  "generated": "2026-06-29T02:54:30.933803Z",
   "period": {
-    "start": "2025-06-28",
-    "end": "2026-06-28"
+    "start": "2025-06-29",
+    "end": "2026-06-29"
   },
-  "total": 114,
+  "total": 124,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -74,12 +74,20 @@
     {
       "date": "2026-06-27",
       "count": 3
+    },
+    {
+      "date": "2026-06-28",
+      "count": 6
+    },
+    {
+      "date": "2026-06-29",
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 36
+      "count": 38
     },
     {
       "path": "/repte/retrats-lents",
@@ -87,11 +95,11 @@
     },
     {
       "path": "/en",
-      "count": 10
+      "count": 12
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 7
+      "count": 10
     },
     {
       "path": "/legal/formulari",
@@ -103,7 +111,7 @@
     },
     {
       "path": "/en/legal/formulari",
-      "count": 3
+      "count": 5
     },
     {
       "path": "/112revelats",
@@ -120,6 +128,10 @@
     {
       "path": "/patrocini",
       "count": 2
+    },
+    {
+      "path": "/en/legal/bases",
+      "count": 1
     },
     {
       "path": "/en/avis-legal",
@@ -187,13 +199,13 @@
     }
   ],
   "by_lang": {
-    "en": 23,
+    "en": 31,
     "es": 4
   },
   "by_section": {
-    "inici": 48,
-    "repte": 32,
-    "legal": 15,
+    "inici": 52,
+    "repte": 35,
+    "legal": 18,
     "112revelats": 12,
     "avis-legal": 3,
     "patrocini": 2,
@@ -301,7 +313,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 41
+      "count": 42
     },
     {
       "name": "112books.github.io/112revelats",
@@ -324,6 +336,11 @@
       "count": 3
     },
     {
+      "name": "www.reddit.com",
+      "id": "www.reddit.com",
+      "count": 2
+    },
+    {
       "name": "112books.github.io",
       "id": "112books.github.io",
       "count": 2
@@ -341,11 +358,6 @@
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
-      "count": 1
-    },
-    {
-      "name": "Postal",
-      "id": "Postal",
       "count": 1
     }
   ]
