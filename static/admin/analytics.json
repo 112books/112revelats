@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29T02:54:30.933803Z",
+  "generated": "2026-06-29T12:26:59.152180Z",
   "period": {
     "start": "2025-06-29",
     "end": "2026-06-29"
@@ -225,24 +225,24 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 69
+      "count": 71
     },
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 55
+      "count": 56
     }
   ],
   "systems": [
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 58
+      "count": 60
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Android",
@@ -259,12 +259,12 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 58
+      "count": 59
     },
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 39
+      "count": 40
     },
     {
       "name": "desktophd",
@@ -274,14 +274,14 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 3
+      "count": 4
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 99
+      "count": 100
     },
     {
       "name": "Poland",
@@ -291,7 +291,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Canada",
@@ -302,6 +302,11 @@
       "name": "United Kingdom",
       "id": "GB",
       "count": 4
+    },
+    {
+      "name": "Belgium",
+      "id": "BE",
+      "count": 1
     },
     {
       "name": "Czechia",
