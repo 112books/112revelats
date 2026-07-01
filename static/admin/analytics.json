@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-01T00:02:53.035219Z",
+  "generated": "2026-07-01T05:18:32.531482Z",
   "period": {
     "start": "2025-07-01",
     "end": "2026-07-01"
   },
-  "total": 134,
+  "total": 137,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -89,7 +89,7 @@
     },
     {
       "date": "2026-07-01",
-      "count": 1
+      "count": 4
     }
   ],
   "hits": [
@@ -103,11 +103,11 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 16
+      "count": 18
     },
     {
       "path": "/en",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/legal/formulari",
@@ -207,12 +207,12 @@
     }
   ],
   "by_lang": {
-    "en": 37,
+    "en": 40,
     "es": 4
   },
   "by_section": {
-    "inici": 54,
-    "repte": 42,
+    "inici": 55,
+    "repte": 44,
     "legal": 19,
     "112revelats": 12,
     "avis-legal": 3,
@@ -238,7 +238,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 62
+      "count": 66
     }
   ],
   "systems": [
@@ -255,7 +255,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 18
+      "count": 22
     },
     {
       "name": "Windows",
@@ -267,7 +267,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 62
+      "count": 66
     },
     {
       "name": "desktop",
@@ -294,7 +294,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 11
+      "count": 15
     },
     {
       "name": "Poland",
@@ -336,7 +336,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 45
+      "count": 46
     },
     {
       "name": "112books.github.io/112revelats",
@@ -354,6 +354,11 @@
       "count": 4
     },
     {
+      "name": "com.reddit.frontpage",
+      "id": "com.reddit.frontpage",
+      "count": 3
+    },
+    {
       "name": "www.reddit.com",
       "id": "www.reddit.com",
       "count": 3
@@ -362,11 +367,6 @@
       "name": "112books.github.io/112revelats/repte/retrats-lents",
       "id": "112books.github.io/112revelats/repte/retrats-lents",
       "count": 3
-    },
-    {
-      "name": "com.reddit.frontpage",
-      "id": "com.reddit.frontpage",
-      "count": 2
     },
     {
       "name": "112books.github.io",
