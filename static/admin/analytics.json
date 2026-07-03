@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03T07:57:44.291340Z",
+  "generated": "2026-07-03T12:52:36.041468Z",
   "period": {
     "start": "2025-07-03",
     "end": "2026-07-03"
@@ -247,6 +247,11 @@
       "name": "Safari",
       "id": "Safari",
       "count": 74
+    },
+    {
+      "name": "Firefox",
+      "id": "Firefox",
+      "count": 3
     }
   ],
   "systems": [
@@ -268,7 +273,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 21
+      "count": 24
     }
   ],
   "sizes": [
@@ -280,7 +285,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 55
+      "count": 58
     },
     {
       "name": "desktophd",
@@ -325,6 +330,11 @@
       "count": 4
     },
     {
+      "name": "Netherlands",
+      "id": "NL",
+      "count": 4
+    },
+    {
       "name": "Argentina",
       "id": "AR",
       "count": 3
@@ -347,11 +357,6 @@
     {
       "name": "Estonia",
       "id": "EE",
-      "count": 1
-    },
-    {
-      "name": "Netherlands",
-      "id": "NL",
       "count": 1
     },
     {
