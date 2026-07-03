@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-02T22:10:01.916643Z",
+  "generated": "2026-07-03T00:00:25.092092Z",
   "period": {
-    "start": "2025-07-02",
-    "end": "2026-07-02"
+    "start": "2025-07-03",
+    "end": "2026-07-03"
   },
-  "total": 149,
+  "total": 158,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -90,6 +90,10 @@
     {
       "date": "2026-07-01",
       "count": 16
+    },
+    {
+      "date": "2026-07-02",
+      "count": 9
     }
   ],
   "hits": [
@@ -99,7 +103,7 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 26
+      "count": 30
     },
     {
       "path": "/repte/retrats-lents",
@@ -107,23 +111,31 @@
     },
     {
       "path": "/en",
-      "count": 15
+      "count": 16
     },
     {
       "path": "/legal/formulari",
       "count": 7
     },
     {
+      "path": "/en/legal/formulari",
+      "count": 6
+    },
+    {
       "path": "/legal/bases",
       "count": 6
     },
     {
-      "path": "/en/legal/formulari",
-      "count": 5
-    },
-    {
       "path": "/112revelats",
       "count": 3
+    },
+    {
+      "path": "/en/legal/bases",
+      "count": 2
+    },
+    {
+      "path": "/en/avis-legal",
+      "count": 2
     },
     {
       "path": "/avis-legal",
@@ -138,11 +150,7 @@
       "count": 2
     },
     {
-      "path": "/en/legal/bases",
-      "count": 1
-    },
-    {
-      "path": "/en/avis-legal",
+      "path": "/en/cookies",
       "count": 1
     },
     {
@@ -207,18 +215,18 @@
     }
   ],
   "by_lang": {
-    "en": 50,
+    "en": 59,
     "es": 4
   },
   "by_section": {
-    "inici": 59,
-    "repte": 52,
-    "legal": 19,
+    "inici": 60,
+    "repte": 56,
+    "legal": 21,
     "112revelats": 12,
-    "avis-legal": 3,
+    "avis-legal": 4,
     "patrocini": 2,
-    "privacitat": 1,
-    "cookies": 1
+    "cookies": 2,
+    "privacitat": 1
   },
   "noticies_top": [],
   "festivals_top": [],
@@ -356,7 +364,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 52
+      "count": 55
     },
     {
       "name": "112books.github.io/112revelats",
@@ -369,13 +377,13 @@
       "count": 5
     },
     {
-      "name": "ig",
-      "id": "ig",
-      "count": 4
-    },
-    {
       "name": "www.reddit.com",
       "id": "www.reddit.com",
+      "count": 5
+    },
+    {
+      "name": "ig",
+      "id": "ig",
       "count": 4
     },
     {
