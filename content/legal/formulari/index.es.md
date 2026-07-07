@@ -18,7 +18,7 @@ Esta convocatoria es una llamada a los fotógrafos que quieran explorar el retra
 - Se valorará el uso de formatos analógicos, pero no es obligatorio
 - **No se aceptarán imágenes generadas por inteligencia artificial**
 
-<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" enctype="multipart/form-data" style="max-width:100%;margin-top:2rem;">
+<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
   <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">1. INFORMACIÓN DEL AUTOR/A</h4>
@@ -37,12 +37,9 @@ Esta convocatoria es una llamada a los fotógrafos que quieran explorar el retra
   <textarea name="descripcio" placeholder="Comentario o descripción breve del conjunto de fotografías (opcional)" rows="3"></textarea>
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">3. ENVÍO DE IMÁGENES</h4>
-  <p style="font-size:0.85rem;color:var(--ink-3);margin-bottom:0.5rem;">Sube aquí tus 4 fotografías en formato JPG, PNG o TIF. Tamaño máximo por archivo: 10 MB.</p>
+  <p style="font-size:0.85rem;color:var(--ink-3);margin-bottom:0.5rem;">Sube tus fotografías (hasta 4, formato JPG/PNG/TIF) a un servicio de transferencia como <a href="https://www.swisstransfer.com/" target="_blank">SwissTransfer</a>, WeTransfer, Google Drive o similar, y pega aquí el enlace de descarga.<br><strong>Resolución mínima: 3000 px por el lado largo, 300 ppp (dpi)</strong> — las imágenes seleccionadas se imprimirán en el fotolibro.<br>Al enviar las imágenes confirmas que eres el autor/a y que aceptas las <a href="/es/legal/bases/" target="_blank">bases del concurso</a>.</p>
 
-  <input type="file" name="imatge1" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge2" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge3" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge4" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
+  <input type="url" name="enllac-imatges" placeholder="https://www.swisstransfer.com/d/..." required>
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">4. AUTORIZACIÓN Y CONDICIONES</h4>
 

@@ -18,7 +18,7 @@ This call is for photographers who want to explore slow portraiture: pinhole cam
 - Analog formats are valued but not required
 - **AI-generated images will not be accepted**
 
-<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" enctype="multipart/form-data" style="max-width:100%;margin-top:2rem;">
+<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
   <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">1. AUTHOR INFORMATION</h4>
@@ -37,12 +37,9 @@ This call is for photographers who want to explore slow portraiture: pinhole cam
   <textarea name="descripcio" placeholder="Brief description of the photo series (optional)" rows="3"></textarea>
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">3. IMAGE UPLOAD</h4>
-  <p style="font-size:0.85rem;color:var(--ink-3);margin-bottom:0.5rem;">Upload your 4 photographs in JPG, PNG or TIF format. Maximum size per file: 10 MB.</p>
+  <p style="font-size:0.85rem;color:var(--ink-3);margin-bottom:0.5rem;">Upload your photographs (up to 4, JPG/PNG/TIF format) to a file transfer service such as <a href="https://www.swisstransfer.com/" target="_blank">SwissTransfer</a>, WeTransfer, Google Drive, or similar, and paste the download link here.<br><strong>Minimum resolution: 3000 px on the longest side, 300 dpi</strong> — selected images will be printed in the photobook.<br>By submitting your images you confirm that you are the author and that you accept the <a href="/en/legal/bases/" target="_blank">contest terms</a>.</p>
 
-  <input type="file" name="imatge1" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge2" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge3" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
-  <input type="file" name="imatge4" accept=".jpg,.jpeg,.png,.tif,.tiff" style="padding:0.4rem 0;">
+  <input type="url" name="enllac-imatges" placeholder="https://www.swisstransfer.com/d/..." required>
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">4. AUTHORIZATION & TERMS</h4>
 
