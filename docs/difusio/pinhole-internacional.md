@@ -15,7 +15,7 @@
 - [x] **Reddit r/pinhole** — Post en anglès *(28 juny)*
 - [x] **Reddit r/analog** — Descartat (regla no self-promotion) → substituït per r/pinhole *(28 juny)*
 - [x] **Flickr: Pinhole Portraiture + Homemade Pinhole + B&W Pinhole Photography** — Posts publicats *(28 juny)*
-- [ ] **Photrio.com** — Post subfòrum Pinhole *(30 juny)*
+- [x] **Photrio.com** — Post subfòrum Pinhole *(3 juliol)*
 - [x] **pinholeday.org** — Formulari de contacte *(fet)*
 - [ ] Instagram Post 3 *(1 juliol, 19h)*
 
