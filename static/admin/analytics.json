@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-09T23:06:31.361024Z",
+  "generated": "2026-07-10T02:27:56.480855Z",
   "period": {
-    "start": "2025-07-09",
-    "end": "2026-07-09"
+    "start": "2025-07-10",
+    "end": "2026-07-10"
   },
-  "total": 184,
+  "total": 186,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -106,12 +106,20 @@
     {
       "date": "2026-07-07",
       "count": 8
+    },
+    {
+      "date": "2026-07-09",
+      "count": 1
+    },
+    {
+      "date": "2026-07-10",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 45
+      "count": 46
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -119,7 +127,7 @@
     },
     {
       "path": "/repte/retrats-lents",
-      "count": 27
+      "count": 28
     },
     {
       "path": "/en",
@@ -239,8 +247,8 @@
     "es": 5
   },
   "by_section": {
-    "inici": 66,
-    "repte": 64,
+    "inici": 67,
+    "repte": 65,
     "legal": 31,
     "avis-legal": 5,
     "112revelats": 12,
@@ -261,7 +269,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 95
+      "count": 96
     },
     {
       "name": "Safari",
@@ -288,7 +296,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 30
+      "count": 31
     },
     {
       "name": "Android",
@@ -305,7 +313,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 74
+      "count": 75
     },
     {
       "name": "desktophd",
@@ -342,7 +350,7 @@
     {
       "name": "Argentina",
       "id": "AR",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Canada",
