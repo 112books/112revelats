@@ -17,16 +17,16 @@
 - [x] **Flickr: Pinhole Portraiture + Homemade Pinhole + B&W Pinhole Photography** — Posts publicats *(28 juny)*
 - [x] **Photrio.com** — Post subfòrum Pinhole *(3 juliol)*
 - [x] **pinholeday.org** — Formulari de contacte *(fet)*
-- [ ] Instagram Post 3 *(1 juliol, 19h)*
+- [x] Instagram Post 3 *(1 juliol, 19h)*
 
 ### Setmana 2 (7–13 juliol)
 
-- [ ] **Flickr: Digital Pinhole Photography** — Post *(7 juliol)*
-- [ ] **Flickr: Large Format Pinhole Group** — Post *(8 juliol)*
-- [ ] Instagram Post 4 *(8 juliol, 19h)*
-- [ ] **AlternativePhotography.com** — Email *(9 juliol)*
-- [ ] **Justin Quinnell** — Email personal *(10 juliol)*
-- [ ] **Pinhole London** — Email *(11 juliol)*
+- [x] **Flickr: Digital Pinhole Photography** — Post *(7 juliol)*
+- [x] **Flickr: Large Format Pinhole Group** — Post *(8 juliol)*
+- [x] Instagram Post 4 *(8 juliol, 19h)*
+- [x] **AlternativePhotography.com** — Email *(9 juliol)* — van publicar la convocatòria i van destacar el projecte a Facebook
+- [x] **Justin Quinnell** — Email personal *(10 juliol)* — ha fet una story! ⭐
+- [x] **Pinhole London** — DM Instagram *(11 juliol)*
 
 ### Setmana 3 (14–20 juliol)
 
@@ -182,6 +182,8 @@ Joan Martínez
 
 ### Email a Justin Quinnell
 
+**A:** `justinpinhole@gmail.com` (web: https://www.pinholephotography.org)
+
 **Assumpte:**
 ```
 Slow Portraits — pinhole photobook open call | would love your support
@@ -247,6 +249,25 @@ Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para re
 Toda la info: https://112revelats.112books.eu/es/repte/retrats-lents/
 
 ¡Muchas gracias! 🙏
+```
+
+---
+
+### DM Instagram a @pinholelondon (https://www.instagram.com/pinholelondon/)
+
+**Text:**
+```
+Hi Pinhole London!
+
+We're 112 Revelats, a collective photobook project from Catalonia. Our current open call — Retrats Lents (Slow Portraits) — invites photographers to submit portraits made with pinhole cameras or long-exposure techniques.
+
+Free to participate, open internationally, deadline September 6th 2026. Selected images go into a printed collective photobook.
+
+Would you be up for sharing it with your community?
+
+All info: https://112revelats.112books.eu/en/repte/retrats-lents/
+
+Thank you! 🙏
 ```
 
 ---
