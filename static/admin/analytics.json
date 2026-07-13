@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-12T23:47:03.136939Z",
+  "generated": "2026-07-13T02:11:11.066697Z",
   "period": {
-    "start": "2025-07-12",
-    "end": "2026-07-12"
+    "start": "2025-07-13",
+    "end": "2026-07-13"
   },
-  "total": 206,
+  "total": 208,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -118,6 +118,10 @@
     {
       "date": "2026-07-11",
       "count": 18
+    },
+    {
+      "date": "2026-07-12",
+      "count": 2
     }
   ],
   "hits": [
@@ -127,7 +131,7 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 41
+      "count": 43
     },
     {
       "path": "/repte/retrats-lents",
@@ -247,12 +251,12 @@
     }
   ],
   "by_lang": {
-    "en": 85,
+    "en": 87,
     "es": 5
   },
   "by_section": {
     "inici": 76,
-    "repte": 73,
+    "repte": 75,
     "legal": 34,
     "avis-legal": 5,
     "112revelats": 12,
@@ -406,12 +410,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 70
+      "count": 71
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 11
+      "count": 12
     },
     {
       "name": "112books.github.io/112revelats",
