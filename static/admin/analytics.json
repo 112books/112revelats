@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-13T23:48:50.093592Z",
+  "generated": "2026-07-14T01:56:39.830894Z",
   "period": {
-    "start": "2025-07-13",
-    "end": "2026-07-13"
+    "start": "2025-07-14",
+    "end": "2026-07-14"
   },
-  "total": 208,
+  "total": 218,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -122,31 +122,35 @@
     {
       "date": "2026-07-12",
       "count": 2
+    },
+    {
+      "date": "2026-07-13",
+      "count": 10
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 52
+      "count": 54
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 43
+      "count": 46
     },
     {
       "path": "/repte/retrats-lents",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/en",
       "count": 22
     },
     {
-      "path": "/en/legal/formulari",
-      "count": 11
+      "path": "/legal/formulari",
+      "count": 15
     },
     {
-      "path": "/legal/formulari",
+      "path": "/en/legal/formulari",
       "count": 11
     },
     {
@@ -251,13 +255,13 @@
     }
   ],
   "by_lang": {
-    "en": 87,
+    "en": 90,
     "es": 5
   },
   "by_section": {
-    "inici": 76,
-    "repte": 75,
-    "legal": 34,
+    "inici": 78,
+    "repte": 79,
+    "legal": 38,
     "avis-legal": 5,
     "112revelats": 12,
     "patrocini": 3,
@@ -410,7 +414,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 71
+      "count": 77
     },
     {
       "name": "l.instagram.com",
@@ -425,7 +429,7 @@
     {
       "name": "www.reddit.com",
       "id": "www.reddit.com",
-      "count": 5
+      "count": 6
     },
     {
       "name": "ig",
@@ -443,6 +447,11 @@
       "count": 3
     },
     {
+      "name": "www.112books.eu",
+      "id": "www.112books.eu",
+      "count": 3
+    },
+    {
       "name": "Postal",
       "id": "Postal",
       "count": 2
@@ -450,11 +459,6 @@
     {
       "name": "112books.github.io",
       "id": "112books.github.io",
-      "count": 2
-    },
-    {
-      "name": "naubostik.com",
-      "id": "naubostik.com",
       "count": 2
     }
   ]
