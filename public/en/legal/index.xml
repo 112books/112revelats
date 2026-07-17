@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Legals on 112 Revelats</title><link>https://112revelats.112books.eu/en/legal/</link><description>Recent content in Legals on 112 Revelats</description><generator>Hugo</generator><language>en</language><atom:link href="https://112revelats.112books.eu/en/legal/index.xml" rel="self" type="application/rss+xml"/><item><title>Collaborate with 112 Revelats</title><link>https://112revelats.112books.eu/en/legal/col-labora/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/en/legal/col-labora/</guid><description>&lt;p&gt;&lt;strong&gt;Collaborate with 112 Revelats&lt;/strong&gt;
+&lt;strong&gt;Current challenge: Slow Portraits&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;112 Revelats is a collective editorial project powered by 112 Books. Companies and organizations related to photography can contribute financially or in-kind to help fund the printed edition, design, production and dissemination of the project.&lt;/p&gt;
+&lt;p&gt;Sponsors receive recognition and visibility according to their contribution level.&lt;/p&gt;
+&lt;form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;"&gt;
+ &lt;input type="hidden" name="_subject" value="Collaboration 112 Revelats"&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Personal details&lt;/h4&gt;
+ &lt;input type="text" name="nom-contacte" placeholder="Full name of contact person" required&gt;
+ &lt;input type="text" name="empresa" placeholder="Company / Organization"&gt;
+ &lt;input type="text" name="cif" placeholder="Tax ID (CIF/NIF)" required&gt;
+ &lt;input type="text" name="adreca-fiscal" placeholder="Tax address" required&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Type of participation&lt;/h4&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="col-laborador" required&gt; Collaborator — up to €100
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="mecenes"&gt; Patron — €101 to €300
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="patrocinador"&gt; Sponsor — €301 to €600
+ &lt;/label&gt;
+ &lt;label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;"&gt;
+ &lt;input type="radio" name="tipus" value="patrocinador-principal"&gt; Main Sponsor — over €600
+ &lt;/label&gt;
+ &lt;input type="text" name="import" placeholder="Contribution amount (in euros)"&gt;
+ &lt;textarea name="altres" placeholder="Other NON-financial contributions (brief description)" rows="3"&gt;&lt;/textarea&gt;
+ &lt;h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;"&gt;Visibility &amp; recognition&lt;/h4&gt;
+ &lt;p style="font-size:0.85rem;color:var(--ink-3);"&gt;I authorize the display of our name (company or individual) on the 112 Revelats website:&lt;/p&gt;</description></item><item><title>Participation form — Slow Portraits</title><link>https://112revelats.112books.eu/en/legal/formulari/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/en/legal/formulari/</guid><description>&lt;p&gt;&lt;strong&gt;112 Revelats – Participation form&lt;/strong&gt;
+&lt;strong&gt;Current challenge: Slow Portraits&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="font-size:1.2rem;color:var(--accent);font-weight:700;"&gt;Submission deadline: September 6, 2026&lt;/p&gt;
+&lt;p&gt;Some images need time. A gaze that builds while the shutter stays open. Light passing through a tiny hole, projecting the world upside down inside a can. In a moment where everything moves fast, we propose returning to the pause: building a portrait from waiting, observation, and long exposure.&lt;/p&gt;
+&lt;p&gt;This call is for photographers who want to explore slow portraiture: pinhole cameras, long exposure, slow photography. No professional equipment needed. A tin can, photographic paper, and patience are enough.&lt;/p&gt;</description></item><item><title>Terms &amp; Conditions — Slow Portraits</title><link>https://112revelats.112books.eu/en/legal/bases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://112revelats.112books.eu/en/legal/bases/</guid><description>&lt;p&gt;&lt;strong&gt;112 Revelats – Participation Terms&lt;/strong&gt;
+&lt;strong&gt;Current challenge: Slow Portraits&lt;/strong&gt;
+&lt;strong&gt;Submission deadline: September 6, 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="1-project-purpose"&gt;1. Project purpose&lt;/h3&gt;
+&lt;p&gt;The 112 Revelats project, driven by the publisher &lt;strong&gt;112 Books&lt;/strong&gt;, aims to collect original photographic works to form part of a collective publication. This initiative seeks to give visibility to emerging and established photographers through digital publications and, if possible, printed editions, as well as presentations, exhibitions and other associated cultural activities.&lt;/p&gt;
+&lt;h3 id="2-participation-requirements"&gt;2. Participation requirements&lt;/h3&gt;
+&lt;p&gt;Photographers over 18 years of age, of any nationality or residence, may participate.
+Participants must fully accept these terms.
+Only original works created by the author will be accepted; AI-generated images or plagiarized works are not allowed.
+Proposals must be submitted within the period established by the organization.&lt;/p&gt;</description></item></channel></rss>

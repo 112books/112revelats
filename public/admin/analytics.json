@@ -1,0 +1,474 @@
+{
+  "generated": "2026-07-17T07:59:55.207456Z",
+  "period": {
+    "start": "2025-07-17",
+    "end": "2026-07-17"
+  },
+  "total": 219,
+  "total_unique": 0,
+  "hits_by_day": [
+    {
+      "date": "2026-06-05",
+      "count": 31
+    },
+    {
+      "date": "2026-06-06",
+      "count": 3
+    },
+    {
+      "date": "2026-06-07",
+      "count": 3
+    },
+    {
+      "date": "2026-06-08",
+      "count": 3
+    },
+    {
+      "date": "2026-06-09",
+      "count": 2
+    },
+    {
+      "date": "2026-06-11",
+      "count": 4
+    },
+    {
+      "date": "2026-06-16",
+      "count": 24
+    },
+    {
+      "date": "2026-06-17",
+      "count": 2
+    },
+    {
+      "date": "2026-06-18",
+      "count": 6
+    },
+    {
+      "date": "2026-06-19",
+      "count": 1
+    },
+    {
+      "date": "2026-06-20",
+      "count": 2
+    },
+    {
+      "date": "2026-06-22",
+      "count": 1
+    },
+    {
+      "date": "2026-06-23",
+      "count": 3
+    },
+    {
+      "date": "2026-06-24",
+      "count": 2
+    },
+    {
+      "date": "2026-06-25",
+      "count": 6
+    },
+    {
+      "date": "2026-06-26",
+      "count": 18
+    },
+    {
+      "date": "2026-06-27",
+      "count": 3
+    },
+    {
+      "date": "2026-06-28",
+      "count": 6
+    },
+    {
+      "date": "2026-06-29",
+      "count": 7
+    },
+    {
+      "date": "2026-06-30",
+      "count": 6
+    },
+    {
+      "date": "2026-07-01",
+      "count": 16
+    },
+    {
+      "date": "2026-07-02",
+      "count": 9
+    },
+    {
+      "date": "2026-07-03",
+      "count": 14
+    },
+    {
+      "date": "2026-07-04",
+      "count": 4
+    },
+    {
+      "date": "2026-07-07",
+      "count": 8
+    },
+    {
+      "date": "2026-07-09",
+      "count": 1
+    },
+    {
+      "date": "2026-07-10",
+      "count": 3
+    },
+    {
+      "date": "2026-07-11",
+      "count": 18
+    },
+    {
+      "date": "2026-07-12",
+      "count": 2
+    },
+    {
+      "date": "2026-07-13",
+      "count": 10
+    },
+    {
+      "date": "2026-07-16",
+      "count": 1
+    }
+  ],
+  "hits": [
+    {
+      "path": "/",
+      "count": 55
+    },
+    {
+      "path": "/en/repte/retrats-lents",
+      "count": 46
+    },
+    {
+      "path": "/repte/retrats-lents",
+      "count": 29
+    },
+    {
+      "path": "/en",
+      "count": 22
+    },
+    {
+      "path": "/legal/formulari",
+      "count": 15
+    },
+    {
+      "path": "/en/legal/formulari",
+      "count": 11
+    },
+    {
+      "path": "/legal/bases",
+      "count": 7
+    },
+    {
+      "path": "/en/legal/bases",
+      "count": 4
+    },
+    {
+      "path": "/en/avis-legal",
+      "count": 3
+    },
+    {
+      "path": "/112revelats",
+      "count": 3
+    },
+    {
+      "path": "/avis-legal",
+      "count": 2
+    },
+    {
+      "path": "/es/repte/retrats-lents",
+      "count": 2
+    },
+    {
+      "path": "/patrocini",
+      "count": 2
+    },
+    {
+      "path": "/es/legal/formulari",
+      "count": 1
+    },
+    {
+      "path": "/en/patrocini",
+      "count": 1
+    },
+    {
+      "path": "/en/cookies",
+      "count": 1
+    },
+    {
+      "path": "/privacitat",
+      "count": 1
+    },
+    {
+      "path": "/cookies",
+      "count": 1
+    },
+    {
+      "path": "/es",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/patrocini",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/legal/bases",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/legal/formulari",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/en",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/en/repte/retrats-lents",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/es/repte/retrats-lents",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/avis-legal",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/privacitat",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/cookies",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/exempcio",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/repte/arrencant-el-dia",
+      "count": 1
+    },
+    {
+      "path": "/112revelats/repte/retrats-lents",
+      "count": 1
+    }
+  ],
+  "by_lang": {
+    "en": 90,
+    "es": 5
+  },
+  "by_section": {
+    "inici": 79,
+    "repte": 79,
+    "legal": 38,
+    "avis-legal": 5,
+    "112revelats": 12,
+    "patrocini": 3,
+    "cookies": 2,
+    "privacitat": 1
+  },
+  "noticies_top": [],
+  "festivals_top": [],
+  "wizard_funnel": {
+    "wizard-s1": 0,
+    "wizard-s2": 0,
+    "wizard-s3": 0,
+    "wizard-s4": 0,
+    "wizard-sent": 0
+  },
+  "browsers": [
+    {
+      "name": "Chrome",
+      "id": "Chrome",
+      "count": 108
+    },
+    {
+      "name": "Safari",
+      "id": "Safari",
+      "count": 103
+    },
+    {
+      "name": "Firefox",
+      "id": "Firefox",
+      "count": 9
+    }
+  ],
+  "systems": [
+    {
+      "name": "macOS",
+      "id": "macOS",
+      "count": 84
+    },
+    {
+      "name": "iOS",
+      "id": "iOS",
+      "count": 62
+    },
+    {
+      "name": "Windows",
+      "id": "Windows",
+      "count": 39
+    },
+    {
+      "name": "Android",
+      "id": "Android",
+      "count": 35
+    }
+  ],
+  "sizes": [
+    {
+      "name": "phone",
+      "id": "phone",
+      "count": 94
+    },
+    {
+      "name": "desktop",
+      "id": "desktop",
+      "count": 90
+    },
+    {
+      "name": "desktophd",
+      "id": "desktophd",
+      "count": 29
+    },
+    {
+      "name": "tablet",
+      "id": "tablet",
+      "count": 7
+    }
+  ],
+  "locations": [
+    {
+      "name": "Spain",
+      "id": "ES",
+      "count": 123
+    },
+    {
+      "name": "United States",
+      "id": "US",
+      "count": 37
+    },
+    {
+      "name": "United Kingdom",
+      "id": "GB",
+      "count": 16
+    },
+    {
+      "name": "Poland",
+      "id": "PL",
+      "count": 11
+    },
+    {
+      "name": "Greece",
+      "id": "GR",
+      "count": 10
+    },
+    {
+      "name": "Argentina",
+      "id": "AR",
+      "count": 5
+    },
+    {
+      "name": "Austria",
+      "id": "AT",
+      "count": 4
+    },
+    {
+      "name": "Canada",
+      "id": "CA",
+      "count": 4
+    },
+    {
+      "name": "Netherlands",
+      "id": "NL",
+      "count": 4
+    },
+    {
+      "name": "Belgium",
+      "id": "BE",
+      "count": 1
+    },
+    {
+      "name": "Czechia",
+      "id": "CZ",
+      "count": 1
+    },
+    {
+      "name": "Germany",
+      "id": "DE",
+      "count": 1
+    },
+    {
+      "name": "Estonia",
+      "id": "EE",
+      "count": 1
+    },
+    {
+      "name": "Ireland",
+      "id": "IE",
+      "count": 1
+    },
+    {
+      "name": "Sweden",
+      "id": "SE",
+      "count": 1
+    }
+  ],
+  "refs": [
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 77
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 12
+    },
+    {
+      "name": "112books.github.io/112revelats",
+      "id": "112books.github.io/112revelats",
+      "count": 7
+    },
+    {
+      "name": "www.reddit.com",
+      "id": "www.reddit.com",
+      "count": 6
+    },
+    {
+      "name": "ig",
+      "id": "ig",
+      "count": 4
+    },
+    {
+      "name": "com.reddit.frontpage",
+      "id": "com.reddit.frontpage",
+      "count": 3
+    },
+    {
+      "name": "Postal",
+      "id": "Postal",
+      "count": 3
+    },
+    {
+      "name": "112books.github.io/112revelats/repte/retrats-lents",
+      "id": "112books.github.io/112revelats/repte/retrats-lents",
+      "count": 3
+    },
+    {
+      "name": "www.112books.eu",
+      "id": "www.112books.eu",
+      "count": 3
+    },
+    {
+      "name": "112books.github.io",
+      "id": "112books.github.io",
+      "count": 2
+    }
+  ]
+}
