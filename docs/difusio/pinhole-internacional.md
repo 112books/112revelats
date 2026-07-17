@@ -30,11 +30,11 @@
 
 ### Setmana 3 (14–20 juliol)
 
-- [ ] **The Pinhole Project** (Seattle) — Email *(14 juliol)*
-- [ ] **Pinhole New York** — Email / Facebook *(15 juliol)*
+- [x] **The Pinhole Project** (Seattle) — Email *(14 juliol)*
+- [x] **Pinhole New York** — Email / Facebook *(15 juliol)*
 - [ ] **Colectivo Sinóptico** (Uruguai) — Email *(16 juliol)*
-- [ ] **@fotografia.estenopeica** (Instagram) — DM *(17 juliol)*
-- [ ] **Lomography Magazine** — Email *(18 juliol)*
+- [x] **Fotoclub Valencia** — Email català *(17 juliol)*
+- [x] **Lomography Magazine** — (als 4 mails) Email *(18 juliol)*
 
 ### Setmana 4 (21–27 juliol)
 
@@ -43,6 +43,8 @@
 - [ ] **pinholeday.org/participate/listGroups.php** — Contactar 5 grups *(23 juliol)*
 - [ ] **pinholeday.org** — Contactar 5 grups més *(24 juliol)*
 - [ ] **Colectivo La Pesera** (Mèxic) — Facebook *(25 juliol)*
+- [ ] **@catamarca_estenopeica** (Argentina) — DM Instagram *(26 juliol)*
+- [ ] **@fotoestenopeica** (Itàlia) — DM Instagram *(27 juliol)*
 
 ### Setmana 5 i + (agost — recordatoris)
 
@@ -272,7 +274,93 @@ Thank you! 🙏
 
 ---
 
+### Email a The Pinhole Project (Seattle)
+
+> Web: https://www.thepinholeproject.com — busca contacte a la web
+
+**Assumpte:**
+```
+Open call: Slow Portraits — pinhole portrait photobook (free, international, Sept 6)
+```
+
+**Text:**
+```
+Hi The Pinhole Project team,
+
+I'm Joan Martínez, from 112 Revelats — a collective photobook project based in Catalonia, Spain.
+
+We're currently running Retrats Lents (Slow Portraits), an open call for portraits made with pinhole cameras or long-exposure techniques. It's free, open internationally, and submissions are open until September 6th, 2026. Selected images will be published in a printed collective photobook in late October.
+
+Your community would be a wonderful fit for this project. Would you consider sharing it with your followers or listing it on your site?
+
+Challenge page: https://112revelats.112books.eu/en/repte/retrats-lents/
+Press kit: https://112revelats.112books.eu/en/#premsa
+
+Thank you so much!
+Joan Martínez · 112 Revelats
+```
+
+---
+
+### Email a Pinhole New York
+
+> Busca contacte a la web / Instagram @pinholenewyork
+
+**Assumpte:**
+```
+Open call: Slow Portraits — pinhole portrait photobook (free, international, Sept 6)
+```
+
+**Text:**
+```
+Hi Pinhole New York,
+
+I'm Joan Martínez, from 112 Revelats — a collective photobook project from Catalonia, Spain.
+
+We're running Retrats Lents (Slow Portraits) — an open call for portraits made with pinhole cameras or long-exposure techniques. Free, open internationally, deadline September 6th 2026. Selected images go into a printed collective photobook in late October.
+
+Would you be up for sharing it with your community?
+
+Challenge page: https://112revelats.112books.eu/en/repte/retrats-lents/
+Press kit: https://112revelats.112books.eu/en/#premsa
+
+Thank you!
+Joan Martínez · 112 Revelats
+```
+
+---
+
+### Email a Lomography Magazine
+
+> Contacte: editorial@lomography.com (o formulari web)
+
+**Assumpte:**
+```
+Open call submission: Slow Portraits — pinhole portrait photobook project
+```
+
+**Text:**
+```
+Hi Lomography Magazine team,
+
+I'm Joan Martínez, from 112 Revelats — a collective photobook project from Catalonia, Spain.
+
+We're running an open call called Retrats Lents (Slow Portraits): portraits made with pinhole cameras or any long-exposure technique. Free to enter, open internationally, deadline September 6th 2026. Selected images will be published in a printed collective photobook in late October.
+
+We'd love to be featured or mentioned on Lomography Magazine — it feels like exactly the right audience for this project.
+
+Challenge page: https://112revelats.112books.eu/en/repte/retrats-lents/
+Press kit: https://112revelats.112books.eu/en/#premsa
+
+Thank you for your time!
+Joan Martínez · 112 Revelats
+```
+
+---
+
 ### Email a Colectivo Sinóptico (Uruguai)
+
+**A:** `colectivosinoptico@gmail.com`
 
 **Assumpte:**
 ```
@@ -294,6 +382,58 @@ Dossier de prensa: https://112revelats.112books.eu/es/#premsa
 
 ¡Muchas gracias!
 Joan Martínez · 112 Revelats
+```
+
+---
+
+### Email a Fotoclub Valencia
+
+**A:** `fotoclubvalencia@gmail.com`
+
+**Assumpte:**
+```
+Retrats Lents — convocatòria oberta per a retrat estenopeic | fotollibre col·lectiu
+```
+
+**Text:**
+```
+Hola equip de Fotoclub Valencia,
+
+Som 112 Revelats, un projecte editorial col·lectiu de fotollibre des de Catalunya. El nostre segon repte — Retrats Lents — és una convocatòria oberta per a retrats fets amb càmera estenopeica o tècnica de llarga exposició.
+
+És gratuïta, oberta internacionalment, i el termini és el 6 de setembre de 2026. Les imatges seleccionades formaran part d'un fotollibre col·lectiu imprès.
+
+Creiem que pot interessar a la vostra comunitat, especialment als qui practiqueu la fotografia estenopeica. Ens podríeu difondre-la?
+
+Tota la info: https://112revelats.112books.eu/repte/retrats-lents/
+Dossier de premsa: https://112revelats.112books.eu/#premsa
+
+Moltes gràcies!
+Joan Martínez · 112 Revelats
+```
+
+---
+
+### DM Instagram a @catamarca_estenopeica
+
+**Text:**
+```
+¡Hola @catamarca_estenopeica! Somos 112 Revelats, un proyecto de fotolibros colectivos desde Cataluña. Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para retratos con cámara estenopeica o larga exposición. Gratuita, internacional, hasta el 6 de septiembre.
+
+¿Nos darías una mención o lo compartirías con vuestra comunidad? 🙏
+https://112revelats.112books.eu/es/repte/retrats-lents/
+```
+
+---
+
+### DM Instagram a @fotoestenopeica
+
+**Text:**
+```
+Ciao @fotoestenopeica! Siamo 112 Revelats, un progetto di fotolibri collettivi dalla Catalogna. Abbiamo aperta una call — Retrats Lents (Ritratti Lenti) — per ritratti realizzati con fotocamera stenopeica o lunga esposizione. Gratuita, internazionale, scadenza 6 settembre 2026.
+
+Potreste condividerla con la vostra community? 🙏
+https://112revelats.112books.eu/en/repte/retrats-lents/
 ```
 
 ---
