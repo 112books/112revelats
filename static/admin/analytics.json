@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-17T22:42:47.932737Z",
+  "generated": "2026-07-18T01:56:09.450903Z",
   "period": {
-    "start": "2025-07-17",
-    "end": "2026-07-17"
+    "start": "2025-07-18",
+    "end": "2026-07-18"
   },
-  "total": 219,
+  "total": 226,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -130,6 +130,10 @@
     {
       "date": "2026-07-16",
       "count": 1
+    },
+    {
+      "date": "2026-07-17",
+      "count": 7
     }
   ],
   "hits": [
@@ -139,7 +143,7 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 46
+      "count": 49
     },
     {
       "path": "/repte/retrats-lents",
@@ -147,7 +151,7 @@
     },
     {
       "path": "/en",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/legal/formulari",
@@ -155,7 +159,7 @@
     },
     {
       "path": "/en/legal/formulari",
-      "count": 11
+      "count": 12
     },
     {
       "path": "/legal/bases",
@@ -163,11 +167,11 @@
     },
     {
       "path": "/en/legal/bases",
-      "count": 4
+      "count": 5
     },
     {
       "path": "/en/avis-legal",
-      "count": 3
+      "count": 4
     },
     {
       "path": "/112revelats",
@@ -259,14 +263,14 @@
     }
   ],
   "by_lang": {
-    "en": 90,
+    "en": 97,
     "es": 5
   },
   "by_section": {
-    "inici": 79,
-    "repte": 79,
-    "legal": 38,
-    "avis-legal": 5,
+    "inici": 80,
+    "repte": 82,
+    "legal": 40,
+    "avis-legal": 6,
     "112revelats": 12,
     "patrocini": 3,
     "cookies": 2,
@@ -423,7 +427,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 77
+      "count": 79
     },
     {
       "name": "l.instagram.com",
@@ -466,9 +470,9 @@
       "count": 3
     },
     {
-      "name": "112books.github.io",
-      "id": "112books.github.io",
-      "count": 2
+      "name": "112books.eu",
+      "id": "112books.eu",
+      "count": 3
     }
   ]
 }
