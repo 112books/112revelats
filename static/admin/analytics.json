@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-18T22:42:29.101476Z",
+  "generated": "2026-07-19T02:07:29.432119Z",
   "period": {
-    "start": "2025-07-18",
-    "end": "2026-07-18"
+    "start": "2025-07-19",
+    "end": "2026-07-19"
   },
-  "total": 226,
+  "total": 228,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -134,12 +134,16 @@
     {
       "date": "2026-07-17",
       "count": 7
+    },
+    {
+      "date": "2026-07-18",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 55
+      "count": 57
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -267,7 +271,7 @@
     "es": 5
   },
   "by_section": {
-    "inici": 80,
+    "inici": 82,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -450,6 +454,11 @@
       "count": 4
     },
     {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 4
+    },
+    {
       "name": "com.reddit.frontpage",
       "id": "com.reddit.frontpage",
       "count": 3
@@ -467,11 +476,6 @@
     {
       "name": "www.112books.eu",
       "id": "www.112books.eu",
-      "count": 3
-    },
-    {
-      "name": "112books.eu",
-      "id": "112books.eu",
       "count": 3
     }
   ]
