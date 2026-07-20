@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-19T22:44:27.538683Z",
+  "generated": "2026-07-20T02:27:41.989748Z",
   "period": {
-    "start": "2025-07-19",
-    "end": "2026-07-19"
+    "start": "2025-07-20",
+    "end": "2026-07-20"
   },
-  "total": 228,
+  "total": 230,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -138,12 +138,16 @@
     {
       "date": "2026-07-18",
       "count": 2
+    },
+    {
+      "date": "2026-07-19",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 57
+      "count": 58
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -186,6 +190,10 @@
       "count": 2
     },
     {
+      "path": "/es",
+      "count": 2
+    },
+    {
       "path": "/es/repte/retrats-lents",
       "count": 2
     },
@@ -211,10 +219,6 @@
     },
     {
       "path": "/cookies",
-      "count": 1
-    },
-    {
-      "path": "/es",
       "count": 1
     },
     {
@@ -268,10 +272,10 @@
   ],
   "by_lang": {
     "en": 97,
-    "es": 5
+    "es": 6
   },
   "by_section": {
-    "inici": 82,
+    "inici": 84,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -436,7 +440,7 @@
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 12
+      "count": 13
     },
     {
       "name": "112books.github.io/112revelats",
