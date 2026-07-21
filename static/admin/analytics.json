@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-20T22:53:49.041836Z",
+  "generated": "2026-07-21T02:06:12.908485Z",
   "period": {
-    "start": "2025-07-20",
-    "end": "2026-07-20"
+    "start": "2025-07-21",
+    "end": "2026-07-21"
   },
-  "total": 230,
+  "total": 231,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -142,12 +142,16 @@
     {
       "date": "2026-07-19",
       "count": 2
+    },
+    {
+      "date": "2026-07-20",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 58
+      "count": 59
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -275,7 +279,7 @@
     "es": 6
   },
   "by_section": {
-    "inici": 84,
+    "inici": 85,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -463,13 +467,13 @@
       "count": 4
     },
     {
-      "name": "com.reddit.frontpage",
-      "id": "com.reddit.frontpage",
-      "count": 3
-    },
-    {
       "name": "Postal",
       "id": "Postal",
+      "count": 4
+    },
+    {
+      "name": "com.reddit.frontpage",
+      "id": "com.reddit.frontpage",
       "count": 3
     },
     {
