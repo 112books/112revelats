@@ -288,7 +288,7 @@ Properament: seleccionats i fotollibre.
 | 2 | 25 juny (dijous) | 2 Stories | Explicació tècnica estenopeica |
 | 3 | 1 juliol (dimecres) | Post + Story | Mid-month boost + citació |
 | 4 | 8 juliol (dimecres) | 2 Stories | Crida a la comunitat |
-| 5 | 30 juliol (dijous) | Carrusel + Story | Mid-point (meitat campanya) |
+| 5 | 30 juliol (dijous) | Carrusel + Story | Mid-point (meitat campanya) — ✅ publicat |
 | 6 | 12 agost (dimecres) | Post + Story | Agost = fotografia lenta |
 | 7 | 6 agost (dijous) | Story countdown | 1 mes per tancar |
 | 8 | 1 setembre (dimarts) | Post + 2 Stories | Última setmana — urgència |

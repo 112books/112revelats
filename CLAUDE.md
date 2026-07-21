@@ -120,6 +120,7 @@
 - ✅ `sync-112revelats.sh` ara accepta `deploy` com a argument per a ús no-interactiu: `./sync-112revelats.sh deploy`
 - ✅ Difusió Retrats Lents: emails/missatges enviats a clubs, escoles, premsa i comunitats online (2026-06-13) — veure `docs/difusio/retrats-lents-difusio.md`
 - ✅ Campanya Instagram: material visual generat (`campanya-instagram/`), pla complet de 10 posts amb textos finals (`campanya-instagram/pla-posts.md`), 11 esdeveniments creats a Google Calendar (2026-06-16)
+- ✅ Instagram Post 5 (mid-point, carrusel + story amb poll) publicat (2026-07-21)
 
 ### Notat
 
@@ -128,5 +129,5 @@
 
 ---
 
-*Última actualització: 2026-06-16*
+*Última actualització: 2026-07-21*
 *Mantenidor: Joan Martínez Serres — joan@linuxbcn.com*
