@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-22T23:57:21.012742Z",
+  "generated": "2026-07-23T05:48:50.240434Z",
   "period": {
-    "start": "2025-07-22",
-    "end": "2026-07-22"
+    "start": "2025-07-23",
+    "end": "2026-07-23"
   },
-  "total": 231,
+  "total": 241,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -146,12 +146,16 @@
     {
       "date": "2026-07-20",
       "count": 1
+    },
+    {
+      "date": "2026-07-22",
+      "count": 10
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 59
+      "count": 69
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -279,7 +283,7 @@
     "es": 6
   },
   "by_section": {
-    "inici": 85,
+    "inici": 95,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -447,6 +451,11 @@
       "count": 13
     },
     {
+      "name": "Postal",
+      "id": "Postal",
+      "count": 13
+    },
+    {
       "name": "112books.github.io/112revelats",
       "id": "112books.github.io/112revelats",
       "count": 7
@@ -464,11 +473,6 @@
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
-      "count": 4
-    },
-    {
-      "name": "Postal",
-      "id": "Postal",
       "count": 4
     },
     {
