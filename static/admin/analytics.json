@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-23T23:55:08.020937Z",
+  "generated": "2026-07-24T02:07:39.609983Z",
   "period": {
-    "start": "2025-07-23",
-    "end": "2026-07-23"
+    "start": "2025-07-24",
+    "end": "2026-07-24"
   },
-  "total": 241,
+  "total": 242,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -150,12 +150,16 @@
     {
       "date": "2026-07-22",
       "count": 10
+    },
+    {
+      "date": "2026-07-23",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 69
+      "count": 70
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -283,7 +287,7 @@
     "es": 6
   },
   "by_section": {
-    "inici": 95,
+    "inici": 96,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -446,13 +450,13 @@
       "count": 79
     },
     {
-      "name": "l.instagram.com",
-      "id": "l.instagram.com",
-      "count": 13
-    },
-    {
       "name": "Postal",
       "id": "Postal",
+      "count": 14
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
       "count": 13
     },
     {
