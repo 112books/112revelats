@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T12:20:24.398205Z",
+  "generated": "2026-07-24T16:33:55.933232Z",
   "period": {
     "start": "2025-07-24",
     "end": "2026-07-24"
@@ -443,56 +443,5 @@
       "count": 1
     }
   ],
-  "refs": [
-    {
-      "name": "Desconegut",
-      "id": "Desconegut",
-      "count": 79
-    },
-    {
-      "name": "Postal",
-      "id": "Postal",
-      "count": 14
-    },
-    {
-      "name": "l.instagram.com",
-      "id": "l.instagram.com",
-      "count": 13
-    },
-    {
-      "name": "112books.github.io/112revelats",
-      "id": "112books.github.io/112revelats",
-      "count": 7
-    },
-    {
-      "name": "www.reddit.com",
-      "id": "www.reddit.com",
-      "count": 6
-    },
-    {
-      "name": "ig",
-      "id": "ig",
-      "count": 4
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 4
-    },
-    {
-      "name": "com.reddit.frontpage",
-      "id": "com.reddit.frontpage",
-      "count": 3
-    },
-    {
-      "name": "112books.github.io/112revelats/repte/retrats-lents",
-      "id": "112books.github.io/112revelats/repte/retrats-lents",
-      "count": 3
-    },
-    {
-      "name": "www.112books.eu",
-      "id": "www.112books.eu",
-      "count": 3
-    }
-  ]
+  "refs": []
 }
