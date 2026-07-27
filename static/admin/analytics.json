@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-26T23:56:02.663753Z",
+  "generated": "2026-07-27T02:35:36.224556Z",
   "period": {
-    "start": "2025-07-26",
-    "end": "2026-07-26"
+    "start": "2025-07-27",
+    "end": "2026-07-27"
   },
-  "total": 242,
+  "total": 243,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -154,12 +154,16 @@
     {
       "date": "2026-07-23",
       "count": 1
+    },
+    {
+      "date": "2026-07-26",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 70
+      "count": 71
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -287,7 +291,7 @@
     "es": 6
   },
   "by_section": {
-    "inici": 96,
+    "inici": 97,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -447,7 +451,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 79
+      "count": 80
     },
     {
       "name": "Postal",
