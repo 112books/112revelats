@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T21:58:35.976434Z",
+  "generated": "2026-07-28T23:01:03.944573Z",
   "period": {
     "start": "2025-07-28",
     "end": "2026-07-28"
@@ -309,23 +309,7 @@
     "wizard-s4": 0,
     "wizard-sent": 0
   },
-  "browsers": [
-    {
-      "name": "Chrome",
-      "id": "Chrome",
-      "count": 121
-    },
-    {
-      "name": "Safari",
-      "id": "Safari",
-      "count": 109
-    },
-    {
-      "name": "Firefox",
-      "id": "Firefox",
-      "count": 14
-    }
-  ],
+  "browsers": [],
   "systems": [
     {
       "name": "macOS",
