@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-28T23:01:03.944573Z",
+  "generated": "2026-07-29T02:03:19.896812Z",
   "period": {
-    "start": "2025-07-28",
-    "end": "2026-07-28"
+    "start": "2025-07-29",
+    "end": "2026-07-29"
   },
-  "total": 243,
+  "total": 244,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -158,12 +158,16 @@
     {
       "date": "2026-07-26",
       "count": 1
+    },
+    {
+      "date": "2026-07-28",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 71
+      "count": 72
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -291,7 +295,7 @@
     "es": 6
   },
   "by_section": {
-    "inici": 97,
+    "inici": 98,
     "repte": 82,
     "legal": 40,
     "avis-legal": 6,
@@ -309,7 +313,23 @@
     "wizard-s4": 0,
     "wizard-sent": 0
   },
-  "browsers": [],
+  "browsers": [
+    {
+      "name": "Chrome",
+      "id": "Chrome",
+      "count": 121
+    },
+    {
+      "name": "Safari",
+      "id": "Safari",
+      "count": 109
+    },
+    {
+      "name": "Firefox",
+      "id": "Firefox",
+      "count": 14
+    }
+  ],
   "systems": [
     {
       "name": "macOS",
@@ -435,7 +455,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 80
+      "count": 81
     },
     {
       "name": "Postal",
