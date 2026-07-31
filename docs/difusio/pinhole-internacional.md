@@ -32,14 +32,14 @@
 
 - [x] **The Pinhole Project** (Seattle) — Email *(14 juliol)*
 - [x] **Pinhole New York** — Email / Facebook *(15 juliol)*
-- [ ] **Colectivo Sinóptico** (Uruguai) — Email *(16 juliol)*
+- [x] **Colectivo Sinóptico** (Uruguai) — Email *(16 juliol)* — sense resposta per ara
 - [x] **Fotoclub Valencia** — Email català *(17 juliol)*
 - [x] **Lomography Magazine** — (als 4 mails) Email *(18 juliol)*
 
 ### Setmana 4 (21–27 juliol)
 
-- [ ] **35mmc** — Email *(21 juliol)*
-- [ ] **LensCulture** — Email *(22 juliol)*
+- [x] **35mmc** — Email *(21 juliol)*
+- [x] **LensCulture** — Email a photonews@lensculture.com *(31 juliol)*
 - [ ] **pinholeday.org/participate/listGroups.php** — Contactar 5 grups *(23 juliol)*
 - [ ] **pinholeday.org** — Contactar 5 grups més *(24 juliol)*
 - [ ] **Colectivo La Pesera** (Mèxic) — Facebook *(25 juliol)*
@@ -434,6 +434,29 @@ Ciao @fotoestenopeica! Siamo 112 Revelats, un progetto di fotolibri collettivi d
 
 Potreste condividerla con la vostra community? 🙏
 https://112revelats.112books.eu/en/repte/retrats-lents/
+```
+
+---
+
+### DM Facebook a Colectivo La Pesera (Mèxic)
+
+> Per Facebook Messenger a `https://facebook.com/colectivo.lapesera`
+
+**Text:**
+```
+¡Hola equipo de Colectivo La Pesera!
+
+Somos 112 Revelats, un proyecto editorial colectivo de fotolibros desde Cataluña, España. Cada edición proponemos un reto temático y construimos un fotolibro único con las imágenes seleccionadas de los participantes.
+
+Nuestro segundo reto — Retrats Lents (Retratos Lentos) — es una convocatoria abierta para retratos con cámara estenopeica (pinhole) o cualquier técnica de larga exposición. Es gratuita, abierta internacionalmente, y el plazo es el 6 de septiembre de 2026. Las imágenes seleccionadas formarán un fotolibro colectivo impreso que se publicará a finales de octubre.
+
+Sabemos que La Pesera es un referente de la fotografía estenopeica en México. ¿Podríais difundirlo entre vuestra comunidad? Sería un gran empuje para llegar a autores latinoamericanos.
+
+Toda la info: https://112revelats.112books.eu/es/repte/retrats-lents/
+Dossier de prensa: https://112revelats.112books.eu/es/#premsa
+
+¡Muchas gracias!
+Joan Martínez · 112 Revelats · 112Books.eu
 ```
 
 ---

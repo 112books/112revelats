@@ -157,7 +157,7 @@ https://112revelats.112books.eu/en/
 
 | Entitat | Contacte | Email / Xarxa | Idioma | Plantilla | Enviat |
 |---|---|---|---|---|---|
-| **Colectivo Sinóptico** — Montevideo, Uruguai | — | colectivosinoptico@gmail.com · [@tallersinoptico](https://twitter.com/tallersinoptico) | ES | ES | ⏳ |
+| **Colectivo Sinóptico** — Montevideo, Uruguai | — | colectivosinoptico@gmail.com · [@tallersinoptico](https://twitter.com/tallersinoptico) | ES | ES | ✅ |
 | **Colectivo La Pesera** — Mèxic | — | [Facebook /colectivo.lapesera](https://facebook.com/colectivo.lapesera) | ES | ES | ⏳ |
 | **@fotografia.estenopeica** — compte Instagram internacional | — | [@fotografia.estenopeica](https://instagram.com/fotografia.estenopeica) | ES | ES | ⏳ |
 
@@ -220,7 +220,7 @@ https://112revelats.112books.eu/en/
 |---|---|---|---|---|---|
 | **Lomography Magazine** | Erin (editora en cap) | magazine.editors@lomography.com | EN | EN | ⏳ |
 | **35mmc** — blog analògic més gran del món | — | info@35mmc.com · [35mmc.com](https://www.35mmc.com) | EN | EN | ⏳ |
-| **LensCulture** — fotografia contemporània | — | photonews@lensculture.com | EN | EN | ⏳ |
+| **LensCulture** — fotografia contemporània | — | photonews@lensculture.com | EN | EN | ✅ |
 | **AlternativePhotography.com** — pinhole i tèc. alternatives | — | talk@alternativephotography.com | EN | EN | ⏳ |
 
 ---
