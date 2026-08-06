@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-05T23:54:47.840147Z",
+  "generated": "2026-08-06T02:01:33.382134Z",
   "period": {
-    "start": "2025-08-05",
-    "end": "2026-08-05"
+    "start": "2025-08-06",
+    "end": "2026-08-06"
   },
-  "total": 261,
+  "total": 262,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -178,12 +178,16 @@
     {
       "date": "2026-08-04",
       "count": 1
+    },
+    {
+      "date": "2026-08-05",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 75
+      "count": 76
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -315,7 +319,7 @@
     "es": 9
   },
   "by_section": {
-    "inici": 105,
+    "inici": 106,
     "repte": 88,
     "legal": 44,
     "avis-legal": 6,
@@ -513,6 +517,11 @@
       "count": 4
     },
     {
+      "name": "www.112books.eu",
+      "id": "www.112books.eu",
+      "count": 4
+    },
+    {
       "name": "com.reddit.frontpage",
       "id": "com.reddit.frontpage",
       "count": 3
@@ -520,11 +529,6 @@
     {
       "name": "112books.github.io/112revelats/repte/retrats-lents",
       "id": "112books.github.io/112revelats/repte/retrats-lents",
-      "count": 3
-    },
-    {
-      "name": "naubostik.com",
-      "id": "naubostik.com",
       "count": 3
     }
   ]
