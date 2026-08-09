@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-08T23:22:06.217366Z",
+  "generated": "2026-08-09T03:27:52.507252Z",
   "period": {
-    "start": "2025-08-08",
-    "end": "2026-08-08"
+    "start": "2025-08-09",
+    "end": "2026-08-09"
   },
-  "total": 265,
+  "total": 268,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -190,6 +190,10 @@
     {
       "date": "2026-08-07",
       "count": 2
+    },
+    {
+      "date": "2026-08-08",
+      "count": 3
     }
   ],
   "hits": [
@@ -238,6 +242,10 @@
       "count": 3
     },
     {
+      "path": "/en/patrocini",
+      "count": 2
+    },
+    {
       "path": "/avis-legal",
       "count": 2
     },
@@ -250,15 +258,19 @@
       "count": 2
     },
     {
+      "path": "/en/privacitat",
+      "count": 1
+    },
+    {
+      "path": "/es/privacitat",
+      "count": 1
+    },
+    {
       "path": "/es/legal/bases",
       "count": 1
     },
     {
       "path": "/es/legal/formulari",
-      "count": 1
-    },
-    {
-      "path": "/en/patrocini",
       "count": 1
     },
     {
@@ -323,8 +335,8 @@
     }
   ],
   "by_lang": {
-    "en": 102,
-    "es": 9
+    "en": 104,
+    "es": 10
   },
   "by_section": {
     "inici": 108,
@@ -332,9 +344,9 @@
     "legal": 44,
     "avis-legal": 6,
     "112revelats": 12,
-    "patrocini": 3,
-    "cookies": 2,
-    "privacitat": 1
+    "patrocini": 4,
+    "privacitat": 3,
+    "cookies": 2
   },
   "noticies_top": [],
   "festivals_top": [],
@@ -492,7 +504,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 91
+      "count": 94
     },
     {
       "name": "Postal",
