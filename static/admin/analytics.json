@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-17T23:16:34.969303Z",
+  "generated": "2026-08-18T00:53:26.651911Z",
   "period": {
-    "start": "2025-08-17",
-    "end": "2026-08-17"
+    "start": "2025-08-18",
+    "end": "2026-08-18"
   },
-  "total": 271,
+  "total": 273,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -206,12 +206,20 @@
     {
       "date": "2026-08-14",
       "count": 1
+    },
+    {
+      "date": "2026-08-17",
+      "count": 1
+    },
+    {
+      "date": "2026-08-18",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 78
+      "count": 79
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -223,7 +231,7 @@
     },
     {
       "path": "/en",
-      "count": 27
+      "count": 28
     },
     {
       "path": "/legal/formulari",
@@ -351,11 +359,11 @@
     }
   ],
   "by_lang": {
-    "en": 105,
+    "en": 106,
     "es": 10
   },
   "by_section": {
-    "inici": 110,
+    "inici": 112,
     "repte": 89,
     "legal": 44,
     "avis-legal": 6,
@@ -378,7 +386,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 138
+      "count": 139
     },
     {
       "name": "Safari",
@@ -395,7 +403,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 98
+      "count": 99
     },
     {
       "name": "iOS",
@@ -422,7 +430,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 122
+      "count": 123
     },
     {
       "name": "phone",
@@ -489,7 +497,7 @@
     {
       "name": "Canada",
       "id": "CA",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Singapore",
@@ -544,6 +552,11 @@
       "count": 6
     },
     {
+      "name": "www.112books.eu",
+      "id": "www.112books.eu",
+      "count": 5
+    },
+    {
       "name": "ig",
       "id": "ig",
       "count": 4
@@ -554,18 +567,13 @@
       "count": 4
     },
     {
-      "name": "www.112books.eu",
-      "id": "www.112books.eu",
-      "count": 4
-    },
-    {
       "name": "com.reddit.frontpage",
       "id": "com.reddit.frontpage",
       "count": 3
     },
     {
-      "name": "112books.github.io/112revelats/repte/retrats-lents",
-      "id": "112books.github.io/112revelats/repte/retrats-lents",
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
       "count": 3
     }
   ]
