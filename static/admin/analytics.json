@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-21T00:57:22.851911Z",
+  "generated": "2026-08-21T02:22:52.472842Z",
   "period": {
     "start": "2025-08-21",
     "end": "2026-08-21"
   },
-  "total": 277,
+  "total": 278,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -222,12 +222,16 @@
     {
       "date": "2026-08-20",
       "count": 2
+    },
+    {
+      "date": "2026-08-21",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 82
+      "count": 83
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -371,7 +375,7 @@
     "es": 10
   },
   "by_section": {
-    "inici": 115,
+    "inici": 116,
     "repte": 89,
     "legal": 45,
     "avis-legal": 6,
@@ -394,7 +398,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 140
+      "count": 141
     },
     {
       "name": "Safari",
@@ -421,7 +425,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 56
+      "count": 57
     },
     {
       "name": "Android",
@@ -438,7 +442,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 124
+      "count": 125
     },
     {
       "name": "phone",
@@ -465,7 +469,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 43
+      "count": 44
     },
     {
       "name": "United Kingdom",
@@ -537,7 +541,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 100
+      "count": 101
     },
     {
       "name": "Postal",
