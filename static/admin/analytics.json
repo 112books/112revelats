@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-28T08:33:52.868017Z",
+  "generated": "2026-08-29T03:00:15.659927Z",
   "period": {
-    "start": "2025-08-28",
-    "end": "2026-08-28"
+    "start": "2025-08-29",
+    "end": "2026-08-29"
   },
-  "total": 279,
+  "total": 281,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -230,6 +230,10 @@
     {
       "date": "2026-08-26",
       "count": 1
+    },
+    {
+      "date": "2026-08-28",
+      "count": 2
     }
   ],
   "hits": [
@@ -239,7 +243,7 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 50
+      "count": 51
     },
     {
       "path": "/repte/retrats-lents",
@@ -247,7 +251,7 @@
     },
     {
       "path": "/en",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/legal/formulari",
@@ -375,12 +379,12 @@
     }
   ],
   "by_lang": {
-    "en": 106,
+    "en": 108,
     "es": 10
   },
   "by_section": {
-    "inici": 117,
-    "repte": 89,
+    "inici": 118,
+    "repte": 90,
     "legal": 45,
     "avis-legal": 6,
     "112revelats": 12,
@@ -402,7 +406,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 142
+      "count": 144
     },
     {
       "name": "Safari",
@@ -429,7 +433,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 58
+      "count": 60
     },
     {
       "name": "Android",
@@ -446,7 +450,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 125
+      "count": 127
     },
     {
       "name": "phone",
@@ -473,7 +477,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 45
+      "count": 47
     },
     {
       "name": "United Kingdom",
@@ -545,7 +549,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 102
+      "count": 103
     },
     {
       "name": "Postal",
