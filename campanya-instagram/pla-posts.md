@@ -206,8 +206,12 @@ Gratuït · Fotollibre col·lectiu · Obert a tothom
 
 ---
 
-### POST 8 — Última setmana (urgència)
-**Data:** 1 setembre (dimarts) · 19:00h  
+### POST 8 — Última setmana (urgència) — ✅ PUBLICAT 2026-09-02
+**Data:** 2 setembre (dimecres) · publicat · (previst 1 set)  
+
+> Nota: Posts 6 (12 ago) i 7 (6 ago) es van ometre — dates i missatge caducats.
+> Post 8 adaptat: data concreta "diumenge 6 de setembre", "octubre" → "tardor 2026".
+
 **Format:** Story x2 + Post
 
 **Copy (peu de foto):**
@@ -291,7 +295,7 @@ Properament: seleccionats i fotollibre.
 | 5 | 30 juliol (dijous) | Carrusel + Story | Mid-point (meitat campanya) — ✅ publicat |
 | 6 | 12 agost (dimecres) | Post + Story | Agost = fotografia lenta |
 | 7 | 6 agost (dijous) | Story countdown | 1 mes per tancar |
-| 8 | 1 setembre (dimarts) | Post + 2 Stories | Última setmana — urgència |
+| 8 | 2 setembre (dimecres) | Post + 2 Stories | Última setmana — urgència — ✅ publicat |
 | 9 | 4 setembre (dijous) | Story | 2 dies per tancar |
 | 10 | 6 setembre (diumenge) | 2 Stories | Últim dia |
 
