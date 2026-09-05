@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-04T22:43:18.255290Z",
+  "generated": "2026-09-05T00:33:27.620210Z",
   "period": {
-    "start": "2025-09-04",
-    "end": "2026-09-04"
+    "start": "2025-09-05",
+    "end": "2026-09-05"
   },
-  "total": 303,
+  "total": 306,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -246,12 +246,16 @@
     {
       "date": "2026-09-03",
       "count": 3
+    },
+    {
+      "date": "2026-09-04",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 97
+      "count": 98
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -259,7 +263,7 @@
     },
     {
       "path": "/repte/retrats-lents",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/en",
@@ -290,6 +294,10 @@
       "count": 4
     },
     {
+      "path": "/avis-legal",
+      "count": 3
+    },
+    {
       "path": "/patrocini",
       "count": 3
     },
@@ -299,10 +307,6 @@
     },
     {
       "path": "/en/patrocini",
-      "count": 2
-    },
-    {
-      "path": "/avis-legal",
       "count": 2
     },
     {
@@ -395,10 +399,10 @@
     "es": 10
   },
   "by_section": {
-    "inici": 131,
-    "repte": 94,
+    "inici": 132,
+    "repte": 95,
     "legal": 49,
-    "avis-legal": 6,
+    "avis-legal": 7,
     "patrocini": 5,
     "112revelats": 12,
     "exempcio": 1,
@@ -561,7 +565,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 106
+      "count": 107
     },
     {
       "name": "l.instagram.com",
