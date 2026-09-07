@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-06T22:50:46.228994Z",
+  "generated": "2026-09-07T00:37:07.559543Z",
   "period": {
-    "start": "2025-09-06",
-    "end": "2026-09-06"
+    "start": "2025-09-07",
+    "end": "2026-09-07"
   },
-  "total": 306,
+  "total": 311,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -250,12 +250,16 @@
     {
       "date": "2026-09-04",
       "count": 3
+    },
+    {
+      "date": "2026-09-06",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 98
+      "count": 99
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -271,14 +275,14 @@
     },
     {
       "path": "/legal/formulari",
-      "count": 18
-    },
-    {
-      "path": "/en/legal/formulari",
-      "count": 12
+      "count": 19
     },
     {
       "path": "/legal/bases",
+      "count": 13
+    },
+    {
+      "path": "/en/legal/formulari",
       "count": 12
     },
     {
@@ -290,12 +294,12 @@
       "count": 4
     },
     {
-      "path": "/es",
+      "path": "/avis-legal",
       "count": 4
     },
     {
-      "path": "/avis-legal",
-      "count": 3
+      "path": "/es",
+      "count": 4
     },
     {
       "path": "/patrocini",
@@ -307,6 +311,10 @@
     },
     {
       "path": "/en/patrocini",
+      "count": 2
+    },
+    {
+      "path": "/privacitat",
       "count": 2
     },
     {
@@ -335,10 +343,6 @@
     },
     {
       "path": "/en/cookies",
-      "count": 1
-    },
-    {
-      "path": "/privacitat",
       "count": 1
     },
     {
@@ -399,14 +403,14 @@
     "es": 10
   },
   "by_section": {
-    "inici": 132,
+    "inici": 133,
     "repte": 95,
-    "legal": 49,
-    "avis-legal": 7,
+    "legal": 51,
+    "avis-legal": 8,
     "patrocini": 5,
     "112revelats": 12,
+    "privacitat": 4,
     "exempcio": 1,
-    "privacitat": 3,
     "cookies": 2
   },
   "noticies_top": [],
@@ -565,7 +569,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 107
+      "count": 108
     },
     {
       "name": "l.instagram.com",
