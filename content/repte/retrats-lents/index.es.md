@@ -32,4 +32,4 @@ No hace falta tener una cámara especial: puedes construir tu propia cámara est
 2. [Envíanos tu propuesta a través del formulario de inscripción](/es/legal/formulari/)
 3. Si tu imagen es seleccionada, formará parte del fotolibro colectivo
 
-> **El período de inscripción está abierto.** Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).
+> **Prórroga:** el plazo de envío se ha ampliado hasta el **20 de septiembre de 2026**. Si habías dejado la participación para el final, todavía estás a tiempo. Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).

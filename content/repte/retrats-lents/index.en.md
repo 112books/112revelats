@@ -32,4 +32,4 @@ You don't need a special camera: you can build your own pinhole camera with a ti
 2. [Send us your proposal through the registration form](/en/legal/formulari/)
 3. If your image is selected, it will be part of the collective photobook
 
-> **The registration period is open.** Check the [full terms](/en/legal/bases/) and the [participation form](/en/legal/formulari/).
+> **Extended deadline:** the submission period has been extended to **September 20, 2026**. If you were leaving it to the last minute, you still have time. Check the [full terms](/en/legal/bases/) and the [participation form](/en/legal/formulari/).

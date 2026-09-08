@@ -32,4 +32,4 @@ No cal tenir una càmera especial: pots construir la teva pròpia càmera esteno
 2. [Envia'ns la teva proposta a través del formulari d'inscripció](/legal/formulari/)
 3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
 
-> **El període d'inscripció està obert.** Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
+> **Pròrroga:** el termini d'enviament s'ha ampliat fins al **20 de setembre de 2026**. Si havies deixat la participació per al final, encara ets a temps. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
