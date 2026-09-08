@@ -4,10 +4,10 @@ description: "Segundo reto fotográfico de 112 Revelats — Retratos con cámara
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 jun — 6 sep"
+  - date: "21 jun — 20 sep"
     status: "active"
     note: "Inicio oficial en el solsticio de verano (Sant Joan)"
-  - date: "21 jun — 6 sep"
+  - date: "21 jun — 20 sep"
     status: "active"
     note: "Gratuita y abierta a todas las edades y niveles. Menores: requieren autorización del tutor legal."
   - date: "Principios de octubre"

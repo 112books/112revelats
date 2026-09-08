@@ -5,7 +5,7 @@ description: "Bases del segundo reto fotográfico de 112 Revelats"
 
 **112 Revelats – Bases de participación**
 **Reto actual: Retratos Lentos**
-**Fecha límite de envío: 6 de septiembre de 2026**
+**Fecha límite de envío: 20 de septiembre de 2026**
 
 ### 1. Objeto del proyecto
 

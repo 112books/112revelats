@@ -5,7 +5,7 @@ description: "Terms and conditions for the second photographic challenge of 112 
 
 **112 Revelats – Participation Terms**
 **Current challenge: Slow Portraits**
-**Submission deadline: September 6, 2026**
+**Submission deadline: September 20, 2026**
 
 ### 1. Project purpose
 

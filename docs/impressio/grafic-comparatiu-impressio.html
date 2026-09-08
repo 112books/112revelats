@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparativa proveïdors impressió POD · 112 Revelats — Retrats Lents</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#1a1a1a; --ink2:#4a4a4a; --ink3:#8a8a8a;
+    --paper:#f5f0eb; --paper2:#fffdf8; --line:#e6dfd4;
+    --accent:#1A4B8C; --accent2:#b8341f;
+    --good:#2e7d32; --warn:#b87f1f; --bad:#a8322b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  header{background:var(--paper2);border-bottom:1px solid var(--line);padding:2.5rem 1rem 2rem}
+  header .wrap{max-width:1000px;margin:0 auto}
+  h1{margin:0 0 .4rem;font-size:1.7rem;letter-spacing:-.01em}
+  .sub{color:var(--ink2);font-size:.95rem;margin:0}
+  .meta{color:var(--ink3);font-size:.82rem;margin-top:.8rem}
+  main{max-width:1000px;margin:0 auto;padding:2rem 1rem 4rem}
+  section{background:var(--paper2);border:1px solid var(--line);border-radius:10px;
+    padding:1.4rem 1.4rem 1.6rem;margin-bottom:1.6rem}
+  h2{margin:0 0 .3rem;font-size:1.15rem}
+  .lead{color:var(--ink2);font-size:.9rem;margin:0 0 1.1rem}
+  .chart{position:relative;width:100%;height:420px}
+  .chart.radar{height:460px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
+  .legend-note{color:var(--ink3);font-size:.8rem;margin-top:.6rem}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+  th,td{border:1px solid var(--line);padding:.45rem .5rem;text-align:left;vertical-align:top}
+  th{background:var(--paper);font-weight:600}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .pill{display:inline-block;padding:.08rem .45rem;border-radius:99px;font-size:.72rem;font-weight:600}
+  .pill.g{background:#e3f3e3;color:var(--good)}
+  .pill.w{background:#f6ecd8;color:var(--warn)}
+  .pill.b{background:#f7e3e0;color:var(--bad)}
+  .tag{display:inline-block;margin:0 .3rem .3rem 0;padding:.18rem .5rem;border:1px solid var(--line);
+    border-radius:6px;font-size:.75rem;color:var(--ink2);background:var(--paper)}
+  .tags{margin:.4rem 0 0}
+  footer{color:var(--ink3);font-size:.78rem;text-align:center;padding:1rem}
+  .row-best{background:#fbf6e8}
+  @media(prefers-color-scheme:dark){
+    :root{--ink:#eee;--ink2:#c5c5c5;--ink3:#8a8a8a;--paper:#15171a;--paper2:#1b1e22;--line:#2c2f35;
+      --good:#7bd47e;--warn:#d6a85a;--bad:#d98c86}
+    .pill.g{background:#1f3a23;color:var(--good)}
+    .pill.w{background:#3a341d;color:var(--warn)}
+    .pill.b{background:#3a2622;color:var(--bad)}
+    .row-best{background:#2a2718}
+    table th,.tag{background:var(--paper)}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Comparativa de sistemes d'impressió sota demanda (POD)</h1>
+    <p class="sub">Fotollibre col·lectiu <strong>112 Revelats 02 — Retrats Lents</strong> · pinhole / llarga exposició · B/N + color</p>
+    <p class="meta">Dades: 2026-07-31 · Fonts: <code>docs/impressio/fotollibre-opcions-impressio.md</code> i <code>fotollibre-BN-proveïdors.md</code></p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Cost unitari orientatiu (EUR)</h2>
+    <p class="lead">Fotollibre ≈ 80 pàgines, format aprox. 20×25 cm (HC = tapa dura). Valors orientatius per comparar; Peecho i impremta local requereixen cotització. Conversió USD→EUR ≈ 1,08.</p>
+    <div class="chart">
+      <canvas id="cost"></canvas>
+    </div>
+    <p class="legend-note">Més baix = més econòmic. Les barres vermelles superen els 30 €/u (edicions premium/col·leccionables).</p>
+  </section>
+
+  <section>
+    <h2>Perfil qualitatiu per proveïdor (0–5)</h2>
+    <p class="lead">Cada eix avalua una dimensió clau per al projecte: com més gran, millor. 112 Revelats valora especialment paper premium, formats 12×12, EUR directe i possibilitat de layflat.</p>
+    <div class="chart radar">
+      <canvas id="radar"></canvas>
+    </div>
+    <p class="legend-note">Puntuacions derivades dels informes: paper fotogràfic, flexibilitat de trim, divisa EUR nativa, POD sense mínim, distribució retail (Amazon/Ingram), layflat, rapidesa d'enviament a Barcelona.</p>
+  </section>
+
+  <section>
+    <h2>Resum ràpid</h2>
+    <p class="lead">Fitxa comparativa dels 5 proveïdors i les seves opcions.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Proveïdor</th><th>Divisa</th><th>Paper premium / fotogràfic</th><th>Trim 12×12 / custom</th><th>Layflat</th><th>Mínim</th><th>Distribució</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>KDP (Amazon)</strong></td><td>EUR</td>
+          <td><span class="pill b">No</span> 88–105 GSM làser</td>
+          <td><span class="pill w">Limitat</span> no HC quadrat</td>
+          <td><span class="pill b">No</span></td>
+          <td>1 (proof)</td><td>Amazon + Expanded</td></tr>
+        <tr><td><strong>Blurb</strong></td><td>USD</td>
+          <td><span class="pill g">Sí</span> Mohawk Pearl 190 GSM</td>
+          <td><span class="pill g">Sí</span> 12×12, 13×11</td>
+          <td><span class="pill w">Premium</span> layflat car</td>
+          <td>1</td><td>Blurb + Amazon + Ingram</td></tr>
+        <tr><td><strong>Lulu</strong></td><td>USD</td>
+          <td><span class="pill b">No</span> 80# 118 GSM</td>
+          <td><span class="pill w">Parcial</span> 8.5×8.5 HC</td>
+          <td><span class="pill b">No</span></td>
+          <td>1</td><td>Ingram 40.000 punts</td></tr>
+        <tr><td><strong>Peecho</strong></td><td>EUR</td>
+          <td><span class="pill g">Sí</span> Mohawk 148 GSM / E-Photo 190 GSM</td>
+          <td><span class="pill w">Fixos</span> A4/US Letter</td>
+          <td><span class="pill g">Sí</span> E-Photo Lustre</td>
+          <td>1</td><td>White-label / directe</td></tr>
+        <tr><td><strong>Impremta local BCN</strong></td><td>EUR</td>
+          <td><span class="pill g">Total</span> couché 150-170, Hahnemühle</td>
+          <td><span class="pill g">Total</span> qualsevol trim</td>
+          <td><span class="pill w">Manual</span></td>
+          <td>50–100 còpies</td><td>Directa / local</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Cost total aproximat · 100 còpies (B/N, 80 pàg, ~20×25 cm)</h2>
+    <div class="chart">
+      <canvas id="total"></canvas>
+    </div>
+    <p class="legend-note">Impremta local aporta control i identitat a costa d'embornal de capital; KDP és el més barat; Peecho i Blurb balancing qualitat/preu POD.</p>
+  </section>
+
+  <section>
+    <h2>Recomanació (estratègia en 3 edicions)</h2>
+    <p class="lead">El plan operatiu proposat als informes:</p>
+    <div class="tags">
+      <span class="tag"><strong>A · Col·leccionable numerada</strong> — impremta local BCN (Síndrome/Cote), trim 12×12, couché 150 GSM cosit, 100–300 còpies, 35–50 €</span>
+      <span class="tag"><strong>B · POD premium global</strong> — Peecho Layflat A4 190 GSM o Blurb 13×11 Mohawk Superfine, 40–60 €, sense stock</span>
+      <span class="tag"><strong>C · Mass market accessible</strong> — KDP 6×9 paperback cream B/N, 12–18 €, Amazon.es automàtic</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Gràfic generat a partir dels informes interns de 112 Revelats — comparativa POD per al fotollibre Retrats Lents · 2026-07-31
+</footer>
+
+<script>
+const ACCENT='#1A4B8C', ACCENT2='#b8341f', GOOD='#2e7d32', WARN='#b87f1f', BAD='#a8322b';
+const GRID='#e6dfd4', TICK='#4a4a4a';
+
+const fmtEUR=(v)=>v.toLocaleString('ca-ES',{style:'currency',currency:'EUR',minimumFractionDigits:0,maximumFractionDigits:0});
+
+// --- Barres: cost unitari ---
+const costLabels=['KDP PB 6×9 cream','KDP HC 8.25×11','Blurb PB 8×10 B&W','Blurb HC 8×10 Standard','Blurb HC 8×10 Mohawk','Lulu HC 8.5×8.5','Peecho HC A4 Mohawk','Peecho Layflat A4','Impremta local 12×12'];
+const costData=[2.0,5.5,11.0,23.0,85.0,17.0,12.0,15.5,10.0];
+const costColors=costData.map(v=>v>30?ACCENT2:ACCENT);
+
+new Chart(document.getElementById('cost'),{
+  type:'bar',
+  data:{labels:costLabels,datasets:[{label:'€/unitat',data:costData,backgroundColor:costColors,borderRadius:6,maxBarThickness:48}]},
+  options:{
+    indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    scales:{
+      x:{ticks:{color:TICK,callback:v=>fmtEUR(v)},grid:{color:GRID},title:{display:true,text:'Cost unitari orientatiu (EUR)',color:TICK}},
+      y:{ticks:{color:TICK},grid:{display:false}}
+    },
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>fmtEUR(c.raw)+' /unitat'}}}
+  }
+});
+
+// --- Radar: perfil qualitatiu ---
+const radarDims=['Paper fotogràfic','Trim flexible','Divisa EUR nativa','POD sense mínim','Distribució retail','Layflat','Rapidesa envio BCN'];
+const radarData={
+  'KDP':[1,1,5,5,5,0,4],
+  'Blurb':[5,5,2,5,4,2,3],
+  'Lulu':[2,2,2,5,5,0,4],
+  'Peecho':[5,3,5,4,2,5,5],
+  'Impremta local':[5,5,5,1,1,3,5]
+};
+const axisMax=5;
+new Chart(document.getElementById('radar'),{
+  type:'radar',
+  data:{
+    labels:radarDims,
+    datasets:Object.entries(radarData).map(([k,v],i)=>{
+      const colors=[ACCENT,ACCENT2,GOOD,WARN,'#6a4c93'];
+      return {label:k,data:v,borderColor:colors[i],backgroundColor:colors[i]+'22',
+        pointBackgroundColor:colors[i],borderWidth:2,pointRadius:3};
+    })
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    scales:{r:{min:0,max:axisMax,ticks:{stepSize:1,backdropColor:'transparent',color:TICK},
+      grid:{color:GRID},angleLines:{color:GRID},pointLabels:{color:TICK,font:{size:11}}}},
+    plugins:{legend:{position:'bottom',labels:{color:TICK,boxWidth:12}}}
+  }
+});
+
+// --- Barres: total 100 còpies ---
+const totalLabels=['KDP PB','KDP HC','Blurb PB 8×10','Blurb HC Standard','Blurb HC Mohawk','Lulu HC','Peecho Mohawk','Peecho Layflat','Impremta local'];
+const totalData=costData.map(c=>Math.round(c*100));
+new Chart(document.getElementById('total'),{
+  type:'bar',
+  data:{labels:totalLabels,datasets:[{label:'Total 100 còpies (EUR)',data:totalData,
+    backgroundColor:totalData.map(v=>v>3000?ACCENT2:ACCENT),borderRadius:6,maxBarThickness:52}]},
+  options:{
+    indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    scales:{
+      x:{ticks:{color:TICK,callback:v=>v.toLocaleString('ca-ES')+' €'},grid:{color:GRID},title:{display:true,text:'Total aproximat 100 còpies (EUR)',color:TICK}},
+      y:{ticks:{color:TICK},grid:{display:false}}
+    },
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>c.raw.toLocaleString('ca-ES')+' € (100 còpies)'}}}
+  }
+});
+</script>
+</body>
+</html>

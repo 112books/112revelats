@@ -4,10 +4,10 @@ description: "Second photographic challenge of 112 Revelats — Pinhole camera a
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 Jun — 6 Sep"
+  - date: "21 Jun — 20 Sep"
     status: "active"
     note: "Official start on the summer solstice (Sant Joan)"
-  - date: "21 Jun — 6 Sep"
+  - date: "21 Jun — 20 Sep"
     status: "active"
     note: "Free and open to all ages and levels. Minors require parental authorization."
   - date: "Early October"

@@ -4,10 +4,10 @@ description: "Segon repte fotogràfic de 112 Revelats — Retrats amb càmera es
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 juny — 6 setembre"
+  - date: "21 juny — 20 setembre"
     status: "active"
     note: "Inici oficial el solstici d'estiu (Sant Joan)"
-  - date: "21 juny — 6 setembre"
+  - date: "21 juny — 20 setembre"
     status: "active"
     note: "Gratuïta i oberta a totes les edats i nivells. Menors: cal autorització del tutor legal."
   - date: "Principis d'octubre"

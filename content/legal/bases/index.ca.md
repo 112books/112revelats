@@ -5,7 +5,7 @@ description: "Bases del segon repte fotogràfic de 112 Revelats"
 
 **112 Revelats – Bases de participació**
 **Repte actual: Retrats Lents**
-**Data límit d'enviament: 6 de setembre de 2026**
+**Data límit d'enviament: 20 de setembre de 2026**
 
 ### 1. Objecte del projecte
 
