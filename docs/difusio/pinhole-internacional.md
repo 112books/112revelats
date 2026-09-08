@@ -78,7 +78,7 @@ We're 112 Revelats, a collective photobook project from Catalonia. Each edition 
 
 Our second challenge is **Retrats Lents** (Slow Portraits): portrait photography using a pinhole camera or any long-exposure technique.
 
-📅 Open until September 6th, 2026
+📅 Open until September 20th, 2026
 🆓 Free to participate
 📖 Selected images: collective photobook (late October 2026)
 🌍 Open to everyone worldwide
@@ -107,7 +107,7 @@ Hi everyone!
 
 Sharing an open call that might interest this group:
 
-112 Revelats is a collective photobook project. Our second challenge — Retrats Lents (Slow Portraits) — is open for submissions until September 6th, 2026.
+112 Revelats is a collective photobook project. Our second challenge — Retrats Lents (Slow Portraits) — is open for submissions until September 20th, 2026.
 
 We're looking for portraits made with pinhole cameras or long-exposure techniques. Selected images will be included in a printed collective photobook.
 
@@ -141,7 +141,7 @@ We're inviting photographers worldwide to submit portraits made with pinhole cam
 
 - Free to participate
 - Open internationally, all ages and levels
-- Deadline: September 6th, 2026
+- Deadline: September 20th, 2026
 
 More info and submission form:
 https://112revelats.112books.eu/en/repte/retrats-lents/
@@ -166,7 +166,7 @@ Hi Worldwide Pinhole Photography Day team,
 
 My name is Joan Martínez, from 112 Revelats — a collective photobook project based in Catalonia.
 
-Our second challenge, Retrats Lents (Slow Portraits), is an open call for portrait photography made with pinhole cameras or long-exposure techniques. Submissions are open until September 6th, 2026. Selected images will be included in a collective photobook published in late October.
+Our second challenge, Retrats Lents (Slow Portraits), is an open call for portrait photography made with pinhole cameras or long-exposure techniques. Submissions are open until September 20th, 2026. Selected images will be included in a collective photobook published in late October.
 
 It's free and open internationally. We think it could resonate with your community of pinhole photographers.
 
@@ -197,7 +197,7 @@ Hi Justin,
 
 I'm Joan Martínez, from 112 Revelats — a small collective photobook project from Catalonia, Spain.
 
-We're running an open call called Retrats Lents (Slow Portraits): portraits made with pinhole cameras or long-exposure techniques. Free, open internationally, deadline September 6th. Selected images go into a printed collective photobook in October.
+We're running an open call called Retrats Lents (Slow Portraits): portraits made with pinhole cameras or long-exposure techniques. Free, open internationally, deadline September 20th. Selected images go into a printed collective photobook in October.
 
 Your work has been a huge inspiration for us and for the pinhole community worldwide. If you felt like sharing it with your followers or community, we'd be incredibly grateful.
 
@@ -225,7 +225,7 @@ Hi,
 
 I'm Joan from 112 Revelats, a collective photobook project from Catalonia.
 
-We're running Retrats Lents (Slow Portraits) — an open call for portraits made with pinhole cameras or any long-exposure technique. Free to enter, open internationally, deadline September 6th 2026. Selected work goes into a printed collective photobook.
+We're running Retrats Lents (Slow Portraits) — an open call for portraits made with pinhole cameras or any long-exposure technique. Free to enter, open internationally, deadline September 20th 2026. Selected work goes into a printed collective photobook.
 
 We'd love to be listed or mentioned on AlternativePhotography.com — it feels like exactly the right community for this project.
 
@@ -244,7 +244,7 @@ Joan Martínez · 112 Revelats
 ```
 Hola! Somos 112 Revelats, un proyecto colectivo de fotolibros desde Cataluña.
 
-Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para retratos con cámara estenopeica o larga exposición. Gratuita, internacional, hasta el 6 de septiembre.
+Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para retratos con cámara estenopeica o larga exposición. Gratuita, internacional, hasta el 20 de septiembre.
 
 ¿Nos darías una mención o lo compartirías en Stories? Sería un gran empuje para la comunidad estenopeica hispanohablante.
 
@@ -263,7 +263,7 @@ Hi Pinhole London!
 
 We're 112 Revelats, a collective photobook project from Catalonia. Our current open call — Retrats Lents (Slow Portraits) — invites photographers to submit portraits made with pinhole cameras or long-exposure techniques.
 
-Free to participate, open internationally, deadline September 6th 2026. Selected images go into a printed collective photobook.
+Free to participate, open internationally, deadline September 20th 2026. Selected images go into a printed collective photobook.
 
 Would you be up for sharing it with your community?
 
@@ -289,7 +289,7 @@ Hi The Pinhole Project team,
 
 I'm Joan Martínez, from 112 Revelats — a collective photobook project based in Catalonia, Spain.
 
-We're currently running Retrats Lents (Slow Portraits), an open call for portraits made with pinhole cameras or long-exposure techniques. It's free, open internationally, and submissions are open until September 6th, 2026. Selected images will be published in a printed collective photobook in late October.
+We're currently running Retrats Lents (Slow Portraits), an open call for portraits made with pinhole cameras or long-exposure techniques. It's free, open internationally, and submissions are open until September 20th, 2026. Selected images will be published in a printed collective photobook in late October.
 
 Your community would be a wonderful fit for this project. Would you consider sharing it with your followers or listing it on your site?
 
@@ -317,7 +317,7 @@ Hi Pinhole New York,
 
 I'm Joan Martínez, from 112 Revelats — a collective photobook project from Catalonia, Spain.
 
-We're running Retrats Lents (Slow Portraits) — an open call for portraits made with pinhole cameras or long-exposure techniques. Free, open internationally, deadline September 6th 2026. Selected images go into a printed collective photobook in late October.
+We're running Retrats Lents (Slow Portraits) — an open call for portraits made with pinhole cameras or long-exposure techniques. Free, open internationally, deadline September 20th 2026. Selected images go into a printed collective photobook in late October.
 
 Would you be up for sharing it with your community?
 
@@ -345,7 +345,7 @@ Hi Lomography Magazine team,
 
 I'm Joan Martínez, from 112 Revelats — a collective photobook project from Catalonia, Spain.
 
-We're running an open call called Retrats Lents (Slow Portraits): portraits made with pinhole cameras or any long-exposure technique. Free to enter, open internationally, deadline September 6th 2026. Selected images will be published in a printed collective photobook in late October.
+We're running an open call called Retrats Lents (Slow Portraits): portraits made with pinhole cameras or any long-exposure technique. Free to enter, open internationally, deadline September 20th 2026. Selected images will be published in a printed collective photobook in late October.
 
 We'd love to be featured or mentioned on Lomography Magazine — it feels like exactly the right audience for this project.
 
@@ -373,7 +373,7 @@ Hola equipo de Colectivo Sinóptico,
 
 Somos 112 Revelats, un proyecto editorial colectivo de fotolibros desde Cataluña. Nuestro segundo reto — Retrats Lents (Retratos Lentos) — es una convocatoria abierta para retratos con cámara estenopeica o larga exposición.
 
-Es gratuita, abierta internacionalmente, hasta el 6 de septiembre de 2026. Las imágenes seleccionadas formarán un fotolibro colectivo impreso.
+Es gratuita, abierta internacionalmente, hasta el 20 de septiembre de 2026. Las imágenes seleccionadas formarán un fotolibro colectivo impreso.
 
 ¿Podríais difundirlo entre vuestra comunidad?
 
@@ -401,7 +401,7 @@ Hola equip de Fotoclub Valencia,
 
 Som 112 Revelats, un projecte editorial col·lectiu de fotollibre des de Catalunya. El nostre segon repte — Retrats Lents — és una convocatòria oberta per a retrats fets amb càmera estenopeica o tècnica de llarga exposició.
 
-És gratuïta, oberta internacionalment, i el termini és el 6 de setembre de 2026. Les imatges seleccionades formaran part d'un fotollibre col·lectiu imprès.
+És gratuïta, oberta internacionalment, i el termini és el 20 de setembre de 2026. Les imatges seleccionades formaran part d'un fotollibre col·lectiu imprès.
 
 Creiem que pot interessar a la vostra comunitat, especialment als qui practiqueu la fotografia estenopeica. Ens podríeu difondre-la?
 
@@ -418,7 +418,7 @@ Joan Martínez · 112 Revelats
 
 **Text:**
 ```
-¡Hola @catamarca_estenopeica! Somos 112 Revelats, un proyecto de fotolibros colectivos desde Cataluña. Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para retratos con cámara estenopeica o larga exposición. Gratuita, internacional, hasta el 6 de septiembre.
+¡Hola @catamarca_estenopeica! Somos 112 Revelats, un proyecto de fotolibros colectivos desde Cataluña. Tenemos abierta una convocatoria — Retrats Lents (Retratos Lentos) — para retratos con cámara estenopeica o larga exposición. Gratuita, internacional, hasta el 20 de septiembre.
 
 ¿Nos darías una mención o lo compartirías con vuestra comunidad? 🙏
 https://112revelats.112books.eu/es/repte/retrats-lents/
@@ -448,7 +448,7 @@ https://112revelats.112books.eu/en/repte/retrats-lents/
 
 Somos 112 Revelats, un proyecto editorial colectivo de fotolibros desde Cataluña, España. Cada edición proponemos un reto temático y construimos un fotolibro único con las imágenes seleccionadas de los participantes.
 
-Nuestro segundo reto — Retrats Lents (Retratos Lentos) — es una convocatoria abierta para retratos con cámara estenopeica (pinhole) o cualquier técnica de larga exposición. Es gratuita, abierta internacionalmente, y el plazo es el 6 de septiembre de 2026. Las imágenes seleccionadas formarán un fotolibro colectivo impreso que se publicará a finales de octubre.
+Nuestro segundo reto — Retrats Lents (Retratos Lentos) — es una convocatoria abierta para retratos con cámara estenopeica (pinhole) o cualquier técnica de larga exposición. Es gratuita, abierta internacionalmente, y el plazo es el 20 de septiembre de 2026. Las imágenes seleccionadas formarán un fotolibro colectivo impreso que se publicará a finales de octubre.
 
 Sabemos que La Pesera es un referente de la fotografía estenopeica en México. ¿Podríais difundirlo entre vuestra comunidad? Sería un gran empuje para llegar a autores latinoamericanos.
 

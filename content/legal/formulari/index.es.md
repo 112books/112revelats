@@ -5,7 +5,7 @@ description: "Envía tu propuesta para el reto Retratos Lentos de 112 Revelats"
 
 **112 Revelats – Formulario de participación**
 **Reto actual: Retratos Lentos**
-<p style="font-size:1.2rem;color:var(--accent);font-weight:700;">Fecha límite de envío: 6 de septiembre de 2026</p>
+<p style="font-size:1.2rem;color:var(--accent);font-weight:700;">Fecha límite de envío: 20 de septiembre de 2026 <span style="font-size:0.9rem;font-weight:400;">(prorrogado — fecha original: 6 de septiembre)</span></p>
 
 Hay imágenes que necesitan tiempo. Una mirada que se construye mientras el obturador permanece abierto. La luz que atraviesa un agujero diminuto y proyecta el mundo al revés dentro de una lata. En un momento donde todo va deprisa, proponemos volver a la pausa: construir un retrato desde la espera, la observación y la larga exposición.
 

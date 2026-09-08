@@ -19,7 +19,7 @@
 
 ### Català (CA)
 
-**Assumpte:** Retrats Lents — Repte fotogràfic obert fins al 6 de setembre
+**Assumpte:** Retrats Lents — Repte fotogràfic obert fins al 20 de setembre
 
 ---
 
@@ -27,7 +27,7 @@ Hola [NOM] / equip de [ENTITAT],
 
 Som 112 Revelats, un projecte editorial col·lectiu de fotollibres. Cada edició proposem un repte temàtic i construïm un fotollibre únic amb les imatges seleccionades dels participants.
 
-El nostre segon repte és **Retrats Lents**: fer retrats amb càmera estenopeica (pinhole) o qualsevol tècnica de llarga exposició. El període d'inscripció és obert fins al **6 de setembre de 2026**, i el fotollibre es publicarà a finals d'octubre.
+El nostre segon repte és **Retrats Lents**: fer retrats amb càmera estenopeica (pinhole) o qualsevol tècnica de llarga exposició. El període d'inscripció és obert fins al **20 de setembre de 2026**, i el fotollibre es publicarà a finals d'octubre.
 
 És gratuït, obert a qualsevol edat i nivell. Es pot construir la pròpia càmera estenopeica amb una llauna o una caixa de cartró. El que importa és l'actitud: aturar-se, observar, esperar.
 
@@ -47,7 +47,7 @@ https://112revelats.112books.eu
 
 ### Español (ES)
 
-**Asunto:** Retrats Lents — Convocatoria abierta hasta el 6 de septiembre
+**Asunto:** Retrats Lents — Convocatoria abierta hasta el 20 de septiembre
 
 ---
 
@@ -55,7 +55,7 @@ Hola [NOMBRE] / equipo de [ENTIDAD],
 
 Somos 112 Revelats, un proyecto editorial colectivo de fotolibros. En cada edición proponemos un reto temático y construimos un fotolibro único con las imágenes seleccionadas de los participantes.
 
-Nuestro segundo reto es **Retrats Lents** (Retratos Lentos): retratar con cámara estenopeica (pinhole) o cualquier técnica de larga exposición. El período de inscripción está abierto hasta el **6 de septiembre de 2026**, y el fotolibro se publicará a finales de octubre.
+Nuestro segundo reto es **Retrats Lents** (Retratos Lentos): retratar con cámara estenopeica (pinhole) o cualquier técnica de larga exposición. El período de inscripción está abierto hasta el **20 de septiembre de 2026**, y el fotolibro se publicará a finales de octubre.
 
 Es gratuito, abierto a cualquier edad y nivel. Se puede construir la propia cámara estenopeica con una lata o una caja de cartón. Lo que importa es la actitud: parar, observar, esperar.
 
@@ -75,7 +75,7 @@ https://112revelats.112books.eu/es/
 
 ### English (EN)
 
-**Subject:** Retrats Lents — Open call until September 6th
+**Subject:** Retrats Lents — Open call until September 20th
 
 ---
 
@@ -83,7 +83,7 @@ Hi [NAME] / [ENTITY] team,
 
 We're 112 Revelats, a collective photobook editorial project based in Catalonia. Each edition we propose a thematic challenge and build a unique photobook with selected images from participants.
 
-Our second challenge is **Retrats Lents** (Slow Portraits): portrait photography using a pinhole camera or any long-exposure technique. Submissions are open until **September 6th, 2026**, and the photobook will be published in late October.
+Our second challenge is **Retrats Lents** (Slow Portraits): portrait photography using a pinhole camera or any long-exposure technique. Submissions are open until **September 20th, 2026**, and the photobook will be published in late October.
 
 It's free and open to all ages and levels. You can even build your own pinhole camera from a tin can or a cardboard box. What matters is the attitude: slow down, observe, wait.
 

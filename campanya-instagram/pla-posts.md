@@ -1,6 +1,6 @@
 # Pla de Posts Instagram — Retrats Lents
 **Compte:** @112books.eu  
-**Campanya:** 21 juny – 6 setembre 2026  
+**Campanya:** 21 juny – 20 setembre 2026 (prorrogat des del 6 set)  
 **Publicació:** Dimarts i dijous, 19:00h (hora Barcelona)
 
 ---
@@ -239,26 +239,76 @@ Formulari: Enllaç al perfil 🔗
 
 ---
 
-### POST 9 — 2 dies per tancar
-**Data:** 4 setembre (dijous) · 19:00h  
+### POST 9 — 2 dies per tancar ❌ NO PUBLICAT — substituït per campanya de pròrroga
+~~**Data:** 4 setembre (dijous) · 19:00h~~
+> Obsolet. La convocatòria es va prorrogar fins al 20 de setembre. Vegeu posts 11–13.
+
+---
+
+### POST 10 — Últim dia ❌ NO PUBLICAT — substituït per campanya de pròrroga
+~~**Data:** 6 setembre (diumenge)~~
+> Obsolet. La convocatòria es va prorrogar fins al 20 de setembre. Vegeu posts 11–13.
+
+---
+
+### POST 11 — Anunci de pròrroga ← PUBLICAR ARA (8–9 setembre)
+**Data:** 8 o 9 setembre · 19:00h  
+**Format:** Post + Story
+
+**Copy (peu de foto):**
+```
+Hem ampliat el termini.
+
+La convocatòria de Retrats Lents estava prevista fins al 6 de setembre.
+Hem decidit donar-li dues setmanes més.
+
+Fins al 20 de setembre pots enviar el teu retrat.
+
+Si tenies les imatges a punt i no les havies enviat — ara és el moment.
+Si estaves a mig camí — tens temps per acabar.
+Si no havies pensat en participar-hi — potser ara sí.
+
+Càmera estenopeica o llarga exposició.
+Gratuït. Obert a tothom.
+Les imatges seleccionades formaran un fotollibre col·lectiu.
+
+Formulari: Enllaç al perfil 🔗
+
+#RetratsLents #112Revelats #OpenCall #Pròrroga
+#PinholePhotography #SlowPhotography #Fotollibre #112Books
+```
+
+**Story:**
+```
+Pròrroga fins al 20 de setembre.
+
+Si no havies pogut participar a Retrats Lents — ara pots.
+
+🔗 Formulari al perfil
+```
+
+---
+
+### POST 12 — Recordatori mitja pròrroga (15 setembre)
+**Data:** 15 setembre (dimarts) · 19:00h  
 **Format:** Story
 
 **Copy (Story):**
 ```
-🔴 2 DIES
+⏳ 5 dies
 
-Retrats Lents tanca el 6 de setembre.
+Retrats Lents tanca el 20 de setembre.
 
 Tens la teva imatge? Envia-la ara.
+🔗 Formulari al perfil
 
-Formulari 🔗 al perfil
 #RetratsLents #112Revelats
 ```
 
 ---
 
-### POST 10 — Últim dia
-**Data:** 6 setembre (diumenge) · 10:00h + 20:00h  
+### POST 13 — Últim dia (20 setembre)
+**Data:** 20 setembre (dissabte) · 10:00h + 20:00h  
 **Format:** Story x2
 
 **Copy (Story matí):**
@@ -273,8 +323,6 @@ Retrats Lents · convocatòria oberta fins a les 23:59h
 
 **Copy (Story vespre — 20h):**
 ```
-3 hores per tancar.
-
 Gràcies a tothom qui ha participat. 🙏
 
 Properament: seleccionats i fotollibre.
@@ -296,8 +344,11 @@ Properament: seleccionats i fotollibre.
 | 6 | 12 agost (dimecres) | Post + Story | Agost = fotografia lenta |
 | 7 | 6 agost (dijous) | Story countdown | 1 mes per tancar |
 | 8 | 2 setembre (dimecres) | Post + 2 Stories | Última setmana — urgència — ✅ publicat |
-| 9 | 4 setembre (dijous) | Story | 2 dies per tancar |
-| 10 | 6 setembre (diumenge) | 2 Stories | Últim dia |
+| 9 | ~~4 setembre~~ | — | ❌ No publicat — substituït per pròrroga |
+| 10 | ~~6 setembre~~ | — | ❌ No publicat — substituït per pròrroga |
+| 11 | 8–9 setembre | Post + Story | **Anunci pròrroga ← PUBLICAR ARA** |
+| 12 | 15 setembre | Story | Recordatori — 5 dies |
+| 13 | 20 setembre | 2 Stories | Últim dia |
 
 ---
 

@@ -52,7 +52,7 @@
 >
 > 🔗 Enllaç al web al perfil
 >
-> 📅 Fins al 6 de setembre
+> 📅 Fins al 20 de setembre
 >
 > #RetratsLents #112Revelats #Pinhole #SlowPhotography #FotografiaLenta #CàmeraEstenopeica #Fotollibre #CulturaVisual #112Books
 
