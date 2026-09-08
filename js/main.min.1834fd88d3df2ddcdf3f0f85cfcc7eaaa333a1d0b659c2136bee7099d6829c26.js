@@ -1,0 +1,1 @@
+var scrollBtn=document.getElementById("scroll-top");scrollBtn&&(window.addEventListener("scroll",function(){window.scrollY>400?scrollBtn.classList.add("visible"):scrollBtn.classList.remove("visible")}),scrollBtn.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}))
