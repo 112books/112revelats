@@ -108,7 +108,6 @@
 ### Per fer
 
 - [ ] **Posar imatges a `static/img/retrats-lents/`** — la galeria ja està preparada (CSS + JS randomizer + secció al template). Quan hi hagi imatges al directori, es mostraran automàticament (fins a 6 aleatòries cada visita).
-- [ ] **Self-host Google Fonts** (evitar dependència externa)
 - [ ] **PWA support** (`site.webmanifest`, service worker)
 
 ### Resolt
@@ -127,6 +126,8 @@
 - ✅ **Termini de Retrats Lents ampliat fins a l'1 de novembre de 2026** (2a pròrroga: 6 set → 20 set → 1 nov). Dates actualitzades a tot el web ca/es/en (`content/repte/retrats-lents/`, `content/legal/bases/`, `content/legal/formulari/`) — 2026-10-03
 - ✅ Formularis reforçats (2026-10-03): camp `subject` (en lloc de l'obsolet `_subject`), honeypot `_gotcha` anti-bots, camp `email` afegit a `/legal/col-labora/` i nota de suport `hola@112books.eu` al formulari del concurs
 - ✅ **Formularis 100% propis (2026-10-03)**: backend PHP+SQLite al servidor Dinaserver i enviament amb el correu propi; retirat el servei extern anterior. Codi a `server/forms/`, panell a `/api/admin.php`
+- ✅ **Google Fonts autoallotjades (2026-10-03)**: Beiruti i Literata servides des de `static/fonts/` amb `static/css/fonts.css`; cap petició a Google.
+- ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
 
 ### Notat
 
