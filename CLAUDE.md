@@ -107,7 +107,7 @@
 
 ### Per fer
 
-- [ ] **Posar imatges a `static/img/retrats-lents/`** — la galeria ja està preparada (CSS + JS randomizer + secció al template). Quan hi hagi imatges al directori, es mostraran automàticament (fins a 6 aleatòries cada visita).
+- [ ] **Substituir les 11 fotos d'inspiració** de `static/img/retrats-lents/` per les fotografies reals dels participants quan tanqui el repte (1 nov 2026). La galeria ja funciona i en mostra 6 a l'atzar.
 
 ### Resolt
 
@@ -116,7 +116,7 @@
 - ✅ `robots.txt` creat (permet tots els crawlers)
 - ✅ `humans.txt` creat
 - ✅ `llms.txt` creat (informació per a crawlers d'IA)
-- ✅ Galeria preparada: JS randomizer + CSS + secció al template
+- ✅ Galeria "Mostra de fotografia" al repte (2026-10-03): 11 fotos d'inspiració a `static/img/retrats-lents/`, 6 aleatòries per visita; secció a `layouts/repte/single.html`
 - ✅ `sync-112revelats.sh` ara accepta `deploy` com a argument per a ús no-interactiu: `./sync-112revelats.sh deploy`
 - ✅ Difusió Retrats Lents: emails/missatges enviats a clubs, escoles, premsa i comunitats online (2026-06-13) — veure `docs/difusio/retrats-lents-difusio.md`
 - ✅ Campanya Instagram: material visual generat (`campanya-instagram/`), pla complet de 10 posts amb textos finals (`campanya-instagram/pla-posts.md`), 11 esdeveniments creats a Google Calendar (2026-06-16)
