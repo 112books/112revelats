@@ -19,7 +19,8 @@ This call is for photographers who want to explore slow portraiture: pinhole cam
 - **AI-generated images will not be accepted**
 
 <form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
+  <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">1. AUTHOR INFORMATION</h4>
 
@@ -62,3 +63,5 @@ This call is for photographers who want to explore slow portraiture: pinhole cam
 
   <button type="submit" class="btn btn-primary btn-lg">Submit your proposal</button>
 </form>
+
+<p style="font-size:0.85rem;color:var(--ink-3);">If the form gives you an error or you don't receive a confirmation, write to us at <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p>

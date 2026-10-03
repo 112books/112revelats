@@ -123,6 +123,7 @@
 - ✅ Instagram Post 5 (mid-point, carrusel + story amb poll) publicat (2026-07-21)
 - ✅ Instagram Post 8 (última setmana, post + 2 stories) publicat (2026-09-02). Posts 6, 7, 9 i 10 omesos (dates/missatge caducats).
 - ✅ **Termini de Retrats Lents ampliat fins a l'1 de novembre de 2026** (2a pròrroga: 6 set → 20 set → 1 nov). Dates actualitzades a tot el web ca/es/en (`content/repte/retrats-lents/`, `content/legal/bases/`, `content/legal/formulari/`) — 2026-10-03
+- ✅ Formularis reforçats (2026-10-03): camp `subject` (en lloc de l'obsolet `_subject`), honeypot `_gotcha` anti-bots, camp `email` afegit a `/legal/col-labora/` i nota de suport `hola@112books.eu` al formulari del concurs
 
 ### Notat
 

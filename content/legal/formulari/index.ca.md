@@ -19,7 +19,8 @@ Aquesta convocatòria és una crida als fotògrafs que vulguin explorar el retra
 - **No s'acceptaran imatges generades per intel·ligència artificial**
 
 <form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
+  <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">1. INFORMACIÓ DE L'AUTOR/A</h4>
 
@@ -62,3 +63,5 @@ Aquesta convocatòria és una crida als fotògrafs que vulguin explorar el retra
 
   <button type="submit" class="btn btn-primary btn-lg">Envia la teva proposta</button>
 </form>
+
+<p style="font-size:0.85rem;color:var(--ink-3);">Si el formulari et dona algun error o no reps confirmació, escriu-nos a <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p>

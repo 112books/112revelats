@@ -64,7 +64,8 @@
       <div class="participa-form">
         <h4>{{ i18n "participa_form_title" }}</h4>
         <form class="contact-form" action="{{ $.Site.Params.formAction }}" method="POST">
-          <input type="hidden" name="_subject" value="Inscripcio Retrats Lents">
+          <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
           <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
           <input type="url" name="portfolio" placeholder="{{ i18n "participa_form_portfolio" }}">
@@ -149,6 +150,7 @@
     <p>{{ i18n "contacte_text" }}</p>
     <p class="contacte-nota">{{ i18n "contacte_nota" | safeHTML }}</p>
     <form class="contact-form" action="{{ $.Site.Params.formAction }}" method="POST">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
       <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
       <textarea name="missatge" placeholder="{{ i18n "form_missatge" }}" rows="4"></textarea>

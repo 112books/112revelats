@@ -11,11 +11,13 @@ description: "Formulario de patrocinio y colaboración para empresas y entidades
 Los patrocinadores obtienen reconocimiento y visibilidad según el nivel de colaboración.
 
 <form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="_subject" value="Colaboracio 112 Revelats">
+  <input type="hidden" name="subject" value="Colaboracio 112 Revelats">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">Datos personales</h4>
 
   <input type="text" name="nom-contacte" placeholder="Nombre completo de la persona de contacto" required>
+  <input type="email" name="email" placeholder="Correo electrónico" required>
   <input type="text" name="empresa" placeholder="Empresa / Entidad">
   <input type="text" name="cif" placeholder="Identificación fiscal (CIF/NIF)" required>
   <input type="text" name="adreca-fiscal" placeholder="Dirección fiscal" required>

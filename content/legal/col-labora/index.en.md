@@ -11,11 +11,13 @@ description: "Sponsorship and collaboration form for companies and organizations
 Sponsors receive recognition and visibility according to their contribution level.
 
 <form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="_subject" value="Collaboration 112 Revelats">
+  <input type="hidden" name="subject" value="Collaboration 112 Revelats">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">Personal details</h4>
 
   <input type="text" name="nom-contacte" placeholder="Full name of contact person" required>
+  <input type="email" name="email" placeholder="Email address" required>
   <input type="text" name="empresa" placeholder="Company / Organization">
   <input type="text" name="cif" placeholder="Tax ID (CIF/NIF)" required>
   <input type="text" name="adreca-fiscal" placeholder="Tax address" required>

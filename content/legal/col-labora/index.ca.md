@@ -11,11 +11,13 @@ description: "Formulari de patrocini i col·laboració per a empreses i entitats
 Els patrocinadors obtenen reconeixement i visibilitat segons el nivell de col·laboració.
 
 <form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="_subject" value="Col·laboracio 112 Revelats">
+  <input type="hidden" name="subject" value="Col·laboracio 112 Revelats">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
   <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">Dades personals</h4>
 
   <input type="text" name="nom-contacte" placeholder="Nom complet de la persona de contacte" required>
+  <input type="email" name="email" placeholder="Correu electrònic" required>
   <input type="text" name="empresa" placeholder="Empresa / Entitat">
   <input type="text" name="cif" placeholder="Identificació fiscal (CIF/NIF)" required>
   <input type="text" name="adreca-fiscal" placeholder="Adreça fiscal" required>
