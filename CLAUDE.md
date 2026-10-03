@@ -108,7 +108,6 @@
 ### Per fer
 
 - [ ] **Posar imatges a `static/img/retrats-lents/`** — la galeria ja està preparada (CSS + JS randomizer + secció al template). Quan hi hagi imatges al directori, es mostraran automàticament (fins a 6 aleatòries cada visita).
-- [ ] **PWA support** (`site.webmanifest`, service worker)
 
 ### Resolt
 
@@ -128,6 +127,7 @@
 - ✅ **Formularis 100% propis (2026-10-03)**: backend PHP+SQLite al servidor Dinaserver i enviament amb el correu propi; retirat el servei extern anterior. Codi a `server/forms/`, panell a `/api/admin.php`
 - ✅ **Google Fonts autoallotjades (2026-10-03)**: Beiruti i Literata servides des de `static/fonts/` amb `static/css/fonts.css`; cap petició a Google.
 - ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
+- ✅ **PWA (2026-10-03)**: `site.webmanifest`, icones 192/512 + apple-touch-icon, service worker `sw.js` (network-first, offline fallback) i registre al `main.js`
 
 ### Notat
 

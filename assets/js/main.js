@@ -11,3 +11,9 @@ if (scrollBtn) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}

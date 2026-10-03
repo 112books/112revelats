@@ -6,6 +6,9 @@
   <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ or .Description .Summary .Site.Params.description }}">
   <link rel="icon" href="{{ "img/favicon.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}">
+  <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+  <meta name="theme-color" content="#111110">
   <link rel="canonical" href="{{ .Permalink }}">
 
   <meta property="og:title" content="{{ .Title }}">
