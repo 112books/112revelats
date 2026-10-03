@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T01:38:26.431829Z",
+  "generated": "2026-10-03T07:27:17.011199Z",
   "period": {
     "start": "2025-10-03",
     "end": "2026-10-03"
@@ -458,7 +458,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 154
+      "count": 159
     },
     {
       "name": "Chrome",
@@ -468,24 +468,24 @@
     {
       "name": "Firefox",
       "id": "Firefox",
-      "count": 21
+      "count": 22
     }
   ],
   "systems": [
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 116
+      "count": 120
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 94
+      "count": 95
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 66
+      "count": 67
     },
     {
       "name": "Android",
@@ -502,17 +502,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 143
+      "count": 147
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 129
+      "count": 130
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 44
+      "count": 45
     },
     {
       "name": "tablet",
@@ -524,7 +524,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 177
+      "count": 182
     },
     {
       "name": "United States",
@@ -587,13 +587,13 @@
       "count": 2
     },
     {
-      "name": "Australia",
-      "id": "AU",
-      "count": 1
+      "name": "Sweden",
+      "id": "SE",
+      "count": 2
     },
     {
-      "name": "Belgium",
-      "id": "BE",
+      "name": "Australia",
+      "id": "AU",
       "count": 1
     }
   ],
