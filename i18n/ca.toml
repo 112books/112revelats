@@ -48,6 +48,9 @@
   other = "Tota la informació del repte →"
 [repte_002_desc]
   other = "Segon repte fotogràfic de 112 Revelats. Retrats amb càmera estenopeica i llarga exposició. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum."
+
+[repte_002_prorrogacio]
+  other = "Pròrroga! El termini s'amplia fins a l'1 de novembre de 2026. Alguns usuaris van tenir problemes amb el formulari (ja arreglat) i volem donar més marge per participar-hi."
 [repte_authors_title]
   other = "Participants"
 [repte_authors_desc]

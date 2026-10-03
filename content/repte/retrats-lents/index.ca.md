@@ -32,4 +32,4 @@ No cal tenir una càmera especial: pots construir la teva pròpia càmera esteno
 2. [Envia'ns la teva proposta a través del formulari d'inscripció](/legal/formulari/)
 3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
 
-> **Segona pròrroga:** el termini d'enviament s'amplia fins a l'**1 de novembre de 2026**. La data original era el 6 de setembre i la primera pròrroga va ser el 20 de setembre; ara l'ampliem una altra vegada perquè tothom qui ho vulgui pugui enviar la seva proposta. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
+> **Segona pròrroga:** el termini d'enviament s'amplia fins a l'**1 de novembre de 2026**. La data original era el 6 de setembre i la primera pròrroga va ser el 20 de setembre; ara l'ampliem una altra vegada perquè alguns usuaris van tenir problemes amb el formulari d'inscripció (ja arreglat) i volem donar més marge per participar-hi. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).

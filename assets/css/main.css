@@ -156,6 +156,9 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .participa-form .contact-form { max-width: 100%; }
 .participa-form .checkbox-label a { color: var(--ink-2); text-decoration: underline; font-size: 0.75rem; }
 
+/* avis de prorroga */
+.deadline-note { margin-top: 0.9rem; padding: 0.7rem 0.9rem; background: rgba(254,33,33,0.08); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; font-weight: 600; color: var(--ink); }
+
 /* timeline 6-step */
 .timeline {
   display: flex; flex-direction: column; gap: 0;

@@ -1,6 +1,6 @@
 # Pla de Posts Instagram — Retrats Lents
 **Compte:** @112books.eu  
-**Campanya:** 21 juny – 20 setembre 2026 (prorrogat des del 6 set)  
+**Campanya:** 21 juny – 1 novembre 2026 (2 pròrrogues: 6 set → 20 set → 1 nov)  
 **Publicació:** Dimarts i dijous, 19:00h (hora Barcelona)
 
 ---
@@ -349,6 +349,33 @@ Properament: seleccionats i fotollibre.
 | 11 | 8–9 setembre | Post + Story | **Anunci pròrroga ← PUBLICAR ARA** |
 | 12 | 15 setembre | Story | Recordatori — 5 dies |
 | 13 | 20 setembre | 2 Stories | Últim dia |
+
+---
+
+### POST 14 — Pròrroga fins a l'1 de novembre (formulari arreglat)
+
+**Data:** publicar com abans millor · 19:00h
+**Format:** Post (1080×1080) + Story (1080×1920)
+**Material:** post-14-prorrogacio.jpg + story-prorrogacio.jpg
+
+**Copy (peu de foto):**
+
+PRÒRROGA ✦
+
+El formulari d'inscripció ja funciona correctament. Alguns usuaris van tenir problemes per enviar la seva proposta, i per això ampliem el termini del repte Retrats Lents:
+
+📅 Nou termini: 1 de novembre de 2026
+
+Volem que ningú que vulgui participar no es quedi fora.
+
+🆓 Gratuït i obert a tothom
+📷 Retrats amb càmera estenopeica, llarga exposició o qualsevol tècnica slow
+📖 Les millors imatges formaran part d'un fotollibre col·lectiu
+
+Participa-hi — enllaç al perfil 🔗
+https://112revelats.112books.eu/legal/formulari/
+
+#RetratsLents #112Revelats #FotografiaEstenopeica #PinholePhotography #SlowPhotography #Fotollibre #FotografiaAnalògica #FotografiaCreativa #112Books #OpenCall #Pinhole
 
 ---
 

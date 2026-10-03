@@ -32,4 +32,4 @@ No hace falta tener una cámara especial: puedes construir tu propia cámara est
 2. [Envíanos tu propuesta a través del formulario de inscripción](/es/legal/formulari/)
 3. Si tu imagen es seleccionada, formará parte del fotolibro colectivo
 
-> **Segunda prórroga:** el plazo de envío se amplía hasta el **1 de noviembre de 2026**. La fecha original era el 6 de septiembre y la primera prórroga fue el 20 de septiembre; ahora lo ampliamos de nuevo para que todo el mundo que quiera pueda enviar su propuesta. Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).
+> **Segunda prórroga:** el plazo de envío se amplía hasta el **1 de noviembre de 2026**. La fecha original era el 6 de septiembre y la primera prórroga fue el 20 de septiembre; ahora lo ampliamos de nuevo porque algunos usuarios tuvieron problemas con el formulario de inscripción (ya arreglado) y queremos dar más margen para participar. Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).
