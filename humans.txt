@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Joan Martínez Serres
+Contact: joan@linuxbcn.com
+Site: linuxbcn.cat
+
+/* PROJECT */
+Site: 112 Revelats
+Domain: 112revelats.112books.eu
+Language: ca, es, en
+Generator: Hugo
+
+/* THANKS */
+112 Books — editorial
+All photographers and participants
