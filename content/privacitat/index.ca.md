@@ -20,7 +20,7 @@ El tractament de dades es basa en el consentiment exprés de l'usuari en enviar 
 
 ## Destinataris
 
-Les dades no es cediran a tercers, llevat d'obligació legal. Utilitzem **Formspree** com a processador de formularis, que compleix amb el RGPD.
+Les dades no es cediran a tercers, llevat d'obligació legal. Els formularis s'envien directament al nostre servidor (112books.eu) i les notificacions es fan amb el nostre propi correu; no utilitzem cap processador extern de formularis.
 
 ## Termini de conservació
 

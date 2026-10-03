@@ -11,6 +11,6 @@ Utilitzem **GoatCounter** com a eina d'anàlisi d'audiència. GoatCounter no uti
 
 ## Cookies tècniques
 
-Algunes cookies tècniques poden ser generades pel navegador o per serveis de tercers (com Formspree) per al funcionament bàsic del web. Aquestes cookies no emmagatzemen informació personal.
+Algunes cookies tècniques poden ser generades pel navegador o pel nostre propi servidor per al funcionament bàsic del web. Aquestes cookies no emmagatzemen informació personal.
 
 Per a més informació, consulta la nostra [política de privacitat](/privacitat).

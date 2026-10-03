@@ -20,7 +20,7 @@ Data processing is based on the user's express consent when submitting the form.
 
 ## Recipients
 
-Data will not be transferred to third parties, except where required by law. We use **Formspree** as our form processor, which complies with GDPR.
+Data will not be transferred to third parties, except where required by law. Forms are sent directly to our own server (112books.eu) and notifications are sent with our own mail system; we do not use any external form processor.
 
 ## Retention period
 

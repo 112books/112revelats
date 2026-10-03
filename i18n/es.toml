@@ -210,3 +210,9 @@
   other = "Kit de Prensa"
 [gallery_title]
   other = "Muestra de fotografía"
+
+[form_ok]
+  other = "¡Gracias! Hemos recibido tu propuesta."
+
+[form_err]
+  other = "No se ha podido enviar. Vuelve a intentarlo o escríbenos a hola@112books.eu."

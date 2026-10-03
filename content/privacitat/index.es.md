@@ -20,7 +20,7 @@ El tratamiento de datos se basa en el consentimiento expreso del usuario al envi
 
 ## Destinatarios
 
-Los datos no se cederán a terceros, salvo obligación legal. Utilizamos **Formspree** como procesador de formularios, que cumple con el RGPD.
+Los datos no se cederán a terceros, salvo obligación legal. Los formularios se envían directamente a nuestro servidor (112books.eu) y las notificaciones se realizan con nuestro propio correo; no utilizamos ningún procesador externo de formularios.
 
 ## Plazo de conservación
 

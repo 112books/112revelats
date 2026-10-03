@@ -210,3 +210,9 @@
   other = "Press Kit"
 [gallery_title]
   other = "Photo samples"
+
+[form_ok]
+  other = "Thank you! We have received your proposal."
+
+[form_err]
+  other = "It could not be sent. Please try again or write to us at hola@112books.eu."

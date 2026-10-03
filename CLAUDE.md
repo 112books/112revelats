@@ -32,8 +32,11 @@
 - GitHub Actions disponible (`.github/workflows/deploy.yml`) però no activat
 
 ### Formularis
-- **Formspree** (`https://formspree.io/f/maqzqynz`) — contacte + inscripció repte + col·laboració
-- File upload al formulari de participació amb `enctype="multipart/form-data"`
+- **Backend propi** a `https://112books.eu/api/submit.php` (PHP 8.4 + SQLite) al servidor Dinaserver `vl28359`.
+- Codi a `server/forms/`; desplegat a `/home/112books/www/api/` i `/home/112books/webforms/`.
+- Notificacions amb el **correu propi** (`mail()` via wrapper de Dinaserver) cap a `hola@112books.eu`.
+- Panell: `https://112books.eu/api/admin.php` (Basic auth; contrasenya a `/home/112books/webforms/config.php`).
+- Cap servei extern de formularis. Les imatges es lliuren per SwissTransfer (camp enllac-imatges).
 
 ### Password (ELIMINAT)
 - El site **ja no té password gate**. Era un `baseof.html` amb SHA256 + `sessionStorage`. Es va eliminar el 2026-06-05.
@@ -83,7 +86,7 @@
 |---|---|
 | Hugo single-page + pàgines internes | Home és landing; reptes/legal són pàgines profundes |
 | GitHub Pages | Gratuït, HTTPS automàtic, custom domain |
-| Formspree | Sense backend propi, suporta file upload |
+| Backend propi | Formularis PHP+SQLite i correu propi al servidor Dinaserver |
 | `defaultContentLanguageInSubdir = false` | CA sense prefix, més net |
 | `AllTranslations` per lang switch | Modern, correcte amb Hugo multilingüe |
 | Sense taxonomies | No calen etiquetes ni categories |
@@ -105,7 +108,6 @@
 ### Per fer
 
 - [ ] **Posar imatges a `static/img/retrats-lents/`** — la galeria ja està preparada (CSS + JS randomizer + secció al template). Quan hi hagi imatges al directori, es mostraran automàticament (fins a 6 aleatòries cada visita).
-- [ ] **Confirmar Formspree** — el primer submit del formulari envia un email de confirmació al teu compte. Cal obrir-lo i confirmar.
 - [ ] **Self-host Google Fonts** (evitar dependència externa)
 - [ ] **PWA support** (`site.webmanifest`, service worker)
 
@@ -124,6 +126,7 @@
 - ✅ Instagram Post 8 (última setmana, post + 2 stories) publicat (2026-09-02). Posts 6, 7, 9 i 10 omesos (dates/missatge caducats).
 - ✅ **Termini de Retrats Lents ampliat fins a l'1 de novembre de 2026** (2a pròrroga: 6 set → 20 set → 1 nov). Dates actualitzades a tot el web ca/es/en (`content/repte/retrats-lents/`, `content/legal/bases/`, `content/legal/formulari/`) — 2026-10-03
 - ✅ Formularis reforçats (2026-10-03): camp `subject` (en lloc de l'obsolet `_subject`), honeypot `_gotcha` anti-bots, camp `email` afegit a `/legal/col-labora/` i nota de suport `hola@112books.eu` al formulari del concurs
+- ✅ **Formularis 100% propis (2026-10-03)**: backend PHP+SQLite al servidor Dinaserver i enviament amb el correu propi; retirat el servei extern anterior. Codi a `server/forms/`, panell a `/api/admin.php`
 
 ### Notat
 

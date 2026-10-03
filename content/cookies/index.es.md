@@ -11,6 +11,6 @@ Utilizamos **GoatCounter** como herramienta de análisis de audiencia. GoatCount
 
 ## Cookies técnicas
 
-Algunas cookies técnicas pueden ser generadas por el navegador o por servicios de terceros (como Formspree) para el funcionamiento básico del web. Estas cookies no almacenan información personal.
+Algunas cookies técnicas pueden ser generadas por el navegador o por nuestro propio servidor para el funcionamiento básico del web. Estas cookies no almacenan información personal.
 
 Para más información, consulta nuestra [política de privacidad](/privacitat).

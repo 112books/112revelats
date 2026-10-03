@@ -18,7 +18,9 @@ Aquesta convocatòria és una crida als fotògrafs que vulguin explorar el retra
 - Es valorarà l'ús de formats analògics, però no és obligatori
 - **No s'acceptaran imatges generades per intel·ligència artificial**
 
-<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
+<form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="inscripcio" data-msg-ok="Gràcies! Hem rebut la teva proposta." data-msg-err="No s'ha pogut enviar. Torna-ho a provar o escriu-nos a hola@112books.eu." style="max-width:100%;margin-top:2rem;">
+  <input type="hidden" name="form" value="inscripcio">
+  <input type="hidden" name="_ts" value="">
   <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 

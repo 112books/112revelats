@@ -10,7 +10,9 @@ description: "Formulario de patrocinio y colaboración para empresas y entidades
 
 Los patrocinadores obtienen reconocimiento y visibilidad según el nivel de colaboración.
 
-<form class="contact-form" action="https://formspree.io/f/maqzqynz" method="POST" style="max-width:100%;margin-top:2rem;">
+<form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="collaboracio" data-msg-ok="¡Gracias! Hemos recibido tu propuesta." data-msg-err="No se ha podido enviar. Vuelve a intentarlo o escríbenos a hola@112books.eu." style="max-width:100%;margin-top:2rem;">
+  <input type="hidden" name="form" value="collaboracio">
+  <input type="hidden" name="_ts" value="">
   <input type="hidden" name="subject" value="Colaboracio 112 Revelats">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
