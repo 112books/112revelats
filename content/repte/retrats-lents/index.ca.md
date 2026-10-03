@@ -4,18 +4,18 @@ description: "Segon repte fotogràfic de 112 Revelats — Retrats amb càmera es
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 juny — 20 setembre"
+  - date: "21 juny — 1 novembre"
     status: "active"
     note: "Inici oficial el solstici d'estiu (Sant Joan)"
-  - date: "21 juny — 20 setembre"
+  - date: "21 juny — 1 novembre"
     status: "active"
     note: "Gratuïta i oberta a totes les edats i nivells. Menors: cal autorització del tutor legal."
-  - date: "Principis d'octubre"
+  - date: "Mitjan novembre"
     status: "future"
     note: "Comunicarem els seleccionats"
-  - date: "Octubre"
+  - date: "Finals de novembre"
     status: "future"
-    note: "El fotollibre es llança a finals d'octubre"
+    note: "El fotollibre es llança a finals de novembre"
 ---
 
 **Retrats Lents** és el segon repte fotogràfic de 112 Revelats. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum.
@@ -32,4 +32,4 @@ No cal tenir una càmera especial: pots construir la teva pròpia càmera esteno
 2. [Envia'ns la teva proposta a través del formulari d'inscripció](/legal/formulari/)
 3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
 
-> **Pròrroga:** el termini d'enviament s'ha ampliat fins al **20 de setembre de 2026**. Si havies deixat la participació per al final, encara ets a temps. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
+> **Segona pròrroga:** el termini d'enviament s'amplia fins a l'**1 de novembre de 2026**. La data original era el 6 de setembre i la primera pròrroga va ser el 20 de setembre; ara l'ampliem una altra vegada perquè tothom qui ho vulgui pugui enviar la seva proposta. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).

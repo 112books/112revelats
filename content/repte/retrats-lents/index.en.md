@@ -4,18 +4,18 @@ description: "Second photographic challenge of 112 Revelats — Pinhole camera a
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 Jun — 20 Sep"
+  - date: "21 Jun — 1 Nov"
     status: "active"
     note: "Official start on the summer solstice (Sant Joan)"
-  - date: "21 Jun — 20 Sep"
+  - date: "21 Jun — 1 Nov"
     status: "active"
     note: "Free and open to all ages and levels. Minors require parental authorization."
-  - date: "Early October"
+  - date: "Mid-November"
     status: "future"
     note: "Selected participants will be announced"
-  - date: "October"
+  - date: "End of November"
     status: "future"
-    note: "The photobook launches at the end of October"
+    note: "The photobook launches at the end of November"
 ---
 
 **Retrats Lents** is the second photographic challenge of 112 Revelats. An invitation to slow down your gaze and capture the essence of the subject through time and low light.
@@ -32,4 +32,4 @@ You don't need a special camera: you can build your own pinhole camera with a ti
 2. [Send us your proposal through the registration form](/en/legal/formulari/)
 3. If your image is selected, it will be part of the collective photobook
 
-> **Extended deadline:** the submission period has been extended to **September 20, 2026**. If you were leaving it to the last minute, you still have time. Check the [full terms](/en/legal/bases/) and the [participation form](/en/legal/formulari/).
+> **Second extension:** the submission period is extended to **November 1, 2026**. The original deadline was September 6 and the first extension was September 20; we are extending it again so everyone who wants to take part has the chance. Check the [full terms](/en/legal/bases/) and the [participation form](/en/legal/formulari/).

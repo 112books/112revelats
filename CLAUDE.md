@@ -121,7 +121,8 @@
 - ✅ Difusió Retrats Lents: emails/missatges enviats a clubs, escoles, premsa i comunitats online (2026-06-13) — veure `docs/difusio/retrats-lents-difusio.md`
 - ✅ Campanya Instagram: material visual generat (`campanya-instagram/`), pla complet de 10 posts amb textos finals (`campanya-instagram/pla-posts.md`), 11 esdeveniments creats a Google Calendar (2026-06-16)
 - ✅ Instagram Post 5 (mid-point, carrusel + story amb poll) publicat (2026-07-21)
-- ✅ Instagram Post 8 (última setmana, post + 2 stories) publicat (2026-09-02). Posts 6 i 7 omesos (dates/missatge caducats). Pendents: Post 9 (4 set) i Post 10 (6 set, últim dia)
+- ✅ Instagram Post 8 (última setmana, post + 2 stories) publicat (2026-09-02). Posts 6, 7, 9 i 10 omesos (dates/missatge caducats).
+- ✅ **Termini de Retrats Lents ampliat fins a l'1 de novembre de 2026** (2a pròrroga: 6 set → 20 set → 1 nov). Dates actualitzades a tot el web ca/es/en (`content/repte/retrats-lents/`, `content/legal/bases/`, `content/legal/formulari/`) — 2026-10-03
 
 ### Notat
 
@@ -130,7 +131,7 @@
 
 ---
 
-*Última actualització: 2026-09-02*
+*Última actualització: 2026-10-03*
 *Mantenidor: Joan Martínez Serres — joan@linuxbcn.com*
 
 

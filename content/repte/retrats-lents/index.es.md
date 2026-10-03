@@ -4,18 +4,18 @@ description: "Segundo reto fotográfico de 112 Revelats — Retratos con cámara
 status: "active"
 challengeNumber: 2
 phases:
-  - date: "21 jun — 20 sep"
+  - date: "21 jun — 1 nov"
     status: "active"
     note: "Inicio oficial en el solsticio de verano (Sant Joan)"
-  - date: "21 jun — 20 sep"
+  - date: "21 jun — 1 nov"
     status: "active"
     note: "Gratuita y abierta a todas las edades y niveles. Menores: requieren autorización del tutor legal."
-  - date: "Principios de octubre"
+  - date: "Mediados de noviembre"
     status: "future"
     note: "Comunicaremos los seleccionados"
-  - date: "Octubre"
+  - date: "Finales de noviembre"
     status: "future"
-    note: "El fotolibro se lanza a finales de octubre"
+    note: "El fotolibro se lanza a finales de noviembre"
 ---
 
 **Retratos Lentos** es el segundo reto fotográfico de 112 Revelats. Una invitación a ralentizar la mirada y capturar la esencia del sujeto a través del tiempo y la poca luz.
@@ -32,4 +32,4 @@ No hace falta tener una cámara especial: puedes construir tu propia cámara est
 2. [Envíanos tu propuesta a través del formulario de inscripción](/es/legal/formulari/)
 3. Si tu imagen es seleccionada, formará parte del fotolibro colectivo
 
-> **Prórroga:** el plazo de envío se ha ampliado hasta el **20 de septiembre de 2026**. Si habías dejado la participación para el final, todavía estás a tiempo. Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).
+> **Segunda prórroga:** el plazo de envío se amplía hasta el **1 de noviembre de 2026**. La fecha original era el 6 de septiembre y la primera prórroga fue el 20 de septiembre; ahora lo ampliamos de nuevo para que todo el mundo que quiera pueda enviar su propuesta. Consulta las [bases completas](/es/legal/bases/) y el [formulario de participación](/es/legal/formulari/).
