@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-07T21:11:41.048578Z",
+  "generated": "2026-10-08T01:29:54.330723Z",
   "period": {
-    "start": "2025-10-07",
-    "end": "2026-10-07"
+    "start": "2025-10-08",
+    "end": "2026-10-08"
   },
-  "total": 338,
+  "total": 339,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -298,6 +298,10 @@
     {
       "date": "2026-10-05",
       "count": 1
+    },
+    {
+      "date": "2026-10-07",
+      "count": 1
     }
   ],
   "hits": [
@@ -315,7 +319,7 @@
     },
     {
       "path": "/en",
-      "count": 32
+      "count": 33
     },
     {
       "path": "/legal/formulari",
@@ -443,11 +447,11 @@
     }
   ],
   "by_lang": {
-    "en": 113,
+    "en": 114,
     "es": 10
   },
   "by_section": {
-    "inici": 148,
+    "inici": 149,
     "repte": 101,
     "legal": 55,
     "avis-legal": 9,
@@ -653,7 +657,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 5
+      "count": 6
     },
     {
       "name": "com.reddit.frontpage",
