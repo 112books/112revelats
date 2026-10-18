@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-17T23:53:11.079651Z",
+  "generated": "2026-10-18T07:41:15.821900Z",
   "period": {
-    "start": "2025-10-17",
-    "end": "2026-10-17"
+    "start": "2025-10-18",
+    "end": "2026-10-18"
   },
-  "total": 340,
+  "total": 342,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -306,12 +306,16 @@
     {
       "date": "2026-10-08",
       "count": 1
+    },
+    {
+      "date": "2026-10-17",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 112
+      "count": 113
     },
     {
       "path": "/en/repte/retrats-lents",
@@ -323,7 +327,7 @@
     },
     {
       "path": "/en",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/legal/formulari",
@@ -451,11 +455,11 @@
     }
   ],
   "by_lang": {
-    "en": 114,
+    "en": 115,
     "es": 10
   },
   "by_section": {
-    "inici": 150,
+    "inici": 152,
     "repte": 101,
     "legal": 55,
     "avis-legal": 9,
@@ -631,7 +635,7 @@
     {
       "name": "Postal",
       "id": "Postal",
-      "count": 14
+      "count": 15
     },
     {
       "name": "www.112books.eu",
