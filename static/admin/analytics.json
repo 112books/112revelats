@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-18T22:10:28.018372Z",
+  "generated": "2026-10-19T00:41:57.699064Z",
   "period": {
-    "start": "2025-10-18",
-    "end": "2026-10-18"
+    "start": "2025-10-19",
+    "end": "2026-10-19"
   },
-  "total": 342,
+  "total": 345,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -310,6 +310,10 @@
     {
       "date": "2026-10-17",
       "count": 2
+    },
+    {
+      "date": "2026-10-18",
+      "count": 3
     }
   ],
   "hits": [
@@ -319,7 +323,7 @@
     },
     {
       "path": "/en/repte/retrats-lents",
-      "count": 52
+      "count": 53
     },
     {
       "path": "/repte/retrats-lents",
@@ -327,7 +331,7 @@
     },
     {
       "path": "/en",
-      "count": 34
+      "count": 36
     },
     {
       "path": "/legal/formulari",
@@ -455,12 +459,12 @@
     }
   ],
   "by_lang": {
-    "en": 115,
+    "en": 118,
     "es": 10
   },
   "by_section": {
-    "inici": 152,
-    "repte": 101,
+    "inici": 154,
+    "repte": 102,
     "legal": 55,
     "avis-legal": 9,
     "patrocini": 6,
@@ -625,7 +629,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 119
+      "count": 120
     },
     {
       "name": "l.instagram.com",
