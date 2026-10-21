@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T01:11:22.323296Z",
+  "generated": "2026-10-21T06:53:41.486871Z",
   "period": {
     "start": "2025-10-21",
     "end": "2026-10-21"
@@ -495,7 +495,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 152
+      "count": 153
     },
     {
       "name": "Firefox",
@@ -527,14 +527,14 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 10
+      "count": 11
     }
   ],
   "sizes": [
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 150
+      "count": 151
     },
     {
       "name": "phone",
