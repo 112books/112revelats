@@ -62,11 +62,26 @@ def main():
     hits_data = safe_get(raw, "hits_data") or {}
     hits_list = safe_get(hits_data, "hits") or []
 
+    # Guard: si /stats/hits ha fallat (resposta null o buida) no sobreescriguis
+    # un analytics.json que ja tenia pàgines; evita perdre el detall per un error
+    # transitori de l'API.
+    if not hits_list and os.path.exists(output_file):
+        try:
+            with open(output_file) as f:
+                previous = json.load(f)
+            if previous.get("hits"):
+                print("WARN: /stats/hits buit; es conserva l'analytics.json existent")
+                return
+        except (json.JSONDecodeError, OSError):
+            pass
+
     by_lang     = {}
     by_section  = {}
     total       = 0
     hits_by_day = {}
     hits_pages  = {}
+    pages_daily    = {}
+    sections_daily = {}
     events_data = {}
 
     WIZARD_STEPS = ['wizard-s1', 'wizard-s2', 'wizard-s3', 'wizard-s4', 'wizard-sent']
@@ -98,6 +113,12 @@ def main():
             by_section[section] = by_section.get(section, 0) + count
             if date:
                 hits_by_day[date] = hits_by_day.get(date, 0) + count
+                # Desglossament diari per pàgina i per secció: permet filtrar
+                # el dashboard per dia/setmana/mes/trimestre/any.
+                pages_daily.setdefault(path, {})
+                pages_daily[path][date] = pages_daily[path].get(date, 0) + count
+                sections_daily.setdefault(section, {})
+                sections_daily[section][date] = sections_daily[section].get(date, 0) + count
 
         if path_total > 0:
             hits_pages[path] = hits_pages.get(path, 0) + path_total
@@ -120,6 +141,15 @@ def main():
 
     wizard_funnel = {k: events_data.get(k, 0) for k in WIZARD_STEPS}
 
+    def sort_daily(daily_map):
+        """Ordena per total desc i, dins de cada clau, les dates ascendentment."""
+        return {
+            key: dict(sorted(series.items()))
+            for key, series in sorted(
+                daily_map.items(), key=lambda kv: sum(kv[1].values()), reverse=True
+            )
+        }
+
     total_data   = safe_get(raw, "total_data") or {}
     total_unique = safe_get(total_data, "total_unique") or 0
 
@@ -138,6 +168,8 @@ def main():
         "hits":         hits_top,
         "by_lang":      by_lang,
         "by_section":   by_section,
+        "pages_daily":    sort_daily(pages_daily),
+        "sections_daily": sort_daily(sections_daily),
         "noticies_top":  noticies_top,
         "festivals_top": festivals_top,
         "wizard_funnel": wizard_funnel,
@@ -152,7 +184,11 @@ def main():
     with open(output_file, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"Analytics processats: {total} visites, {len(hits_by_day_list)} dies, funnel: {wizard_funnel}")
+    print(
+        f"Analytics processats: {total} visites, {len(hits_by_day_list)} dies, "
+        f"{len(pages_daily)} pàgines i {len(sections_daily)} seccions amb detall diari, "
+        f"funnel: {wizard_funnel}"
+    )
 
 if __name__ == "__main__":
     main()

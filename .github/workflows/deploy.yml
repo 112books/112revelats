@@ -3,6 +3,12 @@ name: Deploy Hugo site
 on:
   push:
     branches: [main]
+  # Els commits del fetch els fa el GITHUB_TOKEN, que no encadena altres
+  # workflows: el deploy no s'executaria i el web quedaria desfasat. Amb
+  # workflow_run es reconstrueix el main al dia quan acaba el fetch.
+  workflow_run:
+    workflows: ["Fetch GoatCounter Analytics"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:

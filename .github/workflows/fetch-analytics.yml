@@ -68,6 +68,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add static/admin/analytics.json
-          git diff --staged --quiet || git commit -m "chore: update analytics [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update analytics"
           git pull --rebase
           git push
