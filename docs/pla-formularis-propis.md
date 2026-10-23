@@ -34,12 +34,13 @@ public/admin.php, config.sample.php).
 | `form` | On és | Camps obligatoris (servidor) |
 |---|---|---|
 | `inscripcio` | `/legal/formulari/` | `nom`, `email`, `enllac-imatges` |
-| `inscripcio-rapida` | Home (`#reptes`) | `nom`, `email` |
 | `collaboracio` | `/legal/col-labora/` | `nom-contacte`, `email`, `cif`, `adreca-fiscal`, `tipus`, `visibilitat-web`, `visibilitat-publicacio`, `rgpd` |
 | `contacte` | Home (`#contacte`) | `nom`, `email` |
+| `inscripcio-rapida` | *antic* formulari de la home | `nom`, `email` — es manté per a pàgines cachejades |
 
-El formulari ràpid de la home **no** és la inscripció completa: recull el contacte i
-enllaça al formulari complet. El correu de notificació ho indica i hi porta l'enllaç.
+La home **no té formulari**: a `#reptes` hi ha un CTA («Omple el formulari d'inscripció»)
+que porta a `/legal/formulari/`. Així no hi ha dos circuits d'inscripció i ningú no es
+pensa que ha enviat les fotografies quan només ha deixat les dades.
 
 Tots els formularis envien també `subject` (tema del correu) i `lang` (ca/es/en).
 
@@ -67,15 +68,11 @@ La config.php NO es desplega; es crea un cop al servidor (contrasenya aleatoria)
 
     # contacte (desa i envia correu)
     curl -s -X POST $B -H "Content-Type: application/json" \
-      -d '{"form":"contacte","nom":"Test","email":"prova@example.com","missatge":"Hola","_ts":0}'
-
-    # formulari rapid de la home (inscripcio-rapida)
-    curl -s -X POST $B -H "Content-Type: application/json" \
-      -d '{"form":"inscripcio-rapida","nom":"Test","email":"prova@example.com","_ts":0}'
+      -d '{"form":"contacte","nom":"Test","email":"prova@example.com","missatge":"Hola"}'
 
     # la inscripcio completa exigeix l'enllac d'imatges
     curl -s -X POST $B -H "Content-Type: application/json" \
-      -d '{"form":"inscripcio","nom":"Test","email":"prova@example.com","_ts":0}'
+      -d '{"form":"inscripcio","nom":"Test","email":"prova@example.com"}'
     # -> {"ok":false,"error":"missing_fields","fields":["enllac-imatges"]}
 
     # preflight CORS
@@ -89,11 +86,13 @@ hola@112books.eu; esborra-les despres des del panell o amb sqlite3.
 
 - hugo.toml: paràmetre formEndpoint.
 - assets/js/forms.js: intercepta els enviaments i fa fetch a l'endpoint.
-- Cada formulari porta: data-form (inscripcio / inscripcio-rapida / contacte / collaboracio),
-  data-msg-ok, data-msg-err, i els camps ocults form i _ts.
+- Cada formulari porta: data-form (inscripcio / contacte / collaboracio),
+  data-msg-ok, data-msg-err, i els camps ocults form, subject i lang.
 - forms.js mostra l'error concret (camps que falten, correu invalid, URL, 429) en
   l'idioma de la pagina i marca els camps afectats.
-- Anti-bot: honeypot _gotcha + temps minim (_ts, 1 s) + rate limit 10/hora per IP i formulari.
+- Anti-bot: honeypot _gotcha + rate limit 10/hora per IP i formulari. **No** es fa
+  servir cap marca de temps del client: els rellotges desfasats feien perdre
+  enviaments reals amb un fals «ok» (vegeu l'incident del 2026-10-23).
 - CORS: https://112revelats.112books.eu, https://112revelats.org i https://www.112revelats.org.
 
 ## Manteniment

@@ -64,22 +64,8 @@
 
       <div class="participa-form">
         <h4>{{ i18n "participa_form_title" }}</h4>
-        <p class="participa-note">{{ i18n "participa_form_note" }} <a href="{{ "legal/formulari" | relLangURL }}">{{ i18n "participa_form_complet" }}</a>.</p>
-        <form class="contact-form" action="{{ $.Site.Params.formEndpoint }}" method="POST" data-endpoint="{{ $.Site.Params.formEndpoint }}" data-form="inscripcio-rapida" data-msg-ok="{{ i18n "form_ok_rapid" }}" data-msg-err="{{ i18n "form_err" }}">
-          <input type="hidden" name="form" value="inscripcio-rapida">
-          <input type="hidden" name="_ts" value="">
-          <input type="hidden" name="subject" value="Inscripcio rapida Retrats Lents">
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
-          <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>
-          <input type="url" name="portfolio" placeholder="{{ i18n "participa_form_portfolio" }}">
-          <textarea name="missatge" placeholder="{{ i18n "participa_form_missatge" }}" rows="3"></textarea>
-          <label class="checkbox-label">
-            <input type="checkbox" name="rgpd" value="si" required>
-            {{ i18n "participa_form_rgpd" }} <a href="{{ "privacitat" | relLangURL }}" target="_blank">{{ i18n "participa_form_rgpd_link" }}</a>
-          </label>
-          <button type="submit" class="btn btn-primary btn-lg">{{ i18n "form_envia" }}</button>
-        </form>
+        <p class="participa-cta-text">{{ i18n "participa_form_cta_text" }}</p>
+        <a class="btn btn-primary btn-lg" href="{{ "legal/formulari" | relLangURL }}">{{ i18n "participa_form_cta" }}</a>
       </div>
     </div>
 
@@ -155,7 +141,6 @@
     <p class="contacte-nota">{{ i18n "contacte_nota" | safeHTML }}</p>
     <form class="contact-form" action="{{ $.Site.Params.formEndpoint }}" method="POST" data-endpoint="{{ $.Site.Params.formEndpoint }}" data-form="contacte" data-msg-ok="{{ i18n "form_ok" }}" data-msg-err="{{ i18n "form_err" }}">
       <input type="hidden" name="form" value="contacte">
-      <input type="hidden" name="_ts" value="">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
       <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>

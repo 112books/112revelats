@@ -12,7 +12,6 @@ Els patrocinadors obtenen reconeixement i visibilitat segons el nivell de col·l
 
 <form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="collaboracio" data-msg-ok="Gràcies! Hem rebut la teva proposta." data-msg-err="No s'ha pogut enviar. Torna-ho a provar o escriu-nos a hola@112books.eu." style="max-width:100%;margin-top:2rem;">
   <input type="hidden" name="form" value="collaboracio">
-  <input type="hidden" name="_ts" value="">
   <input type="hidden" name="subject" value="Col·laboracio 112 Revelats">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 

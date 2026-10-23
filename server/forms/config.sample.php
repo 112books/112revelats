@@ -13,5 +13,4 @@ return [
     'admin_password'   => 'CANVIA_AQUESTA_CONTRASENYA_LLARGA',
     'db_path'          => __DIR__ . '/data/forms.sqlite',
     'rate_per_hour'    => 10,
-    'min_fill_seconds' => 1,
 ];

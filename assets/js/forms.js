@@ -139,9 +139,6 @@
   }
 
   document.querySelectorAll('form.contact-form').forEach(function (form) {
-    var ts = form.querySelector('input[name="_ts"]');
-    if (ts && !ts.value) { ts.value = String(Date.now()); }
-
     form.addEventListener('input', function (event) {
       var el = event.target;
       if (el && el.classList) {
@@ -161,7 +158,6 @@
 
       var payload = {};
       new FormData(form).forEach(function (value, key) { payload[key] = value; });
-      if (ts) { payload._ts = ts.value || String(Date.now()); }
       payload.lang = LANG;
 
       Promise.resolve().then(function () {
@@ -179,7 +175,6 @@
         if (data && data.ok) {
           showMessage(form, getMessage(form, 'data-msg-ok', 'OK'), false);
           form.reset();
-          if (ts) { ts.value = String(Date.now()); }
           return;
         }
 

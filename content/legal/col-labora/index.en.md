@@ -12,7 +12,6 @@ Sponsors receive recognition and visibility according to their contribution leve
 
 <form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="collaboracio" data-msg-ok="Thank you! We have received your proposal." data-msg-err="It could not be sent. Please try again or write to us at hola@112books.eu." style="max-width:100%;margin-top:2rem;">
   <input type="hidden" name="form" value="collaboracio">
-  <input type="hidden" name="_ts" value="">
   <input type="hidden" name="subject" value="Collaboration 112 Revelats">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 

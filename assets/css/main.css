@@ -155,8 +155,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; letter-spacing: 
 .participa-form h4 { font-size: 0.9rem; margin-bottom: 0.8rem; }
 .participa-form .contact-form { max-width: 100%; }
 .participa-form .checkbox-label a { color: var(--ink-2); text-decoration: underline; font-size: 0.75rem; }
-.participa-form .participa-note { font-size: 0.8rem; color: var(--ink-3); line-height: 1.45; margin: -0.3rem 0 0.6rem; }
-.participa-form .participa-note a { color: var(--ink-2); }
+.participa-form .participa-cta-text { font-size: 0.9rem; color: var(--ink-2); line-height: 1.5; margin: -0.2rem 0 0.8rem; }
 
 /* avis de prorroga */
 .deadline-note { margin-top: 0.9rem; padding: 0.7rem 0.9rem; background: rgba(254,33,33,0.08); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; font-weight: 600; color: var(--ink); }

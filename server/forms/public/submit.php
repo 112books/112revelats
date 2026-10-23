@@ -26,14 +26,9 @@ if (!empty($data['_gotcha'])) {
     wf_out(200, ['ok' => true]);
 }
 
-// Anti-bot: nomes si el client ha enviat _ts i ha estat massa rapid.
-// (Un huma no pot carregar i enviar en menys d'un segon.)
-$ts = (int) ($data['_ts'] ?? 0);
-$nowMs = (int) round(microtime(true) * 1000);
-$minMs = (int) ((wf_config()['min_fill_seconds'] ?? 1) * 1000);
-if ($ts > 0 && ($nowMs - $ts) < $minMs) {
-    wf_out(200, ['ok' => true]);
-}
+// Anti-bot: honeypot (_gotcha) + rate limit. No usem cap marca de temps del
+// client: els rellotges dels dispositius poden anar desfasats i fariem perdre
+// enviaments reals amb un fals "ok".
 
 $form = preg_replace('/[^a-z_-]/', '', strtolower((string) ($data['form'] ?? 'contacte')));
 if ($form === '' || $form === null) {

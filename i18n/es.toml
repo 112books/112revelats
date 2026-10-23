@@ -71,12 +71,10 @@
   other = "He leído y acepto la"
 [participa_form_rgpd_link]
   other = "política de privacidad"
-[participa_form_note]
-  other = "Déjanos tus datos y te contactaremos. Para enviar las fotografías, utiliza el"
-[participa_form_complet]
-  other = "formulario completo de inscripción"
-[form_ok_rapid]
-  other = "¡Gracias! Te hemos apuntado. Te contactaremos para que nos envíes las fotografías."
+[participa_form_cta_text]
+  other = "Para participar hay que enviar la propuesta con el formulario de inscripción: nombre, correo y enlace a las fotografías."
+[participa_form_cta]
+  other = "Rellena el formulario de inscripción →"
 [fase_placeholder_1]
   other = "Revisar propuestas"
 [fase_placeholder_2]
