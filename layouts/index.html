@@ -64,10 +64,11 @@
 
       <div class="participa-form">
         <h4>{{ i18n "participa_form_title" }}</h4>
-        <form class="contact-form" action="{{ $.Site.Params.formEndpoint }}" method="POST" data-endpoint="{{ $.Site.Params.formEndpoint }}" data-form="inscripcio" data-msg-ok="{{ i18n "form_ok" }}" data-msg-err="{{ i18n "form_err" }}">
-          <input type="hidden" name="form" value="inscripcio">
+        <p class="participa-note">{{ i18n "participa_form_note" }} <a href="{{ "legal/formulari" | relLangURL }}">{{ i18n "participa_form_complet" }}</a>.</p>
+        <form class="contact-form" action="{{ $.Site.Params.formEndpoint }}" method="POST" data-endpoint="{{ $.Site.Params.formEndpoint }}" data-form="inscripcio-rapida" data-msg-ok="{{ i18n "form_ok_rapid" }}" data-msg-err="{{ i18n "form_err" }}">
+          <input type="hidden" name="form" value="inscripcio-rapida">
           <input type="hidden" name="_ts" value="">
-          <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
+          <input type="hidden" name="subject" value="Inscripcio rapida Retrats Lents">
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
           <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>

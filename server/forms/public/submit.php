@@ -26,16 +26,17 @@ if (!empty($data['_gotcha'])) {
     wf_out(200, ['ok' => true]);
 }
 
-// Anti-bot: massa ràpid.
+// Anti-bot: nomes si el client ha enviat _ts i ha estat massa rapid.
+// (Un huma no pot carregar i enviar en menys d'un segon.)
 $ts = (int) ($data['_ts'] ?? 0);
 $nowMs = (int) round(microtime(true) * 1000);
-$minMs = (int) ((wf_config()['min_fill_seconds'] ?? 3) * 1000);
+$minMs = (int) ((wf_config()['min_fill_seconds'] ?? 1) * 1000);
 if ($ts > 0 && ($nowMs - $ts) < $minMs) {
     wf_out(200, ['ok' => true]);
 }
 
-$form = preg_replace('/[^a-z_]/', '', strtolower((string) ($data['form'] ?? 'contacte')));
-if ($form === '') {
+$form = preg_replace('/[^a-z_-]/', '', strtolower((string) ($data['form'] ?? 'contacte')));
+if ($form === '' || $form === null) {
     $form = 'contacte';
 }
 
@@ -45,6 +46,7 @@ $allowedFields = [
     'accepta-condicions', 'autoritzacio-us', 'rgpd', 'empresa', 'cif',
     'adreca-fiscal', 'tipus', 'import', 'altres', 'visibilitat-web',
     'visibilitat-publicacio', 'comentaris', 'missatge', 'portfolio', 'llistacorreu',
+    'subject', 'lang',
 ];
 
 $fields = [];
@@ -54,10 +56,19 @@ foreach ($allowedFields as $key) {
     }
 }
 
+// Idioma del formulari (ens ajuda a respondre en la llengua correcta).
+if (!empty($fields['lang'])) {
+    $fields['lang'] = in_array($fields['lang'], ['ca', 'es', 'en'], true) ? $fields['lang'] : '';
+    if ($fields['lang'] === '') {
+        unset($fields['lang']);
+    }
+}
+
 $required = [
-    'inscripcio'   => ['nom', 'email', 'enllac-imatges'],
-    'collaboracio' => ['nom-contacte', 'email', 'cif', 'adreca-fiscal', 'tipus', 'visibilitat-web', 'visibilitat-publicacio', 'rgpd'],
-    'contacte'     => ['nom', 'email'],
+    'inscripcio'        => ['nom', 'email', 'enllac-imatges'],
+    'inscripcio-rapida' => ['nom', 'email'],
+    'collaboracio'      => ['nom-contacte', 'email', 'cif', 'adreca-fiscal', 'tipus', 'visibilitat-web', 'visibilitat-publicacio', 'rgpd'],
+    'contacte'          => ['nom', 'email'],
 ];
 $need = $required[$form] ?? ['nom', 'email'];
 $missing = [];
@@ -71,14 +82,15 @@ if ($missing) {
 }
 
 if (!filter_var((string) ($fields['email'] ?? ''), FILTER_VALIDATE_EMAIL)) {
-    wf_out(422, ['ok' => false, 'error' => 'invalid_email']);
+    wf_out(422, ['ok' => false, 'error' => 'invalid_email', 'fields' => ['email']]);
 }
 if (!empty($fields['enllac-imatges']) && !filter_var((string) $fields['enllac-imatges'], FILTER_VALIDATE_URL)) {
-    wf_out(422, ['ok' => false, 'error' => 'invalid_url']);
+    wf_out(422, ['ok' => false, 'error' => 'invalid_url', 'fields' => ['enllac-imatges']]);
 }
 
 $ip = wf_ip();
 if (!wf_rate_ok($ip, $form)) {
+    header('Retry-After: 900');
     wf_out(429, ['ok' => false, 'error' => 'rate_limited']);
 }
 
@@ -101,11 +113,29 @@ foreach ($fields as $k => $v) {
     $lines[] = $k . ': ' . str_replace("\n", ' | ', (string) $v);
 }
 $lines[] = str_repeat('-', 40);
+if ($form === 'inscripcio-rapida') {
+    $lines[] = 'Nota: formulari rapid de la home; pot faltar l\'enllac de les imatges.';
+    $lines[] = 'Per completar la inscripcio: https://112revelats.112books.eu/legal/formulari/';
+    $lines[] = str_repeat('-', 40);
+}
 $lines[] = 'Panell: https://112books.eu/api/admin.php';
 $body = implode("\n", $lines);
 
-$label = $form === 'inscripcio' ? 'Inscripcio Retrats Lents' : ($form === 'collaboracio' ? 'Col·laboracio' : 'Contacte');
-$subject = '[' . $label . '] ' . ($name !== '' ? $name : 'sense nom');
+$labels = [
+    'inscripcio'        => 'Inscripcio Retrats Lents',
+    'inscripcio-rapida' => 'Inscripcio rapida Retrats Lents',
+    'collaboracio'      => 'Col·laboracio',
+    'contacte'          => 'Contacte',
+];
+$label = $labels[$form] ?? 'Contacte';
+
+$subjectExtra = trim((string) ($fields['subject'] ?? ''));
+if ($subjectExtra !== '') {
+    $subjectExtra = mb_substr($subjectExtra, 0, 120, 'UTF-8');
+}
+$subject = ($subjectExtra !== '' ? $subjectExtra : '[' . $label . ']')
+    . ' — ' . ($name !== '' ? $name : 'sense nom');
+
 $mailed = wf_send_mail($subject, $body, $email) ? 1 : 0;
 
 $pdo->prepare('UPDATE submissions SET mailed = ? WHERE id = ?')->execute([$mailed, $id]);

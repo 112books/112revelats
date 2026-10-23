@@ -32,7 +32,8 @@
 - GitHub Actions disponible (`.github/workflows/deploy.yml`) però no activat
 
 ### Formularis
-- **Backend propi** a `https://112books.eu/api/submit.php` (PHP 8.4 + SQLite) al servidor Dinaserver `vl28359`.
+- **Backend propi** a `https://112books.eu/api/submit.php` (PHP 8.5 + SQLite) al servidor Dinaserver `vl28359`.
+- Tipus: `inscripcio` (formulari complet), `inscripcio-rapida` (home), `contacte` i `collaboracio`.
 - Codi a `server/forms/`; desplegat a `/home/112books/www/api/` i `/home/112books/webforms/`.
 - Notificacions amb el **correu propi** (`mail()` via wrapper de Dinaserver) cap a `hola@112books.eu`.
 - Panell: `https://112books.eu/api/admin.php` (Basic auth; contrasenya a `/home/112books/webforms/config.php`).
@@ -128,15 +129,16 @@
 - ✅ **Google Fonts autoallotjades (2026-10-03)**: Beiruti i Literata servides des de `static/fonts/` amb `static/css/fonts.css`; cap petició a Google.
 - ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
 - ✅ **PWA (2026-10-03)**: `site.webmanifest`, icones 192/512 + apple-touch-icon, service worker `sw.js` (network-first, offline fallback) i registre al `main.js`
+- ✅ **Formulari ràpid de la home arreglat (2026-10-23)**: enviava `form=inscripcio` sense `enllac-imatges` i el backend responia 422; ara és `inscripcio-rapida` (nom+email), amb nota i enllaç al formulari complet. El backend retorna els camps que falten i `forms.js` els mostra/marca; a més, `subject` i `lang` s'envien i es desen, el correu codifica l'assumpte, el rate limit és 10/h i CORS inclou `112revelats.org`. Vegeu `docs/incident-2026-10-23-formulari-home.md`
 
 ### Notat
 
 - Les pàgines CA **no** tenen `/ca/` prefix (és l'idioma per defecte). Si la URL es visita amb `/ca/...` dona 404 — és comportament esperat.
-- `sync-112revelats.sh` té `read -p` interactiu — no es pot usar en no-interactiu. Alternativa: `git push origin main && hugo --minify && git push origin \`git subtree split --prefix public main\`:gh-pages --force`
+- `sync-112revelats.sh` té `read -p` interactiu — no es pot usar en no-interactiu. Alternativa fiable: `hugo --minify` i publicar `public/` en un worktree de `gh-pages` (vegeu `docs/pla-formularis-propis.md` i l'historial de desplegaments).
 
 ---
 
-*Última actualització: 2026-10-03*
+*Última actualització: 2026-10-23*
 *Mantenidor: Joan Martínez Serres — joan@linuxbcn.com*
 
 

@@ -71,6 +71,12 @@
   other = "He llegit i accepto la"
 [participa_form_rgpd_link]
   other = "política de privacitat"
+[participa_form_note]
+  other = "Deixa'ns les teves dades i et contactarem. Per enviar les fotografies, fes servir el"
+[participa_form_complet]
+  other = "formulari complet d'inscripció"
+[form_ok_rapid]
+  other = "Gràcies! T'hem apuntat. Et contactarem perquè ens enviïs les fotografies."
 [fase_placeholder_1]
   other = "Revisar propostes"
 [fase_placeholder_2]

@@ -77,9 +77,7 @@ function wf_ip(): string {
 
 function wf_clean($v, int $max = 2000): string {
     $v = (string) ($v ?? '');
-    $v = str_replace(["
-", ""], "
-", $v);
+    $v = str_replace(["\r\n", "\r"], "\n", $v);
     $v = strip_tags($v);
     $v = trim($v);
     return mb_substr($v, 0, $max, 'UTF-8');
@@ -111,6 +109,9 @@ function wf_send_mail(string $subject, string $body, string $replyTo): bool {
     }
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-Type: text/plain; charset=UTF-8';
+    $headers[] = 'Content-Transfer-Encoding: 8bit';
     $headers[] = 'X-Mailer: 112forms';
+    // Capçalera Subject codificada (noms i temes amb accents o símbols).
+    $subject = mb_encode_mimeheader($subject, 'UTF-8', 'B', "\r\n", 0);
     return @mail((string) $cfg['recipient'], $subject, $body, implode("\r\n", $headers), '-f' . $from);
 }

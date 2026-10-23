@@ -4,10 +4,14 @@ return [
     'recipient'        => 'hola@112books.eu',
     'sender'           => 'formulari@112books.eu',
     'sender_name'      => 'Formulari 112 Revelats',
-    'allowed_origins'  => ['https://112revelats.112books.eu'],
+    'allowed_origins'  => [
+        'https://112revelats.112books.eu',
+        'https://112revelats.org',
+        'https://www.112revelats.org',
+    ],
     'admin_user'       => 'form',
     'admin_password'   => 'CANVIA_AQUESTA_CONTRASENYA_LLARGA',
     'db_path'          => __DIR__ . '/data/forms.sqlite',
-    'rate_per_hour'    => 6,
-    'min_fill_seconds' => 3,
+    'rate_per_hour'    => 10,
+    'min_fill_seconds' => 1,
 ];
