@@ -60,7 +60,7 @@ les seves dades es perdien. **S'ha eliminat el filtre**; queden el honeypot
 - **forms.js**: missatges concrets per camps que falten, correu invàlid, URL
   invàlida i massa intents; marca els camps afectats i, si falta un camp que
   no és a la pàgina, enllaça al formulari complet.
-- **Anti-bot**: honeypot `_gotcha` + rate limit 10/hora per IP i formulari.
+- **Anti-bot**: honeypot `_gotcha` + rate limit 30/hora per IP i formulari.
   Sense marques de temps del client.
 - **CORS**: afegits `https://112revelats.org` i `https://www.112revelats.org`.
 - **`wf_clean`**: normalització de finals de línia corregida (`\r\n` i `\r` → `\n`).
@@ -72,7 +72,7 @@ les seves dades es perdien. **S'ha eliminat el filtre**; queden el honeypot
   idioma invàlid i preflight CORS.
 - Producció: el participant que es va queixar va poder enviar la inscripció
   completa i es va desar amb correu enviat (23/10, 15:22 UTC). El test de Joan
-  també es va desar (15:24 UTC).
+  es va desar (15:24 UTC) i es va esborrar a l'auditoria posterior.
 - Navegador headless: el formulari complet i el de contacte desen la fila i
   mostren el missatge d'èxit després de treure el filtre `_ts`.
 - Home generada (CA/ES/EN): CTA cap a `/legal/formulari/` present.
@@ -80,7 +80,11 @@ les seves dades es perdien. **S'ha eliminat el filtre**; queden el honeypot
 ## Pendent
 
 - Vigilar els logs per si apareixen 422/429 repetits.
-- La fila de prova de Joan (`joan`, 2026-10-23 15:24 UTC) es pot esborrar des
-  del panell.
+- Queda una fila de prova antiga (`joanet`, 2026-10-03, id 4) que es pot
+  esborrar si no es vol conservar.
 - Si algú altre es va quedar sense enviar abans d'aquest arreglament, caldria
   demanar-li que torni a provar-ho.
+
+## Auditoria posterior
+
+Vegeu `docs/auditoria-formularis-2026-10-23.md`.

@@ -90,7 +90,7 @@ hola@112books.eu; esborra-les despres des del panell o amb sqlite3.
   data-msg-ok, data-msg-err, i els camps ocults form, subject i lang.
 - forms.js mostra l'error concret (camps que falten, correu invalid, URL, 429) en
   l'idioma de la pagina i marca els camps afectats.
-- Anti-bot: honeypot _gotcha + rate limit 10/hora per IP i formulari. **No** es fa
+- Anti-bot: honeypot _gotcha + rate limit 30/hora per IP i formulari. **No** es fa
   servir cap marca de temps del client: els rellotges desfasats feien perdre
   enviaments reals amb un fals «ok» (vegeu l'incident del 2026-10-23).
 - CORS: https://112revelats.112books.eu, https://112revelats.org i https://www.112revelats.org.

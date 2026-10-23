@@ -129,7 +129,7 @@
 - ✅ **Google Fonts autoallotjades (2026-10-03)**: Beiruti i Literata servides des de `static/fonts/` amb `static/css/fonts.css`; cap petició a Google.
 - ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
 - ✅ **PWA (2026-10-03)**: `site.webmanifest`, icones 192/512 + apple-touch-icon, service worker `sw.js` (network-first, offline fallback) i registre al `main.js`
-- ✅ **Formularis arreglats (2026-10-23)**: el formulari de la home enviava `form=inscripcio` sense `enllac-imatges` i el backend responia 422. S'ha substituït per un CTA a `/legal/formulari/` (un sol circuit d'inscripció). El backend retorna els camps que falten i `forms.js` els mostra/marca; `subject` i `lang` s'envien i es desen i l'assumpte del correu es codifica. S'ha eliminat el filtre `_ts` perquè els rellotges desfasats descartaven enviaments reals amb un fals «ok»; queden honeypot + rate limit 10/h. CORS inclou `112revelats.org`. Vegeu `docs/incident-2026-10-23-formulari-home.md`
+- ✅ **Formularis arreglats (2026-10-23)**: el formulari de la home enviava `form=inscripcio` sense `enllac-imatges` i el backend responia 422. S'ha substituït per un CTA a `/legal/formulari/` (un sol circuit d'inscripció). El backend retorna els camps que falten i `forms.js` els mostra/marca; `subject` i `lang` s'envien i es desen i l'assumpte del correu es codifica. S'ha eliminat el filtre `_ts` perquè els rellotges desfasats descartaven enviaments reals amb un fals «ok»; queden honeypot + rate limit 30/h. CORS inclou `112revelats.org`. Vegeu `docs/incident-2026-10-23-formulari-home.md`
 
 ### Notat
 
