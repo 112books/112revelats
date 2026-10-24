@@ -139,8 +139,10 @@
     <h2>{{ i18n "contacte_title" }}</h2>
     <p>{{ i18n "contacte_text" }}</p>
     <p class="contacte-nota">{{ i18n "contacte_nota" | safeHTML }}</p>
+    <noscript><p class="noscript-note">{{ i18n "form_noscript" }} <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p></noscript>
     <form class="contact-form" action="{{ $.Site.Params.formEndpoint }}" method="POST" data-endpoint="{{ $.Site.Params.formEndpoint }}" data-form="contacte" data-msg-ok="{{ i18n "form_ok" }}" data-msg-err="{{ i18n "form_err" }}">
       <input type="hidden" name="form" value="contacte">
+      <input type="hidden" name="convocatoria" value="contacte">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <input type="text" name="nom" placeholder="{{ i18n "form_nom" }}" required>
       <input type="email" name="email" placeholder="{{ i18n "form_email" }}" required>

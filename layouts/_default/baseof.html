@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ or .Params.ogImage .Site.Params.ogImage | absURL }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+  <meta property="og:locale" content="{{ .Site.Language.Locale }}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ .Title }}">
@@ -76,7 +76,7 @@
       <div class="nav-langs">
         {{ range .AllTranslations }}
           {{ if ne .Lang $.Lang }}
-            <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+            <a href="{{ .RelPermalink }}" class="lang-switch" hreflang="{{ .Lang }}">{{ .Language.Label }}</a>
           {{ end }}
         {{ end }}
       </div>

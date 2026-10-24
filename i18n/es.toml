@@ -223,3 +223,5 @@
 
 [form_err]
   other = "No se ha podido enviar. Vuelve a intentarlo o escríbenos a hola@112books.eu."
+[form_noscript]
+  other = "Este formulario necesita JavaScript. Si no lo tienes activado, escríbenos a"

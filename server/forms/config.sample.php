@@ -12,5 +12,8 @@ return [
     'admin_user'       => 'form',
     'admin_password'   => 'CANVIA_AQUESTA_CONTRASENYA_LLARGA',
     'db_path'          => __DIR__ . '/data/forms.sqlite',
+    'email_image'      => __DIR__ . '/assets/email-header.jpg',
+    'submissions_path' => __DIR__ . '/submissions',
     'rate_per_hour'    => 30,
+    'send_confirmation' => true,
 ];

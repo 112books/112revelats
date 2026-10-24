@@ -41,7 +41,7 @@ $allowedFields = [
     'accepta-condicions', 'autoritzacio-us', 'rgpd', 'empresa', 'cif',
     'adreca-fiscal', 'tipus', 'import', 'altres', 'visibilitat-web',
     'visibilitat-publicacio', 'comentaris', 'missatge', 'portfolio', 'llistacorreu',
-    'subject', 'lang',
+    'subject', 'lang', 'convocatoria',
 ];
 
 $fields = [];
@@ -99,10 +99,24 @@ $st = $pdo->prepare('INSERT INTO submissions(form, name, email, ip, ua, data, cr
 $st->execute([$form, $name, $email, $ip, $ua, json_encode($fields, JSON_UNESCAPED_UNICODE), $createdAt]);
 $id = (int) $pdo->lastInsertId();
 
+// Confirmacio automatica al participant (es pot desactivar a config.php).
+$sendConfirmation = (bool) (wf_config()['send_confirmation'] ?? true);
+$confirmation = $sendConfirmation ? wf_confirmation_mail($form, $fields, $name, $email) : false;
+$confirmationLabel = !$sendConfirmation ? 'desactivada' : ($confirmation ? 'enviada' : 'NO enviada');
+
+// Fitxer Markdown de l'entrada, per convocatoria, per arxivar-la.
+$md = wf_store_submission_md(
+    ['id' => $id, 'form' => $form, 'name' => $name, 'email' => $email, 'ip' => $ip, 'created_at' => $createdAt],
+    $fields,
+    (bool) $confirmation
+);
+
 $lines = [];
 $lines[] = 'Nova entrada de formulari: ' . strtoupper($form);
 $lines[] = 'Data: ' . $createdAt;
 $lines[] = 'IP: ' . $ip;
+$lines[] = 'Confirmacio al participant: ' . $confirmationLabel;
+$lines[] = 'Fitxer MD: ' . ($md ? $md['path'] : 'NO generat');
 $lines[] = str_repeat('-', 40);
 foreach ($fields as $k => $v) {
     $lines[] = $k . ': ' . str_replace("\n", ' | ', (string) $v);
@@ -131,7 +145,44 @@ if ($subjectExtra !== '') {
 $subject = ($subjectExtra !== '' ? $subjectExtra : '[' . $label . ']')
     . ' — ' . ($name !== '' ? $name : 'sense nom');
 
-$mailed = wf_send_mail($subject, $body, $email) ? 1 : 0;
+$esc = static function ($v): string {
+    return htmlspecialchars((string) $v, ENT_QUOTES, 'UTF-8');
+};
+$rowsHtml = '';
+foreach ($fields as $k => $v) {
+    $val = trim((string) $v);
+    if ($val === '') {
+        $val = '—';
+    }
+    $rowsHtml .= '<tr>'
+        . '<td style="padding:6px 10px;border-bottom:1px solid #eeeeee;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.5;color:#666666;vertical-align:top;white-space:nowrap;">' . $esc($k) . '</td>'
+        . '<td style="padding:6px 10px;border-bottom:1px solid #eeeeee;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.5;color:#333333;vertical-align:top;">' . nl2br($esc($val), false) . '</td>'
+        . '</tr>';
+}
+$notifHtml = '<p style="margin:0 0 10px;font-size:14px;line-height:1.5;color:#333333;">Nova entrada de formulari: <strong>' . $esc(strtoupper($form)) . '</strong></p>'
+    . '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin:0 0 14px;">' . $rowsHtml . '</table>'
+    . '<p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#333333;">Confirmació al participant: <strong>' . $esc($confirmationLabel) . '</strong></p>';
+if ($md) {
+    $notifHtml .= '<p style="margin:0;font-size:13px;line-height:1.5;color:#333333;">Fitxer adjunt: <strong>' . $esc($md['filename']) . '</strong></p>';
+} else {
+    $notifHtml .= '<p style="margin:0;font-size:13px;line-height:1.5;color:#b00000;">No s\'ha pogut generar el fitxer .md.</p>';
+}
+$attachment = $md ? ['filename' => $md['filename'], 'mime' => 'text/markdown; charset=UTF-8', 'data' => $md['content']] : null;
+
+$mailed = wf_mail_html(
+    (string) wf_config()['recipient'],
+    $subject,
+    $body,
+    $email,
+    'Nova entrada — ' . $label,
+    $notifHtml,
+    'https://112books.eu/api/admin.php',
+    'Obrir el panell',
+    $attachment,
+    null,
+    'ca',
+    ''
+) ? 1 : 0;
 
 $pdo->prepare('UPDATE submissions SET mailed = ? WHERE id = ?')->execute([$mailed, $id]);
 

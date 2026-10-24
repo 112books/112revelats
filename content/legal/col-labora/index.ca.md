@@ -10,8 +10,10 @@ description: "Formulari de patrocini i col·laboració per a empreses i entitats
 
 Els patrocinadors obtenen reconeixement i visibilitat segons el nivell de col·laboració.
 
+<noscript><p class="noscript-note">Aquest formulari necessita JavaScript. Si no el tens activat, escriu-nos a <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p></noscript>
 <form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="collaboracio" data-msg-ok="Gràcies! Hem rebut la teva proposta." data-msg-err="No s'ha pogut enviar. Torna-ho a provar o escriu-nos a hola@112books.eu." style="max-width:100%;margin-top:2rem;">
   <input type="hidden" name="form" value="collaboracio">
+  <input type="hidden" name="convocatoria" value="col-laboracio">
   <input type="hidden" name="subject" value="Col·laboracio 112 Revelats">
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 

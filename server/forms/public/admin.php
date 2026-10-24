@@ -16,6 +16,32 @@ if (!$ok) {
 
 $pdo = wf_db();
 
+$mdBase = rtrim((string) ($cfg['submissions_path'] ?? __DIR__ . '/../../webforms/submissions'), '/');
+$mdFiles = [];
+foreach (glob($mdBase . '/*/*.md') ?: [] as $f) {
+    if (preg_match('/_id(\d+)_/', basename($f), $m)) {
+        $mdFiles[(int) $m[1]] = $f;
+    }
+}
+
+if (isset($_GET['md'])) {
+    $id = (int) $_GET['md'];
+    $file = $mdFiles[$id] ?? '';
+    $realBase = realpath($mdBase);
+    $real = $file !== '' ? realpath($file) : false;
+    if ($real === false || $realBase === false || strpos($real, $realBase . DIRECTORY_SEPARATOR) !== 0) {
+        http_response_code(404);
+        header('Content-Type: text/plain; charset=utf-8');
+        echo 'No trobat';
+        exit;
+    }
+    header('Content-Type: text/markdown; charset=utf-8');
+    header('Content-Disposition: attachment; filename="' . basename($real) . '"');
+    header('Content-Length: ' . (string) filesize($real));
+    readfile($real);
+    exit;
+}
+
 if (($_GET['export'] ?? '') === 'csv') {
     header('Content-Type: text/csv; charset=utf-8');
     header('Content-Disposition: attachment; filename="formularis-112revelats.csv"');
@@ -44,7 +70,7 @@ $rows = $pdo->query('SELECT id, form, name, email, ip, mailed, created_at, data 
 <style>body{font-family:system-ui,sans-serif;margin:2rem;color:#111}h1{font-size:1.4rem}table{border-collapse:collapse;width:100%;font-size:.85rem}th,td{border:1px solid #ddd;padding:.4rem .5rem;text-align:left;vertical-align:top}th{background:#f4f4f4}.f{white-space:pre-wrap;max-width:460px}.m0{color:#b00}.m1{color:#070}</style></head>
 <body><h1>Formularis 112 Revelats</h1>
 <p><a href="?export=csv">Exporta CSV</a> - <?= count($rows) ?> entrades (maxim 300)</p>
-<table><tr><th>#</th><th>Form</th><th>Nom</th><th>Email</th><th>Data</th><th>Correu</th><th>Dades</th></tr>
+<table><tr><th>#</th><th>Form</th><th>Nom</th><th>Email</th><th>Data</th><th>Correu</th><th>MD</th><th>Dades</th></tr>
 <?php foreach ($rows as $row): $d = json_decode((string) $row['data'], true); if (!is_array($d)) { $d = []; } ?>
 <tr>
 <td><?= (int) $row['id'] ?></td>
@@ -53,6 +79,7 @@ $rows = $pdo->query('SELECT id, form, name, email, ip, mailed, created_at, data 
 <td><?= htmlspecialchars((string) $row['email']) ?></td>
 <td><?= htmlspecialchars((string) $row['created_at']) ?></td>
 <td class="m<?= (int) $row['mailed'] ?>"><?= ((int) $row['mailed']) ? 'si' : 'no' ?></td>
+<td><?php if (!empty($mdFiles[(int) $row['id']])): ?><a href="?md=<?= (int) $row['id'] ?>">.md</a><?php else: ?>—<?php endif; ?></td>
 <td class="f"><?php foreach ($d as $k => $v): ?><b><?= htmlspecialchars((string) $k) ?>:</b> <?= htmlspecialchars((string) $v) ?><br><?php endforeach; ?></td>
 </tr>
 <?php endforeach; ?>

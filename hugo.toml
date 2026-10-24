@@ -7,17 +7,17 @@ disableKinds = ["taxonomy", "term"]
 
 [languages]
   [languages.ca]
-    languageName = "CA"
+    label = "CA"
     weight = 1
     disableKinds = ["taxonomy", "term"]
 
   [languages.es]
-    languageName = "ES"
+    label = "ES"
     weight = 2
     disableKinds = ["taxonomy", "term"]
 
   [languages.en]
-    languageName = "EN"
+    label = "EN"
     weight = 3
     disableKinds = ["taxonomy", "term"]
 
