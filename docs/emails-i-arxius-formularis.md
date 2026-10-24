@@ -160,3 +160,11 @@ El correu surt amb el wrapper `mail()` de Dinaserver; el procés web corre com
 - **No** s'adjunta el `.md` al participant; només a la notificació interna.
 - Si canvies la imatge, torna a executar `scripts/gen-email-header.py` i
   desplega el JPG.
+
+## 6. Pendent: correus de prova
+
+Els correus de prova de `hola@112books.eu` **no s'han pogut esborrar** des del
+servidor: el Maildir és de `vmail` (700), l'usuari `112books` no hi pot
+entrar, no té `sudo` i no hi ha contrasenya IMAP. Cal accés IMAP/root o
+esborrar-los manualment. La llista d'assumptes i les instruccions són a
+`docs/sessio-2026-10-23-24-formularis.md`.

@@ -3,6 +3,7 @@
 > Estat actual del projecte. Llegeix-lo abans de tocar res.
 > Actualitza'l quan canviï una decisió d'arquitectura.
 > ⚠️ **Primer llegeix AGENTS.md** per a la descripció executiva.
+> Tancament de la sessió 2026-10-23/24: `docs/sessio-2026-10-23-24-formularis.md`.
 
 ---
 
@@ -112,6 +113,7 @@
 ### Per fer
 
 - [ ] **Substituir les 11 fotos d'inspiració** de `static/img/retrats-lents/` per les fotografies reals dels participants quan tanqui el repte (1 nov 2026). La galeria ja funciona i en mostra 6 a l'atzar.
+- [ ] **Esborrar els correus de prova** de `hola@112books.eu` (cal accés IMAP/root; llista d'assumptes a `docs/sessio-2026-10-23-24-formularis.md`).
 
 ### Resolt
 
@@ -133,6 +135,8 @@
 - ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
 - ✅ **PWA (2026-10-03)**: `site.webmanifest`, icones 192/512 + apple-touch-icon, service worker `sw.js` (network-first, offline fallback) i registre al `main.js`
 - ✅ **Correus HTML i arxiu .md (2026-10-24)**: imatge de capçalera incrustada (CID, Apple Mail la mostra), confirmació automàtica CA/ES/EN amb botó, notificació interna amb tots els camps i el `.md` adjunt; arxiu per convocatòria, descàrrega des del panell, còpia diària del directori `submissions/` i `<noscript>` amb el correu de contacte. Desplegament corregit: GitHub Actions des de `main` (no `gh-pages`). Vegeu `docs/emails-i-arxius-formularis.md`
+- ✅ **Neteja de dades de prova (2026-10-24)**: `joanet` esborrat de la BD, de **tots els backups** i amb `VACUUM`; només queden les inscripcions reals (Sergio i Jesús).
+- ✅ **Control horari (2026-10-24)**: `.taques/112revelats/2026-10-23.md`, `2026-10-24.md` i `weekly-report.md` — 8h 45min de sessió (estimació manual).
 - ✅ **Formularis arreglats (2026-10-23)**: el formulari de la home enviava `form=inscripcio` sense `enllac-imatges` i el backend responia 422. S'ha substituït per un CTA a `/legal/formulari/` (un sol circuit d'inscripció). El backend retorna els camps que falten i `forms.js` els mostra/marca; `subject` i `lang` s'envien i es desen i l'assumpte del correu es codifica. S'ha eliminat el filtre `_ts` perquè els rellotges desfasats descartaven enviaments reals amb un fals «ok»; queden honeypot + rate limit 30/h. CORS inclou `112revelats.org`. Vegeu `docs/incident-2026-10-23-formulari-home.md`
 
 ### Notat

@@ -80,11 +80,12 @@ les seves dades es perdien. **S'ha eliminat el filtre**; queden el honeypot
 ## Pendent
 
 - Vigilar els logs per si apareixen 422/429 repetits.
-- Queda una fila de prova antiga (`joanet`, 2026-10-03, id 4) que es pot
-  esborrar si no es vol conservar.
+- La fila de prova antiga `joanet` (2026-10-03, id 4) s'ha esborrat de la BD
+  i de tots els backups (2026-10-24).
 - Si algú altre es va quedar sense enviar abans d'aquest arreglament, caldria
   demanar-li que torni a provar-ho.
 
 ## Auditoria posterior
 
-Vegeu `docs/auditoria-formularis-2026-10-23.md`.
+Vegeu `docs/auditoria-formularis-2026-10-23.md` i el tancament de la sessió a
+`docs/sessio-2026-10-23-24-formularis.md`.

@@ -58,7 +58,8 @@ sense imatge i la manca d'arxiu estructurat per convocatòria.
 
 - `PRAGMA integrity_check` → `ok`.
 - Entrades reals: Sergio Català (21/10) i Jesús Joglar (23/10). Les files de
-  prova (4 i 8–13) s'han esborrat.
+  prova (4 i 8–13) s'han esborrat; `joanet` també de tots els backups, amb
+  `VACUUM`.
 - Panell: 401 sense auth; 200 amb Basic auth; CSV 200; descàrrega `.md` 200.
 - Permisos: `webforms` 700, `data` 700, `submissions` 700, fitxers 600.
 
