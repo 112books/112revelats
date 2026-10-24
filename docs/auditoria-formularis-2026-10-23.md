@@ -1,14 +1,16 @@
-# Auditoria dels formularis — 2026-10-23
+# Auditoria dels formularis — 2026-10-23 / 2026-10-24
 
 > Revisió completa després de l'incident del formulari de la home
 > (`docs/incident-2026-10-23-formulari-home.md`).
-> Abast: web CA/ES/EN, backend PHP+SQLite, correu, panell, còpies, CORS i límits.
+> Abast: web CA/ES/EN, backend PHP+SQLite, correu, panell, còpies, CORS,
+> límits, correus HTML i arxiu `.md`.
 
 ## Resum
 
-Tot verificat i funcionant. Les úniques incidències trobades durant la revisió
-s'han resolt: hi havia còpies del codi PHP dins del docroot i el rate limit
-(10/h) era baix per a aules o tallers amb IP compartida.
+Tot verificat i funcionant. S'han resolt: el formulari ambigu de la home, el
+filtre `_ts` que descartava enviaments amb rellotges desfasats, les còpies de
+codi dins del docroot, el rate limit baix per a IP compartides, els correus
+sense imatge i la manca d'arxiu estructurat per convocatòria.
 
 ## Formularis
 
@@ -18,71 +20,83 @@ s'han resolt: hi havia còpies del codi PHP dins del docroot i el rate limit
 | Contacte | Home `#contacte` | `nom`, `email` | POST 200, desat i correu enviat |
 | Col·laboració | `/legal/col-labora/` | `nom-contacte`, `email`, `cif`, `adreca-fiscal`, `tipus`, `visibilitat-web`, `visibilitat-publicacio`, `rgpd` | POST 200, desat i correu enviat |
 
-- Home: el CTA «Omple el formulari d'inscripció →» apunta a
-  `/legal/formulari` (CA), `/es/legal/formulari` (ES) i
-  `/en/legal/formulari` (EN). No queda cap formulari ambigu a `#reptes`.
-- Markup de les 9 pàgines: `action` i `data-endpoint` correctes, `form`
-  ocult coincident amb `data-form`, honeypot `_gotcha`, missatges
-  `data-msg-ok` / `data-msg-err`, `forms.js` carregat i cap `_ts`.
+- Home: CTA cap a `/legal/formulari` (CA/ES/EN); no queda cap formulari ambigu.
+- Markup de les 9 pàgines: `action`/`data-endpoint` correctes, `form` ocult
+  coincident, `convocatoria`, honeypot, missatges, `forms.js` i `<noscript>`.
+- `<noscript>` visible amb JavaScript desactivat (provat amb Chrome).
+
+## Correus
+
+- Cada enviament genera **confirmació al participant** i **notificació interna**.
+- HTML + text pla; imatge de capçalera incrustada (CID `header112`), sense
+  imatges remotes: Apple Mail la mostra.
+- MIME provat amb un `sendmail_path` que imprimeix el missatge:
+  - confirmació: `multipart/related` → `multipart/alternative` + JPEG;
+  - notificació: `multipart/mixed` → related/alternative + `.md` adjunt.
+- Assumpte codificat; una capçalera amb salts de línia queda dins d'un sol
+  `encoded-word` (sense injecció).
+- Mida ~55 KB per correu.
+
+## Arxiu Markdown
+
+- `/home/112books/webforms/submissions/<convocatoria>/*.md`, 700/600.
+- Front matter per a Obsidian + camps llegibles + metadades.
+- `convocatoria` oculta a tots els formularis; fallback al backend.
+- Descàrrega des del panell (`?md=<id>`) i adjunt a la notificació interna.
+- `backup.sh` inclou un `submissions-*.tar.gz` diari.
 
 ## Backend
 
-- CORS: `112revelats.112books.eu`, `112revelats.org` i
-  `www.112revelats.org` responen 204 amb `Access-Control-Allow-Origin`;
-  un origen desconegut no rep capçalera.
-- Errors: 422 amb el camp o camps que falten; `invalid_email`;
-  `invalid_url`; honeypot (200 sense desar); 429 amb `Retry-After: 900`.
-- Rate limit: 30/hora per IP i formulari. Provat amb una configuració de 2/h:
-  el tercer enviament retorna 429.
-- Assumpte del correu codificat amb `mb_encode_mimeheader`; una capçalera amb
-  salts de línia queda codificada (sense injecció).
+- CORS: els 3 orígens responen 204 amb capçalera; un origen desconegut no.
+- Errors: 422 amb camps; `invalid_email`; `invalid_url`; honeypot; 429 +
+  `Retry-After: 900`.
+- Rate limit: 30/hora per IP i formulari (provat amb 2/h → 429).
 - `_ts` eliminat del client i del servidor.
-
-## Correu
-
-- Els correus de prova han arribat a `hola@112books.eu` (contacte, inscripció
-  i col·laboració).
-- El cos inclou formulari, data, IP, camps i enllaç al panell. `Reply-To` és
-  el correu del participant.
+- `wf_clean` normalitza correctament CRLF/CR.
 
 ## Base de dades i panell
 
 - `PRAGMA integrity_check` → `ok`.
-- Entrades actuals: Sergio Català (21/10) i Jesús Joglar (23/10). Les files de
-  prova de la revisió (8–11) s'han esborrat. Queda una prova antiga del 3/10
-  (`joanet`, id 4) que es pot esborrar si es vol.
-- Panell: 401 sense autenticació, 200 amb Basic auth, export CSV 200. El
-  participant hi apareix.
-- Permisos: `webforms` 700, `data` 700, `backups/source` 700 i fitxers 600.
+- Entrades reals: Sergio Català (21/10) i Jesús Joglar (23/10). Les files de
+  prova (4 i 8–13) s'han esborrat.
+- Panell: 401 sense auth; 200 amb Basic auth; CSV 200; descàrrega `.md` 200.
+- Permisos: `webforms` 700, `data` 700, `submissions` 700, fitxers 600.
 
 ## Còpies de seguretat
 
-- `cron` diari a les 03:30 (`backup.sh`), retenció de 30 dies i màxim 60
-  còpies. Prova manual correcta (`backup_ok`).
-- Les còpies del codi PHP que s'havien deixat a `/home/112books/www/api/`
-  s'han mogut a `webforms/backups/source/` (fora del docroot, 600).
+- `cron` diari 03:30; `forms-*.sqlite` + `submissions-*.tar.gz`; retenció
+  30 dies / 60 còpies.
+- Còpies de codi fora del docroot (`webforms/backups/source/`, 600).
 
 ## Interfície
 
-- Viewport mòbil 390×844: sense desbordament horitzontal; CTA i formulari de
-  contacte visibles.
-- Errors localitzats provats en ES i EN: missatge concret, camp marcat amb
-  `field-error` i `aria-invalid`.
+- Mòbil 390×844: sense desbordament; CTA i formulari visibles.
+- Errors localitzats ES/EN amb `field-error` i `aria-invalid`.
 
-## Canvis fets durant l'auditoria
+## Desplegament
 
-- Rate limit 10 → 30/h (config del servidor, `config.sample.php` i docs).
-- Còpies de codi fora del docroot.
-- Files de prova 8–11 esborrades.
+- GitHub Pages es publica amb `.github/workflows/deploy.yml` en push a `main`
+  (run 40047785553, `success`). La branca `gh-pages` ja no s'utilitza.
+- `sync-112revelats.sh` fa commit/push a `main`; no publica `gh-pages`.
+
+## Canvis fets
+
+- Formulari de la home → CTA al formulari complet.
+- `_ts` eliminat; honeypot + rate limit 30/h.
+- Errors concrets a `forms.js` i marcatge de camps.
+- Correus HTML amb imatge CID + confirmació automàtica CA/ES/EN.
+- Arxiu `.md` per convocatòria + adjunt + descàrrega al panell + còpia diària.
+- `<noscript>` amb `hola@112books.eu`.
+- Hugo: `label` i `.Site.Language.Locale` (sense avisos de deprecació).
+- Còpies de codi fora del docroot; files de prova esborrades.
 
 ## Limitacions i recomanacions
 
-- Els formularis necessiten JavaScript. Sense JS, el POST natiu arriba al
-  backend però el navegador mostra el JSON en cru. Es podria afegir un
-  `<noscript>` amb el correu de contacte.
-- No hi ha correu automàtic de confirmació al participant; només la notificació
-  interna.
 - Si un taller comparteix IP i supera les 30 inscripcions/hora, cal apujar
   `rate_per_hour`.
-- Hugo mostra avisos de deprecació per `languageName` i `.Site.LanguageCode`
-  (cosmètic; no afecta el build).
+- La confirmació s'envia al correu indicat; un correu aliè podria rebre-la
+  (backscatter). Es pot desactivar amb `send_confirmation`.
+- Sense JavaScript, el POST natiu arriba al backend i el navegador mostra el
+  JSON en cru; el `<noscript>` ja indica el correu alternatiu.
+- En canviar de convocatòria cal actualitzar el camp ocult `convocatoria` i els
+  textos de la confirmació (Retrats Lents/termini) a `server/forms/lib.php`.

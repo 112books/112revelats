@@ -6,8 +6,7 @@ Migració de WordPress a Hugo del site **112 Revelats**, un projecte col·lectiu
 - **Domini**: 112revelats.112books.eu (o 112revelats.org en futur)
 - **Responsable**: Joan Martínez (LinuxBCN)
 - **Idiomes**: Català (principal), Español, English
-- **Amfitrió actual**: WordPress a Dinahosting
-- **Amfitrió futur**: GitHub Pages + Hugo
+- **Amfitrió actual**: GitHub Pages + Hugo (workflow de GitHub Actions)
 
 ## Estructura del site
 Single-page amb seccions:
@@ -22,16 +21,18 @@ Single-page amb seccions:
 ## Estil
 - Disseny net, centrat en la fotografia
 - Colors: neutres (blanc, negre, grisos) — la foto és la protagonista
-- Tipografia: IBM Plex Sans (com LinuxBCN)
+- Tipografia: Beiruti (display) i Literata (cos)
 - Responsive, PWA-ready
 
 ## Desplegament
-- Build: `hugo --minify`
-- Destí: GitHub Pages (branch gh-pages)
-- Sync: `./sync-112revelats.sh`
+- Build: `hugo --minify` (ho fa també el workflow)
+- Destí: GitHub Pages via **GitHub Actions** en push a `main`
+  (`.github/workflows/deploy.yml`)
+- Deploy: `git push origin main`; el workflow compila i publica
+- `./sync-112revelats.sh` ajuda a commit/push; ja no publica `gh-pages`
 
 ## Tecnologies
 - Hugo (generador estàtic)
 - Cap framework CSS extern
-- Formulari de contacte: Netlify Forms o similar
+- Formulari: backend propi PHP 8.5 + SQLite a 112books.eu (sense servei extern)
 - Galetes: només tècniques (avís de cookies si cal)

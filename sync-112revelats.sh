@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# sync-112revelats.sh — Git + Hugo + Deploy (GitHub Pages)
+# sync-112revelats.sh — Git + Hugo + deploy via GitHub Actions
+# El desplegament real el fa .github/workflows/deploy.yml en push a main.
+# Aquest script ja no publica la branca gh-pages.
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -47,40 +49,19 @@ build() {
 }
 
 deploy() {
-  sync
   build
-  deploy_ghpages
-}
-
-deploy_ghpages() {
-  print "Publicant a GitHub Pages..."
-  git checkout --orphan gh-pages-tmp
-  git rm -rf . > /dev/null 2>&1 || true
-  cp -r $BUILD_DIR/* . 2>/dev/null || true
-  touch .nojekyll
-  git add -A
-  git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)"
-  git push $REMOTE gh-pages-tmp:gh-pages --force
-  git checkout $BRANCH
-  git branch -D gh-pages-tmp 2>/dev/null || true
-  ok "Deploy fet → https://112revelats.112books.eu/"
+  sync
 }
 
 deploy_auto() {
   build
-  print "Publicant a GitHub Pages..."
-  git checkout --orphan gh-pages-tmp 2>/dev/null
-  git rm -rf . > /dev/null 2>&1 || true
-  cp -r $BUILD_DIR/* . 2>/dev/null || true
-  touch .nojekyll
-  rm -rf PROMO public static docs .DS_Store 2>/dev/null || true
-  find . -name ".DS_Store" -delete 2>/dev/null || true
-  git add -A 2>/dev/null || true
-  git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)" 2>/dev/null || true
-  git push $REMOTE gh-pages-tmp:gh-pages --force 2>/dev/null || true
-  git checkout $BRANCH 2>/dev/null || true
-  git branch -D gh-pages-tmp 2>/dev/null || true
-  ok "Deploy fet → https://112revelats.112books.eu/"
+  if [[ -n $(git status -s) ]]; then
+    git add .
+    git commit -m "deploy: $(date +%Y-%m-%d_%H:%M)" || true
+  fi
+  git pull $REMOTE $BRANCH --rebase || exit 1
+  git push $REMOTE $BRANCH || exit 1
+  ok "Push a main fet. GitHub Actions publicarà el web → https://112revelats.112books.eu/"
 }
 
 if [[ "$1" == "deploy" ]]; then
@@ -96,7 +77,7 @@ echo ""
 echo "1) Status"
 echo "2) Sync (git)"
 echo "3) Build local"
-echo "4) Deploy (GitHub Pages)"
+echo "4) Deploy (commit + push a main; GitHub Actions publica)"
 echo "0) Sortir"
 echo ""
 

@@ -11,7 +11,7 @@
 **112 Revelats** — projecte editorial col·lectiu de fotollibres. Cada edició proposa un repte temàtic, els participants hi aporten la seva mirada i construeixen un fotollibre únic.
 
 - **Domini:** `112revelats.112books.eu`
-- **Repositori GitHub:** `github.com/112books/112revelats` (main → font, gh-pages → build)
+- **Repositori GitHub:** `github.com/112books/112revelats` (main → font; GitHub Actions → Pages)
 - **Responsable:** Joan Martínez (LinuxBCN) per a 112Books.eu
 - **Idiomes:** Català (ca, principal) · Español (es) · English (en)
 - **Públic:** Fotògrafs, artistes visuals, editors, mecenes
@@ -27,9 +27,10 @@
 - Multilingüe via `[languages]` + `i18n/*.toml` + `AllTranslations`
 
 ### Allotjament
-- **GitHub Pages** des de la branca `gh-pages`
-- Deploy manual: `hugo --minify` + push `public/` a `gh-pages` (o via `sync-112revelats.sh`)
-- GitHub Actions disponible (`.github/workflows/deploy.yml`) però no activat
+- **GitHub Pages** des de `main` amb el workflow `.github/workflows/deploy.yml` (GitHub Actions).
+- Deploy: `git push origin main`; el workflow compila amb Hugo i publica. També
+  s'executa després del workflow `Fetch GoatCounter Analytics`.
+- La branca `gh-pages` i el desplegament manual de `public/` ja no s'utilitzen.
 
 ### Formularis
 - **Backend propi** a `https://112books.eu/api/submit.php` (PHP 8.5 + SQLite) al servidor Dinaserver `vl28359`.
@@ -38,6 +39,8 @@
 - Notificacions amb el **correu propi** (`mail()` via wrapper de Dinaserver) cap a `hola@112books.eu`.
 - Panell: `https://112books.eu/api/admin.php` (Basic auth; contrasenya a `/home/112books/webforms/config.php`).
 - Cap servei extern de formularis. Les imatges es lliuren per SwissTransfer (camp enllac-imatges).
+- **Correus HTML** amb la imatge de capçalera incrustada (CID, visible a Apple Mail) i **confirmació automàtica** al participant en el seu idioma.
+- **Arxiu `.md` per convocatòria** a `/home/112books/webforms/submissions/<convocatoria>/`, adjunt a la notificació interna i descarregable des del panell (`?md=<id>`). Vegeu `docs/emails-i-arxius-formularis.md`.
 
 ### Password (ELIMINAT)
 - El site **ja no té password gate**. Era un `baseof.html` amb SHA256 + `sessionStorage`. Es va eliminar el 2026-06-05.
@@ -96,7 +99,7 @@
 
 ## 5. Estil i branding
 
-- **Tipografia:** Beiruti (display), Literata (cos) — carregades des de Google Fonts
+- **Tipografia:** Beiruti (display), Literata (cos) — autoallotjades a `static/fonts/`
 - **Paleta:** `--ink: #111110`, `--accent: rgb(254,33,33)` (vermell 112Books)
 - **Header fix:** 100px, fons blanc semitransparent amb `backdrop-filter`
 - **`.page-content`**: `padding-top: calc(var(--header-h) + 3rem)` per evitar solapament
@@ -129,16 +132,17 @@
 - ✅ **Google Fonts autoallotjades (2026-10-03)**: Beiruti i Literata servides des de `static/fonts/` amb `static/css/fonts.css`; cap petició a Google.
 - ✅ **Còpia diària de la BD de formularis (2026-10-03)**: `cron` al servidor a les 03:30 (`backup.sh`), retenció de 30 dies, a `/home/112books/webforms/backups/`
 - ✅ **PWA (2026-10-03)**: `site.webmanifest`, icones 192/512 + apple-touch-icon, service worker `sw.js` (network-first, offline fallback) i registre al `main.js`
+- ✅ **Correus HTML i arxiu .md (2026-10-24)**: imatge de capçalera incrustada (CID, Apple Mail la mostra), confirmació automàtica CA/ES/EN amb botó, notificació interna amb tots els camps i el `.md` adjunt; arxiu per convocatòria, descàrrega des del panell, còpia diària del directori `submissions/` i `<noscript>` amb el correu de contacte. Desplegament corregit: GitHub Actions des de `main` (no `gh-pages`). Vegeu `docs/emails-i-arxius-formularis.md`
 - ✅ **Formularis arreglats (2026-10-23)**: el formulari de la home enviava `form=inscripcio` sense `enllac-imatges` i el backend responia 422. S'ha substituït per un CTA a `/legal/formulari/` (un sol circuit d'inscripció). El backend retorna els camps que falten i `forms.js` els mostra/marca; `subject` i `lang` s'envien i es desen i l'assumpte del correu es codifica. S'ha eliminat el filtre `_ts` perquè els rellotges desfasats descartaven enviaments reals amb un fals «ok»; queden honeypot + rate limit 30/h. CORS inclou `112revelats.org`. Vegeu `docs/incident-2026-10-23-formulari-home.md`
 
 ### Notat
 
 - Les pàgines CA **no** tenen `/ca/` prefix (és l'idioma per defecte). Si la URL es visita amb `/ca/...` dona 404 — és comportament esperat.
-- `sync-112revelats.sh` té `read -p` interactiu — no es pot usar en no-interactiu. Alternativa fiable: `hugo --minify` i publicar `public/` en un worktree de `gh-pages` (vegeu `docs/pla-formularis-propis.md` i l'historial de desplegaments).
+- El desplegament és automàtic en push a `main` (GitHub Actions). `sync-112revelats.sh` fa el commit/push i deixa que el workflow publiqui; no cal tocar `gh-pages`.
 
 ---
 
-*Última actualització: 2026-10-23*
+*Última actualització: 2026-10-24*
 *Mantenidor: Joan Martínez Serres — joan@linuxbcn.com*
 
 

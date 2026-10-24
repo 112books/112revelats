@@ -2,6 +2,7 @@
 
 > Estat: **implementat i en producció** · 2026-10-03
 > Revisió post-incident: 2026-10-23 (vegeu `docs/incident-2026-10-23-formulari-home.md`)
+> Correus HTML i arxiu `.md` per convocatòria: `docs/emails-i-arxius-formularis.md` · 2026-10-24
 > Objectiu assolit: cap servei extern de formularis; enviament amb el correu propi.
 
 ## Arquitectura
@@ -12,9 +13,11 @@
     https://112books.eu/api/submit.php   (PHP 8.5, docroot /home/112books/www)
           |
           +-- SQLite  /home/112books/webforms/data/forms.sqlite
+          +-- submissions/<convocatoria>/*.md   arxiu Markdown (700)
+          +-- assets/email-header.jpg           capcalera incrustada als correus
           +-- mail()  (wrapper /usr/bin/phpmailer de Dinaserver)
-          |      -> hola@112books.eu
-          +-- /api/admin.php (Basic auth)  llistat + export CSV
+          |      -> hola@112books.eu  + confirmacio al participant
+          +-- /api/admin.php (Basic auth)  llistat + CSV + descarrega .md
 
 ## On és cada cosa
 
@@ -22,12 +25,15 @@ Servidor: 112books@vl28359.dinaserver.com (Dinaserver, Debian 11).
 
     /home/112books/www/api/submit.php      endpoint public
     /home/112books/www/api/admin.php       panell (Basic auth)
-    /home/112books/webforms/lib.php        llibreria (BD, rate limit, correu)
+    /home/112books/webforms/lib.php        llibreria (BD, rate limit, correu, MD)
     /home/112books/webforms/config.php     configuracio (600) - NO al repo
     /home/112books/webforms/data/          SQLite (700)
+    /home/112books/webforms/submissions/   arxiu .md per convocatoria (700)
+    /home/112books/webforms/assets/        imatge de capcalera dels correus
+    /home/112books/webforms/backup.sh      copia diaria de BD + submissions
 
-Repo (aquest projecte): carpeta server/forms/ (lib.php, public/submit.php,
-public/admin.php, config.sample.php).
+Repo (aquest projecte): carpeta server/forms/ (lib.php, backup.sh, assets/,
+public/submit.php, public/admin.php, config.sample.php).
 
 ## Tipus de formulari
 
@@ -42,14 +48,16 @@ La home **no té formulari**: a `#reptes` hi ha un CTA («Omple el formulari d'i
 que porta a `/legal/formulari/`. Així no hi ha dos circuits d'inscripció i ningú no es
 pensa que ha enviat les fotografies quan només ha deixat les dades.
 
-Tots els formularis envien també `subject` (tema del correu) i `lang` (ca/es/en).
+Tots els formularis envien també `subject` (tema del correu), `lang` (ca/es/en)
+i `convocatoria` (carpeta de l'arxiu `.md`).
 
 ## Desplegament (des del repo)
 
-    ssh 112books@vl28359.dinaserver.com "mkdir -p /home/112books/webforms/data /home/112books/www/api"
-    scp server/forms/lib.php 112books@vl28359.dinaserver.com:/home/112books/webforms/lib.php
+    ssh 112books@vl28359.dinaserver.com "mkdir -p /home/112books/webforms/data /home/112books/webforms/assets /home/112books/webforms/submissions /home/112books/www/api && chmod 700 /home/112books/webforms/assets /home/112books/webforms/submissions"
+    scp server/forms/lib.php server/forms/backup.sh 112books@vl28359.dinaserver.com:/home/112books/webforms/
+    scp server/forms/assets/email-header.jpg 112books@vl28359.dinaserver.com:/home/112books/webforms/assets/
     scp server/forms/public/submit.php server/forms/public/admin.php 112books@vl28359.dinaserver.com:/home/112books/www/api/
-    ssh 112books@vl28359.dinaserver.com "chmod 640 /home/112books/www/api/*.php"
+    ssh 112books@vl28359.dinaserver.com "chmod 640 /home/112books/www/api/*.php /home/112books/webforms/lib.php; chmod 600 /home/112books/webforms/assets/email-header.jpg; chmod 700 /home/112books/webforms/backup.sh"
 
 La config.php NO es desplega; es crea un cop al servidor (contrasenya aleatoria).
 
@@ -61,6 +69,7 @@ La config.php NO es desplega; es crea un cop al servidor (contrasenya aleatoria)
     ssh 112books@vl28359.dinaserver.com "grep admin_password /home/112books/webforms/config.php"
 
 - Export CSV: https://112books.eu/api/admin.php?export=csv
+- Descarrega del Markdown: https://112books.eu/api/admin.php?md=&lt;id&gt; (columna **MD**).
 
 ## Proves rapides
 
@@ -87,18 +96,24 @@ hola@112books.eu; esborra-les despres des del panell o amb sqlite3.
 - hugo.toml: paràmetre formEndpoint.
 - assets/js/forms.js: intercepta els enviaments i fa fetch a l'endpoint.
 - Cada formulari porta: data-form (inscripcio / contacte / collaboracio),
-  data-msg-ok, data-msg-err, i els camps ocults form, subject i lang.
+  data-msg-ok, data-msg-err, i els camps ocults form, subject, lang i convocatoria.
 - forms.js mostra l'error concret (camps que falten, correu invalid, URL, 429) en
   l'idioma de la pagina i marca els camps afectats.
 - Anti-bot: honeypot _gotcha + rate limit 30/hora per IP i formulari. **No** es fa
   servir cap marca de temps del client: els rellotges desfasats feien perdre
   enviaments reals amb un fals «ok» (vegeu l'incident del 2026-10-23).
 - CORS: https://112revelats.112books.eu, https://112revelats.org i https://www.112revelats.org.
+- Correus HTML amb imatge incrustada (CID) i confirmacio automatica al participant;
+  la notificacio interna porta el `.md` adjunt. Vegeu `docs/emails-i-arxius-formularis.md`.
+- El web es publica amb el workflow `.github/workflows/deploy.yml` en fer push a
+  `main` (GitHub Actions). La branca `gh-pages` ja no s'utilitza.
 
 ## Manteniment
 
-- Copia de seguretat diària (cron del servidor) de forms.sqlite i dels logs.
-- Retencio de dades: esborrar entrades antigues periodicament (GDPR).
+- Copia de seguretat diària (cron del servidor, 03:30) de `forms.sqlite` i de
+  `submissions/` en un `submissions-*.tar.gz`; retencio de 30 dies i 60 copies.
+- Retencio de dades: esborrar entrades antigues i els `.md` corresponents
+  periodicament (GDPR).
 - Debian 11 es EOL; planificar Debian 12/13.
 - WordPress viu al mateix servidor: mantenir-lo actualitzat.
 
