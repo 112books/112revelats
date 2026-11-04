@@ -149,6 +149,8 @@
   other = "Descarregar \"Arrencant el dia\" (PDF)"
 [hero_cta_participa]
   other = "Participa al repte"
+[hero_cta_tancat]
+  other = "Participació tancada l'1 de novembre de 2026"
 [participa_title]
   other = "Participa amb el teu projecte"
 [participa_text]
