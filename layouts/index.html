@@ -6,7 +6,7 @@
     <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
     <div class="hero-cta">
       <a href="{{ $.Site.Params.llibreUrl }}" class="btn btn-primary" target="_blank" rel="noopener">{{ i18n "hero_cta_pdf" }}</a>
-      <a href="#reptes" class="btn btn-secondary">{{ i18n "hero_cta_participa" }}</a>
+      <span class="btn btn-secondary" style="text-decoration:line-through;opacity:0.4;cursor:not-allowed;">{{ i18n "hero_cta_participa" }}</span>
     </div>
   </div>
 </section>
@@ -56,16 +56,14 @@
       <div class="phases">
         <h4>{{ i18n "reptes_fases_subtitle" }}</h4>
         <div class="phase-list">
-          <div class="phase phase-active"><span class="phase-dot"></span> {{ i18n "fase_revisar" }}</div>
-          <div class="phase phase-pending"><span class="phase-dot"></span> {{ i18n "fase_activat" }}</div>
+          <div class="phase phase-done"><span class="phase-dot"></span> {{ i18n "fase_revisar" }}</div>
+          <div class="phase phase-active"><span class="phase-dot"></span> {{ i18n "fase_activat" }}</div>
           <div class="phase phase-pending"><span class="phase-dot"></span> {{ i18n "fase_desenvolupar" }}</div>
         </div>
       </div>
 
       <div class="participa-form">
-        <h4>{{ i18n "participa_form_title" }}</h4>
-        <p class="participa-cta-text">{{ i18n "participa_form_cta_text" }}</p>
-        <a class="btn btn-primary btn-lg" href="{{ "legal/formulari" | relLangURL }}">{{ i18n "participa_form_cta" }}</a>
+        <p class="participa-cta-text" style="color:var(--ink-2);">{{ i18n "repte_002_prorrogacio" }}</p>
       </div>
     </div>
 

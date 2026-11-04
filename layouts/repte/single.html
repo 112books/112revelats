@@ -83,7 +83,7 @@
       <div class="phase-list">
         {{ $phaseNames := slice (i18n "fase_1") (i18n "fase_2") (i18n "fase_3") (i18n "fase_4") (i18n "fase_5") (i18n "fase_6") }}
         {{ range $i, $p := .Params.phases }}
-          {{ $class := cond (eq $p.status "active") "phase-active" (cond (eq $p.status "future") "phase-pending" "") }}
+          {{ $class := cond (eq $p.status "active") "phase-active" (cond (eq $p.status "future") "phase-pending" (cond (eq $p.status "done") "phase-done" "")) }}
           <div class="phase {{ $class }}">
             <span class="phase-dot"></span>
             <div>

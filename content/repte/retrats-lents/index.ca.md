@@ -5,14 +5,14 @@ status: "active"
 challengeNumber: 2
 phases:
   - date: "21 juny — 1 novembre"
-    status: "active"
+    status: "done"
     note: "Inici oficial el solstici d'estiu (Sant Joan)"
   - date: "21 juny — 1 novembre"
-    status: "active"
+    status: "done"
     note: "Gratuïta i oberta a totes les edats i nivells. Menors: cal autorització del tutor legal."
-  - date: "Mitjan novembre"
-    status: "future"
-    note: "Comunicarem els seleccionats"
+  - date: "Novembre"
+    status: "active"
+    note: "Revisió de les propostes rebudes i selecció de les imatges per al fotollibre"
   - date: "Finals de novembre"
     status: "future"
     note: "El fotollibre es llança a finals de novembre"
@@ -26,10 +26,8 @@ En un món que va cada cop més de pressa, proposem tornar a l'essència de la f
 
 No cal tenir una càmera especial: pots construir la teva pròpia càmera estenopeica amb una llauna o una caixa de cartró. El que importa és l'actitud: aturar-se, observar, esperar.
 
-## Com participar
+## Participació tancada
 
-1. Fes un retrat amb càmera estenopeica o llarga exposició
-2. [Envia'ns la teva proposta a través del formulari d'inscripció](/legal/formulari/)
-3. Si la teva imatge és seleccionada, formarà part del fotollibre col·lectiu
+El termini d'enviament va tancar l'**1 de novembre de 2026**. Estem en l'etapa de selecció i producció del fotollibre. Els participants seleccionats seran contactats directament.
 
-> **Segona pròrroga:** el termini d'enviament s'amplia fins a l'**1 de novembre de 2026**. La data original era el 6 de setembre i la primera pròrroga va ser el 20 de setembre; ara l'ampliem una altra vegada perquè alguns usuaris van tenir problemes amb el formulari d'inscripció (ja arreglat) i volem donar més marge per participar-hi. Consulta les [bases completes](/legal/bases/) i el [formulari de participació](/legal/formulari/).
+Consulta les [bases completes](/legal/bases/) per a més informació.

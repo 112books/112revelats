@@ -5,14 +5,14 @@ status: "active"
 challengeNumber: 2
 phases:
   - date: "21 Jun — 1 Nov"
-    status: "active"
+    status: "done"
     note: "Official start on the summer solstice (Sant Joan)"
   - date: "21 Jun — 1 Nov"
-    status: "active"
+    status: "done"
     note: "Free and open to all ages and levels. Minors require parental authorization."
-  - date: "Mid-November"
-    status: "future"
-    note: "Selected participants will be announced"
+  - date: "November"
+    status: "active"
+    note: "Review of received proposals and selection of images for the photobook"
   - date: "End of November"
     status: "future"
     note: "The photobook launches at the end of November"
@@ -26,10 +26,8 @@ In a world that moves faster every day, we propose returning to the essence of p
 
 You don't need a special camera: you can build your own pinhole camera with a tin can or a cardboard box. What matters is the attitude: stopping, observing, waiting.
 
-## How to participate
+## Submissions closed
 
-1. Take a portrait with a pinhole camera or long exposure
-2. [Send us your proposal through the registration form](/en/legal/formulari/)
-3. If your image is selected, it will be part of the collective photobook
+The submission deadline was **November 1, 2026**. We are now in the selection and photobook production stage. Selected participants will be contacted directly.
 
-> **Second extension:** the submission period is extended to **November 1, 2026**. The original deadline was September 6 and the first extension was September 20; we are extending it again because some users had trouble with the registration form (now fixed) and we want to give everyone more margin to take part. Check the [full terms](/en/legal/bases/) and the [participation form](/en/legal/formulari/).
+See the [full terms](/en/legal/bases/) for more information.

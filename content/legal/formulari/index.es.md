@@ -1,70 +1,13 @@
 ---
 title: "Formulario de participación — Retratos Lentos"
-description: "Envía tu propuesta para el reto Retratos Lentos de 112 Revelats"
+description: "El plazo de participación en el reto Retratos Lentos ha cerrado"
 ---
 
 **112 Revelats – Formulario de participación**
 **Reto actual: Retratos Lentos**
-<p style="font-size:1.2rem;color:var(--accent);font-weight:700;">Fecha límite de envío: 1 de noviembre de 2026 <span style="font-size:0.9rem;font-weight:400;">(segunda prórroga — fecha original: 6 de septiembre; primera prórroga: 20 de septiembre)</span></p>
 
-Hay imágenes que necesitan tiempo. Una mirada que se construye mientras el obturador permanece abierto. La luz que atraviesa un agujero diminuto y proyecta el mundo al revés dentro de una lata. En un momento donde todo va deprisa, proponemos volver a la pausa: construir un retrato desde la espera, la observación y la larga exposición.
+<p style="font-size:1.1rem;color:var(--ink);font-weight:700;padding:1rem 1.25rem;background:rgba(0,0,0,0.05);border-left:4px solid var(--ink);margin:1.5rem 0;">El plazo de envío se cerró el <strong>1 de noviembre de 2026</strong>. Estamos en la etapa de selección y producción del fotolibro.</p>
 
-Esta convocatoria es una llamada a los fotógrafos que quieran explorar el retrato lento: cámara estenopeica, larga exposición, fotografía slow. No hace falta equipo profesional. Una lata, papel fotográfico y paciencia son suficientes.
+Gracias a todas las personas que han participado. Estamos revisando las propuestas recibidas y contactaremos directamente a los participantes seleccionados.
 
-**¿Qué estamos buscando?**
-- Una serie de **hasta 4 fotografías** por participante
-- **Tema:** el retrato — rostros, ausencias, presencias, gestos, el cuerpo, la mirada
-- **Técnica:** cámara estenopeica (pinhole), larga exposición o cualquier técnica que requiera ralentizar el proceso fotográfico
-- Se valorará el uso de formatos analógicos, pero no es obligatorio
-- **No se aceptarán imágenes generadas por inteligencia artificial**
-
-<noscript><p class="noscript-note">Este formulario necesita JavaScript. Si no lo tienes activado, escríbenos a <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p></noscript>
-<form class="contact-form" action="https://112books.eu/api/submit.php" method="POST" data-endpoint="https://112books.eu/api/submit.php" data-form="inscripcio" data-msg-ok="¡Gracias! Hemos recibido tu propuesta." data-msg-err="No se ha podido enviar. Vuelve a intentarlo o escríbenos a hola@112books.eu." style="max-width:100%;margin-top:2rem;">
-  <input type="hidden" name="form" value="inscripcio">
-  <input type="hidden" name="convocatoria" value="retrats-lents">
-  <input type="hidden" name="subject" value="Inscripcio Retrats Lents">
-  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
-  <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">1. INFORMACIÓN DEL AUTOR/A</h4>
-
-  <input type="text" name="nom" placeholder="Nombre completo" required>
-  <input type="email" name="email" placeholder="Correo electrónico" required>
-  <input type="tel" name="telefon" placeholder="Teléfono de contacto (opcional)">
-  <input type="url" name="web" placeholder="Página web o blog (opcional)">
-  <input type="text" name="instagram" placeholder="Instagram (opcional)">
-  <input type="text" name="facebook" placeholder="Facebook (opcional)">
-  <textarea name="biografia" placeholder="Biografía (breve)" rows="3"></textarea>
-
-  <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">2. PROPUESTA FOTOGRÁFICA</h4>
-
-  <input type="text" name="titol-projecte" placeholder="Nombre del proyecto (opcional)">
-  <textarea name="descripcio" placeholder="Comentario o descripción breve del conjunto de fotografías (opcional)" rows="3"></textarea>
-
-  <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">3. ENVÍO DE IMÁGENES</h4>
-  <p style="font-size:0.85rem;color:var(--ink-3);margin-bottom:0.5rem;">Sube tus fotografías (hasta 4, formato JPG/PNG/TIF) a un servicio de transferencia como <a href="https://www.swisstransfer.com/" target="_blank">SwissTransfer</a>, WeTransfer, Google Drive o similar, y pega aquí el enlace de descarga.<br><strong>Resolución mínima: 3000 px por el lado largo, 300 ppp (dpi)</strong> — las imágenes seleccionadas se imprimirán en el fotolibro.<br>Al enviar las imágenes confirmas que eres el autor/a y que aceptas las <a href="/es/legal/bases/" target="_blank">bases del concurso</a>.</p>
-
-  <input type="url" name="enllac-imatges" placeholder="https://www.swisstransfer.com/d/..." required>
-
-  <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">4. AUTORIZACIÓN Y CONDICIONES</h4>
-
-  <label class="checkbox-label">
-    <input type="checkbox" name="accepta-condicions" value="si" required>
-    Acepto las condiciones de participación y declaro que soy el autor/a de las imágenes enviadas. (<a href="/es/legal/bases/" target="_blank">Lee las bases</a>)
-  </label>
-
-  <label class="checkbox-label">
-    <input type="checkbox" name="autoritzacio-us" value="si" required>
-    Autorizo el uso de mi material para la publicación dentro del proyecto 112 Revelats.
-  </label>
-
-  <label class="checkbox-label">
-    <input type="checkbox" name="rgpd" value="si" required>
-    He leído, entiendo y acepto el <a href="/es/avis-legal/" target="_blank">Aviso legal</a>, <a href="/es/cookies/" target="_blank">Política de Cookies</a> y <a href="/es/privacitat/" target="_blank">Política de Protección de datos</a>.
-  </label>
-
-  <h4 style="margin:1.5rem 0 0.5rem;font-size:1.1rem;">5. ENVÍA TU PROPUESTA</h4>
-
-  <button type="submit" class="btn btn-primary btn-lg">Envía tu propuesta</button>
-</form>
-
-<p style="font-size:0.85rem;color:var(--ink-3);">Si el formulario te da algún error o no recibes confirmación, escríbenos a <a href="mailto:hola@112books.eu">hola@112books.eu</a>.</p>
+Si tienes alguna pregunta, escríbenos a [hola@112books.eu](mailto:hola@112books.eu).

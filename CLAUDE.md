@@ -112,7 +112,7 @@
 
 ### Per fer
 
-- [ ] **Substituir les 11 fotos d'inspiració** de `static/img/retrats-lents/` per les fotografies reals dels participants quan tanqui el repte (1 nov 2026). La galeria ja funciona i en mostra 6 a l'atzar.
+- [ ] **Substituir les 11 fotos d'inspiració** de `static/img/retrats-lents/` per les fotografies reals dels participants seleccionats. La galeria ja funciona i en mostra 6 a l'atzar.
 - [ ] **Esborrar els correus de prova** de `hola@112books.eu` (cal accés IMAP/root; llista d'assumptes a `docs/sessio-2026-10-23-24-formularis.md`).
 
 ### Resolt

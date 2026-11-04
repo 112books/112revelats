@@ -50,7 +50,7 @@
   other = "Second photographic challenge by 112 Revelats. Portraits with pinhole camera and long exposure. An invitation to slow down the gaze and capture the subject's essence through time and low light."
 
 [repte_002_prorrogacio]
-  other = "Extended! The deadline is now November 1, 2026. Some users had trouble with the form (now fixed), so we want to give everyone more time to take part."
+  other = "The submission deadline was November 1, 2026. We are now in the selection and photobook production stage."
 [repte_authors_title]
   other = "Participants"
 [repte_authors_desc]
@@ -60,7 +60,7 @@
 [repte_authors_other]
   other = "Also participated (special thanks)"
 [repte_002_estat]
-  other = "Open for submissions"
+  other = "Selection and production"
 [participa_form_title]
   other = "Sign up for the challenge"
 [participa_form_portfolio]
@@ -144,7 +144,7 @@
 [faq_5_r]
   other = "You can make a donation for the print edition of the photobook, or sponsor an emerging author. [Fill in the collaboration form](/en/legal/col-labora/) and we will explain the options."
 [hero_subtitle]
-  other = "Collective photobook project"
+  other = "Collective photobook creation project"
 [hero_cta_pdf]
   other = "Download \"Starting the day\" (PDF)"
 [hero_cta_participa]

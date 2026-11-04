@@ -50,7 +50,7 @@
   other = "Segon repte fotogràfic de 112 Revelats. Retrats amb càmera estenopeica i llarga exposició. Una invitació a alentir la mirada i capturar l'essència del subjecte a través del temps i la poca llum."
 
 [repte_002_prorrogacio]
-  other = "Pròrroga! El termini s'amplia fins a l'1 de novembre de 2026. Alguns usuaris van tenir problemes amb el formulari (ja arreglat) i volem donar més marge per participar-hi."
+  other = "El termini d'enviament va tancar l'1 de novembre de 2026. Estem en l'etapa de selecció i producció del fotollibre."
 [repte_authors_title]
   other = "Participants"
 [repte_authors_desc]
@@ -60,7 +60,7 @@
 [repte_authors_other]
   other = "També hi van participar (agraïment especial)"
 [repte_002_estat]
-  other = "Inscripció oberta"
+  other = "Selecció i producció"
 [participa_form_title]
   other = "Inscriu-te al repte"
 [participa_form_portfolio]
@@ -144,7 +144,7 @@
 [faq_5_r]
   other = "Pots fer una donació per a l'edició en paper del fotollibre, o apadrinar un autor emergent. [Omple el formulari de col·laboració](/legal/col-labora/) i t'expliquem les opcions."
 [hero_subtitle]
-  other = "Projecte de fotollibres col·lectius"
+  other = "Projecte de creació de fotollibres col·lectius"
 [hero_cta_pdf]
   other = "Descarregar \"Arrencant el dia\" (PDF)"
 [hero_cta_participa]
