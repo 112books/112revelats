@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-18T18:38:29.844233Z",
+  "generated": "2026-11-19T00:55:18.378438Z",
   "period": {
-    "start": "2025-11-18",
-    "end": "2026-11-18"
+    "start": "2025-11-19",
+    "end": "2026-11-19"
   },
-  "total": 392,
+  "total": 393,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -382,6 +382,10 @@
     {
       "date": "2026-11-17",
       "count": 3
+    },
+    {
+      "date": "2026-11-18",
+      "count": 1
     }
   ],
   "hits": [
@@ -434,16 +438,16 @@
       "count": 4
     },
     {
+      "path": "/en/patrocini",
+      "count": 3
+    },
+    {
       "path": "/es/repte/retrats-lents",
       "count": 3
     },
     {
       "path": "/112revelats",
       "count": 3
-    },
-    {
-      "path": "/en/patrocini",
-      "count": 2
     },
     {
       "path": "/privacitat",
@@ -531,7 +535,7 @@
     }
   ],
   "by_lang": {
-    "en": 125,
+    "en": 126,
     "es": 12
   },
   "by_section": {
@@ -539,7 +543,7 @@
     "repte": 110,
     "legal": 60,
     "avis-legal": 9,
-    "patrocini": 6,
+    "patrocini": 7,
     "112revelats": 12,
     "privacitat": 4,
     "exempcio": 1,
@@ -775,6 +779,11 @@
       "2026-09-02": 1,
       "2026-10-03": 1
     },
+    "/en/patrocini": {
+      "2026-07-03": 1,
+      "2026-08-08": 1,
+      "2026-11-18": 1
+    },
     "/es/repte/retrats-lents": {
       "2026-06-05": 1,
       "2026-06-16": 1,
@@ -782,10 +791,6 @@
     },
     "/112revelats": {
       "2026-06-05": 3
-    },
-    "/en/patrocini": {
-      "2026-07-03": 1,
-      "2026-08-08": 1
     },
     "/privacitat": {
       "2026-06-16": 1,
@@ -1032,7 +1037,8 @@
       "2026-07-03": 1,
       "2026-08-08": 1,
       "2026-09-02": 1,
-      "2026-10-03": 1
+      "2026-10-03": 1,
+      "2026-11-18": 1
     },
     "privacitat": {
       "2026-06-16": 1,
@@ -1065,7 +1071,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 164
+      "count": 165
     },
     {
       "name": "Firefox",
@@ -1087,7 +1093,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 81
+      "count": 82
     },
     {
       "name": "Android",
@@ -1104,7 +1110,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 172
+      "count": 173
     },
     {
       "name": "phone",
@@ -1194,8 +1200,8 @@
       "count": 2
     },
     {
-      "name": "Australia",
-      "id": "AU",
+      "name": "Albania",
+      "id": "AL",
       "count": 1
     }
   ],
@@ -1203,7 +1209,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 145
+      "count": 146
     },
     {
       "name": "l.instagram.com",
